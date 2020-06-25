@@ -31,7 +31,7 @@ body, button, input, textarea {
 }
 
 .bandContent{
-  max-width: 1100px; /*Main container width with page content */
+  max-width: 2100px; /*Main container width with page content */
 }
 
 .splitColumns {
@@ -733,15 +733,6 @@ sup {
   .image-container.learn-list {
     margin: 0 auto;
   }
-}
-
-/*---Giraffe easter egg */
-.giraffe {
-  height: 70px;
-  width: 50px;
-  background-image: url('../images/giraffe.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .hanchor { 
