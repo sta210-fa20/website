@@ -5,6 +5,6 @@
 
 STA 210 website 
 
-Desinged from tidymodels.org with inspiration from https://datavizm20.classes.andrewheiss.com/
+Designed from tidymodels.org with inspiration from https://datavizm20.classes.andrewheiss.com/
 
 
