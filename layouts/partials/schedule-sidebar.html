@@ -10,17 +10,18 @@
           </a>
       </div>
     </div>
+  
   {{ range (where .Site.RegularPages.ByWeight "Section" "schedule" ) }}
     <div class="section">
-        <div class="sectionTitle">{{ .Weight }}&nbsp&nbsp<a class = "sectionTitle {{ if eq $page.RelPermalink .RelPermalink }}current{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <div class="sectionTitle"><a class = "sectionTitle {{ if eq $page.RelPermalink .RelPermalink }}current{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
         </div>
     </div>
     {{ end }}
   </div>
   
   <!-- Adds Help nudge, but only to single pages --> 
-  {{ if .IsPage }}
+  <!--{{ if .IsPage }}
     {{ partial "help.html" . }}
-  {{ end }}
+  {{ end }}-->
 
 </div>
