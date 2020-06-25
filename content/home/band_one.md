@@ -1,19 +1,13 @@
 ---
 col0:
-  row1: tidymodels
-  row2: rsample
-  row3: parsnip
+  row1: 
+  row2:
+  row3: 
 col2:
-  row2: recipes
-  row3: tune
-  row4: yardstick
-title: tidymodels
+  row2: 
+  row3: 
+  row4: 
+title: STA 210
 ---
 
-The tidymodels framework is a collection of packages for modeling and machine learning using [tidyverse](https://www.tidyverse.org/) principles.
-
-Install tidymodels with:
-
-```{r, eval= FALSE}
-install.packages("tidymodels")
-```
+Welome to STA 210: Regression Analysis! This is where i'll have the course description 

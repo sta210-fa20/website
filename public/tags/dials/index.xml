@@ -60,6 +60,16 @@
   </item>
   
 <item>
+  <title>Course materials?</title>
+  <link>/home/band_three/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_three/</guid>
+  <description>&lt;p&gt;Maybe put course materials here?&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
   <title>help</title>
   <link>/help/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,12 +121,12 @@ and &lt;code&gt;tidymodels&lt;/code&gt; so that the right people are more likely
   </item>
   
 <item>
-  <title>Learn tidymodels</title>
+  <title>Learn Regression analysis</title>
   <link>/home/band_two/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/home/band_two/</guid>
-  <description>&lt;p&gt;Whether you are just starting out today or have years of experience with modeling, tidymodels offers a consistent, flexible framework for your work.&lt;/p&gt;
+  <description>&lt;p&gt;Maybe put insturctor and TA info here.&lt;/p&gt;
 </description>
   </item>
   
@@ -131,25 +141,13 @@ and &lt;code&gt;tidymodels&lt;/code&gt; so that the right people are more likely
   </item>
   
 <item>
-  <title>Stay up to date</title>
-  <link>/home/band_three/</link>
-  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-  
-<guid>/home/band_three/</guid>
-  <description>&lt;p&gt;Hear about the latest tidymodels news at the &lt;a href=&#34;https://www.tidyverse.org/tags/tidymodels/&#34; target=&#34;_blank&#34;&gt;tidyverse blog&lt;/a&gt;.&lt;/p&gt;
-</description>
-  </item>
-  
-<item>
-  <title>tidymodels</title>
+  <title>STA 210</title>
   <link>/home/band_one/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/home/band_one/</guid>
-  <description>&lt;p&gt;The tidymodels framework is a collection of packages for modeling and machine learning using &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;tidyverse&lt;/a&gt; principles.&lt;/p&gt;
-&lt;p&gt;Install tidymodels with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-{r,&#34; data-lang=&#34;{r,&#34;&gt;install.packages(&amp;quot;tidymodels&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;</description>
+  <description>&lt;p&gt;Welome to STA 210: Regression Analysis! This is where i&amp;rsquo;ll have the course description&lt;/p&gt;
+</description>
   </item>
   
 <item>

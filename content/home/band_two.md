@@ -1,6 +1,5 @@
 ---
-title: Learn tidymodels
+title: Learn Regression analysis
 ---
 
-Whether you are just starting out today or have years of experience with modeling, tidymodels offers a consistent, flexible framework for your work.
-   
+Maybe put insturctor and TA info here.
