@@ -1,0 +1,14 @@
+---
+title: "A predictive modeling case study"
+weight: 5
+tags: [parsnip, recipes, rsample, workflows, tune]
+categories: [model fitting, tuning]
+description: | 
+  Develop, from beginning to end, a predictive model using best practices.
+---
+
+```{r setup, include = FALSE, message = FALSE, warning = FALSE}
+source(here::here("content/start/common.R"))
+```
+
+this is where I'd put week one details. 
