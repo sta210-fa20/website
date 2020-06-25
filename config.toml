@@ -1,5 +1,5 @@
 # Title of your site
-title = "Tidymodels"
+title = "STA 210: Regression Analysis"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
@@ -9,11 +9,11 @@ baseurl = "https://www.tidymodels.org/"
 theme = "hugo-tourmaline"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = "UA-20375833-29"
+googleAnalytics = ""
 
 relativeurls = false
 languageCode = "en-us"
-description = "A collection of R packages for modeling and machine learning using tidyverse principles."
+description = "Website for STA 210: Regression Analysis at Duke University"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 # below is critical for non-authors to show up in article listing

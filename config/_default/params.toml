@@ -1,18 +1,18 @@
 # Description for social sharing and search engines.
-description = "A collection of R packages for modeling and machine learning using tidyverse principles."
+description = "Website for STA 210: Regression Analysis at Duke University"
 
 # Default image for social sharing and search engines. Place image in `static/images/` folder and specify image name here.
-sharing_image = "feature_summary_large_image.jpg"
-twitter_image = "feature_summary_large_image.jpg"
+sharing_image = ""
+twitter_image = ""
 
 # Link custom CSS and JS assets
 #   (relative to /static/css and /static/js respectively)
-custom_css = ["tm.css"]
-custom_js = ["tm.js"]
+custom_css = ["sta210.css"]
+custom_js = ["sta210.js"]
 
 # Define base hex url for index page (where the stickers link out to)
-hex_base_url = "tidymodels.github.io/"
-hex_ext = "svg"
+hex_base_url = ""
+hex_ext = ""
     
 # Define "news" as both articles and events
 mainSections = ["articles", "events"]
@@ -30,7 +30,7 @@ MathJaxVersion = "2.7.1"
 [footer]
     github_url = ""
     twitter_url = ""
-    support = "Proudly supported by"
+    support = "Website inspired by tidymodels and data viz site."
 
 # leave blank in quotes for the default = true
 # to turn off, set = false (no quotes)
