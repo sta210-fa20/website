@@ -1,20 +1,20 @@
 resources:
-- url: /find/
-  title: Find
+- url: /schedule/
+  title: schedule
   icon: fa-search
   icon_pack: fas
   what: |
     Explore searchable tables of all tidymodels packages and functions.
 
-- url: /books/
-  title: Books
+- url: /help/
+  title: help
   icon: fa-book-open
   icon_pack: fas
   what: |
     Study up on statistics and modeling with our comprehensive books.
 
 - url: https://www.tidyverse.org/tags/tidymodels/
-  title: News
+  title: Github
   icon: fa-bullhorn
   icon_pack: fas
   what: |

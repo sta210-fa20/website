@@ -1,49 +1,41 @@
 ---
-title: How to contribute to tidymodels
+title: help
 ---
 
-The ecosystem of tidymodels packages would not be possible without the contributions of the R community. No matter your current skills, it's possible to contribute back to tidymodels. Contributions are guided by our design goals.
+## Asking for help
 
-## Design goals
+If you're asking for R help, reporting a bug, or requesting a new feature, you're more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://reprex.tidyverse.org/) package is built for. You can learn more about reprex, along with other tips on how to help others help you in the [tidyverse.org help section](https://www.tidyverse.org/help/).
 
-The goals of tidymodels packages are to:
+## Where to ask
 
- * Encourage empirical validation and good statistical practice.
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png" alt="" width="400" height="285" align="right" style="padding:1em;" />
 
- * Smooth out heterogeneous interfaces.
- 
- * Establish highly reusable infrastructure.
+Now that you've made a reprex, you need to share it in an appropriate forum. Here are some options:
 
- * Enable a wider variety of methodologies.
+* [__community.rstudio.com__](https://community.rstudio.com/c/ml/15): This is a warm
+  and welcoming place to ask any questions you might have about
+  tidymodels or more generally about modeling, machine learning, and deep learning. (You can also ask questions about the tidyverse and RStudio there, too!)
+  
+* [__Stack Overflow__](https://stackoverflow.com/questions/tagged/tidymodels). You're probably already familiar
+  with Stack Overflow from googling; it's a frequent source of answers to
+  coding related questions. Asking a question on Stack Overflow can be 
+  intimidating, but if you've taken the time to create a reprex, you're much
+  more likely to get a useful answer. Make sure to [tag your question](https://stackoverflow.com/help/tagging) with `r`
+  and `tidymodels` so that the right people are more likely to see it.
+  
+* [__Twitter__][twitter-rstats]. It's hard to share your reprex only on twitter, because 280 characters are rarely enough and screenshots don't help others play with your code. However, twitter is a great place to share a link to your reprex that's hosted elsewhere! The [#rstats twitter][twitter-rstats] community is extremely friendly and active, and is a great crowd to be a part of. Make sure you tag your tweet with `#rstats` and `#tidymodels`.
 
- * Help package developers quickly build high quality model packages of their own.
+* If you think you've found a __bug__, please follow the instructions for filing an issue on 
+  [contributing to tidymodels](/contribute/).
 
-These goals are guided by our [principles for creating modeling packages](https://tidymodels.github.io/model-implementation-principles/). 
+[twitter-rstats]: https://twitter.com/search?q=%23rstats&src=typd
 
-**What are different ways _you_ can contribute?**
+## Resources
 
-## Answer questions
+- See what you need to know to [get started with tidymodels](/start/), and learn more about [using tidymodels for specific tasks](/learn/).
 
-You can help others use and learn tidymodels by answering questions on the [RStudio community site](https://community.rstudio.com/tag/tidymodels), [Stack Overflow](https://stackoverflow.com/questions/tagged/tidymodels?sort=newest), and [Twitter](https://twitter.com/search?q=%23tidymodels&f=live). Many people asking for help with tidymodels don't know what a [reprex](https://www.tidyverse.org/help#reprex) is or how to craft one. Acknowledging an individual's problem, showing them how to build a reprex, and pointing them to helpful resources are all enormously beneficial, even if you don't immediately solve their problem.
+- Each tidymodels package has its own documentation site, full of helpful information. Find [links to all package documentation sites](/packages/) and explore them!
 
-Remember that while you might have seen a problem a hundred times before, it's new to the person asking it. Be patient, polite, and empathic.
+- Search [all tidymodels functions](/find/), and check out [our books on these topics](/books/).
 
-## File issues
-
-If you've found a bug, first create a minimal [reprex](https://www.tidyverse.org/help#reprex). Spend some time working to make it as minimal as possible; the more time you spend doing this, the easier it is to fix the bug. When your reprex is ready, file it on the [GitHub repo](https://github.com/tidymodels/) of the appropriate package. 
-
-The tidymodels team often focuses on one package at a time to reduce context switching and be more efficient. We may not address each issue right away, but we will use the reprex you create to understand your problem when it is time to focus on that package.
-
-## Contribute documentation
-
-Documentation is a high priority for tidymodels, and pull requests to correct or improve documentation are welcome. The most important thing to know is that tidymodels packages use [roxygen2](https://roxygen2.r-lib.org/); this means that documentation is found in the R code close to the source of each function. There are some special tags, but most tidymodels packages now use markdown in the documentation. This makes it particularly easy to get started!
-
-
-## Contribute code
-
-If you are a more experienced R programmer, you may have the inclination, interest, and ability to contribute directly to package development. Before you submit a pull request on a tidymodels package, always file an issue and confirm the tidymodels team agrees with your idea and is happy with your basic proposal.
-
-In tidymodels packages, we use the [tidyverse style guide](https://style.tidyverse.org/) which will make sure that your new code and documentation matches the existing style. This makes the review process much smoother.
-
-The tidymodels packages are explicitly built to support the creation of other modeling packages, and we would love to hear about what you build yourself! Check out our learning resources for [developing custom modeling tools](/learn/develop/).
-
+- Stay up to date with the latest news about tidymodels through our posts on the [tidyverse blog](https://www.tidyverse.org/tags/tidymodels/).

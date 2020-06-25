@@ -1,13 +1,13 @@
 bandtwo:
-- url: /start/
-  title: Get Started
+- url: /schedule/
+  title: Schedule
   icon: fa-flag-checkered
   icon_pack: fas
   what: |
     What do you need to know to start using tidymodels? Learn what you need in 5 articles, starting with how to create a model and ending with a beginning-to-end modeling case study.
 
-- url: /learn/
-  title: Learn
+- url: /help/
+  title: Get help
   icon: fa-lightbulb
   icon_pack: far
   what: |
