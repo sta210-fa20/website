@@ -43,10 +43,6 @@
   </url>
   
   <url>
-    <loc>/schedule/</loc>
-  </url>
-  
-  <url>
     <loc>/help/</loc>
   </url>
   
@@ -92,6 +88,10 @@
   
   <url>
     <loc>/tags/rsample/</loc>
+  </url>
+  
+  <url>
+    <loc>/schedule/</loc>
   </url>
   
   <url>

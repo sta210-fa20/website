@@ -1,89 +1,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Schedule on STA 210</title>
-    <link>/schedule/</link>
-    <description>Recent content in Schedule on STA 210</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>en-us</copyright>
-    
-        <atom:link href="/schedule/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Week 01</title>
-      <link>/schedule/week-01/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/schedule/week-01/</guid>
-      <description>this is where I&amp;rsquo;d put week one details.</description>
-      <content>&lt;p&gt;this is where I&amp;rsquo;d put week one details.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Week 02</title>
-      <link>/schedule/week-02/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/schedule/week-02/</guid>
-      <description>put the content here.</description>
-      <content>&lt;p&gt;put the content here.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Week 03</title>
-      <link>/schedule/week-03/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/schedule/week-03/</guid>
-      <description>put the content here.</description>
-      <content>&lt;p&gt;put the content here.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Week 04</title>
-      <link>/schedule/week-04/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/schedule/week-04/</guid>
-      <description>put the content here.</description>
-      <content>&lt;p&gt;put the content here.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Week 05</title>
-      <link>/schedule/week-05/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/schedule/week-05/</guid>
-      <description>week the content here.</description>
-      <content>&lt;p&gt;week the content here.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Course materials?</title>
-      <link>/home/band_three/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/home/band_three/</guid>
-      <description>Maybe put course materials here?</description>
-      <content>&lt;p&gt;Maybe put course materials here?&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>help</title>
-      <link>/help/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/help/</guid>
-      <description>Asking for help If you&amp;rsquo;re asking for R help, reporting a bug, or requesting a new feature, you&amp;rsquo;re more likely to succeed if you include a good reproducible example, which is precisely what the reprex package is built for. You can learn more about reprex, along with other tips on how to help others help you in the tidyverse.org help section.
-Where to ask Now that you&amp;rsquo;ve made a reprex, you need to share it in an appropriate forum.</description>
-      <content>&lt;h2 id=&#34;asking-for-help&#34;&gt;Asking for help&lt;/h2&gt;
+  <title>Maria Tackett on STA 210</title>
+  <link>/author/maria-tackett/</link>
+  <description>Recent content in Maria Tackett on STA 210</description>
+  <generator>Hugo -- gohugo.io</generator>
+<language>en-us</language>
+
+<atom:link href="/author/maria-tackett/index.xml" rel="self" type="application/rss+xml" />
+
+
+<item>
+  <title>Week 01</title>
+  <link>/schedule/week-01/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/schedule/week-01/</guid>
+  <description>&lt;p&gt;this is where I&amp;rsquo;d put week one details.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Week 02</title>
+  <link>/schedule/week-02/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/schedule/week-02/</guid>
+  <description>&lt;p&gt;put the content here.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Week 03</title>
+  <link>/schedule/week-03/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/schedule/week-03/</guid>
+  <description>&lt;p&gt;put the content here.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Week 04</title>
+  <link>/schedule/week-04/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/schedule/week-04/</guid>
+  <description>&lt;p&gt;put the content here.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Week 05</title>
+  <link>/schedule/week-05/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/schedule/week-05/</guid>
+  <description>&lt;p&gt;week the content here.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Course materials?</title>
+  <link>/home/band_three/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_three/</guid>
+  <description>&lt;p&gt;Maybe put course materials here?&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>help</title>
+  <link>/help/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/help/</guid>
+  <description>&lt;h2 id=&#34;asking-for-help&#34;&gt;Asking for help&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;re asking for R help, reporting a bug, or requesting a new feature, you&amp;rsquo;re more likely to succeed if you include a good reproducible example, which is precisely what the &lt;a href=&#34;https://reprex.tidyverse.org/&#34;&gt;reprex&lt;/a&gt; package is built for. You can learn more about reprex, along with other tips on how to help others help you in the &lt;a href=&#34;https://www.tidyverse.org/help/&#34;&gt;tidyverse.org help section&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;where-to-ask&#34;&gt;Where to ask&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png&#34; alt=&#34;&#34; width=&#34;400&#34; height=&#34;285&#34; align=&#34;right&#34; style=&#34;padding:1em;&#34; /&gt;&lt;/p&gt;
@@ -125,53 +117,46 @@ and &lt;code&gt;tidymodels&lt;/code&gt; so that the right people are more likely
 &lt;p&gt;Stay up to date with the latest news about tidymodels through our posts on the &lt;a href=&#34;https://www.tidyverse.org/tags/tidymodels/&#34;&gt;tidyverse blog&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Learn Regression analysis</title>
-      <link>/home/band_two/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/home/band_two/</guid>
-      <description>Maybe put insturctor and TA info here.</description>
-      <content>&lt;p&gt;Maybe put insturctor and TA info here.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Project</title>
-      <link>/project/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/project/</guid>
-      <description>This is where put the project.</description>
-      <content>&lt;p&gt;This is where put the project.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>STA 210</title>
-      <link>/home/band_one/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/home/band_one/</guid>
-      <description>Welome to STA 210: Regression Analysis! This is where i&amp;rsquo;ll have the course description</description>
-      <content>&lt;p&gt;Welome to STA 210: Regression Analysis! This is where i&amp;rsquo;ll have the course description&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Tidymodels packages</title>
-      <link>/syllabus/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/syllabus/</guid>
-      <description>Installation and use   Install many of the packages in the tidymodels ecosystem by running install.packages(&amp;quot;tidymodels&amp;quot;).
-  Run library(tidymodels) to load the core packages and make them available in your current R session.
-  Core tidymodels The core tidymodels packages work together to enable a wide variety of modeling approaches:
-  tidymodels  tidymodels is a meta-package that installs and load the core packages listed below that you need for modeling and machine learning.</description>
-      <content>&lt;h2 id=&#34;installation-and-use&#34;&gt;Installation and use&lt;/h2&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Learn Regression analysis</title>
+  <link>/home/band_two/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_two/</guid>
+  <description>&lt;p&gt;Maybe put insturctor and TA info here.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Project</title>
+  <link>/project/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/project/</guid>
+  <description>&lt;p&gt;This is where put the project.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>STA 210</title>
+  <link>/home/band_one/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_one/</guid>
+  <description>&lt;p&gt;Welome to STA 210: Regression Analysis! This is where i&amp;rsquo;ll have the course description&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Tidymodels packages</title>
+  <link>/syllabus/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/syllabus/</guid>
+  <description>&lt;h2 id=&#34;installation-and-use&#34;&gt;Installation and use&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Install many of the packages in the tidymodels ecosystem by running &lt;code&gt;install.packages(&amp;quot;tidymodels&amp;quot;)&lt;/code&gt;.&lt;/p&gt;
@@ -297,8 +282,8 @@ and &lt;code&gt;tidymodels&lt;/code&gt; so that the right people are more likely
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://tidymodels.github.io/hardhat/&#34;&gt;hardhat&lt;/a&gt; is a &lt;em&gt;developer-focused&lt;/em&gt; package that helps beginners create high-quality R packages for modeling.&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-    </item>
-    
-  </channel>
-</rss>
+</description>
+  </item>
+  
+</channel>
+  </rss>
