@@ -17,7 +17,7 @@ lessons:
     title: "Review: Hypothesis Tests"
     reading: "reading-01.html"
     slides: "lec-slides/02-review-ht.html"
-  - date: "Thu, Jan 16"
+  - date: "Thu, Jan 16" 
     title: "Lab 01: Review R"
     slides: "lab-slides/01-lab-slides.html"
     lab: "lab-01-review-r.html"

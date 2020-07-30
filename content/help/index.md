@@ -1,10 +1,11 @@
 ---
-title: help
+title: Where to find help
 ---
 
 ## Asking for help
 
 If you're asking for R help, reporting a bug, or requesting a new feature, you're more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://reprex.tidyverse.org/) package is built for. You can learn more about reprex, along with other tips on how to help others help you in the [tidyverse.org help section](https://www.tidyverse.org/help/).
+
 
 ## Where to ask
 
@@ -29,6 +30,15 @@ Now that you've made a reprex, you need to share it in an appropriate forum. Her
   [contributing to tidymodels](/contribute/).
 
 [twitter-rstats]: https://twitter.com/search?q=%23rstats&src=typd
+
+## Office hours
+
+## Academic resource center
+
+The Academic Resource Center (ARC) offers free services to all students during their undergraduate careers at Duke.  Services include Learning Consultations, Peer Tutoring, Learning Communities, ADHD/LD Coaching, Outreach Workshops, GRE/MCAT Prep, Study Connect, and more. Because learning is a process unique to every individual, we work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! arc.duke.edu • theARC@duke.edu • 919-684-5917, 211 Academic Advising Center Building, East Campus – behind Marketplace.
+
+
+
 
 ## Resources
 

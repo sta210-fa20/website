@@ -35,15 +35,11 @@
   </url>
   
   <url>
-    <loc>/home/band_three/</loc>
+    <loc>/home/band_two/</loc>
   </url>
   
   <url>
     <loc>/tags/dials/</loc>
-  </url>
-  
-  <url>
-    <loc>/help/</loc>
   </url>
   
   <url>
@@ -52,10 +48,6 @@
   
   <url>
     <loc>/lessons/</loc>
-  </url>
-  
-  <url>
-    <loc>/home/band_two/</loc>
   </url>
   
   <url>
@@ -103,11 +95,15 @@
   </url>
   
   <url>
+    <loc>/syllabus/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
   </url>
   
   <url>
-    <loc>/syllabus/</loc>
+    <loc>/home/band_three/</loc>
   </url>
   
   <url>
@@ -116,6 +112,10 @@
   
   <url>
     <loc>/categories/tuning/</loc>
+  </url>
+  
+  <url>
+    <loc>/help/</loc>
   </url>
   
   <url>

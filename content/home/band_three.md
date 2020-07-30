@@ -1,7 +1,5 @@
 ---
-title: Course materials?
+title: Teaching Team 
 ---
 
-Maybe put course materials here?
-
-   
+course materials
