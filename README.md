@@ -6,8 +6,10 @@ STA 210 website: https://sta210-fa20.netlify.app
 
 
 
-Designed from tidymodels.org with inspiration from https://datavizm20.classes.andrewheiss.com/ and 
-https://introds.org/
+Designed from tidymodels.org with inspiration from
+
+- https://datavizm20.classes.andrewheiss.com/
+- https://introds.org/
 
 
 
