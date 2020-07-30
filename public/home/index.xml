@@ -65,18 +65,258 @@
     </item>
     
     <item>
-      <title>Course materials?</title>
-      <link>/home/band_three/</link>
+      <title>Course info</title>
+      <link>/home/band_two/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
-      <guid>/home/band_three/</guid>
-      <description>Maybe put course materials here?</description>
-      <content>&lt;p&gt;Maybe put course materials here?&lt;/p&gt;
+      <guid>/home/band_two/</guid>
+      <description>Lectures  Gross Hall 103  Mon and Wed 10:05a - 11:20a Labs Lab 01  Link Classroom #5  Thu 3:05p - 4:20p
+Lab 02  Link Classroom #5  Thu 4:40p - 5:55p
+Lab 03  Link Classroom #1  Thu 4:40p - 5:55p
+Lab 04 Asynchronous
+Teaching team and office hours             Instructor Prof. Maria Tackett   Tue 8:30a - 10a, Thu 10:30a - 12p Old Chem 118B   TAs Youngsoo Baek   Mon 1p - 3p Old Chem 203B   Cody Coombs   Tue 1p - 3p Old Chem 203B    Sophie Dalldorf   Fri 1p - 3p Old Chem 203B    Jonathan Klus   Mon 3p - 5p Old Chem 203B    Matty Pahren   Tue 3p - 5p Old Chem 203B    Ethan Shen   Wed 3p - 5p Old Chem 203B     </description>
+      <content>&lt;h4 id=&#34;lectures&#34;&gt;Lectures&lt;/h4&gt;
+&lt;p&gt;&lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Gross Hall 103    &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Mon and Wed 10:05a - 11:20a
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h4 id=&#34;labs&#34;&gt;Labs&lt;/h4&gt;
+&lt;p&gt;Lab 01    &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Link Classroom #5     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Thu 3:05p - 4:20p&lt;/p&gt;
+&lt;p&gt;Lab 02     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Link Classroom #5     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Thu 4:40p - 5:55p&lt;/p&gt;
+&lt;p&gt;Lab 03     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Link Classroom #1     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Thu 4:40p - 5:55p&lt;/p&gt;
+&lt;p&gt;Lab 04 Asynchronous&lt;/p&gt;
+&lt;h3 id=&#34;teaching-team-and-office-hours&#34;&gt;Teaching team and office hours&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Instructor&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://stat.duke.edu/~mt324/&#34;&gt;Prof. Maria Tackett&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:maria.tackett@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/matackett&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 8:30a - 10a, Thu 10:30a - 12p&lt;/td&gt;
+&lt;td&gt;Old Chem 118B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TAs&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://stat.duke.edu/people/youngsoo-baek-0&#34;&gt;Youngsoo Baek&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:youngsoo.baek@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/ybaek&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Mon 1p - 3p&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://linkedin.com/in/cody-coombs-3b8034158&#34;&gt;Cody Coombs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:cody.coombs@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/coombscody&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 1p - 3p&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/in/sophie-dalldorf-598a16192/&#34;&gt;Sophie Dalldorf&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:sophia.dalldorf@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/sophiedalldorf&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Fri 1p - 3p&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://stat.duke.edu/people/jonathan-klus&#34;&gt;Jonathan Klus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:jonathan.klus@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/jonklus&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Mon 3p - 5p&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/in/mattypahren&#34;&gt;Matty Pahren&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:martha.pahren@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/mpahren&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 3p - 5p&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/in/ethan-shen-931010134/&#34;&gt;Ethan Shen&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:ethan.shen@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/ethann-shen&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Wed 3p - 5p&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </content>
     </item>
     
     <item>
-      <title>help</title>
+      <title>Project</title>
+      <link>/project/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/project/</guid>
+      <description>This is where put the project.</description>
+      <content>&lt;p&gt;This is where put the project.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>STA 210: Regression Analysis</title>
+      <link>/home/band_one/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/home/band_one/</guid>
+      <description>Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory.</description>
+      <content>&lt;p&gt;Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Syllabus</title>
+      <link>/syllabus/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/syllabus/</guid>
+      <description>Click here to download a PDF copy of the syllabus.
+Course Learning Objectives By the end of the semester, you will…
+ know methods for analyzing multivariate datasets, with an emphasis on interpretation know how to check whether proposed statistical models are appropriate for given data develop proficiency in addressing complex research questions using statistical evidence develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git understand the process of data-based research by working on an independent research project  Activities &amp;amp; Assessments The following activities and assessments will help you successfully achieve the course learning objectives.</description>
+      <content>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;syllabus.pdf&#34;&gt;Click here&lt;/a&gt; to download a PDF copy of the syllabus.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;course-learning-objectives&#34;&gt;Course Learning Objectives&lt;/h2&gt;
+&lt;p&gt;By the end of the semester, you will…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;know methods for analyzing multivariate datasets, with an emphasis on interpretation&lt;/li&gt;
+&lt;li&gt;know how to check whether proposed statistical models are appropriate for given data&lt;/li&gt;
+&lt;li&gt;develop proficiency in addressing complex research questions using statistical evidence&lt;/li&gt;
+&lt;li&gt;develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git&lt;/li&gt;
+&lt;li&gt;understand the process of data-based research by working on an independent research project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;activities--assessments&#34;&gt;Activities &amp;amp; Assessments&lt;/h2&gt;
+&lt;p&gt;The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you&amp;rsquo;ve learned in future academic and professional projects.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;homework-25&#34;&gt;Homework (25%)&lt;/h3&gt;
+&lt;p&gt;In homework, you will apply what you&amp;rsquo;ve learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and submitted in the appropriate GitHub repository.&lt;/p&gt;
+&lt;p&gt;Individual homework extensions will only be given for extenuating circumstances. There must be notification from your academic dean about the need for an extension before the homework deadline. We do not grant extensions after the assignment is due.&lt;/p&gt;
+&lt;p&gt;To accommodate unexpected and temporary situations (e.g. interviews and other travel, unusually busy weeks, short term illness, etc.), the lowest homework grade will be dropped at the end of the semester.&lt;/p&gt;
+&lt;br&gt; 
+&lt;br&gt;
+&lt;h3 id=&#34;labs-15&#34;&gt;Labs (15%)&lt;/h3&gt;
+&lt;p&gt;In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. You will work on lab assignments in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team&amp;rsquo;s repository on the course&amp;rsquo;s GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member&amp;rsquo;s relative contribution for each lab. You will also be asked to evaluate your team members&amp;rsquo; performance periodically during the semester.&lt;/p&gt;
+&lt;p&gt;A portion of each lab grade will be for attending and participating during the lab session. You must attend lab and participate during the lab session to receive credit for the group&amp;rsquo;s lab assignment. If you did not attend lab or did not participate during the lab session, your name should not be included in the final group submission.&lt;/p&gt;
+&lt;p&gt;If you miss lab, you should complete lab for partial credit by the regular lab deadline.&lt;/p&gt;
+&lt;p&gt;Individual lab extensions will only be given for extenuating circumstances. There must be notification from your academic dean about the need for an extension before the lab deadline. We do not grant extensions after the assignment is due.&lt;/p&gt;
+&lt;p&gt;To accommodate unexpected and temporary situations (e.g. interviews and other travel, unusually busy weeks, short term illness, etc.), the lowest lab grade will be dropped at the end of the semester.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exams-exam-01-20-exam-02-20&#34;&gt;Exams (Exam 01: 20%, Exam 02: 20%)&lt;/h3&gt;
+&lt;p&gt;The exams are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Both exams will be given during a lecture class period, and you will be permitted to bring one page of hand-written notes to each exam. The exam dates are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Exam 01: Wednesday, February 26&lt;/li&gt;
+&lt;li&gt;Exam 02: Wednesday, April 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Exam dates cannot be changed and no make-up exams will be given.&lt;/strong&gt; If you must miss an exam, your absence must be officially excused before the exam due date. If your absence is excused, the missing exam grade will be imputed at the end of the semester based on your performance on other relevant individual coursework.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;final-project-15&#34;&gt;Final Project (15%)&lt;/h3&gt;
+&lt;p&gt;The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed in teams, and each team will present their results during the final exam period, Tuesday, April 28, 9a - 12p.  &lt;strong&gt;Project presentations must be done during the specified period.&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;teamwork--engagement-5&#34;&gt;Teamwork &amp;amp; Engagement (5%)&lt;/h3&gt;
+&lt;p&gt;This part of the final grade will consist of three components.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Team Feedback Surveys. You will be assigned to diverse teams of 3-4 students based on the results of a Get to Know You survey at the beginning of the semester. These teams will stay consistent throughout the semester (barring extraordinary circumstances). You will primarily work in these teams on lab assignments, the final project, and some in-class activities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Daily Engagement Surveys. After each class you will receive a quick survey of consisting of three questions about engagement in the day&amp;rsquo;s lecture. You are expected to fill out the survey even if you did not attend lecture that day. You are required to complete at least 80% of the daily engagement surveys along with the pre-course and post-course surveys to receive full credit for this component of the grade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In-Class Questions. We will use active learning in class, which will include answering questions through a web browser. You are required to complete at least 75% of these in-class questions to receive full credit for this component of the grade. You will not be graded based on accuracy; however, you should make a earnest attempt at answering the questions, since they will be used in part to give real-time feedback about the class&amp;rsquo;s understanding of the lecture material. You will be identified using your Net Id. It is your responsibility to ensure your Net Id is entered correctly on each survey to receive credit. In-class questions cannot be made up; there is built-in flexibility so you can earn full credit even if you miss multiple lectures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt; 
+&lt;br&gt;
+&lt;h3 id=&#34;grade-calculation&#34;&gt;Grade Calculation&lt;/h3&gt;
+&lt;p&gt;The final grade will be calculated as follows:&lt;/p&gt;
+&lt;p&gt;{.table .table2 .table-condensed .table-striped .text-left}
+&lt;span&gt;&lt;/span&gt;     | &lt;span&gt;&lt;/span&gt;&lt;br&gt;
+&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+Homework | 25%
+Labs | 15%
+Exam 01 | 20%
+Exam 02 | 20%
+Final Project | 15%
+Teamwork &amp;amp; Engagement | 5%&lt;/p&gt;
+&lt;p&gt;Class attendance in lecture and lab is a firm expectation; frequent absences or tardiness will be considered a legitimate cause for grade reduction.&lt;/p&gt;
+&lt;p&gt;If you have a cumulative numerical average of 90 - 100, you are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-. The exact ranges for letter grades will be determined at the end of the semester.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;diversity--inclusion&#34;&gt;Diversity &amp;amp; Inclusion&lt;/h2&gt;
+&lt;p&gt;It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students&amp;rsquo; learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion] (&lt;a href=&#34;https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion)&#34;&gt;https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion)&lt;/a&gt;. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.&lt;/p&gt;
+&lt;p&gt;Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you feel like your performance in the class is being impacted by your experiences outside of class, please don&amp;rsquo;t hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.&lt;/li&gt;
+&lt;li&gt;I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;accessibility&#34;&gt;Accessibility&lt;/h2&gt;
+&lt;p&gt;Duke University is committed to providing equal access to students with documented disabilities. Students with disabilities may contact the &lt;a href=&#34;https://access.duke.edu&#34;&gt;Student Disability Access Office (SDAO)&lt;/a&gt; to ensure your access to this course and to the program. There you can engage in a confidential conversation about the process for requesting reasonable accommodations both in the classroom and in clinical settings. Students are encouraged to register with the SDAO as soon as they begin the program. Please note that accommodations are not provided retroactively. More information can be found online at &lt;a href=&#34;https://access.duke.edu&#34;&gt;access.duke.edu&lt;/a&gt; or by contacting SDAO at 919-668-1267, &lt;a href=&#34;mailto:sdao@duke.edu&#34; title=&#34;email&#34;&gt;&lt;a href=&#34;mailto:SDAO@duke.edu&#34;&gt;SDAO@duke.edu&lt;/a&gt;&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+This class will use the Testing Center to provide testing accommodations to students registered with and approved by the SDAO. The center operates by appointment only and appointments must be made &lt;u&gt;at least 7 consecutive days in advance&lt;/u&gt;, but please schedule your appointments as far in advance as possible. You will not be able to make an appointment until you have submitted a Semester Request with the SDAO and it has been approved. For instructions on how to register with SDAO, visit their website at &lt;a href=&#34;https://access.duke.edu/requests&#34;&gt;https://access.duke.edu/requests&lt;/a&gt;. For instructions on how to make an appointment at the Testing Center, visit their website at &lt;a href=&#34;https://testingcenter.duke.edu&#34;&gt;https://testingcenter.duke.edu&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;getting-help&#34;&gt;Getting Help&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.&lt;/li&gt;
+&lt;li&gt;The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!&lt;/li&gt;
+&lt;li&gt;Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza. There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are times may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The &lt;a href=&#34;https://arc.duke.edu&#34;&gt;Academic Resource Center (ARC)&lt;/a&gt; offers free services to all students during their undergraduate careers at Duke.  Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact &lt;a href=&#34;mailto:arc@duke.edu&#34; title=&#34;email&#34;&gt;&lt;a href=&#34;mailto:ARC@duke.edu&#34;&gt;ARC@duke.edu&lt;/a&gt;&lt;/a&gt;, 919-684-5917, 211 Academic Advising Center Building, East Campus – behind Marketplace.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;course-materials&#34;&gt;Course Materials&lt;/h2&gt;
+&lt;p&gt;All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, &lt;a href=&#34;http://bit.ly/sta210-sp20&#34;&gt;http://bit.ly/sta210-sp20&lt;/a&gt;.
+I will periodically send announcements via email, so please check your email regularly. You may also find a copy of announcements on Sakai.&lt;/p&gt;
+&lt;br&gt; 
+&lt;br&gt;
+&lt;h2 id=&#34;late-work&#34;&gt;Late Work&lt;/h2&gt;
+&lt;p&gt;Homework or lab assignments submitted late but within 24 hours of the deadline may be accepted with a 20% penalty. Homework or lab assignments submitted any later will &lt;u&gt;not&lt;/u&gt; be accepted.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Late work will not be accepted for the exams or the final project.&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;academic-honesty&#34;&gt;Academic Honesty&lt;/h2&gt;
+&lt;p&gt;By enrolling in this course, you have agreed to abide by and uphold the provisions of the  &lt;a href=&#34;https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard&#34;&gt;Duke Community Standard&lt;/a&gt; as well as the policies specific to this course. Any violations will automatically result in a grade of 0 on the  assignment and will be reported to &lt;a href=&#34;https://studentaffairs.duke.edu/conduct&#34;&gt;Office of Student Conduct&lt;/a&gt; for further action.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You may not discuss or otherwise work with others on the exams. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reusing code&lt;/strong&gt;: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.&lt;/li&gt;
+&lt;li&gt;On individual assignments, you may not directly share code or write up with other students. On team assignments, you may not directly share code or write up with another team. Unauthorized sharing of the code or write up will be considered a violation for all students involved.
+&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;regrade-requests&#34;&gt;Regrade Requests&lt;/h2&gt;
+&lt;p&gt;Regrade requests should be submitted through the regrade request from on Gradescope. &lt;strong&gt;Requests for a regrade must be made within a week of when the assignment is returned; requests submitted later will not be considered.&lt;/strong&gt; You should only submit a regrade request if there is an error in the grade calculation or a correct answer was mistakenly marked as incorrect. You should not submit a regrade to dispute the number of points deducted for an incorrect response. &lt;em&gt;Please note that by submitting a regrade request, your entire assignment may be regraded and you may potentially lose points.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Due to the time consuming nature of responding to regrade requests, you should attend office hours and ask a member of the teaching team about the feedback before submitting the request When you submit a request, please indicate which member of the teaching team you spoke with. &lt;em&gt;Note: Grades can only be changed by the Professor Tackett. Teaching Assistants cannot change grades on returned assignments.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;No grades will be changed after the final project presentations.&lt;/strong&gt;&lt;/p&gt;
+&lt;br&gt; 
+&lt;br&gt;
+&lt;h2 id=&#34;technology&#34;&gt;Technology&lt;/h2&gt;
+&lt;p&gt;Cell phones and other electronic devices should be turned off or put on silent during class. When you use a laptop, tablet, or comparable device, please ensure that the volume set to mute and the device is only used for class purposes. In general, you should focus on the class discussion/activity at hand and refrain from engaging in other work or outside activities.&lt;/p&gt;
+&lt;h2 id=&#34;a-week-in-210&#34;&gt;A week in 210&lt;/h2&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Teaching Team</title>
+      <link>/home/band_three/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/home/band_three/</guid>
+      <description>course materials</description>
+      <content>&lt;p&gt;course materials&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Where to find help</title>
       <link>/help/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
@@ -110,6 +350,9 @@ and &lt;code&gt;tidymodels&lt;/code&gt; so that the right people are more likely
 &lt;a href=&#34;/contribute/&#34;&gt;contributing to tidymodels&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;office-hours&#34;&gt;Office hours&lt;/h2&gt;
+&lt;h2 id=&#34;academic-resource-center&#34;&gt;Academic resource center&lt;/h2&gt;
+&lt;p&gt;The Academic Resource Center (ARC) offers free services to all students during their undergraduate careers at Duke.  Services include Learning Consultations, Peer Tutoring, Learning Communities, ADHD/LD Coaching, Outreach Workshops, GRE/MCAT Prep, Study Connect, and more. Because learning is a process unique to every individual, we work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! arc.duke.edu • &lt;a href=&#34;mailto:theARC@duke.edu&#34;&gt;theARC@duke.edu&lt;/a&gt; • 919-684-5917, 211 Academic Advising Center Building, East Campus – behind Marketplace.&lt;/p&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -124,178 +367,6 @@ and &lt;code&gt;tidymodels&lt;/code&gt; so that the right people are more likely
 &lt;li&gt;
 &lt;p&gt;Stay up to date with the latest news about tidymodels through our posts on the &lt;a href=&#34;https://www.tidyverse.org/tags/tidymodels/&#34;&gt;tidyverse blog&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Learn Regression analysis</title>
-      <link>/home/band_two/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/home/band_two/</guid>
-      <description>Maybe put insturctor and TA info here.</description>
-      <content>&lt;p&gt;Maybe put insturctor and TA info here.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Project</title>
-      <link>/project/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/project/</guid>
-      <description>This is where put the project.</description>
-      <content>&lt;p&gt;This is where put the project.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>STA 210</title>
-      <link>/home/band_one/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/home/band_one/</guid>
-      <description>Welome to STA 210: Regression Analysis! This is where i&amp;rsquo;ll have the course description</description>
-      <content>&lt;p&gt;Welome to STA 210: Regression Analysis! This is where i&amp;rsquo;ll have the course description&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Tidymodels packages</title>
-      <link>/syllabus/</link>
-      <pubDate>12 Mar 17 10:00 +0000</pubDate>
-      
-      <guid>/syllabus/</guid>
-      <description>Installation and use   Install many of the packages in the tidymodels ecosystem by running install.packages(&amp;quot;tidymodels&amp;quot;).
-  Run library(tidymodels) to load the core packages and make them available in your current R session.
-  Core tidymodels The core tidymodels packages work together to enable a wide variety of modeling approaches:
-  tidymodels  tidymodels is a meta-package that installs and load the core packages listed below that you need for modeling and machine learning.</description>
-      <content>&lt;h2 id=&#34;installation-and-use&#34;&gt;Installation and use&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Install many of the packages in the tidymodels ecosystem by running &lt;code&gt;install.packages(&amp;quot;tidymodels&amp;quot;)&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Run &lt;code&gt;library(tidymodels)&lt;/code&gt; to load the core packages and make them available in your current R session.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;package-section&#34;&gt;
-&lt;div class=&#34;package-section-info&#34;&gt;
-&lt;h2 id=&#34;core-tidymodels&#34;&gt;Core tidymodels&lt;/h2&gt;
-  &lt;p&gt;The core tidymodels packages work together to enable a wide variety of modeling approaches:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;packages&#34;&gt;
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/tidymodels.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://tidymodels.github.io/tidymodels/&#34;&gt; tidymodels &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;tidymodels is a meta-package that installs and load the core packages listed below that you need for modeling and machine learning.
-      &lt;a href=&#34;https://tidymodels.github.io/tidymodels/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/rsample.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://tidymodels.github.io/rsample/&#34;&gt;rsample&lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;rsample provides infrastructure for efficient data splitting and resampling. &lt;a href=&#34;https://tidymodels.github.io/rsample/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/parsnip.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://tidymodels.github.io/parsnip/&#34;&gt; parsnip &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;parsnip is a tidy, unified interface to models that can be used to try a range of models without getting bogged down in the syntactical minutiae of the underlying packages. &lt;a href=&#34;https://tidymodels.github.io/parsnip/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;  
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/recipes.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://tidymodels.github.io/recipes/&#34;&gt; recipes &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;recipes is a tidy interface to data pre-processing tools for feature engineering. &lt;a href=&#34;https://tidymodels.github.io/recipes/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/placeholder.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://tidymodels.github.io/workflows/&#34;&gt; workflows &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;workflows bundle your pre-processing, modeling, and post-processing together. &lt;a href=&#34;https://tidymodels.github.io/workflows/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt; 
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/tune.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://tidymodels.github.io/tune/&#34;&gt; tune &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;tune helps you optimize the hyperparameters of your model and pre-processing steps. &lt;a href=&#34;https://tidymodels.github.io/tune/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;  
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/yardstick.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://tidymodels.github.io/yardstick/&#34;&gt; yardstick &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;yardstick measures the effectiveness of models using performance metrics. &lt;a href=&#34;https://tidymodels.github.io/yardstick/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/broom.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://broom.tidyverse.org/&#34;&gt; broom &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;broom converts the information in common statistical R objects into user-friendly, predictable formats. 
-      &lt;a href=&#34;https://broom.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/dials.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
-    &lt;div class=&#34;package-info&#34;&gt;
-      &lt;h3&gt;&lt;a href=&#34;https://dials.tidymodels.org/&#34;&gt; dials &lt;/a&gt;&lt;/h3&gt;
-      &lt;p&gt;dials creates and manages tuning parameters and parameter grids. 
-      &lt;a href=&#34;https://dials.tidymodels.org/&#34; aria-hidden=&#34;true&#34;&gt;Go to package ...&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;  
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Learn more about the tidymodels metapackage itself at &lt;a href=&#34;https://tidymodels.github.io/tidymodels/&#34;&gt;https://tidymodels.github.io/tidymodels/&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;specialized-packages&#34;&gt;Specialized packages&lt;/h2&gt;
-&lt;p&gt;The tidymodels framework also includes many other packages designed for specialized data analysis and modeling tasks. They are not loaded automatically with &lt;code&gt;library(tidymodels)&lt;/code&gt;, so you&amp;rsquo;ll need to load each one with its own call to &lt;code&gt;library()&lt;/code&gt;. These packages include:&lt;/p&gt;
-&lt;h3 id=&#34;perform-statistical-analysislearnstatistics&#34;&gt;&lt;a href=&#34;/learn/statistics/&#34;&gt;Perform statistical analysis&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://infer.netlify.com/&#34;&gt;infer&lt;/a&gt; is a high-level API for tidyverse-friendly statistical inference.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The &lt;a href=&#34;https://tidymodels.github.io/corrr/&#34;&gt;corrr&lt;/a&gt; package has tidy interfaces for working with correlation matrices.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;create-robust-modelslearnmodels&#34;&gt;&lt;a href=&#34;/learn/models/&#34;&gt;Create robust models&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;parsnip also has additional packages that contain more model definitions. &lt;a href=&#34;https://tidymodels.github.io/discrim/&#34;&gt;discrim&lt;/a&gt; contains definitions for discriminant analysis models and &lt;a href=&#34;https://github.com/tidymodels/rules/&#34;&gt;rules&lt;/a&gt; does the same for rule-based classification and regression models.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;There are several add-on packages for creating recipes. &lt;a href=&#34;https://tidymodels.github.io/embed/&#34;&gt;embed&lt;/a&gt; contains steps to create embeddings or projections of predictors. &lt;a href=&#34;https://tidymodels.github.io/textrecipes/&#34;&gt;textrecipes&lt;/a&gt; has extra steps for text processing, and &lt;a href=&#34;https://tidymodels.github.io/themis/&#34;&gt;themis&lt;/a&gt; can help alleviate class imbalance using sampling methods.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://tidymodels.github.io/tidypredict/&#34;&gt;tidypredict&lt;/a&gt; and &lt;a href=&#34;https://tidymodels.github.io/modeldb/&#34;&gt;modeldb&lt;/a&gt; can convert prediction equations to different languages (e.g. SQL) and fit some models in-database.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;tune-compare-and-work-with-your-modelslearnwork&#34;&gt;&lt;a href=&#34;/learn/work/&#34;&gt;Tune, compare, and work with your models&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://tidymodels.github.io/probably/&#34;&gt;probably&lt;/a&gt; has tools for post-processing class probability estimates.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The &lt;a href=&#34;https://tidymodels.github.io/tidyposterior/&#34;&gt;tidyposterior&lt;/a&gt; package enables users to make formal statistical comparisons between models using resampling and Bayesian methods.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Some R objects become inconveniently large when saved to disk. The &lt;a href=&#34;https://tidymodels.github.io/butcher/&#34;&gt;butcher&lt;/a&gt; package can reduce the size of those objects by removing the sub-components.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;To know whether the data that you are predicting are &lt;em&gt;extrapolations&lt;/em&gt; from the training set, &lt;a href=&#34;https://tidymodels.github.io/applicable/&#34;&gt;applicable&lt;/a&gt; can produce metrics the measure extrapolation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;develop-custom-modeling-toolslearndevelop&#34;&gt;&lt;a href=&#34;/learn/develop/&#34;&gt;Develop custom modeling tools&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://tidymodels.github.io/hardhat/&#34;&gt;hardhat&lt;/a&gt; is a &lt;em&gt;developer-focused&lt;/em&gt; package that helps beginners create high-quality R packages for modeling.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </item>
