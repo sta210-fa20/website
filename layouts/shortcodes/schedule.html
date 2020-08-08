@@ -2,21 +2,25 @@
         {{- range .Site.Data.schedule }}
         {{- range . }}
         <tr>
+                 <td align="right" style="width:18%;text-align:right">{{ .week }}</td>
             <td align="right" style="width:18%;text-align:right">{{ .date }}</td>
             <td style="width:50%;text-align:left">{{ .title | markdownify }}</td>
 
             {{- if .header }}
+            <td style="width:8%;text-align:center" class="mid-table-header">Slides</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">Reading</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">Lab</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">AE</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">HW</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">Quiz</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">Project</td>
 
-            <td style="width:8%;text-align:center" class="mid-table-header">Content</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Lesson</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Example</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Assignment</td>
 
             {{- else }}
 
-            {{- if .content }}
+            {{- if .slides }}
             <td align="center" style="width:10%;text-align:center"><a
-                    href="{{ .Site.baseurl }}/content/{{ .content }}/">
+                    href="{{ .Site.baseurl }}/slides/{{ .slides }}/">
                     <i class="fas fa-book-reader fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center">
@@ -25,8 +29,8 @@
             </td>
             {{- end }}
 
-            {{- if .lesson }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/lesson/{{ .lesson }}/">
+            {{- if .reading}}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/reading/{{ .reading }}/">
                     <i class="fas fa-chalkboard-teacher fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center">
@@ -35,8 +39,8 @@
             </td>
             {{- end }}
 
-            {{- if .example }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/example/{{ .example }}/">
+            {{- if .labs }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/hw/{{ .hw }}/">
                     <i class="fas fa-laptop-code fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center">
@@ -45,7 +49,37 @@
             </td>
             {{- end }}
 
-            {{- if .assignment }}
+            {{- if .hw }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/assignment/{{ .assignment }}/">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
+            </td>
+            {{- end }}
+            
+            {{- if .ae }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/assignment/{{ .assignment }}/">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
+            </td>
+            {{- end }}
+            
+               {{- if .quiz }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/assignment/{{ .assignment }}/">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
+            </td>
+            {{- end }}
+            
+               {{- if .project }}
             <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/assignment/{{ .assignment }}/">
                     <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
             {{- else }}
