@@ -168,7 +168,7 @@ Homework or lab assignments submitted late but within 24 hours of the deadline m
 <br> 
 <br>
 
-## Academic Honesty
+## Academic Honesty / Community pact
 
 By enrolling in this course, you have agreed to abide by and uphold the provisions of the  [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) as well as the policies specific to this course. Any violations will automatically result in a grade of 0 on the  assignment and will be reported to [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
 
@@ -190,4 +190,11 @@ Due to the time consuming nature of responding to regrade requests, you should a
 <br>
 
 ## Important dates
+
+- **Aug 17**: Classes begin
+- **Aug 28**: Drop/add ends
+- **Oct 30**: Last day to withdraw with W
+- **Nov 16**: Classes end
+- **Nov 21**: Final exam period, 9a - 12p
+
 
