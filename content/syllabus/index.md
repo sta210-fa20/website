@@ -14,87 +14,6 @@ By the end of the semester, you will…
 - develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git
 - understand the process of data-based research by working on an independent research project
 
-## Activities & Assessments
-
-The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional projects.
-<br> 
-<br>
-
-### Homework (25%)
-
-In homework, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and submitted in the appropriate GitHub repository. 
-
-Individual homework extensions will only be given for extenuating circumstances. There must be notification from your academic dean about the need for an extension before the homework deadline. We do not grant extensions after the assignment is due. 
-
-To accommodate unexpected and temporary situations (e.g. interviews and other travel, unusually busy weeks, short term illness, etc.), the lowest homework grade will be dropped at the end of the semester. 
-
-<br> 
-<br>
-
-### Labs (15%)
-
-In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. You will work on lab assignments in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's repository on the course's GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab. You will also be asked to evaluate your team members' performance periodically during the semester. 
-
-A portion of each lab grade will be for attending and participating during the lab session. You must attend lab and participate during the lab session to receive credit for the group's lab assignment. If you did not attend lab or did not participate during the lab session, your name should not be included in the final group submission. 
-
-If you miss lab, you should complete lab for partial credit by the regular lab deadline. 
-
-Individual lab extensions will only be given for extenuating circumstances. There must be notification from your academic dean about the need for an extension before the lab deadline. We do not grant extensions after the assignment is due. 
-
-To accommodate unexpected and temporary situations (e.g. interviews and other travel, unusually busy weeks, short term illness, etc.), the lowest lab grade will be dropped at the end of the semester. 
-<br> 
-<br>
-
-### Exams (Exam 01: 20%, Exam 02: 20%)
-
-The exams are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Both exams will be given during a lecture class period, and you will be permitted to bring one page of hand-written notes to each exam. The exam dates are as follows: 
-
-- Exam 01: Wednesday, February 26
-- Exam 02: Wednesday, April 15
-
-**Exam dates cannot be changed and no make-up exams will be given.** If you must miss an exam, your absence must be officially excused before the exam due date. If your absence is excused, the missing exam grade will be imputed at the end of the semester based on your performance on other relevant individual coursework.
-<br> 
-<br>
-
-### Final Project (15%)
-
-The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed in teams, and each team will present their results during the final exam period, Tuesday, April 28, 9a - 12p.  **Project presentations must be done during the specified period.**
-<br> 
-<br>
-
-### Teamwork & Engagement (5%)
-
-This part of the final grade will consist of three components. 
-
-- Team Feedback Surveys. You will be assigned to diverse teams of 3-4 students based on the results of a Get to Know You survey at the beginning of the semester. These teams will stay consistent throughout the semester (barring extraordinary circumstances). You will primarily work in these teams on lab assignments, the final project, and some in-class activities.
-
-- Daily Engagement Surveys. After each class you will receive a quick survey of consisting of three questions about engagement in the day's lecture. You are expected to fill out the survey even if you did not attend lecture that day. You are required to complete at least 80% of the daily engagement surveys along with the pre-course and post-course surveys to receive full credit for this component of the grade. 
-
-- In-Class Questions. We will use active learning in class, which will include answering questions through a web browser. You are required to complete at least 75% of these in-class questions to receive full credit for this component of the grade. You will not be graded based on accuracy; however, you should make a earnest attempt at answering the questions, since they will be used in part to give real-time feedback about the class's understanding of the lecture material. You will be identified using your Net Id. It is your responsibility to ensure your Net Id is entered correctly on each survey to receive credit. In-class questions cannot be made up; there is built-in flexibility so you can earn full credit even if you miss multiple lectures.
-
-<br> 
-<br>
-
-### Grade Calculation
-
-The final grade will be calculated as follows:
- 
-{.table .table2 .table-condensed .table-striped .text-left}
- <span></span>     | <span></span>  
------------|---------------------------------
-Homework | 25%
-Labs | 15%
-Exam 01 | 20%
-Exam 02 | 20%
-Final Project | 15%
-Teamwork & Engagement | 5%
-
-Class attendance in lecture and lab is a firm expectation; frequent absences or tardiness will be considered a legitimate cause for grade reduction.
-
-If you have a cumulative numerical average of 90 - 100, you are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-. The exact ranges for letter grades will be determined at the end of the semester. 
-<br>
-<br>
-
 ## Diversity & Inclusion 
 
 It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion] (https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
@@ -122,13 +41,124 @@ There are times may need help with the class that is beyond what can be provided
 <br>
 <br>
 
-## Course Materials
+## Course Materials + Technology
 
 All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, http://bit.ly/sta210-sp20. 
 I will periodically send announcements via email, so please check your email regularly. You may also find a copy of announcements on Sakai.
 
 <br> 
 <br>
+
+## A Week in STA 210
+
+- ADD PICTURE OR CHART THAT MAPS OUT A WEEK OF CLASS!
+
+## Activities & Assessments
+
+The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional projects.
+<br> 
+<br>
+
+### Homework
+
+In homework, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and submitted in the appropriate GitHub repository. 
+
+Individual homework extensions will only be given for extenuating circumstances. There must be notification from your academic dean about the need for an extension before the homework deadline. We do not grant extensions after the assignment is due. 
+
+To accommodate unexpected and temporary situations (e.g. interviews and other travel, unusually busy weeks, short term illness, etc.), the lowest homework grade will be dropped at the end of the semester. 
+
+<br> 
+<br>
+
+### Labs 
+
+In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. You will work on lab assignments in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's repository on the course's GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab. You will also be asked to evaluate your team members' performance periodically during the semester. 
+
+A portion of each lab grade will be for attending and participating during the lab session. You must attend lab and participate during the lab session to receive credit for the group's lab assignment. If you did not attend lab or did not participate during the lab session, your name should not be included in the final group submission. 
+
+If you miss lab, you should complete lab for partial credit by the regular lab deadline. 
+
+Individual lab extensions will only be given for extenuating circumstances. There must be notification from your academic dean about the need for an extension before the lab deadline. We do not grant extensions after the assignment is due. 
+
+To accommodate unexpected and temporary situations (e.g. interviews and other travel, unusually busy weeks, short term illness, etc.), the lowest lab grade will be dropped at the end of the semester. 
+<br> 
+<br>
+
+### Quizzes
+
+The exams are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Both exams will be given during a lecture class period, and you will be permitted to bring one page of hand-written notes to each exam. The exam dates are as follows: 
+
+- Exam 01: Wednesday, February 26
+- Exam 02: Wednesday, April 15
+
+**Exam dates cannot be changed and no make-up exams will be given.** If you must miss an exam, your absence must be officially excused before the exam due date. If your absence is excused, the missing exam grade will be imputed at the end of the semester based on your performance on other relevant individual coursework.
+<br> 
+<br>
+
+### Final Project 
+
+The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed in teams, and each team will present their results during the final exam period, Tuesday, April 28, 9a - 12p.  **Project presentations must be done during the specified period.**
+<br> 
+<br>
+
+### Teamwork & Engagement 
+
+This part of the final grade will consist of three components. 
+
+- Team Feedback Surveys. You will be assigned to diverse teams of 3-4 students based on the results of a Get to Know You survey at the beginning of the semester. These teams will stay consistent throughout the semester (barring extraordinary circumstances). You will primarily work in these teams on lab assignments, the final project, and some in-class activities.
+
+- Daily Engagement Surveys. After each class you will receive a quick survey of consisting of three questions about engagement in the day's lecture. You are expected to fill out the survey even if you did not attend lecture that day. You are required to complete at least 80% of the daily engagement surveys along with the pre-course and post-course surveys to receive full credit for this component of the grade. 
+
+- In-Class Questions. We will use active learning in class, which will include answering questions through a web browser. You are required to complete at least 75% of these in-class questions to receive full credit for this component of the grade. You will not be graded based on accuracy; however, you should make a earnest attempt at answering the questions, since they will be used in part to give real-time feedback about the class's understanding of the lecture material. You will be identified using your Net Id. It is your responsibility to ensure your Net Id is entered correctly on each survey to receive credit. In-class questions cannot be made up; there is built-in flexibility so you can earn full credit even if you miss multiple lectures.
+
+<br> 
+<br>
+
+### Grade Calculation
+
+The final grade will be calculated as follows:
+
+<center>
+
+ <span></span>   Category  | <span></span> Percentage 
+-----------|---------------------------------
+Quizzes| 35%
+Homework | 25%
+Labs | 15%
+Final Project | 15%
+Participation | 5%
+Stats Experience | 5%
+
+</center>
+
+Class attendance in lecture and lab is a firm expectation; frequent absences or tardiness will be considered a legitimate cause for grade reduction.
+
+Final grade thresholds
+
+<center>
+
+ <span></span>   Point Range  | <span></span> Letter Grade
+-----------|---------------------------------
+A | >= 93
+A- | 90 - 92.99
+B+ | 87 - 89.99
+B | 83 - 86.99
+B- | 80 - 82.99
+C+ | 77 - 79.99
+C | 73 - 76.99
+C- | 70 - 72.99
+D+ | 67 - 69.99
+D | 63 - 66.99
+D- | 60 - 62.99 
+F  | < 60
+
+</center>
+
+
+If you have a cumulative numerical average of 90 - 100, you are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-. The exact ranges for letter grades will be determined at the end of the semester. 
+<br>
+<br>
+
 
 ## Late Work
 
@@ -159,8 +189,5 @@ Due to the time consuming nature of responding to regrade requests, you should a
 <br> 
 <br>
 
-## Technology
+## Important dates
 
-Cell phones and other electronic devices should be turned off or put on silent during class. When you use a laptop, tablet, or comparable device, please ensure that the volume set to mute and the device is only used for class purposes. In general, you should focus on the class discussion/activity at hand and refrain from engaging in other work or outside activities. 
-
-## A week in 210
