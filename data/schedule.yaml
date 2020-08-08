@@ -1,4 +1,7 @@
 lessons:
+  - title: '<span class="fake-header-table"></span>'
+    header: True
+    
   - week: "Week 01"
     date: "Mon, Aug 17"
     title: "Welcome to STA 210!"
@@ -10,6 +13,7 @@ lessons:
   - date: "Thu, Aug 20"
     title: "No Lab"
   #  slides: "lec-slides/01-intro-r-github.html"
+  
   - week: "Week 02"
     date: "Mon, Aug 24 "
     title: "Review: Confidence Intervals"
@@ -26,6 +30,7 @@ lessons:
   #  lab: "lab-02-slr.html"
   - date: "UNIT 01"
     title: "CONTINUOUS RESPONSE VARIABLES"
+    
   - week: "Week 03"
     date: "Mon, Aug 31"
     title: "Class"
@@ -43,6 +48,7 @@ lessons:
     title: "Lab 02: Simple Linear Regression"
    # lab: "lab-02-slr.html"
   #  slides: "lab-slides/02-lab-slides.html"
+  
   - week: "Week 04"
     date: "Mon, Sep 07"
     title: "Simple Linear Regression: Inference"
@@ -62,6 +68,7 @@ lessons:
     title: "Lab 03: Inference for Simple Linear Regression"
    # slides: "lab-slides/03-lab-slides.html"
   #  lab: "lab-03-slr-inf.html"
+  
   - week: "Week 05"
     date: "Mon, Sep 14"
     title: "Analysis of Variance"
@@ -78,6 +85,7 @@ lessons:
     title: "Lab 04: ANOVA"
    # slides: "lab-slides/04-lab-slides.html"
    # lab: "lab-04-anova.html"
+   
   - week: "Week 06"
     date: "Mon, Sep 21"
     title: "MLR: Prediction & math details"
@@ -93,6 +101,7 @@ lessons:
     title: "Lab 05: Data wrangling & regression"
    # slides: "lab-slides/05-lab-slides.html"
    # lab: "lab-05-mlr.html"
+   
   - week: "Week 07"
     date: "Mon, Sep 28"
     title: "MLR: Interactions & Transformations"
@@ -111,6 +120,7 @@ lessons:
   #  hw: "hw-04.html"
   # # #lab: "lab-06-modelling-course-evals.html"
   # # #slides: "lab-slides/06-lab-deck.html"
+  
   - week: "Week 08"
     date: "Mon, Oct 05"
     title: "Exam 01 Review"
@@ -126,6 +136,7 @@ lessons:
     title: "Lab: STA 210 Project"
    # slides: "lab-slides/project-feb27.html"
   #  project: "project.html"
+  
   - week: "Week 09"
     date: "Mon, Oct 12"
     title: "MLR: Model Assessment & Selection"
@@ -140,6 +151,7 @@ lessons:
    # project: "project.html"
     #lab: "lab-07-selection-diagnostics.html"
     #slides: "lab-slides/07-lab-slides.html" 
+    
   - week: "Week 10"
     date: "Mon, Oct 19"
     title: "NO CLASS - Spring Break"
@@ -151,6 +163,7 @@ lessons:
   #  lab: "lab-08-logistic-pt2.html"
   - date: "UNIT 02"
     title: "CATEGORICAL RESPONSE VARIABLES"
+    
   - week: "Week 11"
     date: "Mon, Oct 26"
     title: "NO CLASS - Spring Break, Pt 2"
@@ -170,6 +183,7 @@ lessons:
     #title: "Lab 08"
   #  lab: "lab-09-multinom-logistic.html"
   #  slides: "lab-slides/09-lab-slides.html"
+  
   - week: "Week 12"
     date: "Mon, Nov 02"
     title: "Welcome Back! & Recap"
@@ -194,6 +208,7 @@ lessons:
   #  #lab: "lab-08-multinom-logistic.html"
   #  #slides: "lab-slides/08-lab-slides.html"
   #  #project: "project.html"
+  
   - week: "Week 13"
     date: "Mon, Nov 09"
     title: "Logistic regressions: predictions & model assessment"
@@ -220,6 +235,7 @@ lessons:
     title: "Lab 08: Logistic regression"
    # slides: "lab-slides/08-lab-slides.html"
    # lab: "lab-08-logistic.html"
+   
   - week: "Week 14"
     date: "Mon, Nov 16"
     title: "Mulitinomial logistic regression: Basics"
@@ -232,6 +248,7 @@ lessons:
    # slides: "lec-slides/live-lecture-apr08.html"
   - date: "Thu, Nov 19"
     title: "Lab: Multinomial logistic regression"
+    
   - week: "Week 15"
     date: "Mon, Nov 21"
     title: "Final exam period"

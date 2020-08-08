@@ -6,7 +6,7 @@
             <td align="right" style="width:18%;text-align:right">{{ .date }}</td>
             <td style="width:50%;text-align:left">{{ .title | markdownify }}</td>
 
-            {{- if .header }}
+            {{- if .header }} 
             <td style="width:8%;text-align:center" class="mid-table-header">Slides</td>
             <td style="width:8%;text-align:center" class="mid-table-header">Reading</td>
             <td style="width:8%;text-align:center" class="mid-table-header">Lab</td>
@@ -16,7 +16,7 @@
             <td style="width:8%;text-align:center" class="mid-table-header">Project</td>
 
 
-            {{- else }}
+            {{- else }} 
 
             {{- if .slides }}
             <td align="center" style="width:10%;text-align:center"><a
@@ -92,6 +92,6 @@
             {{- end }}
         </tr>
         {{- end }}
-        {{- end }}
+     {{- end }} 
 
 </table>
