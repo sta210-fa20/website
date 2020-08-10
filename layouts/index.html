@@ -1,28 +1,13 @@
 {{ define "main" }}
 
 <!-- page -->
-<div id="homeContent" class="pushFooter">
+<div id="homeContent">
 
 <!-- band_one.md populates this section -->
 {{ with .Site.GetPage "/home/band_one.md" }}
   <div class="band first">
     <div class="bandContent">
     <img src="img/sta210_sticker.png">
-  <!--
-        {{ $col0 := .Params.col0 }}
-        {{ with $col0 }}
-        {{ with .row1 }}<a href="/"><div class=""></div><img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/{{ $.Site.Params.hex_ext | upper }}/{{ . }}.{{ $.Site.Params.hex_ext}}" alt="{{ . }} hex sticker" class="r1 c0"></a>{{ end }}
-        {{ with .row2 }}<a href="https://{{ $.Site.Params.hex_base_url }}{{ . }}"><div class="filtered r2 c0"></div><img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/{{ $.Site.Params.hex_ext | upper }}/{{ . }}.{{ $.Site.Params.hex_ext}}" alt="{{ . }} hex sticker" class="r2 c0"></a>{{ end }}
-        {{ with .row3 }}<a href="https://{{ $.Site.Params.hex_base_url }}{{ . }}"><div class="filtered r3 c0"></div><img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/{{ $.Site.Params.hex_ext | upper }}/{{ . }}.{{ $.Site.Params.hex_ext}}" alt="{{ . }} hex sticker" class="r3 c0"></a>{{ end }}
-        {{ end }}
-        {{ $col2 := .Params.col2 }}
-        {{ with $col2 }}
-        {{ with .row2 }}<a href="https://{{ $.Site.Params.hex_base_url }}{{ . }}"><div class="filtered r2 c2"></div><img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/{{ $.Site.Params.hex_ext | upper }}/{{ . }}.{{ $.Site.Params.hex_ext}}" alt="{{ . }} hex sticker" class="r2 c2"></a>{{ end }}
-        {{ with .row3 }}<a href="https://{{ $.Site.Params.hex_base_url }}{{ . }}"><div class="filtered r3 c2"></div><img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/{{ $.Site.Params.hex_ext | upper }}/{{ . }}.{{ $.Site.Params.hex_ext}}" alt="{{ . }} hex sticker" class="r3 c2"></a>{{ end }}
-        {{ with .row4 }}<a href="https://{{ $.Site.Params.hex_base_url }}{{ . }}"><div class="filtered r4 c2"></div><img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/{{ $.Site.Params.hex_ext | upper }}/{{ . }}.{{ $.Site.Params.hex_ext}}" alt="{{ . }} hex sticker" class="r4 c2"></a>{{ end }}
-        {{ end }}
-  -->
-
 
 <!-- text on the right -->
       <div class="blurb">
@@ -50,10 +35,6 @@
         <div>
           {{ .Content | markdownify }}
         </div>
-      </div>
-      <div class="blurb">
-        <div class="tagline small"></div>
-        {{ partial "homepage_sticky" . }}
       </div>
     </div> <!-- bandContent -->
   </div> <!-- band -->

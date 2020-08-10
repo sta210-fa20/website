@@ -65,7 +65,8 @@
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/home/band_two/</guid>
-  <description>&lt;h4 id=&#34;lectures&#34;&gt;Lectures&lt;/h4&gt;
+  <description>&lt;p&gt;This is some text to see if this works&lt;/p&gt;
+&lt;h4 id=&#34;lectures&#34;&gt;Lectures&lt;/h4&gt;
 &lt;p&gt;&lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Gross Hall 103    &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Mon and Wed 10:05a - 11:20a
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
@@ -74,69 +75,7 @@
 &lt;p&gt;Lab 02     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Link Classroom #5     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Thu 4:40p - 5:55p&lt;/p&gt;
 &lt;p&gt;Lab 03     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Link Classroom #1     &lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Thu 4:40p - 5:55p&lt;/p&gt;
 &lt;p&gt;Lab 04 Asynchronous&lt;/p&gt;
-&lt;h3 id=&#34;teaching-team-and-office-hours&#34;&gt;Teaching team and office hours&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Instructor&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://stat.duke.edu/~mt324/&#34;&gt;Prof. Maria Tackett&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:maria.tackett@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/matackett&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Tue 8:30a - 10a, Thu 10:30a - 12p&lt;/td&gt;
-&lt;td&gt;Old Chem 118B&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TAs&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://stat.duke.edu/people/youngsoo-baek-0&#34;&gt;Youngsoo Baek&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:youngsoo.baek@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/ybaek&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Mon 1p - 3p&lt;/td&gt;
-&lt;td&gt;Old Chem 203B&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://linkedin.com/in/cody-coombs-3b8034158&#34;&gt;Cody Coombs&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:cody.coombs@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/coombscody&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Tue 1p - 3p&lt;/td&gt;
-&lt;td&gt;Old Chem 203B&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/in/sophie-dalldorf-598a16192/&#34;&gt;Sophie Dalldorf&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:sophia.dalldorf@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/sophiedalldorf&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Fri 1p - 3p&lt;/td&gt;
-&lt;td&gt;Old Chem 203B&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://stat.duke.edu/people/jonathan-klus&#34;&gt;Jonathan Klus&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:jonathan.klus@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/jonklus&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Mon 3p - 5p&lt;/td&gt;
-&lt;td&gt;Old Chem 203B&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/in/mattypahren&#34;&gt;Matty Pahren&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:martha.pahren@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/mpahren&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Tue 3p - 5p&lt;/td&gt;
-&lt;td&gt;Old Chem 203B&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/in/ethan-shen-931010134/&#34;&gt;Ethan Shen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:ethan.shen@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;   &lt;a href=&#34;https://github.com/ethann-shen&#34; title=&#34;GitHub&#34;&gt;&lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Wed 3p - 5p&lt;/td&gt;
-&lt;td&gt;Old Chem 203B&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/center&gt;
 </description>
   </item>
   
@@ -386,13 +325,54 @@ I will periodically send announcements via email, so please check your email reg
   </item>
   
 <item>
-  <title>Teaching Team</title>
+  <title>Teaching Team and office hours</title>
   <link>/home/band_three/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/home/band_three/</guid>
-  <description>&lt;p&gt;course materials&lt;/p&gt;
-</description>
+  <description>&lt;style&gt;
+table {
+  width: 100%;
+}
+&lt;/style&gt;
+&lt;center&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Instructor&lt;/td&gt;
+&lt;td&gt;Maria Tackett&lt;/td&gt;
+&lt;td&gt;Email&lt;/td&gt;
+&lt;td&gt;Office hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TA&lt;/td&gt;
+&lt;td&gt;TA 1&lt;/td&gt;
+&lt;td&gt;Email&lt;/td&gt;
+&lt;td&gt;Office Hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TA&lt;/td&gt;
+&lt;td&gt;TA 2&lt;/td&gt;
+&lt;td&gt;Email&lt;/td&gt;
+&lt;td&gt;Office Hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TA&lt;/td&gt;
+&lt;td&gt;TA 3&lt;/td&gt;
+&lt;td&gt;Email&lt;/td&gt;
+&lt;td&gt;Office hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/center&gt;</description>
   </item>
   
 <item>

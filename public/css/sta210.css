@@ -8,11 +8,10 @@
 
 body, button, input, textarea {
   font-family: 'Lato', sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: normal;
   -webkit-font-smoothing: antialiased; 
 }
-
 
 .listItem .itemDetails .itemMeta .itemDate, .listItem .itemDetails .itemMeta .itemInfo {
   font-size: .875rem;
@@ -23,16 +22,16 @@ body, button, input, textarea {
 }
 
 
-
 /* ----WHITE SPACE ----*/
 
 .article-content h2 {
   margin-bottom: 1.5em; /* increased from 0.5 main-site.css */
 }
 
+/*
 .bandContent{
   max-width: 2100px; /*Main container width with page content */
-}
+/*}*/
 
 .splitColumns {
   display: flex;
@@ -354,11 +353,23 @@ a.productName {
   } 
 
 /*second band*/
-#homeContent .band.second {
+#homeContent .band.second{
   color: black;
   border-bottom: solid 1pt #d9d9d9;
   border-top: solid 1pt #d9d9d9;
 } 
+
+#homeContent .band.third.blurb {
+  width: 100%;
+}
+
+#homeContent .blurb{
+  font-size: 14px;
+} 
+
+#homeContent .blurb table {
+  max-width: 100%;
+}
 
 
 /* Easter egg in corner of homepage */
