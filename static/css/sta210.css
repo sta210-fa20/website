@@ -108,7 +108,7 @@ a {
 div.tagline {
   font-family: 'Lato', sans-serif !important;
   text-transform: uppercase;
-  font-size: 1.2rem !important;
+  font-size: 1.6em !important;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -357,21 +357,15 @@ a.productName {
   color: black;
   border-bottom: solid 1pt #d9d9d9;
   border-top: solid 1pt #d9d9d9;
+  font-size: 14px;
 } 
 
-#homeContent .band.third.blurb {
+#homeContent .blurb_2col {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
   width: 100%;
-}
-
-#homeContent .blurb{
-  width: 500%;
-} 
-
-
-/* Easter egg in corner of homepage */
-
-#homeContent .bee1 {
-  display: block;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*-----TABLES-----*/

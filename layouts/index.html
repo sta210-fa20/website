@@ -28,7 +28,7 @@
 
   <div class="band second">
     <div class="bandContent">
-      <div class="blurb">
+      <div class="blurb_2col"> 
         <div class="tagline">
           {{ .Title }}
         </div>
@@ -37,28 +37,9 @@
         </div>
       </div>
     </div> <!-- bandContent -->
-  </div> <!-- band -->
+</div> <!-- band -->
 
 
-{{ end }}
-
-<!-- band_three.md populates this section -->
-
-{{ with .Site.GetPage "/home/band_three.md" }}
-
-  <div class="band third">
-    <div class="bandContent">
-      <div class="blurb">
-        <div class="tagline">
-          {{ .Title }}
-          </div>
-        <div>
-          {{.Content | markdownify }}
-        </div>
-      </div>
-    </div> <!-- bandContent -->
-  </div> <!-- band -->
-</div> <!-- homeContent -->
 {{ end }}
 
 {{ end }}
