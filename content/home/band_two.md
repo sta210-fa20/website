@@ -36,14 +36,16 @@ Lab 04 &nbsp; <i class="fas fa-calendar" style = "color: #339898"></i></font> &n
 
 ## Teaching Assistants
 
-<i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p
+<ul>
+<li><i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p</li>
 
-<i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p
+<li><i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p</li>
 
-<i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p
+<li><i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p</li>
 
-<i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p
+<li><i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p</li>
 
+</ul>
 </div>
 
 
