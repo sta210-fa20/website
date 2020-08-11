@@ -466,8 +466,8 @@ html {
     transform: rotate(0deg); }
 
 .section .event {
-    border-top: 7pt solid #a19ea936;
-    background-color: #eab0c41a;
+    border-top: 7pt solid #ffffff;
+    background-color: #000000;
 }
 
 .section .event a{
@@ -686,27 +686,27 @@ sup {
 
 
 /*stickies in the  bands */
-#homeContent .blurb .event {
-  background-color: #eab0c400;
+#homeContent .blurb_2col .event {
+  background-color: #ffffff;
 }
 
 
-#homeContent .blurb .event {
-	border: 1pt solid #eab0c452;
-	background-color: #f5e2e800;
+#homeContent .blurb_2col .event {
+	border: 1pt solid #aa008e;
+	background-color: #ffffff;
 }
 
-#homeContent .blurb .event a {
-	color: #1a162d;
+#homeContent .blurb_2col .event a {
+	color: #aa008e;
 }
 
-#homeContent .blurb .event .eventTitle,
-#homeContent .blurb .event .eventTitle a {
+#homeContent .blurb_2col .event .eventTitle,
+#homeContent .blurb_2col .event .eventTitle a {
   text-transform: uppercase;
   letter-spacing: 2pt;
   font-weight: bold !important;
-  color: #ca235e;
-  font-size: 0.85em;
+  color: #aa008e;
+  font-size: 1em;
 }
 
 #homeContent .event .eventTitle a:hover {
@@ -715,7 +715,7 @@ sup {
 }
 
 #homeContent .event .eventTitle a .fa-xs { /* font awesome icon */
-  font-size: .8em; 
+  font-size: 1em; 
 }
 
 #homeContent .event .eventDetails {
@@ -725,7 +725,7 @@ sup {
 }
 
 #homeContent .event .eventDetails a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /*----Mobile display----*/
