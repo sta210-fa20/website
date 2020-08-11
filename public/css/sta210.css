@@ -686,22 +686,22 @@ sup {
 
 
 /*stickies in the  bands */
-#homeContent .blurb_2col .event {
+#homeContent .blurb .event {
   background-color: #ffffff;
 }
 
 
-#homeContent .blurb_2col .event {
+#homeContent .blurb .event {
 	border: 1pt solid #aa008e;
 	background-color: #ffffff;
 }
 
-#homeContent .blurb_2col .event a {
+#homeContent .blurb .event a {
 	color: #aa008e;
 }
 
-#homeContent .blurb_2col .event .eventTitle,
-#homeContent .blurb_2col .event .eventTitle a {
+#homeContent .blurb .event .eventTitle,
+#homeContent .blurb .event .eventTitle a {
   text-transform: uppercase;
   letter-spacing: 2pt;
   font-weight: bold !important;

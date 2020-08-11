@@ -1060,7 +1060,20 @@ em {
     min-height: 160px;
     font-size: 24px;
     line-height: 40px;
-    max-width: 48%; }
+    width: 75%;
+    
+  }
+    
+    #homeContent .band .second .blurb {
+    font-weight: 300;
+    display: inline-block;
+    min-height: 160px;
+    font-size: 24px;
+    line-height: 40px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;}
+    
     #homeContent .band .blurb .tagline {
       font-size: 36px;
       margin-bottom: 16px; }
@@ -1079,7 +1092,7 @@ em {
       background-repeat: no-repeat;
       background-size: 570px 690px; }
   #homeContent .band.second {
-    height: 952px;
+    height: 650px;
     background-color: #fdeba4; }
     #homeContent .band.second .bandContent {
       padding-top: 120px;
@@ -1089,7 +1102,7 @@ em {
       background-repeat: no-repeat;
       background-size: 700px 952px; }
   #homeContent .band.third {
-    height: 450px; }
+    height: 600px; }
     #homeContent .band.third .bandContent {
       height: 450px;
       padding-top: 100px;

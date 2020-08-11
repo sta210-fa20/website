@@ -66,69 +66,44 @@
   
 <guid>/home/band_two/</guid>
   <description>&lt;style&gt;
-.column {
-  width: 50%;
-  display: inline-block;
-  position: relative;
-  padding-right: 20px;
-}
-&lt;/style&gt; 
+  .column {
+  width: 100%;
+  }
+
+  table {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  }
+  
+&lt;/style&gt;
 &lt;div class = &#34;column&#34;&gt;
 &lt;table&gt;
-&lt;thead&gt;
-  &lt;tr&gt;
-    &lt;th class=&#34;tg-0pky&#34;&gt;Instructor&lt;/th&gt;
-    &lt;th class=&#34;tg-0pky&#34;&gt;Maria Tackett&lt;/th&gt;
-    &lt;th class=&#34;tg-0pky&#34;&gt;Email&lt;/th&gt;
-    &lt;th class=&#34;tg-0pky&#34;&gt;Office hours&lt;/th&gt;
-  &lt;/tr&gt;
-&lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA 1&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Email&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Office Hours&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lecture&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;All Students&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Mon and Wed 3:30p - 4:45p&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA 2&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Email&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Office Hours&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Labs&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 01&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Thu 8:30a - 9:45a&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA 3&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Email&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Office hours&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class = &#34;column&#34;&gt;
-&lt;table&gt;
-&lt;thead&gt;
-  &lt;tr&gt;
-    &lt;th class=&#34;tg-0pky&#34;&gt;Instructor&lt;/th&gt;
-    &lt;th class=&#34;tg-0pky&#34;&gt;Maria Tackett&lt;/th&gt;
-    &lt;th class=&#34;tg-0pky&#34;&gt;Email&lt;/th&gt;
-  &lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA 1&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Email&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 02&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Thu 12p - 1:15p&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA 2&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Email&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 03&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Thu 5:15p - 6:30p&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;TA 3&lt;/td&gt;
-    &lt;td class=&#34;tg-0pky&#34;&gt;Email&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 04&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Asynchronous&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
