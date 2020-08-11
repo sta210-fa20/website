@@ -4,18 +4,18 @@ resources:
   icon: fa-search
   icon_pack: fas
   what: |
-    Explore searchable tables of all tidymodels packages and functions.
+    This is the course schedule! whoo! 
 
 - url: /help/
   title: help
   icon: fa-book-open
   icon_pack: fas
   what: |
-    Study up on statistics and modeling with our comprehensive books.
+    This is where you'll get help! Whoo! 
 
 - url: https://www.tidyverse.org/tags/tidymodels/
   title: Github
   icon: fa-bullhorn
   icon_pack: fas
   what: |
-    Hear the latest about tidymodels packages at the [tidyverse blog](https://www.tidyverse.org/tags/tidymodels/). 
+    These are other tags! whoo!

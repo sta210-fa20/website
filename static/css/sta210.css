@@ -6,11 +6,16 @@
   color: #302c41;
 }
 
+body {
+   background-color: #ffffff;
+}
+
 body, button, input, textarea {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: normal;
   -webkit-font-smoothing: antialiased; 
+  
 }
 
 .listItem .itemDetails .itemMeta .itemDate, .listItem .itemDetails .itemMeta .itemInfo {
@@ -351,6 +356,18 @@ a.productName {
   
 #homeContent .band.first a:hover {
   } 
+  
+#homeContent .band.first {
+  background-image: url("https://www2.stat.duke.edu/courses/Spring20/sta210.001/img/bikeshare-reg-plots.png");
+   background-size: cover;
+   background-color: #cccccc;
+   box-shadow: inset 0 0 0 1000px rgba(153, 153, 153, 0.62);
+   color: #ffffff;
+} 
+
+#homeContent .band.first .blurb {
+  font-weight: 600;
+}
 
 /*second band*/
 #homeContent .band.second{
@@ -358,14 +375,35 @@ a.productName {
   border-bottom: solid 1pt #d9d9d9;
   border-top: solid 1pt #d9d9d9;
   font-size: 14px;
+  background-color: #ffffff;
+  margin-bottom: 0px;
 } 
 
-#homeContent .blurb_2col {
-  font-family: 'Lato', sans-serif;
+
+#homeContent .blurb_2col{
   font-size: 20px;
-  font-weight: 300;
+  color: blue;
   width: 100%;
-  -webkit-font-smoothing: antialiased;
+  float: left;
+  height: auto;
+  
+}
+
+
+#homeContent .blurb_2col .left {
+  width: 80%;
+  float: left;
+}
+
+#homeContent .blurb_2col .right {
+  width: 20%;
+  float: left;
+}
+
+
+#homeContent .blurb_3col .col {
+  width: 33.33%;
+  float: left;
 }
 
 /*-----TABLES-----*/

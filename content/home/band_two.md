@@ -4,21 +4,15 @@ title: Course info
 
 <style>
 
-.row {
-  width:100%;
-}
-
-.col {
+.column {
   float: left;
   width: 50%;
-  padding: 10px;
 }
-
 </style> 
-<div class="row">
-  <div class = "col">
 
-### Lectures
+  <div class = "column">
+
+<h2>Lectures </h2>
 
 <font color="#339898"><i class="fas fa-calendar"></i></font> Mon and Wed 3:30p - 4:45p 
 
@@ -34,7 +28,7 @@ Lab 04 &nbsp; <i class="fas fa-calendar" style = "color: #339898"></i></font> &n
 
 </div> 
 
-<div class = "col">
+<div class = "column">
 
 ## Instructor
 
@@ -50,6 +44,7 @@ Lab 04 &nbsp; <i class="fas fa-calendar" style = "color: #339898"></i></font> &n
 
 <i class="fas fa-user" style = "color: #339898"></i> <a href="mailto:maria.tackett@duke.edu" title="email"> Prof. Maria  Tackett</a> &nbsp; <i class="fas fa-calendar-check" style = "color: #339898"></i> Mon 2p - 3:3p
 
-
 </div>
- </div>                  
+
+
+                

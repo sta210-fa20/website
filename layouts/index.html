@@ -7,7 +7,7 @@
 {{ with .Site.GetPage "/home/band_one.md" }}
   <div class="band first">
     <div class="bandContent">
-    <img src="img/sta210_sticker.png">
+  <!--  <img src="img/sta210_sticker.png"> -->
 
 <!-- text on the right -->
       <div class="blurb">
@@ -32,16 +32,37 @@
         <div class="tagline">
           {{ .Title }}
         </div>
-        <div>
+        <div class = "left">
           {{ .Content | markdownify }}
         </div>
+        <div class = "right">
+          {{ partial "homepage_sticky_4" . }}
+          </div>
+        </div>
+        </div>
+    </div>
+
+{{end}}
+  <!-- band three -->
+  
+  <div class="band third">
+    <div class="bandContent">
+        <div class = "blurb_3col">
+          <div class="col">
+             {{ partial "homepage_sticky" . }}
+          </div> 
+          <div class="col">
+             {{ partial "homepage_sticky_2" . }}
+          </div> 
+          <div class="col">
+             {{ partial "homepage_sticky_3" . }}
+          </div> 
+        </div>
       </div>
-    </div> <!-- bandContent -->
-</div> <!-- band -->
-
-
-{{ end }}
+    </div> 
+</div> 
 
 {{ end }}
+
 
 

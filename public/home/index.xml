@@ -70,29 +70,23 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/home/band_two/</guid>
-      <description>.row { width:100%; } .col { float: left; width: 50%; padding: 10px; }  Lectures  Mon and Wed 3:30p - 4:45p
+      <description>.column { float: left; width: 50%; }  Lectures   Mon and Wed 3:30p - 4:45p
 Labs Lab 01  Thu 8:30a - 9:45a
 Lab 02  Thu 12p - 1:15p
 Lab 03  Thu 5:15p - 6:30p
 Lab 04  Asynchronous
  Instructor  Prof. Maria Tackett  Mon 2p - 3:3p
-Teaching Assistants  Prof. Maria Tackett  Mon 2p - 3:3p</description>
+Teaching Assistants  Prof. Maria Tackett  Mon 2p - 3:3p
+ Prof. Maria Tackett  Mon 2p - 3:3p</description>
       <content>&lt;style&gt;
 
-.row {
-  width:100%;
-}
-
-.col {
+.column {
   float: left;
   width: 50%;
-  padding: 10px;
 }
-
 &lt;/style&gt; 
-&lt;div class=&#34;row&#34;&gt;
-  &lt;div class = &#34;col&#34;&gt;
-&lt;h3 id=&#34;lectures&#34;&gt;Lectures&lt;/h3&gt;
+  &lt;div class = &#34;column&#34;&gt;
+&lt;h2&gt;Lectures &lt;/h2&gt;
 &lt;p&gt;&lt;font color=&#34;#339898&#34;&gt;&lt;i class=&#34;fas fa-calendar&#34;&gt;&lt;/i&gt;&lt;/font&gt; Mon and Wed 3:30p - 4:45p&lt;/p&gt;
 &lt;h3 id=&#34;labs&#34;&gt;Labs&lt;/h3&gt;
 &lt;p&gt;Lab 01   &lt;i class=&#34;fas fa-calendar&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Thu 8:30a - 9:45a&lt;/p&gt;
@@ -100,7 +94,7 @@ Teaching Assistants  Prof. Maria Tackett  Mon 2p - 3:3p</description>
 &lt;p&gt;Lab 03   &lt;i class=&#34;fas fa-calendar&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Thu 5:15p - 6:30p&lt;/p&gt;
 &lt;p&gt;Lab 04   &lt;i class=&#34;fas fa-calendar&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt;&lt;/font&gt;   Asynchronous&lt;/p&gt;
 &lt;/div&gt; 
-&lt;div class = &#34;col&#34;&gt;
+&lt;div class = &#34;column&#34;&gt;
 &lt;h2 id=&#34;instructor&#34;&gt;Instructor&lt;/h2&gt;
 &lt;p&gt;&lt;i class=&#34;fas fa-user&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:maria.tackett@duke.edu&#34; title=&#34;email&#34;&gt; Prof. Maria  Tackett&lt;/a&gt;   &lt;i class=&#34;fas fa-calendar-check&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt; Mon 2p - 3:3p&lt;/p&gt;
 &lt;h2 id=&#34;teaching-assistants&#34;&gt;Teaching Assistants&lt;/h2&gt;
@@ -109,7 +103,6 @@ Teaching Assistants  Prof. Maria Tackett  Mon 2p - 3:3p</description>
 &lt;p&gt;&lt;i class=&#34;fas fa-user&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:maria.tackett@duke.edu&#34; title=&#34;email&#34;&gt; Prof. Maria  Tackett&lt;/a&gt;   &lt;i class=&#34;fas fa-calendar-check&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt; Mon 2p - 3:3p&lt;/p&gt;
 &lt;p&gt;&lt;i class=&#34;fas fa-user&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:maria.tackett@duke.edu&#34; title=&#34;email&#34;&gt; Prof. Maria  Tackett&lt;/a&gt;   &lt;i class=&#34;fas fa-calendar-check&#34; style = &#34;color: #339898&#34;&gt;&lt;/i&gt; Mon 2p - 3:3p&lt;/p&gt;
 &lt;/div&gt;
- &lt;/div&gt;                  
 </content>
     </item>
     
@@ -369,50 +362,8 @@ I will periodically send announcements via email, so please check your email reg
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/home/band_three/</guid>
-      <description> table { width: 100%; }              Instructor Maria Tackett Email Office hours   TA TA 1 Email Office Hours   TA TA 2 Email Office Hours   TA TA 3 Email Office hours    </description>
-      <content>&lt;style&gt;
-table {
-  width: 100%;
-}
-&lt;/style&gt;
-&lt;center&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Instructor&lt;/td&gt;
-&lt;td&gt;Maria Tackett&lt;/td&gt;
-&lt;td&gt;Email&lt;/td&gt;
-&lt;td&gt;Office hours&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TA&lt;/td&gt;
-&lt;td&gt;TA 1&lt;/td&gt;
-&lt;td&gt;Email&lt;/td&gt;
-&lt;td&gt;Office Hours&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TA&lt;/td&gt;
-&lt;td&gt;TA 2&lt;/td&gt;
-&lt;td&gt;Email&lt;/td&gt;
-&lt;td&gt;Office Hours&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TA&lt;/td&gt;
-&lt;td&gt;TA 3&lt;/td&gt;
-&lt;td&gt;Email&lt;/td&gt;
-&lt;td&gt;Office hours&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/center&gt;</content>
+      <description></description>
+      <content></content>
     </item>
     
     <item>
