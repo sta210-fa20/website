@@ -14,8 +14,7 @@ title: Course info
   }
   
 </style>
-  
-  
+
 <div class = "column">
 <table>
 <tbody>
@@ -47,3 +46,4 @@ title: Course info
 </tbody>
 </table>
 </div>
+
