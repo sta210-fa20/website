@@ -35,32 +35,16 @@
         </div>
       </div>
       <div class="blurb">
-        <div class="tagline small"></div>
         {{ partial "homepage_sticky" . }}
+        {{ partial "homepage_sticky_2" . }}
       </div>
     </div> <!-- bandContent -->
   </div> <!-- band -->
 
+</div>
 {{ end }}
 
 <!-- band_three.md populates this section -->
-
-{{ with .Site.GetPage "/home/band_three.md" }}
-
-  <div class="band third">
-    <div class="bandContent">
-      <div class="blurb">
-        <div class="tagline">
-          {{ .Title }}
-          </div>
-        <div>
-          {{.Content | markdownify }}
-        </div>
-      </div>
-    </div> <!-- bandContent -->
-  </div> <!-- band -->
-</div> <!-- homeContent -->
-{{ end }}
 
 {{ end }}
 

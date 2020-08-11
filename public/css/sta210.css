@@ -671,20 +671,6 @@ sup {
 
 /*----Landing page----*/
 
-#homeContent .bookCover {
-	width: 600px;
-	height: auto;
-	-moz-box-shadow: none !important;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-	-webkit-transform: rotate(359deg);
-	transform: rotate(359deg);
-	float: left;
-	margin: 60px 40px 40px 40px;
-}
-
-
-
 /*stickies in the  bands */
 #homeContent .blurb .event {
   background-color: #ffffff;

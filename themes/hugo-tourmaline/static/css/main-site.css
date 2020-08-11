@@ -1070,9 +1070,7 @@ em {
     min-height: 160px;
     font-size: 24px;
     line-height: 40px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 20px;}
+    width: 85%;}
     
     #homeContent .band .blurb .tagline {
       font-size: 36px;
@@ -1088,9 +1086,9 @@ em {
     #homeContent .band.first .bandContent {
       padding-top: 220px;
       height: 100%;
-      background-image: url(images/tidy-back-01.svg);
-      background-repeat: no-repeat;
-      background-size: 570px 690px; }
+     /* background-image: url(images/tidy-back-01.svg); */
+    /*  background-repeat: no-repeat; */
+     /*background-size: 570px 690px; */}
   #homeContent .band.second {
     height: 650px;
     background-color: #fdeba4; }
@@ -1098,27 +1096,23 @@ em {
       padding-top: 120px;
       padding-bottom: 100px;
       height: 100%;
-      background-image: url(images/tidy-back-02.svg);
-      background-repeat: no-repeat;
-      background-size: 700px 952px; }
+      margin: 0 auto;
+      padding: 60px;
+     /* background-image: url(images/tidy-back-02.svg); */
+    /*  background-repeat: no-repeat; */
+     /* background-size: 700px 952px; */ 
+    }
   #homeContent .band.third {
     height: 600px; }
     #homeContent .band.third .bandContent {
       height: 450px;
       padding-top: 100px;
       padding-bottom: 100px;
-      background-image: url(images/tidy-back-03.svg);
-      background-repeat: no-repeat;
-      background-size: 650px 450px; }
-  #homeContent .bookCover {
-    margin-top: 50px;
-    margin-left: 50px; }
-  #homeContent .bee1 {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 100px;
-    height: auto; }
+    /*  background-image: url(images/tidy-back-03.svg); */
+    /*  background-repeat: no-repeat; */
+    /*  background-size: 650px 450px; */
+      margin: 0 auto;}
+
 
 /* size & position adjustments */
 @media screen and (max-width: 1023px) {

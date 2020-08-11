@@ -368,13 +368,57 @@ I will periodically send announcements via email, so please check your email reg
     </item>
     
     <item>
-      <title>Teaching Team and office hours</title>
+      <title>Teaching team and office hours</title>
       <link>/home/band_three/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/home/band_three/</guid>
-      <description></description>
-      <content></content>
+      <description> .column { width: 100%; } table { width: 100%; font-size: 20px; font-weight: 400; }     Lecture All Students Mon and Wed 3:30p - 4:45p   Labs Lab 01 Thu 8:30a - 9:45a    Lab 02 Thu 12p - 1:15p    Lab 03 Thu 5:15p - 6:30p    Lab 04 Asynchronous     </description>
+      <content>&lt;style&gt;
+  .column {
+  width: 100%;
+  }
+
+  table {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  
+  }
+  
+&lt;/style&gt;
+&lt;div class = &#34;column&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lecture&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;All Students&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Mon and Wed 3:30p - 4:45p&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Labs&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 01&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Thu 8:30a - 9:45a&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 02&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Thu 12p - 1:15p&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 03&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Thu 5:15p - 6:30p&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Lab 04&lt;/td&gt;
+    &lt;td class=&#34;tg-0pky&#34;&gt;Asynchronous&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content>
     </item>
     
     <item>
