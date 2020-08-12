@@ -6,7 +6,7 @@ toc_depth: 3
 
 **[Click here](syllabus.pdf) to download a PDF copy of the syllabus.**
 
-## Course Learning Objectives
+# Course Learning Objectives
 
 By the end of the semester, you will…
 
