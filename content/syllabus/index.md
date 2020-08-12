@@ -1,5 +1,7 @@
 ---
 title: Syllabus
+toc: true
+toc_depth: 3
 ---
 
 **[Click here](syllabus.pdf) to download a PDF copy of the syllabus.**
@@ -30,8 +32,6 @@ Furthermore, I would like to create a learning environment for my students that 
 Duke University is committed to providing equal access to students with documented disabilities. Students with disabilities may contact the [Student Disability Access Office (SDAO)](https://access.duke.edu) to ensure your access to this course and to the program. There you can engage in a confidential conversation about the process for requesting reasonable accommodations both in the classroom and in clinical settings. Students are encouraged to register with the SDAO as soon as they begin the program. Please note that accommodations are not provided retroactively.
 
 More information can be found online at [access.duke.edu](https://access.duke.edu) or by contacting SDAO at 919-668-1267, <a href="mailto:sdao@duke.edu" title="email">SDAO@duke.edu</a>.
-<br> 
-<br>
 
 ### Academic Integrity & Duke Community Pact
 
@@ -40,8 +40,6 @@ By enrolling in this course, you have agreed to abide by and uphold the provisio
 - You may not discuss or otherwise work with others on the exams. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.
 - **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. 
 - On individual assignments, you may not directly share code or write up with other students. On team assignments, you may not directly share code or write up with another team. Unauthorized sharing of the code or write up will be considered a violation for all students involved.
-<br> 
-<br>
 
 ### Communication 
 
@@ -57,9 +55,6 @@ I will periodically send announcements via email, so please check your email reg
 - Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza. There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond! 
 
 Check out the [Help](/help/) tab for more information about getting help and resources.
-
-<br>
-<br>
 
 ## Course components 
 
@@ -83,9 +78,6 @@ Individual homework extensions will only be given for extenuating circumstances.
 
 To accommodate unexpected events, the lowest lab grade will be dropped at the end of the semester. 
 
-<br> 
-<br>
-
 ### Labs 
 
 In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. You will work on lab assignments in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's repository on the course's GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab. You will also be asked to evaluate your team members' performance periodically during the semester. 
@@ -96,8 +88,6 @@ If you have a scheculed lab time (sections 01 - 03), you are expected to attend 
 If you do not have a scheduled lab time (section 04), you will still be required to complete the lab with your teammates by the stated due date. It will be up to the team members to identify a meeting time (if feasible) and communication plan, so labs can be completed collaboratively. The teaching team will provide tips and resources to help you establish an asynchronous workflow. 
 
 To accommodate unexpected events, the lowest lab grade will be dropped at the end of the semester. 
-<br> 
-<br>
 
 ### Quizzes - UPDATE
 
@@ -107,14 +97,10 @@ The exams are an opportunity to assess the knowledge and skills you’ve learned
 - Exam 02: Wednesday, April 15
 
 **Exam dates cannot be changed and no make-up exams will be given.** If you must miss an exam, your absence must be officially excused before the exam due date. If your absence is excused, the missing exam grade will be imputed at the end of the semester based on your performance on other relevant individual coursework.
-<br> 
-<br>
 
 ### Final Project 
 
 The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided a few weeks into the semester. 
-<br> 
-<br>
 
 ### Participation - UPDATE
 
@@ -130,8 +116,6 @@ This part of the final grade will consist of three components.
 
 [ADD DESCRIPTION!]
 
-<br> 
-<br>
 
 ## Grading
 
@@ -170,9 +154,6 @@ D- | 60 - 62.99
 F  | < 60
 
 </center>
- 
-<br>
-<br>
 
 
 ### Late Work
@@ -182,8 +163,7 @@ You will have a 24 hour grace period after the due date of homework and lab assi
 If there are extenuating circumstances that prevent you from completing an assignment by the stated due date, please let Professor Tackett know as soon as possible.
 
 **Late work will not be accepted for the quizzes or the final project**
-<br> 
-<br>
+
 
 ### Regrade Requests
 
@@ -192,9 +172,6 @@ Regrade requests should be submitted through the regrade request from on Gradesc
 Due to the time consuming nature of responding to regrade requests, you should attend office hours and ask a member of the teaching team about the feedback before submitting the request. When you submit a request, please indicate which member of the teaching team you spoke with. *Note: Grades can only be changed by Professor Tackett. Teaching Assistants cannot change grades on returned assignments.*
 
 **No grades will be changed after the final project presentations.**
-
-<br> 
-<br>
 
 ## Additional resources
 
