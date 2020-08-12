@@ -364,6 +364,7 @@ a {
     cursor: pointer;
     border-radius: 3px;
     color: inherit;
+    font-size: 15px;
     -webkit-transition-property: background-color;
     -moz-transition-property: background-color;
     -o-transition-property: background-color;
@@ -410,14 +411,15 @@ a {
   #rStudioHeader #menu .menuItem {
     display: block;
     line-height: 30px;
-    text-align: left; }
+    text-align: left;
+    font-size: 20px;}
   #rStudioHeader #menu .menuItem.gitHub {
     display: none; }
   #rStudioHeader #menu .menuItem.gitHubText {
     display: block; } }
 
 #rStudioHeader #menu {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px; }
   #rStudioHeader #menu .menuItem:hover {
     text-decoration: none;
@@ -1090,7 +1092,7 @@ em {
     /*  background-repeat: no-repeat; */
      /*background-size: 570px 690px; */}
   #homeContent .band.second {
-    height: 600px;
+    height: 625px;
     background-color: #fdeba4;
     padding-top: 50px;
     padding-bottom: 25px;
@@ -1106,7 +1108,7 @@ em {
      /* background-size: 700px 952px; */ 
     }
   #homeContent .band.third {
-    height: 600px;
+    height: 625px;
     background-color: #fdeba4;
     padding-top: 30px;
     padding-bottom: 30px;
