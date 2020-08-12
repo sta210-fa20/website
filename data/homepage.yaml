@@ -1,7 +1,8 @@
 bandtwo:
-- url: /schedule/
-  title: Sticky 1
-  icon: fa-flag-checkered
+- url: https://sakai.duke.edu
+  title: Join on Zoom!
+  icon: fa-laptop
   icon_pack: fas
   what: |
-    These is the course schedule! whoo! 
+    Join live lectures, labs, and office hours using the Zoom links in [Sakai](https://sakai.duke.edu). 
+

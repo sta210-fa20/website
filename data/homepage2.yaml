@@ -1,7 +1,8 @@
 bandtwo:
 - url: /schedule/
-  title: Sticky 2
-  icon: fa-flag-checkered
+  title: Find out what's happening! 
+  icon: fa-calendar-check
   icon_pack: fas
   what: |
-    These is the course schedule! whoo! 
+    Click on the [schedule](/schedule/) tab to keep up with all activities and assignments. 
+    
