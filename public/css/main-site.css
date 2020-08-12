@@ -1056,6 +1056,7 @@ em {
     display: -webkit-box;
     display: -webkit-flex;
     -webkit-justify-content: space-between; }
+  
   #homeContent .band .blurb {
     font-weight: 300;
     display: inline-block;
@@ -1063,7 +1064,6 @@ em {
     font-size: 24px;
     line-height: 40px;
     width: 75%;
-    
   }
     
     #homeContent .band .second .blurb {
@@ -1073,6 +1073,14 @@ em {
     font-size: 24px;
     line-height: 40px;
     width: 85%;}
+    
+    #homeContent .band .second .blurb .event {
+    font-weight: 300;
+    display: inline-block;
+    min-height: 160px;
+    font-size: 24px;
+    line-height: 40px;
+    width: 15%;}
     
     #homeContent .band .blurb .tagline {
       font-size: 36px;

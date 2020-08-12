@@ -16,35 +16,11 @@ title: Teaching team and office hours
   
 </style>
   
-  
-<div class = "column">
-<table>
-<tbody>
-  <tr>
-    <td class="tg-0pky">Lecture</td>
-    <td class="tg-0pky">All Students</td>
-    <td class="tg-0pky">Mon and Wed 3:30p - 4:45p</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Labs</td>
-    <td class="tg-0pky">Lab 01</td>
-    <td class="tg-0pky">Thu 8:30a - 9:45a</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Lab 02</td>
-    <td class="tg-0pky">Thu 12p - 1:15p</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Lab 03</td>
-    <td class="tg-0pky">Thu 5:15p - 6:30p</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Lab 04</td>
-    <td class="tg-0pky">Asynchronous</td>
-  </tr>
-</tbody>
-</table>
-</div>
+|            |                     |     |
+|------------|---------------------|-----|
+| Instructor | [Prof. Maria Tackett](mailto:maria.tackett@duke.edu) | TBD |
+| TA         | Betsy Bersson      | Mon 8a - 10a |
+| TA         | [Meredith Brown](mailto:meredith.brown@duke.edu)     | Tue 12p - 2p |
+| TA         | [Cody Coombs](mailto:cody.coombs@duke.edu)         | Mon 11:30a - 1:30p |
+| TA         | [Sophie Dalldorf](mailto:sophia.dalldorf@duke.edu)    | TBD |
+| TA         | [Emily Tallman](mailto:emily.tallman@duke.edu)       | Tue 3:30p - 5:30p  |
