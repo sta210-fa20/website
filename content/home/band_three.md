@@ -19,7 +19,7 @@ title: Teaching team and office hours
 |            |                     |     |
 |------------|---------------------|-----|
 | Instructor | [Prof. Maria Tackett](mailto:maria.tackett@duke.edu) | TBD |
-| TA         | Betsy Bersson      | Mon 8a - 10a |
+| TA         | [Betsy Bersson](mailto:elb75@duke.edu)      | Mon 8a - 10a |
 | TA         | [Meredith Brown](mailto:meredith.brown@duke.edu)     | Tue 12p - 2p |
 | TA         | [Cody Coombs](mailto:cody.coombs@duke.edu)         | Mon 11:30a - 1:30p |
 | TA         | [Sophie Dalldorf](mailto:sophia.dalldorf@duke.edu)    | TBD |
