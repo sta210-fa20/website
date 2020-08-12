@@ -112,10 +112,16 @@ a {
 
 div.tagline {
   font-family: 'Lato', sans-serif !important;
-  text-transform: uppercase;
-  font-size: 1.6em !important;
+ /* text-transform: uppercase; */
+  font-size: 1.3em !important;
   font-weight: bold;
   letter-spacing: 2px;
+  color: #008EAA;
+}
+
+#homeContent .band.first .blurb div.tagline {
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .article-title,               /* Most page titles */
@@ -132,7 +138,7 @@ h1, h2, h3, .itemTitle {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 1.3em;
-  text-transform: uppercase;
+  /*text-transform: uppercase; */
   letter-spacing: 1.5pt;
 }
 
@@ -671,6 +677,10 @@ sup {
 
 /*----Landing page----*/
 
+#homeContent .blurb .Title {
+  color: #ffffff;
+}
+
 /*stickies in the  bands */
 #homeContent .blurb .event {
   background-color: #ffffff;
@@ -688,7 +698,7 @@ sup {
 
 #homeContent .blurb .event .eventTitle,
 #homeContent .blurb .event .eventTitle a {
-  text-transform: uppercase;
+ /* text-transform: uppercase; */
   letter-spacing: 2pt;
   font-weight: bold !important;
   color: #aa008e;
