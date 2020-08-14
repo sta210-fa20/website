@@ -39,6 +39,7 @@ lessons:
     title: "Multiple linear regression (MLR)"
   - date: "Thu, Sep 10"
     title: "Lab 04"
+    quiz: "quiz-01.html"
   
   - week: "Week 05"
     date: "Mon, Sep 14"
@@ -65,6 +66,7 @@ lessons:
     title: "MLR: Model diagnostics"  
   - date: "Thu, Oct 01"
     title: "Lab 07"
+    quiz: "quiz-02.html"
     
   - date: "UNIT 02"
     title: "CATEGORICAL RESPONSE VARIABLES"
@@ -94,6 +96,7 @@ lessons:
     title: "Multinomial logistic regression"
   - date: "Thu, Oct 22"
     title: "Lab 10"
+    quiz: "quiz-03.html"
   
   - week: "Week 11"
     date: "Mon, Oct 26"
@@ -115,6 +118,7 @@ lessons:
     title: "TBD"
   - date: "Thu, Nov 05"
     title: "Lab 12"
+    quiz: "quiz-04.html"
     
   - week: "Week 13"
     date: "Mon, Nov 09"
