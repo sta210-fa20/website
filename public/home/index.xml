@@ -180,17 +180,20 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/home/band_two/</guid>
-      <description> .column { width: 100%; } table { width: 100%; font-size: 20px; font-weight: 400; }     Lecture All Students Mon and Wed 3:30p - 4:45p   Labs Lab 01 Thu 8:30a - 9:45a    Lab 02 Thu 12p - 1:15p    Lab 03 Thu 5:15p - 6:30p    Lab 04 Asynchronous     </description>
+      <description> .column { width: 100%; } table { width: 500px; font-size: 17px; font-weight: 400; padding-top: 5px; padding-bottom: 5px; }     Lecture All Students Mon and Wed 3:30p - 4:45p   Labs Lab 01 Thu 8:30a - 9:45a    Lab 02 Thu 12p - 1:15p    Lab 03 Thu 5:15p - 6:30p    Lab 04 Asynchronous     </description>
       <content>&lt;style&gt;
   .column {
   width: 100%;
   }
 
   table {
-  width: 100%;
-  font-size: 20px;
+  width: 500px;
+  font-size: 17px;
   font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 5px;
   }
+  
   
 &lt;/style&gt;
 &lt;div class = &#34;column&#34;&gt;
@@ -563,18 +566,20 @@ Course Learning Objectives By the end of the semester, you will…
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/home/band_three/</guid>
-      <description> .column { width: 100%; } table { width: 100%; font-size: 20px; font-weight: 400; }            Instructor Prof. Maria Tackett TBD   TA Betsy Bersson Mon 8a - 10a   TA Meredith Brown Tue 12p - 2p   TA Cody Coombs Mon 11:30a - 1:30p   TA Sophie Dalldorf TBD   TA Emily Tallman Tue 3:30p - 5:30p    </description>
+      <description> .column { width: 100%; } table { width: 500px; font-size: 17px; font-weight: 400; padding-top: 5px; padding-bottom: 5px; }            Instructor Prof. Maria Tackett TBD   TA Betsy Bersson Mon 8a - 10a   TA Meredith Brown Tue 12p - 2p   TA Cody Coombs Mon 11:30a - 1:30p   TA Sophie Dalldorf TBD   TA Emily Tallman Tue 3:30p - 5:30p    </description>
       <content>&lt;style&gt;
   .column {
   width: 100%;
   }
 
   table {
-  width: 100%;
-  font-size: 20px;
+  width: 500px;
+  font-size: 17px;
   font-weight: 400;
-  
+  padding-top: 5px;
+  padding-bottom: 5px;
   }
+  
   
 &lt;/style&gt;
 &lt;table&gt;

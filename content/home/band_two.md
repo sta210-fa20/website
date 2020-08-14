@@ -8,10 +8,13 @@ title: Course info
   }
 
   table {
-  width: 100%;
-  font-size: 20px;
+  width: 500px;
+  font-size: 17px;
   font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 5px;
   }
+  
   
 </style>
 
