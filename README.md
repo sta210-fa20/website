@@ -1,6 +1,6 @@
 # Website for STA 210: Fall 2020 at Duke University
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" height = 20 /></a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/826377b9-9955-4f1c-bf37-1506b8e35643/deploy-status)](https://app.netlify.com/sites/sta210-fa20/deploys)
 
 :link:  [sta210-fa20.netlify.app](https://sta210-fa20.netlify.app)
 

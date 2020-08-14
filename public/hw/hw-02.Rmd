@@ -1,8 +1,11 @@
 ---
 title: "HW 02"
+subtitle: ""
+author: ""
+date: ""
 output: 
   html_document:
-    css: "sta210-hw.css"
+    css: "./sta210-hw.css"
     toc: true
     toc_float: true
 ---
