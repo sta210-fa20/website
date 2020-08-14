@@ -1,51 +1,53 @@
 ---
-title: Where to find help
+title: Help
 ---
 
-## Asking for help
+## Getting help in the course
 
-If you're asking for R help, reporting a bug, or requesting a new feature, you're more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://reprex.tidyverse.org/) package is built for. You can learn more about reprex, along with other tips on how to help others help you in the [tidyverse.org help section](https://www.tidyverse.org/help/).
+We expect everyone will have questions at some point in the semester, so we encourage you to use the following resources for help: 
 
+## Ask questions during lectures and lab
 
-## Where to ask
-
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png" alt="" width="400" height="285" align="right" style="padding:1em;" />
-
-Now that you've made a reprex, you need to share it in an appropriate forum. Here are some options:
-
-* [__community.rstudio.com__](https://community.rstudio.com/c/ml/15): This is a warm
-  and welcoming place to ask any questions you might have about
-  tidymodels or more generally about modeling, machine learning, and deep learning. (You can also ask questions about the tidyverse and RStudio there, too!)
-  
-* [__Stack Overflow__](https://stackoverflow.com/questions/tagged/tidymodels). You're probably already familiar
-  with Stack Overflow from googling; it's a frequent source of answers to
-  coding related questions. Asking a question on Stack Overflow can be 
-  intimidating, but if you've taken the time to create a reprex, you're much
-  more likely to get a useful answer. Make sure to [tag your question](https://stackoverflow.com/help/tagging) with `r`
-  and `tidymodels` so that the right people are more likely to see it.
-  
-* [__Twitter__][twitter-rstats]. It's hard to share your reprex only on twitter, because 280 characters are rarely enough and screenshots don't help others play with your code. However, twitter is a great place to share a link to your reprex that's hosted elsewhere! The [#rstats twitter][twitter-rstats] community is extremely friendly and active, and is a great crowd to be a part of. Make sure you tag your tweet with `#rstats` and `#tidymodels`.
-
-* If you think you've found a __bug__, please follow the instructions for filing an issue on 
-  [contributing to tidymodels](/contribute/).
-
-[twitter-rstats]: https://twitter.com/search?q=%23rstats&src=typd
+If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
 
 ## Office hours
 
-## Academic resource center
+The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
 
-The Academic Resource Center (ARC) offers free services to all students during their undergraduate careers at Duke.  Services include Learning Consultations, Peer Tutoring, Learning Communities, ADHD/LD Coaching, Outreach Workshops, GRE/MCAT Prep, Study Connect, and more. Because learning is a process unique to every individual, we work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! arc.duke.edu • theARC@duke.edu • 919-684-5917, 211 Academic Advising Center Building, East Campus – behind Marketplace.
+Join using the Zoom link in [Sakai](https://sakai.duke.edu). You can find the office hours schedule on the [homepage](https://sta199-fa20-002.netlify.app/) and in Sakai. 
 
+## Piazza
 
+Outside of class and office hours, any general questions about course content or assignments should be posted on [Piazza](https://www.piazza.com). There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond! 
 
+## Email 
 
-## Resources
+If you have questions about personal matters that are not appropriate for the public forum on Piazza (e.g. illness, accommodations, etc.), you may email Professor Tackett at [maria.tackett@duke.edu](mailto:maria.tackett@duke.edu). 
 
-- See what you need to know to [get started with tidymodels](/start/), and learn more about [using tidymodels for specific tasks](/learn/).
+Please do not email about course content questions but rather post those on Piazza.
 
-- Each tidymodels package has its own documentation site, full of helpful information. Find [links to all package documentation sites](/packages/) and explore them!
+## Resources for the course
 
-- Search [all tidymodels functions](/find/), and check out [our books on these topics](/books/).
+- [OpenIntro Statistics 4th ed](https://leanpub.com/openintro-statistics) by David Diez, Mine &Ccedil;etinkaya-Rundel, and Christopher Barr
+  
+- [R for Data Science](https://r4ds.had.co.nz/) by Garret Grolemund and Hadley Wickham
 
-- Stay up to date with the latest news about tidymodels through our posts on the [tidyverse blog](https://www.tidyverse.org/tags/tidymodels/).
+- [Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/) by Chester Ismay and Albert Kim
+
+## Resources for mental health and wellness
+
+- **DukeReach**: Provides comprehensive outreach services to identify and support students in managing all aspects of well being. If you have concerns about a student's behavior or health visit the website for resources and assistance. 
+Go to [studentaffairs.duke.edu/dukereach](http://studentaffairs.duke.edu/dukereach)
+
+- **Counseling and Psychological Services (CAPS)**: CAPS services include individual, group, and couples counseling services, health coaching, psychiatric services, and workshops and discussions. Contact CAPS at (919) 660-1000
+
+- **Blue Devils Care**. A convenient and cost-effective way for Duke students to receive 24/7 mental health support through TalkNow. Go to [bluedevilscare.duke.edu](https://www.timely.md/faq/blue-devils-care-faq/)
+
+## Resources for academic support and wellness
+
+- **The Academic Resource Center**: Contact the ARC at (919) 684-5917, [theARC@duke.edu](mailto:theARC@duke.edu), or [arc.duke.edu](https://arc.duke.edu/)
+
+- **DuWell**: Contact DuWell at (919) 681-8421, [duwell@studentaffairs.duke.edu](mailto:duwell@studentaffairs.duke.edu), or [studentaffairs.duke.edu/duwell](https://studentaffairs.duke.edu/duwell), and 
+
+- **WellTrack**: Contact WellTrack at [app.welltrack.com](https://app.welltrack.com/)
+
