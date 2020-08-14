@@ -1,7 +1,5 @@
 ---
 title: Syllabus
-toc: true
-toc_depth: 3
 ---
 
 **[Click here](syllabus.pdf) to download a PDF copy of the syllabus.**
@@ -113,7 +111,7 @@ Individual homework extensions will only be given for extenuating circumstances.
 
 There will be four quizzes during the semester. The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Quizzes will be timed and must be completed during the time period specified. 
 
-**Quiz dates cannot be changed and no make-up quizzes will be given.** If extentuating circumstances prohibit you from taking a quiz, please let Professor Tackett know before the start of the quiz. 
+**Quiz dates cannot be changed and no make-up quizzes will be given.** If extenuating circumstances prohibit you from taking a quiz, please let Professor Tackett know before the start of the quiz. 
 
 ### Final Project 
 
@@ -132,7 +130,7 @@ During the course of the semester, there will be periodic opportunities for you 
 
 ## Grading
 
-The final cousre grade will be calculated as follows:
+The final course grade will be calculated as follows:
 
 <center>
 
