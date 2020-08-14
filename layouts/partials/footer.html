@@ -5,28 +5,13 @@
               {{ with .Param "footer.copyright" }}{{ replace . "{year}" now.Year | markdownify}}{{ end }}<br>
               {{ end }}
               {{ if .Param "footer.support" }}
-              {{ with .Param "footer.support" }}{{ replace . "{year}" now.Year | markdownify}}{{ end }} <a class="rstudioLogo" href="https://www.rstudio.com/"></a>
-              {{ end }}
-            </div>
-            <div id="logos">
-              {{ with .Param "footer.github_url"}}
-              <a href="{{ . }}" class="footerLogo gitHub"></a>
-              {{ end }}
-              {{ with .Param "footer.twitter_url"}}
-              <a href="{{ .Param "footer.twitter_url" }}" class="footerLogo twitter"></a>
+              {{ with .Param "footer.support" }}{{ replace . "{year}" now.Year | markdownify}}{{ end }}
               {{ end }}
             </div>
             
             <span class="float-right" aria-hidden="true">
-              <a href="#" class="back-to-top">
-                <span class="button_icon">
-                  <i class="fas fa-chevron-up fa-2x"></i>
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
                 </span>
-              </a>
-            </span>
-            
-          </div>
-        </div>
 
       </div>  <!-- main -->
     </div>  <!-- app -->

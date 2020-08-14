@@ -10,7 +10,6 @@
             <td style="width:8%;text-align:center" class="mid-table-header">Slides</td>
             <td style="width:8%;text-align:center" class="mid-table-header">Reading</td>
             <td style="width:8%;text-align:center" class="mid-table-header">Lab</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">AE</td>
             <td style="width:8%;text-align:center" class="mid-table-header">HW</td>
             <td style="width:8%;text-align:center" class="mid-table-header">Quiz</td>
             <td style="width:8%;text-align:center" class="mid-table-header">Project</td>
@@ -50,16 +49,6 @@
             {{- end }}
 
             {{- if .hw }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/assignment/{{ .assignment }}/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-            {{- end }}
-            
-            {{- if .ae }}
             <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/assignment/{{ .assignment }}/">
                     <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
             {{- else }}
