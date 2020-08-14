@@ -18,15 +18,15 @@ lessons:
     date: "Mon, Aug 24 "
     title: "Simple linear regression (SLR)"
   - date: "Wed, Aug 26"
-    title: "Inference for SLR"
+    title: "SLR: Inference"
   - date: "Thu, Aug 27" 
     title: "Lab 02"
     
   - week: "Week 03"
     date: "Mon, Aug 31"
-    title: "Partitioning variability"
+    title: "SLR: Partitioning variability"
   - date: "Wed, Sep 02"
-    title: "SLR: prediction + conditions"
+    title: "SLR: Prediction + conditions"
   - date: "Thu, Sep 03"
     title: "Lab 03"
  
@@ -48,7 +48,7 @@ lessons:
 
   - week: "Week 06"
     date: "Mon, Sep 21"
-    title: "MLR: transformations"
+    title: "MLR: Transformations"
   - date: "Wed, Sep 23"
     title: "MLR: Comparing models"
   - date: "Thu, Sep 24"
@@ -56,9 +56,9 @@ lessons:
  
   - week: "Week 07"
     date: "Mon, Sep 28"
-    title: "MLR: Model diagnostics"
+    title: "MLR: Model selection"
   - date: "Wed, Sep 30"
-    title: "MLR: Model selection"  
+    title: "MLR: Model diagnostics"  
   - date: "Thu, Oct 01"
     title: "Lab 07"
     
@@ -67,23 +67,23 @@ lessons:
     
   - week: "Week 08"
     date: "Mon, Oct 05"
-    title: "Odds + odds ratio"
+    title: "TBD"
   - date: "Wed, Oct 07"
-    title: "Logistic regression"
+    title: "Odds + odds ratio"
   - date: "Thu, Oct 08"
     title: "Lab 08"
 
   - week: "Week 09"
     date: "Mon, Oct 12"
-    title: "Logistic: predictions + conditions"
+    title: "Logistic regression"
   - date: "Wed, Oct 14"
-    title: "Logistic: inference"
+    title: "Logistic: predictions + conditions"
   - date: "Thu, Oct 15"
     title: "Lab 09"
 
   - week: "Week 10"
     date: "Mon, Oct 19"
-    title: "Multinomial logistic regression"
+    title: "Logistic: inference"
   - date: "Wed, Oct 21"
     title: "Multinomial logistic regression"
   - date: "Thu, Oct 22"
@@ -91,7 +91,7 @@ lessons:
   
   - week: "Week 11"
     date: "Mon, Oct 26"
-    title: "Unit 02 review"
+    title: "Multinomial logistic regression"
   
   - date: "UNIT 03"
     title: "LOOKING AHEAD"
@@ -116,7 +116,7 @@ lessons:
   - date: "Wed, Nov 11"
     title: "Modeling in practice"
   - date: "Thu, Nov 12"
-    title: "Lab 08: Logistic regression"
+    title: "Lab 13"
 
   - week: "Week 14"
     date: "Mon, Nov 16"
