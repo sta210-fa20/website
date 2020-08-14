@@ -16,11 +16,16 @@ By the end of the semester, you will…
 - develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git
 - understand the process of data-based research by working on an independent research project
 
-## Course Community
+### Duke Community Standard 
 
-### Diversity & Inclusion 
+As a student in this course, you have agreed to uphold the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) as well as the practices specific to this course. 
 
-It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion] (https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_KN97j30ST4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### Inclusive community
+
+It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
 
 Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:
 
@@ -29,23 +34,30 @@ Furthermore, I would like to create a learning environment for my students that 
 
 ### Accessibility 
 
-Duke University is committed to providing equal access to students with documented disabilities. Students with disabilities may contact the [Student Disability Access Office (SDAO)](https://access.duke.edu) to ensure your access to this course and to the program. There you can engage in a confidential conversation about the process for requesting reasonable accommodations both in the classroom and in clinical settings. Students are encouraged to register with the SDAO as soon as they begin the program. Please note that accommodations are not provided retroactively.
+If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make accommodations. 
 
-More information can be found online at [access.duke.edu](https://access.duke.edu) or by contacting SDAO at 919-668-1267, <a href="mailto:sdao@duke.edu" title="email">SDAO@duke.edu</a>.
+In addition to accessibility issues experienced during the typical academic year, I recognize that remote learning may present additional challenges. Students may be experiencing unreliable wi-fi, lack of access to quiet study spaces, varied time-zones, or additional responsibilities while studying at home. If you are experiencing these or other difficulties, please contact me to discuss possible accommodations. 
 
-### Academic Integrity & Duke Community Pact
+The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update accommodations](https://access.duke.edu/requests) under these circumstances. 
 
-By enrolling in this course, you have agreed to abide by and uphold the provisions of the  [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) as well as the policies specific to this course. Any violations will automatically result in a grade of 0 on the  assignment and will be reported to [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
+
+### Academic honesty
+
+**TL;DR: Don't cheat!** 
+
+Please abide by the following as you work on assignments in this course:
 
 - You may not discuss or otherwise work with others on the exams. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.
 - **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. 
 - On individual assignments, you may not directly share code or write up with other students. On team assignments, you may not directly share code or write up with another team. Unauthorized sharing of the code or write up will be considered a violation for all students involved.
 
+Any violations in academic honesty standards as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
+
 ### Communication 
 
-All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta210-fa20.netlify.app . 
+All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta20-fa20.netlify.app . 
 
-I will periodically send announcements via email, so please check your email regularly. You may also find a copy of announcements on Sakai.
+I will also email announcements through Sakai periodically to ensure everyone has the current information. Please check your email and/or the Announcements page regularly. 
 
 
 ### Getting Help
@@ -56,18 +68,37 @@ I will periodically send announcements via email, so please check your email reg
 
 Check out the [Help](/help/) tab for more information about getting help and resources.
 
-## Course components 
+## Activities & Assessment
 
 The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional projects.
 
-### A Week in STA 210
+### A Week in STA 210!
 
-- ADD PICTURE OR CHART THAT MAPS OUT A WEEK OF CLASS!
+<center> 
 
-### Lectures
+|                   |   <span></span>         Monday            |      <span></span>      Tuesday       |         <span></span>      Wednesday          |     <span></span>         Thursday          |        Friday        |
+|-------------------|:----------------------------:|:--------------------:|:----------------------------:|:--------------------------:|:--------------------:|
+| **Lectures**      | Live session 3:30p - 4:45p | Watch content videos | Live session 3:30p - 4:45p |                            | Watch content videos |
+| **App. Ex. (AE)** |                              |     Mon's AE due     |                              |        Wed's AE due        |                      |
+| **Labs**          |                              |                      |            Lab due           | Attend lab / start new lab |                      |
 
+</center> 
+
+Lectures will have two components: 
+
+- **Lecture content videos**: These are pre-recorded videos that contain the content. You can think of these as a "video textbook". You should watch the content videos before we meet for the live sessions. 
+
+- **Live lecture sessions**: These sessions will be on Zoom Mondays and Wednesdays 10:15a - 11:30a. During this time, we will answer questions from the live lecture videos and most of the time will be used to work on exercises where you apply the material from the content videos.
 
 ### Labs
+
+In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. Most lab assignments will be performed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's Git repository on the course's GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab, and you will also be asked to evaluate your team members' engagement periodically during the semester. Lab assignments will be completed using R Markdown, correspond to an appropriate GitHub repository, and submitted as a .pdf file to Gradescope. 
+
+**Sections 01L - 03L**: If you are in one of these sections, you are expected to attend lab during the scheduled time. You will spend most time working with your team to complete that week's assignment. There will be teaching assistants available if you have questions as you work. 
+
+**Section 04L:** Though you do not have a scheduled lab time, you will find a time with your team to work on the weekly lab assignment. The teaching team will provide tips and resources to help you establish a plan for collaboration. You will be able to ask questions during office hours and on Piazza.  
+
+*To accommodate unexpected events, the lowest lab grade will be dropped at the end of the semester for all students.*
 
 
 ### Homework
@@ -76,46 +107,28 @@ In homework, you will apply what you've learned during lecture and lab to comple
 
 Individual homework extensions will only be given for extenuating circumstances. Please contact Professor Tackett if you have an extenuating circumstance that prohibits you from completing the homework by the stated due date.
 
-To accommodate unexpected events, the lowest lab grade will be dropped at the end of the semester. 
+*To accommodate unexpected events, the lowest homework grade will be dropped at the end of the semester.*
 
-### Labs 
+### Quizzes 
 
-In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. You will work on lab assignments in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's repository on the course's GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab. You will also be asked to evaluate your team members' performance periodically during the semester. 
+There will be four quizzes during the semester. The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Quizzes will be timed and must be completed during the time period specified. 
 
-If you have a scheculed lab time (sections 01 - 03), you are expected to attend lab during your scheduled time. This is a time for you to work with your teammates under the guidance of a teaching assistant who is there to help you as you work on the assignment. 
-
-
-If you do not have a scheduled lab time (section 04), you will still be required to complete the lab with your teammates by the stated due date. It will be up to the team members to identify a meeting time (if feasible) and communication plan, so labs can be completed collaboratively. The teaching team will provide tips and resources to help you establish an asynchronous workflow. 
-
-To accommodate unexpected events, the lowest lab grade will be dropped at the end of the semester. 
-
-### Quizzes - UPDATE
-
-The exams are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Both exams will be given during a lecture class period, and you will be permitted to bring one page of hand-written notes to each exam. The exam dates are as follows: 
-
-- Exam 01: Wednesday, February 26
-- Exam 02: Wednesday, April 15
-
-**Exam dates cannot be changed and no make-up exams will be given.** If you must miss an exam, your absence must be officially excused before the exam due date. If your absence is excused, the missing exam grade will be imputed at the end of the semester based on your performance on other relevant individual coursework.
+**Quiz dates cannot be changed and no make-up quizzes will be given.** If extentuating circumstances prohibit you from taking a quiz, please let Professor Tackett know before the start of the quiz. 
 
 ### Final Project 
 
 The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided a few weeks into the semester. 
 
-### Participation - UPDATE
+The participation of the course grade will be based primarily on individual Application Exercises (AEs), which give you an opportunity to practice using the statistical concepts and/or code discussed in lecture on short data analyses. AEs will be linked in lecture slides and time will be set aside during the optional live sessions to work on them. These AEs are due by the end of the next day; for instance, an AE associated with a lecture on Monday will be due Tuesday at 11:59p. AEs will be graded based on a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 90% of AEs will result in full points for AEs; anything lower than that will be assigned points accordingly. 
 
-This part of the final grade will consist of three components. 
+In addition to AEs will be periodic activities help build a learning community. These will be short, fun activities that will help everyone in the class connect throughout the semester. 
 
-- Team Feedback Surveys. You will be assigned to diverse teams of 3-4 students based on the results of a Get to Know You survey at the beginning of the semester. These teams will stay consistent throughout the semester (barring extraordinary circumstances). You will primarily work in these teams on lab assignments, the final project, and some in-class activities.
+The last component of participation will be based on periodic team feedback about each team member's overall contribution to labs and the project. 
 
-- Daily Engagement Surveys. After each class you will receive a quick survey of consisting of three questions about engagement in the day's lecture. You are expected to fill out the survey even if you did not attend lecture that day. You are required to complete at least 80% of the daily engagement surveys along with the pre-course and post-course surveys to receive full credit for this component of the grade. 
+### Statistics Experiences
 
-- In-Class Questions. We will use active learning in class, which will include answering questions through a web browser. You are required to complete at least 75% of these in-class questions to receive full credit for this component of the grade. You will not be graded based on accuracy; however, you should make a earnest attempt at answering the questions, since they will be used in part to give real-time feedback about the class's understanding of the lecture material. You will be identified using your Net Id. It is your responsibility to ensure your Net Id is entered correctly on each survey to receive credit. In-class questions cannot be made up; there is built-in flexibility so you can earn full credit even if you miss multiple lectures.
 
-### Statistics Experiences 
-
-[ADD DESCRIPTION!]
-
+During the course of the semester, there will be periodic opportunities for you to experience statistics and data science outside of the classroom. The goal of these experiences are for you to think about how the material you're learning in the course can connect with your experiences and society at large. 
 
 ## Grading
 
@@ -137,6 +150,8 @@ Stats Experience | 5%
 The final letter grade will be determined based on the following thresholds:
 
 <center>
+
+<br>
 
  <span></span> Letter Grade   | <span></span> Final Course Grade
 -----------|---------------------------------
@@ -190,5 +205,3 @@ There are times may need help with the class that is beyond what can be provided
 - **Oct 30**: Last day to withdraw with W
 - **Nov 16**: Classes end
 - **Nov 21**: Final exam period, 9a - 12p
-
-
