@@ -58,7 +58,7 @@ lessons:
     date: "Mon, Sep 28"
     title: "MLR: Model diagnostics"
   - date: "Wed, Sep 30"
-    title: "TBD"
+    title: "MLR: Model selection"  
   - date: "Thu, Oct 01"
     title: "Lab 07"
     
@@ -92,10 +92,15 @@ lessons:
   - week: "Week 11"
     date: "Mon, Oct 26"
     title: "Unit 02 review"
+  
+  - date: "UNIT 03"
+    title: "LOOKING AHEAD"
+  
   - date: "Wed, Oct 28"
-    title: "Model selection"
+    title: "Log-linear models"
   - date: "Thu, Oct 29"
     title: "Lab 11"
+
    
   - week: "Week 12"
     date: "Mon, Nov 02"
