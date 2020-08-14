@@ -19,6 +19,7 @@ lessons:
     title: "Simple linear regression (SLR)"
   - date: "Wed, Aug 26"
     title: "SLR: Inference"
+    hw: "hw-01.html"
   - date: "Thu, Aug 27" 
     title: "Lab 02"
     
@@ -27,6 +28,7 @@ lessons:
     title: "SLR: Partitioning variability"
   - date: "Wed, Sep 02"
     title: "SLR: Prediction + conditions"
+    hw: "hw-02.html"
   - date: "Thu, Sep 03"
     title: "Lab 03"
  
@@ -43,6 +45,7 @@ lessons:
     title: "MLR: inference + conditions"
   - date: "Wed, Sep 16"
     title: "MLR: special predictors"
+    hw: "hw-03.html"
   - date: "Thu, Sep 18"
     title: "Lab 05"
 
@@ -51,6 +54,7 @@ lessons:
     title: "MLR: Transformations"
   - date: "Wed, Sep 23"
     title: "MLR: Comparing models"
+    hw: "hw-04.html"
   - date: "Thu, Sep 24"
     title: "Lab 06"
  
@@ -70,6 +74,7 @@ lessons:
     title: "TBD"
   - date: "Wed, Oct 07"
     title: "Odds + odds ratio"
+    hw: "hw-05.html"
   - date: "Thu, Oct 08"
     title: "Lab 08"
 
@@ -78,6 +83,7 @@ lessons:
     title: "Logistic regression"
   - date: "Wed, Oct 14"
     title: "Logistic: predictions + conditions"
+    hw: "hw-06.html"
   - date: "Thu, Oct 15"
     title: "Lab 09"
 

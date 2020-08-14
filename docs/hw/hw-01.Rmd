@@ -1,0 +1,19 @@
+---
+title: "HW 01"
+subtitle: ""
+author: ""
+date: ""
+output: 
+  html_document:
+    css: "./sta210-hw.css"
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE,
+                      message=FALSE)
+```
+
+Instructions will be posted once the homework is assigned.
