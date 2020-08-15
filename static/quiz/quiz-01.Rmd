@@ -1,8 +1,5 @@
 ---
-title: "HW 01"
-subtitle: ""
-author: ""
-date: ""
+title: "Quiz 01"
 output: 
   html_document:
     css: "sta210-hw.css"
@@ -16,4 +13,4 @@ knitr::opts_chunk$set(echo = TRUE,
                       message=FALSE)
 ```
 
-Instructions will be posted once the homework is assigned.
+Instructions will be posted once the quiz is assigned.
