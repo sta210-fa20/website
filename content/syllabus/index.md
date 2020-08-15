@@ -4,7 +4,7 @@ title: Syllabus
 
 **[Click here](https://sta210-fa20.netlify.app/syllabus.pdf) to download a PDF copy of the syllabus.**
 
-# Course Learning Objectives
+## Course Learning Objectives
 
 By the end of the semester, you will…
 
