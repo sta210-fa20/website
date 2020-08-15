@@ -4,7 +4,7 @@ title: Syllabus
 
 **[Click here](https://sta210-fa20.netlify.app/syllabus.pdf) to download a PDF copy of the syllabus.**
 
-## Course Learning Objectives
+## Course learning objectives
 
 By the end of the semester, you will…
 
@@ -13,6 +13,8 @@ By the end of the semester, you will…
 - develop proficiency in addressing complex research questions using statistical evidence
 - develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git
 - understand the process of data-based research by working on an independent research project
+
+## Course community 
 
 ### Duke Community Standard 
 

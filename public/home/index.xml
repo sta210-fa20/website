@@ -155,8 +155,8 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-05/</guid>
-      <description>week the content here.</description>
-      <content>&lt;p&gt;week the content here.&lt;/p&gt;
+      <description>Check back for details!</description>
+      <content>&lt;p&gt;Check back for details!&lt;/p&gt;
 </content>
     </item>
     
@@ -416,10 +416,10 @@ Go to &lt;a href=&#34;http://studentaffairs.duke.edu/dukereach&#34;&gt;studentaf
       
       <guid>/syllabus/</guid>
       <description>Click here to download a PDF copy of the syllabus.
-Course Learning Objectives By the end of the semester, you will…
- know methods for analyzing multivariate datasets, with an emphasis on interpretation know how to check whether proposed statistical models are appropriate for given data develop proficiency in addressing complex research questions using statistical evidence develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git understand the process of data-based research by working on an independent research project  Duke Community Standard As a student in this course, you have agreed to uphold the Duke Community Standard as well as the practices specific to this course.</description>
+Course learning objectives By the end of the semester, you will…
+ know methods for analyzing multivariate datasets, with an emphasis on interpretation know how to check whether proposed statistical models are appropriate for given data develop proficiency in addressing complex research questions using statistical evidence develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git understand the process of data-based research by working on an independent research project  Course community Duke Community Standard As a student in this course, you have agreed to uphold the Duke Community Standard as well as the practices specific to this course.</description>
       <content>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/syllabus.pdf&#34;&gt;Click here&lt;/a&gt; to download a PDF copy of the syllabus.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;course-learning-objectives&#34;&gt;Course Learning Objectives&lt;/h2&gt;
+&lt;h2 id=&#34;course-learning-objectives&#34;&gt;Course learning objectives&lt;/h2&gt;
 &lt;p&gt;By the end of the semester, you will…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;know methods for analyzing multivariate datasets, with an emphasis on interpretation&lt;/li&gt;
@@ -428,6 +428,7 @@ Course Learning Objectives By the end of the semester, you will…
 &lt;li&gt;develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git&lt;/li&gt;
 &lt;li&gt;understand the process of data-based research by working on an independent research project&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;course-community&#34;&gt;Course community&lt;/h2&gt;
 &lt;h3 id=&#34;duke-community-standard&#34;&gt;Duke Community Standard&lt;/h3&gt;
 &lt;p&gt;As a student in this course, you have agreed to uphold the &lt;a href=&#34;https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard&#34;&gt;Duke Community Standard&lt;/a&gt; as well as the practices specific to this course.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/_KN97j30ST4&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
