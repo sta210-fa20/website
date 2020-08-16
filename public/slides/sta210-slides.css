@@ -4,36 +4,37 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 html{
-  font-size: 16pt; 
+  font-size: 20pt; 
 }
 
 p {
-  font-size: 16pt;
+  font-size: 20pt;
 }
 
 body { 
   font-family: 'Open Sans'; sans-serif;
   font-weight: 400;
   color: #333333;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  color: #00897B;
+  color: #008eaa;
   margin: 0.25em 0 0.5em 0;
 }
 h1, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  color: #00897B;
+  color: #008eaa;
 }
 
 a, a > code {
   font-family: 'Open Sans', sans-serif;
-  color: #993399;
+  color: #008eaa;
   text-decoration: underline;
-  font-size: 16pt;
+  font-weight: bold;
+  font-size: 20pt;
 }
 
 .footnote {
@@ -48,7 +49,7 @@ a, a > code {
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
 .inverse {
-  background-color: #00897B;
+  background-color: #008eaa;
   color: #ffffff;
   /* text-shadow: 0 0 20px #333; */
 }
@@ -94,7 +95,7 @@ ul {
 }
 li{
   margin: 10px 0;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 .large { font-size: 130% }
 .midi { font-size: 90% }
@@ -156,21 +157,21 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 }
 
 .vocab {
-  color: #993399;
+  color: #87037B;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 
 .vocab2 {
-  color: #00897B;
+  color: #008eaa;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 
 .vocab3 {
   color: #022CFA;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 
 .question {
@@ -207,5 +208,18 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 
 .remark-slide-number {
   font-size: 12pt;
+}
+
+
+.remark-slide-content:after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 1100px;
+    height: 60px;
+    width: 81px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("img/sta210_sticker.png");
 }
 

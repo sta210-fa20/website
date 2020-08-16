@@ -14,17 +14,18 @@ font-size: 18px;
 
 |           | Slides                   | Videos |
 |-----------|--------------------------|--------|
-| Monday    | [Welcome to STA 199!](https://sta199-fa20-002.netlify.app/slides/01-intro.html#1) | [Welcome to STA 199!](https://warpwire.duke.edu/w/qx4EAA/)  |
-|  |  | [Tour of website + Sakai](https://warpwire.duke.edu/w/PR4EAA/) |
-| Wednesday | [Meet the Toolkit](https://sta199-fa20-002.netlify.app/slides/02-meet-toolkit.html)       |   R + RStudio Demo     |
+| Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | [Welcome to STA 210!]()  |
+|  |  | [Tour of website + Sakai]() |
+| Wednesday | [Data anlaysis + modeling]()       | Data analysis     |
+|  |       | RMarkdown + Git     |
 
 
 ## Readings
 
 |            |   |
 |------------|---|
+| [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf)  | **Required**   |
 | [How to read an R help page](https://socviz.co/appendix.html#a-little-more-about-r)  | **Required**   |
-| [The murky tale of Flint's deceptive water data](https://sta199-fa20-002.netlify.app/readings/flint_water_story.pdf) | **Required**  |
 |  [ROpenSci's Reproducibility Guide](https://ropensci.github.io/reproducibility-guide/sections/introduction/)          | Optional  |
 |  [1500 scientists lift the lid on reproducibility](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)          | Optional  |
 
@@ -33,10 +34,10 @@ font-size: 18px;
 
 |                        |   |
 |------------------------|---|
-| [Submit GitHub username](https://forms.gle/evRuoBinXY9mJ6ge8) | **due Wed, Aug 19 at 11:59p** |
+| [Submit GitHub username](https://forms.gle/NQdtNt82r8p2zFwC9) | **due Wed, Aug 19 at 11:59p** |
 | Complete Getting to know you survey |   |
 | Lab 01 (assigned Thursday)              |  **due Wed, Aug 26 at 11:59p** |
-| Read [syllabus](https://sta199-fa20-002.netlify.app/syllabus/)              |  |
+| Read [syllabus](https://sta210-fa20.netlify.app/syllabus/)              |  |
 
 ## Other resources
 
