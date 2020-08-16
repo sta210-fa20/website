@@ -14,9 +14,9 @@ font-size: 18px;
 
 |           | Slides                   | Videos |
 |-----------|--------------------------|--------|
-| Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | [Welcome to STA 210!]()  |
-|  |  | [Tour of website + Sakai]() |
-| Wednesday | [Data anlaysis + modeling]()       | Data analysis     |
+| Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | Welcome to STA 210! |
+|  |  | [Tour of website + Sakai](https://warpwire.duke.edu/w/8R4EAA/) |
+| Wednesday | Data anlaysis + modeling]     | Data analysis     |
 |  |       | RMarkdown + Git     |
 
 
