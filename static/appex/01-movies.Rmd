@@ -56,8 +56,6 @@ movies %>%
     ggtitle("Gross Revenue Over Time")
 ```
 
-1. Suppose we fit a regression equation for each genre that uses `year` to predict `gross revenue`. Which genre do you expect to have the largest slope? (*Submit your response in the online form.*)
-
 ### Part 2
 
 Next, let's see the relationship between a movie's budget and its gross revenue.
@@ -73,11 +71,16 @@ movies %>%
   facet_wrap(~ genre)
 ```
 
-1. Suppose we fit a regression equation for each genre that uses `budget` to predict gross revenue (`gross`). What are the signs of the correlation between `budget` and `gross` and the slope in each regression equation?
+## Discussion 
 
-2. Which genre has the smallest residuals, on average? Note: *residual = observed revenue - predicted revenue*. 
 
-3. In the remaining time, discuss the following: Notice in the graph above that `budget` and `gross` are log-transformed. Why are the log-transformed values of the variables displayed rather than the original values (in U.S. dollars)? 
+1. Consider the plot from Part 1. Suppose we fit a regression equation for each genre that uses `year` to predict `gross revenue`. Which genre do you expect to have the largest slope? (*Submit your response in the online form.*)
+
+2. Consider the plot from Part 2. Suppose we fit a regression equation for each genre that uses `budget` to predict gross revenue (`gross`). What are the signs of the correlation between `budget` and `gross` and the slope in each regression equation?
+
+3. Consider the plot from Part 2. Which genre has the smallest residuals, on average? Note: *residual = observed revenue - predicted revenue*. 
+
+4. Consider the plot from Part 2. In the remaining time, discuss the following: Notice in the graph above that `budget` and `gross` are log-transformed. Why are the log-transformed values of the variables displayed rather than the original values (in U.S. dollars)? 
 
 ## References
 
