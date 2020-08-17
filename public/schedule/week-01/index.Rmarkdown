@@ -12,12 +12,12 @@ font-size: 18px;
 
 ## Lectures
 
-|           | Slides                   | Videos |
-|-----------|--------------------------|--------|
-| Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | Welcome to STA 210! |
-|  |  | [Tour of website + Sakai](https://warpwire.duke.edu/w/8R4EAA/) |
-| Wednesday | Data anlaysis + modeling]     | Data analysis     |
-|  |       | RMarkdown + Git     |
+|           | Slides                   | Videos | Application Exercises (AE) |
+|-----------|--------------------------|--------|--------|
+| Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | [Welcome to STA 210!](https://warpwire.duke.edu/w/uyAEAA/) | [Live lecture slides](https://sta210-fa20.netlify.app/appex/01-intro.html)|
+|  |  | [Tour of website + Sakai](https://warpwire.duke.edu/w/8R4EAA/) | [Movie Revenues](https://sta210-fa20.netlify.app/appex/01-movies.html) |
+| Wednesday | Data analysis + modeling     | Data analysis     | |
+|  |       | RMarkdown + Git     | |
 
 
 ## Readings
@@ -35,7 +35,7 @@ font-size: 18px;
 |                        |   |
 |------------------------|---|
 | [Submit GitHub username](https://forms.gle/NQdtNt82r8p2zFwC9) | **due Wed, Aug 19 at 11:59p** |
-| Complete Getting to know you survey |   |
+| Complete [Get to know you survey](https://duke.qualtrics.com/jfe/form/SV_40BHXPlGnAiT01f) | **due Wed, Aug 19 at 11:59p** |
 | Lab 01 (assigned Thursday)              |  **due Wed, Aug 26 at 11:59p** |
 | Read [syllabus](https://sta210-fa20.netlify.app/syllabus/)              |  |
 

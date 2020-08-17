@@ -5,7 +5,6 @@ output:
   xaringan::moon_reader:
     mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
     css: "sta210-slides.css"
-    logo: img/sta210_sticker.png
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -50,10 +49,6 @@ library(tidyverse)
 library(rvest)
 ```
 
-class: middle, center 
-
----
-
 class: center, middle
 
 # Welcome!
@@ -72,13 +67,24 @@ class: center, middle
 
 ### You will learn...
 
+--
+
 - How to apply methods for analyzing multivariate datasets, with an emphasis on interpretation
 
-- How to check whether a proposed statistical model is appropriate for the given data 
+--
+
+- How to check whether a proposed statistical model is 
+appropriate for the given data 
+
+--
 
 - How to address complex research questions using regression analysis
 
+--
+
 - How to use R and Git to do statistical analysis in a reproducible way 
+
+--
 
 - The process for conducting data-driven research by applying the methods from this course to a long-term project
 
