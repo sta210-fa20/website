@@ -15,7 +15,7 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-01/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Welcome to STA 210! Welcome to STA 210! Live lecture slides     Tour of website + Sakai Movie Revenues   Wednesday Data analysis + modeling Data analysis + modeling     Meet the Toolkit Meet the Toolkit     Readings          Elements and Principles for Characterizing Variation between Data Analyses Required   How to read an R help page Required   ROpenSci&amp;rsquo;s Reproducibility Guide Optional   1500 scientists lift the lid on reproducibility Optional    Assignments          Submit GitHub username due Wed, Aug 19 at 11:59p   Complete Get to know you survey due Wed, Aug 19 at 11:59p   Lab 01 (assigned Thursday) due Wed, Aug 26 at 11:59p   Read syllabus     Other resources Complete the following Duke StatSci Learning R tutorials to prepare for Thursday&amp;rsquo;s lab.</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Welcome to STA 210! Welcome to STA 210! Live lecture slides     Tour of website + Sakai Movie Revenues   Wednesday Motivating regression Motivating regression     Meet the Toolkit Meet the Toolkit     Readings          Elements and Principles for Characterizing Variation between Data Analyses Required   How to read an R help page Required   ROpenSci&amp;rsquo;s Reproducibility Guide Optional   1500 scientists lift the lid on reproducibility Optional    Assignments          Submit GitHub username due Wed, Aug 19 at 11:59p   Complete Get to know you survey due Wed, Aug 19 at 11:59p   Lab 01 (assigned Thursday) due Wed, Aug 26 at 11:59p   Read syllabus     Other resources Complete the following Duke StatSci Learning R tutorials to prepare for Thursday&amp;rsquo;s lab.</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -47,8 +47,8 @@ font-size: 18px;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
-&lt;td&gt;Data analysis + modeling&lt;/td&gt;
-&lt;td&gt;Data analysis + modeling&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/02-motivate-regression.html&#34;&gt;Motivating regression&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Motivating regression&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

@@ -9,7 +9,8 @@ lessons:
   - date: "Wed, Aug 19" 
     title: "Meet the toolkit"
     slides: "02-meet-toolkit.html"
-  - title: "Data analysis + modeling"
+  - title: "Motivating regression"
+    slides: "02-motivate-regression.html"
   - date: "Thu, Aug 20"
     title: "Lab 01"
 

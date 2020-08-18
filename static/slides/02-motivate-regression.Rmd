@@ -1,5 +1,5 @@
 ---
-title: "Data analysis + modeling"
+title: "Movtivating regression"
 author: "Prof. Maria Tackett"
 output:
   xaringan::moon_reader:
