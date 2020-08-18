@@ -42,10 +42,10 @@ glimpse(advertising)
 ```
 ## Rows: 200
 ## Columns: 4
-## $ tv        &lt;dbl&gt; 230.1, 44.5, 17.2, …
-## $ radio     &lt;dbl&gt; 37.8, 39.3, 45.9, 4…
-## $ newspaper &lt;dbl&gt; 69.2, 45.1, 69.3, 5…
-## $ sales     &lt;dbl&gt; 22.1, 10.4, 9.3, 18…
+## $ tv        &lt;dbl&gt; 230.1, 44.5, 17.2, 151.5, 180.8, 8.7, 57.5, 120.2, 8.6, 199…
+## $ radio     &lt;dbl&gt; 37.8, 39.3, 45.9, 41.3, 10.8, 48.9, 32.8, 19.6, 2.1, 2.6, 5…
+## $ newspaper &lt;dbl&gt; 69.2, 45.1, 69.3, 58.5, 58.4, 75.0, 23.5, 11.6, 1.0, 21.2, …
+## $ sales     &lt;dbl&gt; 22.1, 10.4, 9.3, 18.5, 12.9, 7.2, 11.8, 13.2, 4.8, 10.6, 8.…
 ```
 
 --
@@ -114,29 +114,13 @@ Each line represents model we could use to predict `sales` using `tv`, `radio`, 
     
 ---
 
-## General form of model
-
-.alert[
-`$$Y = f(\mathbf{X}) + \epsilon$$`
-]
-
-- `\(Y\)`: quantitative response variable
-
-- `\(\mathbf{X} = (X_1, X_2, \ldots, X_p)\)`: predictor variables
-
-- `\(f\)`: fixed but unknown function
-
-- `\(\epsilon\)`: random error term with mean 0 that is independent of `\(\mathbf{X}\)` 
-   
----
-
 ## How to define `\(f\)`
 
 In general, 
 
 1. Choose the functional form of `\(f\)`, i.e. &lt;font class="vocab"&gt;choose the appropriate model given the data&lt;/font&gt;
     - Ex: `\(f\)` is a linear model
-    `$$f(\mathbf{X}) = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p + \epsilon$$`
+    `$$f(\mathbf{X}) = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p$$`
 
 --
 
@@ -161,7 +145,7 @@ What do we expect `sales` to be in a market where there is $100,000 spent on TV 
 
 .vocab[Inference:]
 
-What is the relationship between spending on TV ads an sales after accounting for spending on radio and newspaper ads?
+What is the relationship between spending on TV ads and sales after accounting for spending on radio and newspaper ads?
 
 ---
 
@@ -177,7 +161,7 @@ What is the relationship between spending on TV ads an sales after accounting fo
 
 .vocab[Unit 3: Looking Ahead]
   - Weighted least squares
-  - Dealing with messy data
+  - Dealing with missing data
   - Modeling in practice
 
 ]
