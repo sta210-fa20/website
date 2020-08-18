@@ -182,29 +182,13 @@ $$\text{sales} = f(\text{tv}, \text{radio}, \text{newspaper}) + \epsilon$$
     
 ---
 
-## General form of model
-
-.alert[
-$$Y = f(\mathbf{X}) + \epsilon$$
-]
-
-- $Y$: quantitative response variable
-
-- $\mathbf{X} = (X_1, X_2, \ldots, X_p)$: predictor variables
-
-- $f$: fixed but unknown function
-
-- $\epsilon$: random error term with mean 0 that is independent of $\mathbf{X}$ 
-   
----
-
 ## How to define $f$
 
 In general, 
 
 1. Choose the functional form of $f$, i.e. <font class="vocab">choose the appropriate model given the data</font>
     - Ex: $f$ is a linear model
-    $$f(\mathbf{X}) = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p + \epsilon$$
+    $$f(\mathbf{X}) = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p$$
 
 --
 
@@ -229,7 +213,7 @@ What do we expect `sales` to be in a market where there is $100,000 spent on TV 
 
 .vocab[Inference:]
 
-What is the relationship between spending on TV ads an sales after accounting for spending on radio and newspaper ads?
+What is the relationship between spending on TV ads and sales after accounting for spending on radio and newspaper ads?
 
 ---
 
@@ -245,7 +229,7 @@ What is the relationship between spending on TV ads an sales after accounting fo
 
 .vocab[Unit 3: Looking Ahead]
   - Weighted least squares
-  - Dealing with messy data
+  - Dealing with missing data
   - Modeling in practice
 
 ]
