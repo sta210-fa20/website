@@ -6,8 +6,10 @@ lessons:
     date: "Mon, Aug 17"
     title: "Welcome to STA 210!"
     slides: "01-welcome.html"
-  - date: "Wed, Aug 19"
-    title: "Data analysis + modeling"
+  - date: "Wed, Aug 19" 
+    title: "Meet the toolkit"
+    slides: "02-meet-toolkit.html"
+  - title: "Data analysis + modeling"
   - date: "Thu, Aug 20"
     title: "Lab 01"
 
