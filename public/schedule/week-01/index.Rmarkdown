@@ -16,7 +16,7 @@ font-size: 18px;
 |-----------|--------------------------|--------|--------|
 | Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | [Welcome to STA 210!](https://warpwire.duke.edu/w/uyAEAA/) | [Live lecture slides](https://sta210-fa20.netlify.app/appex/01-intro.html)|
 |  |  | [Tour of website + Sakai](https://warpwire.duke.edu/w/8R4EAA/) | [Movie Revenues](https://sta210-fa20.netlify.app/appex/01-movies.html) |
-| Wednesday | [Motivating regression]     | Motivating regression     | |
+| Wednesday | Motivating regression    | Motivating regression     | |
 |  |     [Meet the Toolkit](https://sta210-fa20.netlify.app/slides/02-meet-toolkit.html)  | [Meet the Toolkit](https://warpwire.duke.edu/w/RSwEAA/)     | |
 
 
