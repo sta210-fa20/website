@@ -133,22 +133,28 @@ Each line represents model we could use to predict `sales` using `tv`, `radio`, 
 
 ---
 
-## Plot Data
+## Let's look at the data
 
-```{r show-plot-2,echo=F}
+```{r echo=F, fig.height = 2.5}
 p1 <- advertising %>% 
   ggplot(mapping=aes(x=tv,y=sales)) + 
   geom_point(alpha=0.5) + 
+  labs(x = "TV Ads (in $1000s)", 
+       y = "Sales (in $millions)") + 
   geom_smooth(method="lm", color="blue",se=FALSE) 
 
 p2 <- advertising %>% 
   ggplot(mapping=aes(x=radio,y=sales)) + 
   geom_point(alpha=0.5) + 
+  labs(x = "Radio Ads (in $1000s)", 
+       y = "Sales (in $millions)") + 
   geom_smooth(method="lm", color="red", se=FALSE) 
 
 p3 <- advertising %>% 
   ggplot(mapping=aes(x=newspaper,y=sales)) + 
   geom_point(alpha=0.5) + 
+  labs(x = "Newspaper (in $1000s)", 
+       y = "Sales (in $millions)") + 
   geom_smooth(method="lm", color="purple", se=FALSE) 
 
 p1 + p2 + p3

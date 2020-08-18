@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Motivating Regression Analysis</title>
+    <title>Data analysis + modeling</title>
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Maria Tackett" />
     <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
@@ -10,7 +10,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Motivating Regression Analysis
+# Data analysis + modeling
 ### Prof. Maria Tackett
 
 ---
@@ -42,10 +42,10 @@ glimpse(advertising)
 ```
 ## Rows: 200
 ## Columns: 4
-## $ tv        &lt;dbl&gt; 230.1, 44.5, 17.2, 151.5, 180.8,…
-## $ radio     &lt;dbl&gt; 37.8, 39.3, 45.9, 41.3, 10.8, 48…
-## $ newspaper &lt;dbl&gt; 69.2, 45.1, 69.3, 58.5, 58.4, 75…
-## $ sales     &lt;dbl&gt; 22.1, 10.4, 9.3, 18.5, 12.9, 7.2…
+## $ tv        &lt;dbl&gt; 230.1, 44.5, 17.2, 151.5, 180.8, 8.7, 57.5, 120.2, 8.6, 199…
+## $ radio     &lt;dbl&gt; 37.8, 39.3, 45.9, 41.3, 10.8, 48.9, 32.8, 19.6, 2.1, 2.6, 5…
+## $ newspaper &lt;dbl&gt; 69.2, 45.1, 69.3, 58.5, 58.4, 75.0, 23.5, 11.6, 1.0, 21.2, …
+## $ sales     &lt;dbl&gt; 22.1, 10.4, 9.3, 18.5, 12.9, 7.2, 11.8, 13.2, 4.8, 10.6, 8.…
 ```
 
 --
@@ -88,9 +88,9 @@ Each line represents model we could use to predict `sales` using `tv`, `radio`, 
 
 ---
 
-## Plot Data
+## Let's look at the data
 
-&lt;img src="02-motivate-regression_files/figure-html/show-plot-2-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="02-motivate-regression_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
 
 .alert[
 `$$\text{sales} = f(\text{tv}, \text{radio}, \text{newspaper}) + \epsilon$$`
