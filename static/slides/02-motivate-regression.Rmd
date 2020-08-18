@@ -237,24 +237,24 @@ What is the relationship between spending on TV ads an sales after accounting fo
 
 .pull-left[
 
-- **Unit 1: Quantitative Response Variables**
-    - Simple Linear Regression 
-    - Multiple Linear Regression
+.vocab[Unit 1: Quantitative Response Variables]
+  - Simple Linear Regression 
+  - Multiple Linear Regression
 
 <br> 
 
-- **Unit 3: Looking Ahead**
-    - Weighted least squares
-    - Dealing with messy data
-    - Modeling in practice
+.vocab[Unit 3: Looking Ahead]
+  - Weighted least squares
+  - Dealing with messy data
+  - Modeling in practice
 
 ]
 
 .pull-right[
 
-- **Unit 2: Categorical Response Variable**
-    - Logistic Regression 
-    - Multinomial Logistic Regression 
+- .vocab[Unit 2: Categorical Response Variable]
+  - Logistic Regression 
+  - Multinomial Logistic Regression 
 
 ]
 
