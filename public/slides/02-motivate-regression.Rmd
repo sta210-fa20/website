@@ -1,17 +1,17 @@
 ---
 title: "Motivating Regression Analysis"
-author: "Dr. Maria Tackett"
-date: "01.14.19"
+author: "Prof. Maria Tackett"
 output:
   xaringan::moon_reader:
     mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
     css: "sta210-slides.css"
-    logo: img/sta210-sticker-icon.png
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+      ratio: "16:9"
 ---
 
 ```{r setup, include=FALSE}
@@ -46,47 +46,21 @@ knitr::opts_chunk$set(
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
-library(rvest)
-```
-
-## Announcements 
-
-- Office hours start today. See course website for office hour times and locations.
-
-- DVS Intro to R Workshop - Jan 22 at 2p
-     - [https://duke.libcal.com/event/4799048](https://duke.libcal.com/event/4799048)
-
----
-
-## Agenda
-
-- Motivate regression analysis 
-
-- RStudio & R Markdown
-
----
-
-## Packages and Data
-
-```{r packages}
-library(tidyverse)
 library(readr) #read_csv() function
-library(cowplot) #plot_grid() function
+library(patchwork)
 ```
 
-```{r data}
+```{r data, echo  = F}
 advertising <- read_csv("data/advertising.csv")
 ```
 
----
-
-## Example: Sales vs. Advertising 
+## Sales vs. Advertising 
 
 - Suppose you are a data scientist on the marketing team and the company wants to improve the sales of their premiere product 
 
-- You want to understand the association between advertising budget and total sales 
+- You want to understand the relationship between .vocab[advertising budget] and .vocab[total sales]
 
-- If there is an association between advertising and sales, then you can provide advice to the company about how to adjust the advertising budget to improve sales
+- The goal is to advise the marketing team about how to set the advertising budget based on their target sales goals
 
 ---
 
@@ -98,11 +72,11 @@ glimpse(advertising)
 
 --
 
-- <font class="vocab">Observations:</font> 200 markets
+- .vocab[Observations]: 200 markets
 
 --
 
-- <font class="vocab">Variables:</font> 
+- .vocab[Variables]:
     - `tv`: Spending on TV ads (in $thousands)
     - `radio`: Spending on radio ads (in $thousands)
     - `newspaper`: Spending on newspaper ads (in $thousands)
@@ -112,60 +86,45 @@ glimpse(advertising)
 
 ## Terminology
 
-- `sales` is the <font class="vocab">response variable</font>
+- `sales` is the .vocab[response variable]
     - variable whose variation we want to understand / variable we wish to predict
     - also known as *outcome* or *dependent* variable
 
 --
 
-- `tv`, `radio`, `newspaper` are the <font class="vocab">predictor variables</font>
+<br> 
+
+- `tv`, `radio`, `newspaper` are the .vocab[predictor variables]
     - variables used to account for variation in the outcome
     - also known as *explanatory*, *independent*, or *input* variables
 
 ---
 
-## Advertising vs. Sales
+## Let's look at the data
 
-```{r plot-data, eval=F}
+```{r echo=F, fig.height = 2.5}
 p1 <- advertising %>% 
   ggplot(mapping=aes(x=tv,y=sales)) + 
   geom_point(alpha=0.5) + 
+  labs(x = "TV Ads (in $1000s)", 
+       y = "Sales (in $millions)") + 
   geom_smooth(method="lm", color="blue",se=FALSE) 
 
 p2 <- advertising %>% 
   ggplot(mapping=aes(x=radio,y=sales)) + 
   geom_point(alpha=0.5) + 
+  labs(x = "Radio Ads (in $1000s)", 
+       y = "Sales (in $millions)") + 
   geom_smooth(method="lm", color="red", se=FALSE) 
 
 p3 <- advertising %>% 
   ggplot(mapping=aes(x=newspaper,y=sales)) + 
   geom_point(alpha=0.5) + 
+  labs(x = "Newspaper (in $1000s)", 
+       y = "Sales (in $millions)") + 
   geom_smooth(method="lm", color="purple", se=FALSE) 
 
-plot_grid(p1,p2,p3,ncol=3)
-```
-
----
-
-## Plot Data
-
-```{r show-plot-1,echo=F}
-p1 <- advertising %>% 
-  ggplot(mapping=aes(x=tv,y=sales)) + 
-  geom_point(alpha=0.5) + 
-  geom_smooth(method="lm", color="blue",se=FALSE) 
-
-p2 <- advertising %>% 
-  ggplot(mapping=aes(x=radio,y=sales)) + 
-  geom_point(alpha=0.5) + 
-  geom_smooth(method="lm", color="red", se=FALSE) 
-
-p3 <- advertising %>% 
-  ggplot(mapping=aes(x=newspaper,y=sales)) + 
-  geom_point(alpha=0.5) + 
-  geom_smooth(method="lm", color="purple", se=FALSE) 
-
-plot_grid(p1,p2,p3,ncol=3)
+p1 + p2 + p3
 ```
 
 --
@@ -192,7 +151,7 @@ p3 <- advertising %>%
   geom_point(alpha=0.5) + 
   geom_smooth(method="lm", color="purple", se=FALSE) 
 
-plot_grid(p1,p2,p3,ncol=3)
+p1 + p2 + p3
 ```
 
 .alert[
@@ -385,216 +344,6 @@ $$\hat{\text{sales}} = \hat{f}(\text{tv},\text{radio}, \text{newspaper})$$
 
 ---
 
-class: center, middle
-
-## Reproducible data analysis
-
----
-
-## Reproducibility checklist
-
-.question[
-What does it mean for a data analysis to be "reproducible"?
-]
-
---
-
-**Near-term goals:**
-
-- Are the tables and figures reproducible from the code and data?
-- Does the code actually do what you think it does?
-- In addition to what was done, is it clear **why** it was done? 
-(e.g., how were parameter settings chosen?)
-
---
-
-**Long-term goals:**
-
-- Can the code be used for other data?
-- Can you extend the code to do other things?
----
-
-## Toolkit
-
-```{r fig.align="center",out.width="70%",echo=FALSE}
-knitr::include_graphics("img/01/toolkit.png")
-```
-
-
-- Scriptability $\rightarrow$ R
-- Literate programming (code, narrative, output in one place) $\rightarrow$ R Markdown
-- Version control $\rightarrow$ Git / GitHub
-
----
-
-class: center, middle
-
-# R and RStudio
-
----
-
-## What is R/RStudio?
-
-- R is a statistical programming language
-- RStudio is a convenient interface for R (an integrated development environment, IDE)
-- At its simplest:<sup>*</sup>
-    - R is like a car’s engine
-    - RStudio is like a car’s dashboard
-
-```{r fig.align="center",out.width="70%",echo=FALSE}
-knitr::include_graphics("img/01/engine-dashboard.png")
-```
-
-.footnote[
-*Source: [Modern Dive](https://moderndive.com/)
-]
-
----
-
-## R/RStudio Tour
-
-.center[
-[DEMO]
-]
-
-Concepts introduced:
-
-- Console
-- Using R as a calculator
-- Environment
-- Loading and viewing a data frame
-- Accessing a variable in a data frame
-- R functions
-
----
-
-### R essentials (a short list)
-
-- **Functions** are (most often) verbs, followed by what they will be applied to in parentheses:
-
-```{r eval=FALSE}
-do_this(to_this)
-do_that(to_this, to_that, with_those)
-```
-
---
-
-- **Columns** (variables) in data frames are accessed with `$`:
-
-```{r eval=FALSE}
-dataframe$var_name
-```
-
---
-
-- **Packages** are installed with the `install.packages` function and loaded with the `library` function, once per session:
-
-```{r eval=FALSE}
-install.packages("package_name")
-library(package_name)
-```
-
----
-
-## tidyverse
-
-.pull-left[
-![](img/01/tidyverse.png)
-]
-
-.pull-right[
-.center[
-[tidyverse.org](https://www.tidyverse.org/)
-]
-
-- The tidyverse is an opinionated collection of R packages designed for data science. 
-- All packages share an underlying philosophy and a common grammar. 
-]
-
----
-
-class: center, middle
-
-# R Markdown
-
----
-
-
-## R Markdown
-
-- Fully reproducible reports -- the analysis is run from the beginning each time you knit
-
-- Simple Markdown syntax for text
-
-- Code goes in chunks, defined by three backticks, narrative goes outside of chunks
-
----
-
-## R Markdown Tour
-
-.center[
-[DEMO]
-]
-
---
-
-Concepts introduced:
-
-- Copying a project in RStudio Cloud
-- Knitting documents
-- R Markdown and (some) R syntax
-
----
-
-## R Markdown tips
-
-**Resources**
-- [R Markdown cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
-- Markdown Quick Reference: 
-    - `Help -> Markdown Quick Reference`
-<br><br>
---
-
-
-**Remember**: The workspace of the R Markdown document is <u>separate</u> from the console
-
----
-
-## Workspace vs. console
-
-- Run the following in the console
-
-```{r eval = FALSE}
-x <- 2
-x * 3
-```
-
---
-
-- Then, add the following chunk in your R Markdown document and knit
-
-```{r eval = FALSE}
-x * 3
-```
-
---
-
-.question[
-What happens? Why the error?
-]
-
----
-
-## How will we use R Markdown?
-
-- Every assignment / lab / project / etc. is an R Markdown document
-
-- You'll always have a template R Markdown document to start with
-
-- The amount of scaffolding in the template will decrease over the semester
-
----
-
 ## Recap 
 
 Can you answer these questions? 
@@ -604,19 +353,5 @@ Can you answer these questions?
     - What are the two basic steps for estimating $f$? 
     - What are two possible reasons for estimating $f$?
 
-**Computing**    
-- What is a reproducible data analysis, and why is it important?
-- What is R vs. RStudio? 
 
----
-
-## Before next class 
-
-- Reading 01 posted online - due Wed 
-
-- Accept the invite to join `STA210-Sp19` organization on GitHub
-
-- If you have not already done so, 
-    - complete "Getting to know you" survey on Sakai 
-    - complete Pretest ([test info & access code](https://www2.stat.duke.edu/courses/Spring19/sta210.001/slides/lab-slides/00-lab-slides.html#8))
     

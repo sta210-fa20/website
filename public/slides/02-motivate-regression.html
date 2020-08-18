@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Motivating Regression Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Maria Tackett" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Motivating Regression Analysis
+### Prof. Maria Tackett
+
+---
+
+
+
+
+
+
+
+
+## Sales vs. Advertising 
+
+- Suppose you are a data scientist on the marketing team and the company wants to improve the sales of their premiere product 
+
+- You want to understand the relationship between .vocab[advertising budget] and .vocab[total sales]
+
+- The goal is to advise the marketing team about how to set the advertising budget based on their target sales goals
+
+---
+
+## Advertising vs. Sales
+
+
+```r
+glimpse(advertising)
+```
+
+```
+## Rows: 200
+## Columns: 4
+## $ tv        &lt;dbl&gt; 230.1, 44.5, 17.2, 151.5, 180.8,…
+## $ radio     &lt;dbl&gt; 37.8, 39.3, 45.9, 41.3, 10.8, 48…
+## $ newspaper &lt;dbl&gt; 69.2, 45.1, 69.3, 58.5, 58.4, 75…
+## $ sales     &lt;dbl&gt; 22.1, 10.4, 9.3, 18.5, 12.9, 7.2…
+```
+
+--
+
+- .vocab[Observations]: 200 markets
+
+--
+
+- .vocab[Variables]:
+    - `tv`: Spending on TV ads (in $thousands)
+    - `radio`: Spending on radio ads (in $thousands)
+    - `newspaper`: Spending on newspaper ads (in $thousands)
+    - `sales`: total sales (in $millions)
+   
+---
+
+## Terminology
+
+- `sales` is the .vocab[response variable]
+    - variable whose variation we want to understand / variable we wish to predict
+    - also known as *outcome* or *dependent* variable
+
+--
+
+&lt;br&gt; 
+
+- `tv`, `radio`, `newspaper` are the .vocab[predictor variables]
+    - variables used to account for variation in the outcome
+    - also known as *explanatory*, *independent*, or *input* variables
+
+---
+
+## Let's look at the data
+
+&lt;img src="02-motivate-regression_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+
+--
+
+Each line represents model we could use to predict `sales` using `tv`, `radio`, or `newspaper`
+
+---
+
+## Plot Data
+
+&lt;img src="02-motivate-regression_files/figure-html/show-plot-2-1.png" style="display: block; margin: auto;" /&gt;
+
+.alert[
+`$$\text{sales} = f(\text{tv}, \text{radio}, \text{newspaper}) + \epsilon$$`
+]
+
+---
+
+## Model 
+
+.alert[
+`$$\text{sales} = f(\text{tv}, \text{radio}, \text{newspaper}) + \epsilon$$`
+]
+
+- **Goal**: Estimate `\(f\)`
+
+--
+
+- How do we estimate `\(f\)`?
+
+--
+
+    - &lt;font class="vocab"&gt;Non-parametric methods:&lt;/font&gt; estimate `\(f\)` by getting as close to the data points as possible without making explicit assumptions about the functional form of `\(f\)`
+    
+--
+
+    - &lt;font class="vocab"&gt;Parametric methods:&lt;/font&gt; estimate `\(f\)` by making an assumption about the functional form of `\(f\)` then using the data to fit a model based on that form 
+    
+---
+
+class: middle, center
+
+.alert[
+In this class, we will focus on &lt;font class="vocab"&gt;parametric methods&lt;/font&gt;
+]
+
+&lt;small&gt;
+*Non-parametric methods covered in STA 325: Machine Learning &amp; Data Mining*
+&lt;/small&gt;
+
+---
+
+## General form of model
+
+.alert[
+`$$Y = f(\mathbf{X}) + \epsilon$$`
+]
+
+- `\(Y\)`: quantitative response variable
+
+- `\(\mathbf{X} = (X_1, X_2, \ldots, X_p)\)`: predictor variables
+
+- `\(f\)`: fixed but unknown function
+    - systematic information `\(\mathbf{X}\)` provides about `\(Y\)`
+
+- `\(\epsilon\)`: random error term with mean 0 that is independent of `\(\mathbf{X}\)` 
+   
+---
+
+## How to estimate `\(f\)`?
+
+In general, we will use the following steps to estimate `\(f\)`
+
+1. Choose the functional form of `\(f\)`, i.e. &lt;font class="vocab"&gt;choose the appropriate model given the data&lt;/font&gt;
+    - Ex: `\(f\)` is a linear model
+    `$$f(\mathbf{X}) = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p + \epsilon$$`
+
+--
+
+2. Use the data to fit (or train) the model, i.e. &lt;font class="vocab"&gt;estimate the model parameters&lt;/font&gt;
+    - Ex: Use a method to estimate the model parameters `\(\beta_0, \beta_1, \ldots, \beta_p\)`
+
+---
+
+## Why estimate `\(f\)`?
+
+Suppose we have the model
+
+`$$\text{sales} = \beta_0 + \beta_1 \times \text{tv} + \beta_2 \times \text{radio} + \beta_3 \times \text{newspaper} + \epsilon$$`
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+--
+
+.question[
+What are 1-2 questions you could answer using this model?
+]
+
+---
+
+## Why estimate `\(f\)`?
+
+There are two types of questions we may be interesting in answering with our model: 
+
+- &lt;font class="vocab"&gt;Prediction: &lt;/font&gt; What is the expected `\(Y\)`  given particular values of  `\(X_1, X_2, \ldots, X_p\)`? 
+--
+
+    - Ex: What is the expected `sales` in a market if the company spends $100,000 TV ads, $30,000 on radio ads, and $10,000 on newspaper ads?
+
+--
+
+- &lt;font class="vocab"&gt;Inference: &lt;/font&gt; What is the relationship between `\(\mathbf{X}\)` and `\(Y\)`. How does `\(Y\)` change as a function of `\(\mathbf{X}\)`?
+--
+
+    - Ex: Which type of media advertising generates the largest boost in sales?
+
+
+---
+
+## Prediction 
+
+`$$\hat{\text{sales}} = \hat{f}(\text{tv},\text{radio}, \text{newspaper})$$`
+
+- **Question**: How accurate is `\(\hat{\text{sales}}\)` as a prediction of `\(\text{sales}\)`?
+
+- This depends on two quantities: reducible and irreducible error
+
+--
+    - &lt;font class="vocab"&gt;Reducible error:&lt;/font&gt; error that can potentially be reduced by using a model , `\(\hat{f}\)`, that is a more appropriate fit for the data
+
+--
+    - &lt;font class="vocab"&gt;Irreducible error: &lt;/font&gt; Error that cannot be reduced even if the model, `\(\hat{f}\)`, is a perfect fit. In other words, this is variability associated with `\(\epsilon\)`
+
+---
+
+class: middle, center
+
+.question[
+In the case of the `advertising` data, what types of factors are included in the irreducible error?
+]
+
+---
+
+## Inference
+
+`$$\hat{\text{sales}} = \hat{f}(\text{tv},\text{radio}, \text{newspaper})$$`
+
+- **Question**: How is `sales` affected as `tv`, `radio`, and `newspaper` change?
+--
+
+- We can break this into several questions: 
+
+--
+    - What predictors are important for understanding sales? 
+--
+    - What is the relationship between sales and each predictor? 
+--
+    - Does the linear model adequately describe the relationship between `sales` and `tv`, `newspaper`, and `radio`, or is a more complex model required?
+
+---
+
+## Course Outline
+
+- **Unit 1: Quantitative Response Variables**
+    - Simple Linear Regression 
+    - Multiple Linear Regression
+&lt;br&gt;&lt;br&gt;
+--
+
+- **Unit 2: Categorical Response Variable**
+    - Logistic Regression 
+    - Multinomial Logistic Regression 
+
+---
+
+## Course Outline
+
+- **Unit 3: Modeling in Practice**
+    - Model Validation
+    - Dealing with messy data
+&lt;br&gt;&lt;br&gt;
+--
+
+- **Unit 4: Looking Ahead**
+    - Time Series 
+    - Other models? 
+ 
+---
+
+## Recap 
+
+- We want to find the function that best fits the relationship between a response variable `\(Y\)` and some predictor variables `\(X_1, \ldots, X_p\)`
+
+- We will use **parametric** methods to find the function 
+    - Choose the appropriate model
+    - Estimate values of the model parameters
+
+- There are two main purposes for the model: 
+    - Prediction 
+    - Inference
+
+---
+
+## Recap 
+
+Can you answer these questions? 
+
+**Motivating Regression Analysis**
+- Given `\(Y = f(\mathbf{X}) + \epsilon\)`
+    - What are the two basic steps for estimating `\(f\)`? 
+    - What are two possible reasons for estimating `\(f\)`?
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
