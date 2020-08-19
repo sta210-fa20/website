@@ -72,7 +72,7 @@ library(usethis)
 use_git_config(user.name = "GitHub username", user.email="your email")
 ```
 
-- Open the RMarkdown file **ae-02-ads-.Rmd**. We will use that for the next part of class. 
+- Open the RMarkdown file **ae-02-ads.Rmd**. We will use that for the next part of class. 
 
 - Put your name for the author, then knit the document. 
 
