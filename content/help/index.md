@@ -34,6 +34,8 @@ Please do not email about course content questions but rather post those on Piaz
 
 - [Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/) by Chester Ismay and Albert Kim
 
+- [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf) by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani
+
 ## Resources for mental health and wellness
 
 - **DukeReach**: Provides comprehensive outreach services to identify and support students in managing all aspects of well being. If you have concerns about a student's behavior or health visit the website for resources and assistance. 
