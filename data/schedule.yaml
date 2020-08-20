@@ -13,7 +13,7 @@ lessons:
     slides: "02-motivate-regression.html"
   - date: "Thu, Aug 20"
     title: "Lab 01: Practice with R"
-    lab: "01-practice-r.html"
+    lab: "lab-01-practice-r.html"
 
   
   - date: "UNIT 01"
