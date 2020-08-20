@@ -1,6 +1,6 @@
 ---
-title: "Lab 01: Review R"
-date: "due Tue, Jan 21 at 11:59p" # TODO update
+title: "Lab 01: Practice with R"
+date: "due Wed, August 26 at 11:59p"
 output: 
   tufte::tufte_html:
     css: "./sta210-labs.css"
@@ -92,16 +92,19 @@ The email address is the one tied to your GitHub account.
 
 ```{r eval=FALSE}
 library(usethis)
-use_git_config(user.name = "GitHub username", user.email="your email")
+use_git_config(user.name = "GitHub username", 
+               user.email="your email")
 ```
 
 For example, mine would be 
 
 ```{r eval=FALSE}
 library(usethis)
-use_git_config(user.name="matackett", user.email="maria.tackett@duke.edu")
+use_git_config(user.name="matackett",
+               user.email="maria.tackett@duke.edu")
 ```
 
+<!--
 If you get the error message
 
 ```{r eval=FALSE}
@@ -113,8 +116,9 @@ then you need to install the `usethis` package. Run the following code in the co
 ```{r eval=FALSE}
 install.package("usethis")
 ```
+-->
 
-Once you run the configuration code, your values for `user.name` and `user.email` will display in the console. If your `user.name` and `user.email` are correct, you're good to go! Otherwise, run the code again with the necessary changes.
+Now you're ready to start! Open the R Markdown file, i.e. the one with the .Rmd extension. 
 
 ## RStudio & R Markdown
 
@@ -167,10 +171,6 @@ Next, go to the *Git* pane in RStudio.
 
 If you have made changes to your Rmd file, you should see it listed here. Click on it to select it in this list and then click on **Diff**. This shows you the difference between the last committed state of the document and its current state with your changes. If you're happy with these changes, write "Update author name" in the **Commit message** box and click **Commit**.
 
-```{r update-author-name-commit, fig.fullwidth = TRUE, echo = FALSE}
-knitr::include_graphics("img/01/update-author-name-commit.png")
-```
-
 You don't have to commit after every change, this would get quite cumbersome. You should consider committing states that are *meaningful to you* for inspection, comparison, or restoration. In the first few assignments, we will provide some guidance on when to commit and an example commit message.
 
 ## Pushing changes: 
@@ -181,26 +181,24 @@ In order to push your changes to GitHub, click **Push**. This will prompt a dial
 
 Make sure you push all the files from the *Git* pane to your assignment repo on GitHub. The Git pane should be empty after you push. If it's not, click the box next to the remaining files, write an informative commit message, and push.
 
+# Data: Trails in Durham, NC
 
-# Data: Avacodos
+Today's data comes from the [Durham Open Data](https://live-durhamnc.opendata.arcgis.com/) a program managed by the City of Durham's Technology Solutions Department and the County of Durham's Information Services & Technology Department to provide open data about our community. You can read more about their mission [here](https://live-durhamnc.opendata.arcgis.com/pages/about-us).
 
-Today's data comes from [Kaggle ](https://kaggle.com/), a popular website that hosts machine learning competitions. 
-
-In this lab, we will focus on data about avocado prices in the United States. The data is located in the *avocado.csv* file located in the *data* folder. Use the code below to read in the .csv file and save it in the RStudio environment as a data frame called `avocado`.
+In this lab, we will focus on data about the proposed and existing outdoor trails in Durham, NC. The data is located in the *durham_trails.csv* file located in the *data* folder. Use the code below to read in the .csv file and save it in the RStudio environment as a data frame called `trails`.
 
 ```{r read-data, eval=FALSE}
-avocado <- read_csv("data/avocado.csv")
+trails <- read_csv("data/durham_trails.csv")
 ```
 
-For today's analysis, we will use the following variables: 
+A full list of the variables in the dataset is available  [here](https://live-durhamnc.opendata.arcgis.com/datasets/existing-and-proposed-trails?geometry=-80.283%2C35.650%2C-77.473%2C36.428). For today's analysis, we will primarily focus on the following variables: 
 
 |  |  |
 |----------|-------|
-| `SaleDate` | Start of the week in which the avocados were sold |
-| `AveragePrice` | Average price of avocados, $/lb |
-| `TotalVolume` | Number of avocados sold  |
-| `type` | Either "conventional" or "organic" |
-| `region` | The metropolitan region in which the avocados were sold |
+| `status` |Whether the trail is proposed or existing|
+| `dogwalking` | Whether dogs are allowed on the trail |
+| `length` | Length of the trail in miles |
+| `trailtype` | Description of trail (crosswalk, sidewalk, walking path, etc.) |
 
 
 # Exercises 
@@ -210,87 +208,80 @@ For today's analysis, we will use the following variables:
 Before doing any analysis, we may want to get quick view of the data. This is a useful thing to do after importing data to see if the data imported correctly. One way to do this, is to look at the actual dataset. Type the code below in the **console** to view the entire dataset. 
 
 ```{marginfigure}
-Notice that the `View(avocado)` command was run in the console and **not** in a code chunk in the RMarkdown file. By running the `View(avocado)` in the console, the dataset displays in your RStudio environment but not in the output from your RMarkdown file.
+Notice that the `View(trails)` command was run in the console and **not** in a code chunk in the RMarkdown file. By running the `View(trails)` in the console, the dataset displays in your RStudio environment but not in the output from your RMarkdown file.
 ```
 
 ```{r eval=FALSE}
-View(avocado)
+View(trails)
 ```
 
 
 ## Exploratory Data Analysis
 
-1. Now that we've had a quick view of the dataset, let's get more details about its structure. Sometimes viewing a summary of the data structure is more useful than viewing the raw data, especially if the dataset has a large number of observations and/or rows. Run the code below to use the `glimpse` function to see a summary of the `avocado` dataset.
+1. Now that we've had a quick view of the dataset, let's get more details about its structure. Sometimes viewing a summary of the data structure is more useful than viewing the raw data, especially if the dataset has a large number of observations and/or rows. Run the code below to use the `glimpse` function to see a summary of the `trails` dataset.
 
-    How many observations are in the `avocado` dataset? How many variables?
+    How many observations are in the `trails` dataset? How many variables?
 
   
 ```{r eval = F}
-glimpse(avocado)
+glimpse(trails)
 ```
 
 
 
 
-2. Before conducting statistical inference (or eventually fitting regression models),  we need do some exploratory data analysis (EDA). Much of EDA consists of visualizing the data but it also includes calculating summary statistics for the variables in our dataset.
-Let's begin by examining the distribution
+2. We start each analysis exploratory data analysis (EDA). Much of EDA consists of visualizing the data but it also includes calculating summary statistics for the variables in our dataset. Let's begin by examining the distribution of `trailtype` with a data visualization and summary statistics. 
 
-
-Let's begin by examining the distribution of `AveragePrice` with a data visualization and summary statistics. 
-
-    - What is a type of graph that's appropriate to visualize the distribution of `AveragePrice`? Fill in the `ggplot` code below to plot the distribution of `status`. Include informative axis labels and title on the graph.
+    - What is a type of graph that's appropriate to visualize the distribution of `trailtype`? Fill in the `ggplot` code below to plot the distribution of `trailtype`. Include informative axis labels and title on the graph.
     
-    - Then, calculate the average price of observations in each category of `status` by completing the code below.
+    - Complete the code to calculate the proportion of observations in each category of `trailtype`. 
+    
+    - Use the graphs and summary statistics to describe the distribution of `trailtype`. 
 
 ```{r eval=FALSE}
-ggplot(data = avocado, aes(x = AveragePrice)) + 
+ggplot(data = trails, aes(x = trailtype)) + 
   __________ + 
   labs(x = "_________", 
        y = "_________", 
-       title = "__________")
+       title = "__________") +
+  coord_flip() #help make axes readable
 ```
 
 
+```{r eval = FALSE}
+trails %>%
+  count(_____) %>%
+  mutate(proportion = n / sum(n))
+```
 
-3. Let's focus on two regions - `RaleighGreensboro`, near Duke, and `LosAngeles`, near where many avocados are grown. Complete the code below to use the `filter` function to create a subset consisting only of these two regions. Assign the subset the name `avo_sub`. (*Hint: There should be 676 observations in avo_sub.*)
-
-
+3. Since we want to analyze characteristics for outdoor trails in Durham, we will just use data from trails that existed as of January 2020 for the remainder of the analysis. Complete the code below to use the `filter` function to create a subset consisting only of trails that existed when this data set was created and have a value reported for `length`. **You will use this subset for the rest of the lab.**
 
 ```{r eval = F}
-__________ <- avocado %>%
-  filter(region %in% c(_____, _____))
+__________ <- trails %>%
+  filter(status == "______", !is.na(______))
 ````
-
-    - Now, calculate the total volume of avocados sold in each of the two regions by completing the code below.
-    
-```{r eval = FALSE}
-avo_sub %>%
-  group_by(____) %>%
-  summarize(Volume=sum(TotalVolume))
-```
 
 
 ```{marginfigure}
 Check your lab-01 repo on the GitHub website (you may need to refresh the page in your browser) to ensure that all of the files are up-to-date.
 ```
 
-*This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write an informative commit message (e.g. "Completed exercises 1 - 3"), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty."*
+<div class = "commit">
+This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write an informative commit message (e.g. "Completed exercises 1 - 3"), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty."
+</div>
 
+4. Let's examine the distribution of `length`. One important part of EDA is creating data visualizations to see the shape, center, spread, and outliers in a distribution. Data visualizations are also useful for examining the relationship between multiple variables. There are a lot of ways to make data visualizations in R; we will use the functions available in the `ggplot2` package.
 
-**Use `avo_sub` for Exercises 4 - 7.**
-
-4. Let's examine the distribution of `AveragePrice`. One important part of EDA is creating data visualizations to see the shape, center, spread, and outliers in a distribution. Data visualizations are also useful for examining the relationship between multiple variables. There are a lot of ways to make data visualizations in R; we will use the functions available in the `ggplot2` package.
-
-   Make a graph to visualize the distribution of `AveragePrice`. Include an informative title and axis labels.
+   Make a graph to visualize the distribution of `length`. Include an informative title and axis labels.
 
 ```{marginfigure}
 See [Section 7.3.1 "Visualizing Distributions"](https://r4ds.had.co.nz/exploratory-data-analysis.html#introduction-3) or the [ggplot2 reference page](https://ggplot2.tidyverse.org/reference/index.html) for details and example code.
 ```                                               
 
-5. Next, fill in the code below to use the `summarise` function to calculate various summary statistics for the variable `AveragePrice`. You can use the [summarise reference page](https://dplyr.tidyverse.org/reference/summarise.html) for more information about the function and example code. 
+5. Next, fill in the code below to use the `summarise` function to calculate various summary statistics for the variable `length`. You can use the [summarise reference page](https://dplyr.tidyverse.org/reference/summarise.html) for more information about the function and example code. 
 
 ```{r eval = FALSE}
-avo_sub %>%
+current_trails %>%
   summarise(min = __________, 
             q1 = __________, 
             median = __________, 
@@ -302,33 +293,42 @@ avo_sub %>%
             )
 ```
 
-6. Describe the distribution of `AveragePrice`. Your description should include comments about the shape, center, spread, and any potential outliers. Use the graph from Exercise 4 and relevant summary statistics from Exercise 5 in your description.
+6. Briefly describe the distribution of `length`. Your description should include comments about the shape, center, spread, and any potential outliers. Use the graph from Exercise 4 and relevant summary statistics from Exercise 5 in your description.
 
-7. We want to limit the analysis to only include data from 2017. 
+7. We want to limit the analysis to trails that are more likely intended for day hikes, rather than multi-day hikes and camping. Therefore, let's remove the extreme outliers from the data for this analysis and only consider those trails that are 15 miles or shorter. 
 
-    Filter the dataset to select only rows that include data from 2017. **Be sure to save the updated dataset, so you can use it for the remainder of the lab.** 
+    Filter the dataset to remove the extreme outliers. **Be sure to save the updated dataset, so you can use it for the remainder of the lab.** 
     
-*This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write informative commit message (e.g. "Completed exercises 4 - 7"), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty."*
+<div class = "commit">
+This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write informative commit message (e.g. "Completed exercises 4 - 7"), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty.
+</div>
 
-8. Consider the distribution of `type`. 
-    - How many observations of each of value of `type` are in the dataset? Show the code and output to support your answer. 
-    - What do you think is the most likely reason for the missing observations of `type`? In other words, what does a missing value of `type` indicate? 
+8. Consider the distribution of `dogwalking`. 
+    - What are the values of `dogwalking` in the dataset? Show the code and output to support your answer. 
+    - What do you think is the most likely reason for the missing observations of `dogwalking`? In other words, what does a missing value of `dogwalking` indicate? 
 
-9. Complete the code below to impute (i.e. fill in) the missing values of `type` with the appropriate value.  Then, display the distribution of `type` to check that the missing values were correctly imputed.
+9. Complete the code below to impute (i.e. fill in) the missing values of `dogwalking` with the appropriate value.  Then, display the distribution of `dogwalking` to check that the missing values were correctly imputed.
 
 ```{r eval=FALSE}
 __________ <- __________ %>%
-  mutate(type = if_else(is.na(type),______,type))
+  mutate(dogwalking = if_else(is.na(dogwalking),______,dogwalking))
 ```
 
-10. Now that we've completed the univariate EDA (i.e. examining one variable at a time), let's examine the relationship between the type of avocado grown and our price observations. Make a graph to visualize the relationship between `AveragePrice` and `type` and calculate the appropriate summary statistics. Include informative axis labels and title on your graph.
+10. Now that we've completed the univariate EDA (i.e. examining one variable at a time), let's examine the relationship between the length of the trail and whether dog walking is allowed. Make a graph to visualize the relationship between `length` and `dogwalking` and calculate the appropriate summary statistics. Include informative axis labels and title on your graph.
 
-11. Describe the relationship between `AveragePrice` and `type`. In other words, describe how the distribution of `AveragePrice` compares between organic and conventionally grown avocados. Include information from the graph and summary statistics from the previous exercise in your response.
+11. Describe the relationship between `length` and `dogwalking`. In other words, describe how the distribution of `length` compares between trails that allow dog walking versus those that don't. Include information from the graph and summary statistics from the previous exercise in your response.
 
-*This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write informative commit message (e.g. "Completed exercises 8 - 11"), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty."*
+<div class = "commit"> 
+This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write informative commit message (e.g. "Completed exercises 8 - 11"), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty.
+</div>
 
 
-# Submitting the assignment
+12. On page 2 of [Elements and Principles for Characterizing Variation
+between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf), the authors identify 8 elements that are used to build a data analysis. For each of the 8 elements, type "Yes" if it was used in this lab (i.e. your data analysis) or "No" if it wasn't. 
+
+**You're done and ready to submit your work! Knit, commit, and push all remaining changes. You can use the commit message "Done with Lab 1!", and make sure you have pushed all the files to GitHub (your Git pane in RStudio should be empty) and that<u>all</u> documents are updated in your repo on GitHub. Then submit the assignment on Gradescope following the instructions below.**
+
+# Submission
 
 In this class, we'll be submitting .pdf documents to Gradescope. Once you are fully satisfied with your lab, **Knit to .pdf** to create a .pdf document. You may notice that the formatting/theme of the report has changed -- this is expected.
 
@@ -344,11 +344,11 @@ To submit your assignment:
 
 - Click *School Credentials* `r emo::ji("arrow_right")` *Duke NetID* and log in using your NetID credentials.
 
-- Click on the *STA 210* course. 
+- Click on your *STA 210* course. 
 
 - Click on the assignment, and you'll be prompted to submit it.
 
-- Mark the pages associated with each exercise, 1 - 5. All of the papers of your lab should be associated with at least one question (i.e., should be "checked"). 
+- Mark the pages associated with each exercise, 1 - 12. All of the papers of your lab should be associated with at least one question (i.e., should be "checked"). 
 
 - Select the first page of your .pdf submission to be associated with the *"Overall"* section.
 
@@ -363,10 +363,6 @@ To submit your assignment:
   - Work with Data: https://rstudio.cloud/learn/primers/2
   - Visualize Data: https://rstudio.cloud/learn/primers/3
 
-- Visualization in R using ggplot2 workshop by the Center for Data and Visualization Sciences 
-  - Jan 30, 1p - 3p
-  - More info & registration: https://duke.libcal.com/event/6085379
-  
 <br><br>
 <hr>
 
