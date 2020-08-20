@@ -7,7 +7,7 @@
             <td style="width:40%;text-align:left">{{ .title | markdownify }}</td>
             {{- if .header }} 
             <td style="width:5%;text-align:center" class="mid-table-header">Slides</td>
-            <td style="width:5%;text-align:center" class="mid-table-header">Lab</td>
+            <td style="width:5%;text-align:center" class="mid-table-header">Labs</td>
             <td style="width:5%;text-align:center" class="mid-table-header">HW</td>
             <td style="width:5%;text-align:center" class="mid-table-header">Quiz</td>
             <td style="width:5%;text-align:center" class="mid-table-header">Project</td>
@@ -28,11 +28,11 @@
 
             {{- if .lab }}
             <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/labs/{{ .lab }}">
-                    <i class="fas file-code fa-lg"></i></a></td>
+                    <i class="far fa-file-code fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center">
                 <font color="f1f1f1">
-                    <i class="fas file-code fa-lg"></i></font>
+                    <i class="far fa-file-code fa-lg"></i></font>
             </td>
             {{- end }}
 
