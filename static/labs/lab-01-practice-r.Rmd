@@ -51,7 +51,7 @@ Each of your assignments will begin with steps in this section. You saw your TA 
 
 ## Clone the repo & start new RStudio project
 
-- Go to the sta210-sp20 organization on GitHub (http://www.github.com/sta210-sp20). Click on the repo with the prefix **lab-01-review-r-**. It contains the starter documents you need to complete the lab.
+- Go to the sta210-fa20 organization on GitHub (http://www.github.com/sta210-fa20). Click on the repo with the prefix **lab-01-review-r-**. It contains the starter documents you need to complete the lab.
 
 ```{r clone-repo-link, fig.margin = TRUE, echo = FALSE, fig.width=3}
 knitr::include_graphics("img/01/clone-repo-link.png")
