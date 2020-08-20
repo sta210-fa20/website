@@ -1,6 +1,6 @@
 ---
 title: "Lab 01: Practice with R"
-date: "due Wed, August 26 at 11:59p"
+subtitle: "due Wed, August 26 at 11:59p"
 output: 
   tufte::tufte_html:
     css: "./sta210-labs.css"
@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE,
 R is the name of the programming language itself and RStudio is a convenient user interface.
 ```
 
-The main goal of this lab is to review the basics of R and RStudio. We will use these tools throughout this course to analyze and make conclusions from real-world data. 
+The main goal of this lab is to practice a few basic functions of R and RStudio. We will use these tools throughout this course to analyze and make conclusions from real-world data. 
 
 ```{marginfigure}
 git is a version control system (like "Track Changes" features from Microsoft Word but more powerful) and GitHub is the home for your Git-based projects on the internet (like DropBox but better).
@@ -51,7 +51,7 @@ Each of your assignments will begin with steps in this section. You saw your TA 
 
 ## Clone the repo & start new RStudio project
 
-- Go to the sta210-fa20 organization on GitHub (http://www.github.com/sta210-fa20). Click on the repo with the prefix **lab-01-review-r-**. It contains the starter documents you need to complete the lab.
+- Go to the sta210-fa20 organization on GitHub (http://www.github.com/sta210-fa20). Click on the repo with the prefix **lab-01-practice-r-**. It contains the starter documents you need to complete the lab.
 
 ```{r clone-repo-link, fig.margin = TRUE, echo = FALSE, fig.width=3}
 knitr::include_graphics("img/01/clone-repo-link.png")
