@@ -14,7 +14,7 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [Simple Linear Regression: Intro](https://sta210-fa20.netlify.app/slides/03-slr-intro.html#1) | Simple Linear Regression: Intro | AE 03 |
+| Monday    | [Simple Linear Regression: Intro](https://sta210-fa20.netlify.app/slides/03-slr-intro.html#1) | [An Introduction to Simple Linear Regression](https://warpwire.duke.edu/w/izoEAA/)| AE 03 |
 | Wednesday | [SLR: Foundation](https://sta210-fa20.netlify.app/slides/04-slr-foundation.html)    | SLR: Foundation | AE 04 |
 |  |     [SLR: Inference](https://sta210-fa20.netlify.app/slides/04-slr-coef-inf.html)  | SLR: Inference    | |
 
@@ -23,6 +23,7 @@ font-size: 18px;
 
 |            |   |
 |------------|---|
+| [OpenIntro Statistics: 8.1 - 8.4 ](https://leanpub.com/openintro-statistics) <br> (click "Read Free Sample" to access PDF) | **Required**   |
 | [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf)  | **Required**   |
 
 
