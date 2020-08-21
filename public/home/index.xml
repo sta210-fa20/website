@@ -132,8 +132,93 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-02/</guid>
-      <description>Check back for details!</description>
-      <content>&lt;p&gt;Check back for details!&lt;/p&gt;
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Simple Linear Regression: Intro Simple Linear Regression: Intro AE 03   Wednesday SLR: Foundation SLR: Foundation AE 04    SLR: Inference SLR: Inference     Readings          Elements and Principles for Characterizing Variation between Data Analyses Required    Assignments          HW 01 (assigned Wed) due Wed, Sep 2 at 11:59p   Lab 02 due Wed, Sep 2 at 11:59p    Announcements Computing workshops by the Center for Data and Visualization Sciences</description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Slides&lt;/th&gt;
+&lt;th&gt;Videos&lt;/th&gt;
+&lt;th&gt;Application Exercises (AE)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Monday&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/03-slr-intro.html#1&#34;&gt;Simple Linear Regression: Intro&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Simple Linear Regression: Intro&lt;/td&gt;
+&lt;td&gt;AE 03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wednesday&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/04-slr-foundation.html&#34;&gt;SLR: Foundation&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SLR: Foundation&lt;/td&gt;
+&lt;td&gt;AE 04&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/04-slr-coef-inf.html&#34;&gt;SLR: Inference&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SLR: Inference&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://arxiv.org/pdf/1903.07639.pdf&#34;&gt;Elements and Principles for Characterizing Variation between Data Analyses&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/hw/hw-01.html&#34;&gt;HW 01 (assigned Wed)&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Wed, Sep 2 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lab 02&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Wed, Sep 2 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;announcements&#34;&gt;Announcements&lt;/h2&gt;
+&lt;p&gt;Computing workshops by the Center for Data and Visualization Sciences&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://duke.libcal.com/event/6867861&#34;&gt;R for data science: getting started, EDA, data wrangling&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Tue, Sep 1, 10a - 12p&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://duke.libcal.com/event/6867914&#34;&gt;R for data science: visualization, pivot, join, regression&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Wed, Sep 9, 1p - 3p&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find a complete list of workshops &lt;a href=&#34;https://library.duke.edu/data/workshops&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
     </item>
     
