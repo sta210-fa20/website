@@ -4,25 +4,27 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 html{
-  font-size: 20pt; 
+  font-size: 22pt; 
 }
 
 p {
-  font-size: 20pt;
+  font-size: 22pt;
 }
 
 body { 
-  font-family: 'Open Sans'; sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: #333333;
-  font-size: 20pt;
+  color: #53565A;
+  font-size: 22pt;
 }
+
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #008eaa;
   margin: 0.25em 0 0.5em 0;
 }
+
 h1, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -34,14 +36,14 @@ a, a > code {
   color: #008eaa;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 22pt;
 }
 
 .footnote {
   position: absolute;
   bottom: 3em;
   padding-right: 4em;
-  font-size: 90%;
+  font-size: 70%;
 }
 .remark-code, .remark-inline-code { 
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
@@ -98,10 +100,11 @@ a, a > code {
 ul {
   list-style-type: square;
 }
+
 li{
   margin: 10px 0;
-  font-size: 20pt;
 }
+
 .large { font-size: 130% }
 .midi { font-size: 90% }
 .small { font-size: 80% }
@@ -119,7 +122,7 @@ table {
   border-bottom: 1px solid #666;
 }
 table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; font-size: 12pt;}
+th, td { padding: 5px; font-size: 20pt;}
 thead, tfoot, tr:nth-child(even) { background: #eee }
 
 @page { margin: 0; }
@@ -134,7 +137,7 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 }
 
 .remark-slide-content{
-  font-size: 24px;
+  font-size: 22pt;
 }
 
 .remark-slide-content:after {
@@ -164,19 +167,16 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 .vocab {
   color: #87037B;
   font-weight: bold;
-  font-size: 20pt;
 }
 
 .vocab2 {
   color: #008eaa;
   font-weight: bold;
-  font-size: 20pt;
 }
 
 .vocab3 {
   color: #022CFA;
   font-weight: bold;
-  font-size: 20pt;
 }
 
 .question {
@@ -198,7 +198,7 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 .instructions {
   border-left: solid 5px #D7E7EC;
   background-color: #D7E7EC;
-  font-size: 90%;
+  font-size: 100%;
   padding: 1px 16px;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -226,5 +226,66 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("img/sta210_sticker.png");
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+
+.pull-slight-right {
+  float: right;
+  width: 30%;
+}
+
+.pull-slight-left {
+   float: left;
+    width: 30%;
+}
+
+.pull-more-right {
+  float: right;
+  width: 68%;
+}
+
+.term {
+    font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+    color: #aa008e;
+    font-weight: bold;
+}
+
+/*Box for equations*/
+.eq {
+  border-radius: 25px;
+  border: solid 5px #c6d47f;
+  background-color: #dce5b2;
+  padding: 7px 13px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  /*font-size: 90%;*/
+}
+
+.small-box-work {
+  border-radius: 25px;
+  border: solid 5px #a6a6a6;
+  background-color: #e5e5e5;
+  padding: 5px 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+/*  font-size: 90%; */
+}
+
+.small-box {
+  border-radius: 25px;
+  border: solid 5px #c6d47f;
+  background-color: #dce5b2;
+  padding: 5px 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+ /* font-size: 90%; */
 }
 
