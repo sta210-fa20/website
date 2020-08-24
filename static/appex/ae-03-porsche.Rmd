@@ -102,6 +102,7 @@ porsche %>%
 ```
 
 
+
 ```{r}
 porsche %>%
   summarise(mean_price = mean(Price), 
