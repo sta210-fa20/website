@@ -38,6 +38,7 @@ font-size: 18px;
 ## Announcements + Resources
 
 **Computing workshops by the Center for Data and Visualization Sciences**
+
 - [R for data science: getting started, EDA, data wrangling](https://duke.libcal.com/event/6867861)
   - Tue, Sep 1, 10a - 12p
 - [R for data science: visualization, pivot, join, regression](https://duke.libcal.com/event/6867914)
