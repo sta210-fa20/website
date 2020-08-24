@@ -35,9 +35,9 @@ font-size: 18px;
 | Lab 02          |  **due Wed, Sep 2 at 11:59p** |
 
 
-## Announcements
+## Announcements + Resources
 
-Computing workshops by the Center for Data and Visualization Sciences
+**Computing workshops by the Center for Data and Visualization Sciences**
 - [R for data science: getting started, EDA, data wrangling](https://duke.libcal.com/event/6867861)
   - Tue, Sep 1, 10a - 12p
 - [R for data science: visualization, pivot, join, regression](https://duke.libcal.com/event/6867914)
@@ -46,6 +46,9 @@ Computing workshops by the Center for Data and Visualization Sciences
 Find a complete list of workshops [here](https://library.duke.edu/data/workshops). 
 
 
+**RStudio Cheat Sheets**
 
+- [ggplot2 cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+- [dplyr cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
 
