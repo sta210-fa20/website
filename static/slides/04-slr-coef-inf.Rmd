@@ -23,7 +23,7 @@ editor_options:
 
 class: middle, center
 
-## [Click for PDF of slides](04-coef-inf.pdf)
+## [Click for PDF of slides](04-slr-coef-inf.pdf)
 
 
 ---
