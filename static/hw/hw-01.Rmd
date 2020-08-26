@@ -1,11 +1,11 @@
 ---
-title: "HW 01: Simple linear"
+title: "HW 01: Simple linear regression"
 subtitle: "due Wed, Sep 2 at 11:59p"
 author: ""
 date: ""
 output: 
   html_document:
-    css: "sta210-hw.css"
+    css: "./sta210-hw.css"
     toc: true
     toc_float: true
 ---
@@ -16,6 +16,7 @@ knitr::opts_chunk$set(echo = TRUE,
                       message=FALSE)
 ```
 
+<!--
 # Getting started
 
 Each of your assignments will begin with the steps outlined in this section. For more detailed instructions about getting started, see the [Lab 01 instructions](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html)
@@ -27,7 +28,6 @@ Each of your assignments will begin with the steps outlined in this section. For
 - Go to https://vm-manage.oit.duke.edu/containers and login with your Duke NetId and Password.
 
 - Click to log into the Docker container **STA 210 - Regression Analysis**. You should now see the RStudio environment. 
-
 
 - Go to *File* `r emo::ji("arrow_right")` *New Project* `r emo::ji("arrow_right")` *Version Control* `r emo::ji("arrow_right")` *Git*. 
 
@@ -66,7 +66,7 @@ If you need to install any of the packages, type `install.packages("package_name
 
 # Questions
 
-## Part 1: Conceptual
+## Part 1: Conceptual questions
 
 Our data set contains the nutrition information for food items sold at Starbucks. Starbucks will often display the number of calories for the display items but will not show any other nutrition information. Therefore, we want to use the number of calories to understand variability in the amount of carbohydrates (in grams) in Starbucks food items. 
 
@@ -77,9 +77,10 @@ starbucks <- read_csv("data/starbucks.csv")
 ```
 
 
-1. We will use the variables `calories` and `carb` for this analysis. What are the response and predictor variables? 
+1. We will use the variables `calories` and `carb` for this analysis. Which variable is the response variable? 
 
 1. Create a scatterplot displaying the relationship between the two variables. Include appropriate a title and appropriate axis labels. 
+
 1. Describe the relationship between number of calories and amount of carbohydrates in Starbucks food items.
 
 1. Use the `lm` function to fit a line to describe the relationship between the number of calories and amount of carbohydrates. 
@@ -91,16 +92,17 @@ starbucks <- read_csv("data/starbucks.csv")
 1. Does it make sense to interpret the intercept? If so, write the interpretation in the context of the data. Otherwise, briefly explain why not. 
 
 1. Calculate the 95% confidence interval for the slope, $\beta_1$. 
+
 1. Interpret the confidence interval from the previous question in the context of the data. 
 
-1. Based on the confidence interval, does knowing the number of calories help us understand the amount of carbohydrates in Starbucks food items? Briefly explain why or why not. 
+1. Based on this analysis, is the number of calories a useful predictor of the amount of carbohydrates in food items at Starbucks? Briefly explain why or why not.
 
 
 ## Part 2: Analysis in Practice
 
 Read the 2016 FiveThirtyEight article ["New Yorkers Will Pay $56 A Month To Trim A Minute Off Their Commute"](https://fivethirtyeight.com/features/new-yorkers-will-pay-56-a-month-to-trim-a-minute-off-their-commute/) by Carl Bialik. 
 
-Rank each of the following principles from  [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf)for data analysis from 1 to 5. Include a 1 - 2 sentence summary for each principle.  
+Rank each of the following principles from  [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf) for the FiveThirtyEight article. Use a scale of 1 - 5. Include a 1 - 2 sentence summary for each principle.  
 
 - data matching:
 - exhaustive:
@@ -143,3 +145,4 @@ Rank each of the following principles from  [Elements and Principles for Charact
 
 *Exercise in part 2 is adapted frm question by  [Dr. Lucy McGowan](https://github.com/sta-212-f19/website).*
 
+-->
