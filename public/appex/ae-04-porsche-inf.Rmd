@@ -1,0 +1,119 @@
+---
+title: "AE 04: Price vs. Mileage for Porsches"
+subtitle: "Inference"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+
+## Announcements
+
+- Lab 01 due today at 11:59p
+- Email (see syllabus) 
+- Introduce George, the R support TA
+- HW 01 released after class
+- [Principles of data analysis](https://arxiv.org/pdf/1903.07639.pdf) (see vignettes)
+
+## Questions? 
+
+## Review hypothesis test + confidence interval 
+
+## Clone a repo + start a new project
+
+See [Lab 01](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html) for instructions on cloning a repo and starting a new project in RStudio. 
+
+Once you have the new project, run the code below (filling in your github username and email address) to configure git. 
+
+```{r eval=FALSE}
+library(usethis)
+use_git_config(user.name= "your github username", user.email="your email")
+```
+
+## Price vs. Mileage
+
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(broom)
+```
+
+```{r load-data, message=FALSE}
+porsche <- read_csv("data/PorschePrice.csv")
+```
+
+
+In this AE, we will analyze the relationship between mileage and price for `r nrow(porsche)` Porsches for sale. More specifically, we want to use the mileage to understand variation in the price. The data set includes the following variables: 
+
+- `Price`: Asking price for the car (in $1,000’s)
+- `Age`: Age of the car (in years)
+- `Mileage`: Previous miles driven (in 1,000’s)
+
+Let's start by getting a quick view of the data. 
+
+```{r glimpse}
+glimpse(porsche)
+```
+
+### Linear model 
+
+```{r model, eval = FALSE}
+price_model <- lm(Price ~ Mileage, data = porsche)
+tidy(price_model)
+```
+
+### Hypothesis test for $\beta_1$
+
+We would like to test the following hypotheses: 
+
+$$H_0: \beta_1 = 0 \text{ vs. } H_a: \beta_1 \neq 0$$
+
+1. State the null and alternative hypotheses in words.
+
+2. What is the test statistic? What does it mean?  
+
+3. What is the p-value? What distribution was used to calculate the p-value? What does the p-value mean? 
+
+4. State your conclusion in the context of the data. 
+
+## Confidence interval for $\beta_1$
+
+We would like to calculate and interpret a 95% confidence interval for $\beta_1$.
+
+Recall, the confidence interval is 
+
+$$\hat{\beta}_1 \pm t^* SE(\hat{\beta}_1)$$
+
+5. Use the code below to calculate the critical value, $t^*$. 
+
+```{r}
+df <- nrow(porsche) - 2
+critical_val <- qt(0.975,df)
+critical_val
+```
+
+6. Calculate the 95% confidence interval. 
+
+```{r conf-int}
+## calculate 95% confidence interval
+```
+
+
+7. Interpret the interval in the context of the data. 
+
+
+Knit your Rmd file to view the updated output. Commit your changes with an informative commit message, and push the updated files to GitHub. 
+
+<hr> 
+
+The data used in this exercise is from [*Stat2: Building Models for a World of Data*](http://www.stat2.org/datapage.html).
