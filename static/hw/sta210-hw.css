@@ -9,21 +9,11 @@
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 350;
+	font-weight: 400;
 	background-color: #fefefe;
-  color: #222;
+	color: #222;
 	counter-reset: li;
 	font-size: 16px;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 350;
-}
-
-li {
-  font-size: 16px;
-  font-weight: 350;
 }
 
 h1.title {
@@ -95,7 +85,7 @@ strong {
 @media screen and (max-width: 760px) {
 	pre {
 		width: 100%;
-		font-size: 16px;
+		font-size: 15px;
      	overflow-x: auto;
 	}
 }
