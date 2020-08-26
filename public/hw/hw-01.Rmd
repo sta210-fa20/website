@@ -101,12 +101,12 @@ Read the 2016 FiveThirtyEight article ["New Yorkers Will Pay $56 A Month To Trim
 
 Rank each of the following principles from  [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf) for the FiveThirtyEight article. Use a scale of 1 - 5, where 1 means the principle has not been applied and 5 means the principle has been fully applied. Include a 1 - 2 sentence summary for each principle.  
 
-- data matching:
-- exhaustive:
-- skeptical:
-- second order:
-- transparency:
-- reproducible:
+- data matching
+- exhaustive
+- skeptical
+- second order
+- transparency
+- reproducible
 
 # Submission
 
