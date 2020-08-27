@@ -31,8 +31,8 @@ font-size: 18px;
 
 |                        |   |
 |------------------------|---|
-| [HW 01 (assigned Wed)](https://sta210-fa20.netlify.app/hw/hw-01.html)            |  **due Wed, Sep 2 at 11:59p** |
-| Lab 02          |  **due Wed, Sep 2 at 11:59p** |
+| [HW 01](https://sta210-fa20.netlify.app/hw/hw-01.html)            |  **due Wed, Sep 2 at 11:59p** |
+| [Lab 02](https://sta210-fa20.netlify.app/labs/lab-02-slr.html)          |  **due Wed, Sep 2 at 11:59p** |
 
 
 ## Announcements + Resources

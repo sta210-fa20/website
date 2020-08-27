@@ -1,0 +1,193 @@
+---
+title: "Lab 02: Simple linear regression"
+subtitle: "due Wed, Sep 2 at 11:59p"
+output: 
+  tufte::tufte_html:
+    css: "./sta210-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 10
+    toc: true
+    toc_depth: 1
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE, 
+                      message=FALSE)
+```
+
+The primary goal of today's lab is to practice with some of the primary data wrangling, data visualization, and modeling functions we will use for regression analysis. It is also another opportunity to continue practicing using RStudio and GitHub before you start collaborating with others.
+
+# Topics covered in this lab 
+
+- Fitting a simple linear regression model using the `lm` function 
+- Interpreting the slope and intercept
+- Using statistical inference to draw conclusions about the slope 
+
+# Getting Started
+
+Each of your assignments will begin with the steps outlined in this section. For more detailed instructions about getting started, see the [Lab 01 instructions](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html)
+
+## Clone the repo & start new RStudio project
+
+- Go to the sta210-fa20 organization on GitHub (http://www.github.com/sta210-fa20). Click on the repo with the prefix **lab-02-slr-**. It contains the starter documents you need to complete the lab.
+
+- Click on the green **Code** button, select **Use HTTPS**. Click on the clipboard icon to copy the repo URL.
+
+- Go to https://vm-manage.oit.duke.edu/containers and login with your Duke NetId and Password.
+
+- Click to log into the Docker container **STA 210 - Regression Analysis**. You should now see the RStudio environment. 
+
+
+- Go to *File* `r emo::ji("arrow_right")` *New Project* `r emo::ji("arrow_right")` *Version Control* `r emo::ji("arrow_right")` *Git*. 
+
+- Copy and paste the URL of your assignment repo into the dialog box *Repository URL*.
+
+- Click *Create Project*, and the files from your GitHub repo will be displayed the *Files* pane in RStudio. 
+
+## Configure git 
+
+One more thing before you get started. We need to configure your git so that RStudio can communicate with GitHub. This requires two pieces of information: your GitHub username and the email address associated with your GitHub account.
+
+Type the following lines of code in the **console** in RStudio filling in your name and email address.
+
+```{r eval=FALSE}
+library(usethis)
+use_git_config(user.name = "GitHub username", 
+               user.email="your email")
+```
+
+Now you're ready to start! Open the R Markdown file (the one with extension .Rmd) to begin the assignment. 
+
+## YAML 
+
+```{marginfigure}
+The top portion of your R Markdown file (between the three dashed lines) is called YAML. It stands for "YAML Ain't Markup Language". It is a human friendly data serialization standard for all programming languages. All you need to know is that this area is called the YAML (we will refer to it as such) and that it contains meta information about your document.
+```
+
+Before we introduce the data, let's update the name and date in the YAML. 
+
+Open the R Markdown (Rmd) file in your project, input your name for the author name and today's date for the date, and knit the document.
+
+## Committing and pushing changes:
+
+- Go to the **Git** pane in your RStudio.
+- Select all of the files that appear in the Git pane.
+- Click to commit. Add a short and informative commit message. - Click to **Push**. This will prompt a dialogue box where you first need to enter your user name, and then your password.
+
+Make sure you push all the files from the *Git* pane to your assignment repo on GitHub. The Git pane should be empty after you push. If it's not, click the box next to the remaining files, write an informative commit message, and push.
+
+# Packages
+
+We will use the following packages in today's lab. 
+
+```{r load-packages}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(MASS) #package containing dataset
+```
+
+
+# Data: Body and heart weight of cats
+
+In today's lab, we will analyze the `cats` dataset in the MASS package. This dataset contains the sex, body weight, and heart weight for 144 domestic cats.
+
+When a veterinarian (vet for short) prescribes heart medicine for a cat, the dosage is partially determined by the weight of the cat's heart. It would be almost impossible for an vet to weigh a cat's heart in the moment, but it is possible (though still difficult!) to get a cat's body weight. 
+
+We want to fit a regression model to understand the relationship between a cat's heart weight and body weight. We could use the model to get an estimate of the cat's heart weight. 
+
+Once you've loaded the MASS package, you can load the data using the code below: 
+
+```{r eval = F}
+data(cats)
+```
+
+The `cats` dataset contains the following variables: 
+
+|  |  |
+|-----------|------------------------------------------|
+| `Sex` | levels M and F |
+| `Bwt` | Body weight in kg |
+| `Hwt` | Heart weight in g |
+
+# Exercises 
+
+## Exploratory Data Analysis
+
+1. What is the response variable? What is the predictor variable?
+
+1. Plot the distribution of `Hwt` and calculate the appropriate summary statistics. Describe the distribution including the shape, center, spread, and any outliers. 
+
+1. Plot the distribution of `Bwt` and calculate the appropriate summary statistics. Describe the distribution including the shape, center, spread, and any outliers. 
+
+1. Create a scatterplot to display the relationship between `Hwt` and `Bwt`.  Use the scatterplot to describe the relationship between the two variables. Be sure the scatterplot includes informative axis labels and title.
+
+<div class = "commit">
+`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is a good time to knit, commit and push your changes to GitHub with a short, informative commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.
+</div>
+
+## Simple Linear Regression
+
+1. Use the `lm` function to fit a simple linear regression model for `Bwt` and `Hwt`. Complete the code below to assign your model a name, and use the `tidy` and `kable` functions to neatly display the model output. 
+
+```{r eval=FALSE}
+_____ <- lm(_________)
+tidy(_____) %>% # output model in a tidy format
+  kable(digits = 3) # neatly format the output
+```
+
+1. Interpret the slope in the context of the problem.
+
+7. Does it make sense to interpret the intercept? If so, interpret the intercept. Otherwise, briefly explain why not. 
+
+<div class = "commit">
+`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is another good time to knit, commit and push your changes to GitHub with a short, informative commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.
+</div>
+
+## Inference
+
+8. We would like to test the following hypotheses: 
+
+$$H_0: \beta_1 = 0 \text{ vs } H_a: \beta_1 \neq 0$$
+
+  - State the hypotheses in words. 
+  - What is the test statistic? Write the equation used to calculate the test statistic. 
+  - What distribution was used to calculate the p-value? 
+  - State your conclusion for the test in the context of the data. 
+    
+9. Now let's compare the relationship between heart weight and body weight for male and female cats. Use the `filter` function to create one data frame for female cats and a separate data frame for male cats. 
+
+10. Fit a model of `Hwt` vs. `Bwt`for **female** cats. Display the 95% confidence interval for the slope using by including `conf.int = TRUE` in the `tidy` function. 
+
+    Interpret the interval in the context of the data. 
+
+11. Fit a model of `Hwt` vs. `Bwt` for  **male** cats. Display the 95% confidence interval for the slope using by including `conf.int = TRUE` in the `tidy` function. 
+
+12. Does the data provide sufficient evidence that the slope is significantly different for male and female cats? Briefly explain. *Hint: Compare the confidence intervals.*
+
+<div class = "commit">
+`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Knit, commit and push your changes to GitHub with an appropriate commit message again. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.
+</div>
+
+# Submission
+
+**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. we will be checking these to make sure you have been practicing how to commit and push changes.**
+
+Once your work is finalized in your GitHub repo, you will submit it to Gradescope.
+To submit your assignment: 
+
+- Go to http://www.gradescope.com and click *Log in* in the top right corner. 
+
+- Click *School Credentials* `r emo::ji("arrow_right")` *Duke NetID* and log in using your NetID credentials.
+
+- Click on your *STA 210* course. 
+
+- Click on the assignment, and you'll be prompted to submit it.
+
+- Mark the pages associated with each exercise. All of the pages of your lab should be associated with at least one question (i.e., should be "checked"). 
+
+- Select the first page of your .pdf submission to be associated with the *"Overall"* section.
+

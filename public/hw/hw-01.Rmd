@@ -88,7 +88,7 @@ starbucks <- read_csv("data/starbucks.csv")
 
 1. Does it make sense to interpret the intercept? If so, write the interpretation in the context of the data. Otherwise, briefly explain why not. 
 
-1. Calculate the 95% confidence interval for the slope, $\beta_1$. 
+1. Calculate the 95% confidence interval for the slope, $\beta_1$. Show the steps of the calculation, e.g. don't just print the confidence interval in the `lm` output. 
 
 1. Interpret the confidence interval from the previous question in the context of the data. 
 

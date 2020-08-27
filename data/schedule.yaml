@@ -32,6 +32,7 @@ lessons:
     hw: "hw-01.html"
   - date: "Thu, Aug 27" 
     title: "Lab 02: SLR"
+    lab: "lab-02-slr.html"
     
   - week: "Week 03"
     date: "Mon, Aug 31"

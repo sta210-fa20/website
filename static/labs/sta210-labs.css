@@ -12,10 +12,15 @@ html {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 350;
+	font-weight: 400;
 	background-color: #fefefe;
 	color: #222;
 	counter-reset: li;
+	font-size: 15px;
+}
+
+p {
+  font-sizez: 15px;
 }
 
 h1.title {
@@ -76,13 +81,7 @@ strong {
 
 /* Code formatting */
 
-/* @media screen and (max-width: 760px) {
-	pre {
-		width: 100%;
-		font-size: 15px;
-	}
-}
-*/
+
 
 @media screen and (max-width: 760px) {
 	pre {
@@ -95,7 +94,7 @@ strong {
 code {
 	font-family: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-size: 16px;
-	line-height: 1.6;
+	/*line-height: 1.6;*/
 }
 
 pre {
@@ -110,6 +109,7 @@ pre {
  	word-break: normal;
  	word-wrap: normal;
 }
+
 
 
 pre.r {
