@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Simple Linear Regression</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Maria Tackett" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Simple Linear Regression
+## Prediction
+### Prof. Maria Tackett
+
+---
+
+
+
+
+
+class: middle, center
+
+## [Click here for PDF of slides](06-slr-par-variation.pdf)
+
+---
+
+## Topics 
+
+--
+
+
+  
+--
+
+
+
+
+
+
+### Caution: Correlation `\(\neq\)` Causation
+
+- The regression model is **&lt;u&gt;not&lt;/u&gt;** a statement of causality
+  + The regression model provides a description of the averages of `\(Y\)` for different values of `\(X\)`
+
+
+- The regression model alone **&lt;u&gt;cannot&lt;/u&gt;** prove causality. You need either
+  - Randomized experiment
+  - Observational study in which all relevant confounding variables are controlled for adequately
+  
+  
+### Cats!
+
+- When veterinarians prescribe heart medicine for cats, the dosage often needs to be calibrated to the weight of the heart.
+
+- It is very difficult to measure the heart's weight, so veterinarians need a way to estimate it. 
+
+- One way to estimate it is using a cat's body weight which is more feasible to obtain (though still difficult depending on the cat!). 
+
+- **Goal**: Fit a regression model that describes the relationship between a cat's heart weight and body weight. 
+
+
+---
+
+### The Data
+
+We will use the **cats** dataset from the MASS package. It contains the following characteristics for 144 cats: 
+- &lt;font class = "vocab"&gt;`Sex`&lt;/font&gt;: Male (M) or Female (F)
+- &lt;font class = "vocab"&gt;`Bwt`&lt;/font&gt;: Body weight in kilograms (kg)
+- &lt;font class = "vocab"&gt;`Hwt`&lt;/font&gt;: Heart weight in grams (g)
+
+
+```
+##    Sex Bwt Hwt
+## 1    F 2.0 7.0
+## 2    F 2.0 7.4
+## 3    F 2.0 9.5
+## 4    F 2.1 7.2
+## 5    F 2.1 7.3
+## 6    F 2.1 7.6
+## 7    F 2.1 8.1
+## 8    F 2.1 8.2
+## 9    F 2.1 8.3
+## 10   F 2.1 8.5
+```
+
+---
+
+### Exploratory Data Analysis
+
+&lt;img src="06-slr-par-variation_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Exploratory Data Analysis
+
+&lt;img src="06-slr-par-variation_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+### Exploratory Data Analysis
+
+
+&lt;table style='width: auto;'
+        class='table table-condensed'&gt;
+&lt;caption&gt;Data summary&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Name &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Piped data &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Number of rows &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 144 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Number of columns &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; _______________________ &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Column type frequency: &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; factor &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; numeric &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; ________________________ &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Group variables &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; None &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+**Variable type: factor**
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; skim_variable &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; n_missing &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; complete_rate &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; ordered &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; n_unique &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; top_counts &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Sex &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; FALSE &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; M: 97, F: 47 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+**Variable type: numeric**
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; skim_variable &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; n_missing &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; complete_rate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mean &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; sd &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; p0 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; p25 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; p50 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; p75 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; p100 &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; hist &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Bwt &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.72 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.49 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.30 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.9 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ▇▇▆▃▂ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hwt &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10.63 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.43 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.95 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 12.12 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.5 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ▆▇▅▁▁ &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+### Exploratory Data Analysis
+
+&lt;img src="06-slr-par-variation_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle, center
+
+### Predictions 
+
+---
+
+class: regular
+
+### Predictions for New Observations 
+
+- We can use the regression model to predict for a response at `\(x_0\)`
+
+`$$\hat{y} =  \hat{\beta}_0 + \hat{\beta}_1 x_0$$`
+&lt;br&gt; 
+
+- Because the regression models produces the mean response for a given value of `\(x_0\)`, it will produce the same estimate whether we want to predict the mean response at `\(x_0\)` or an individual response at `\(x_0\)` 
+
+---
+
+class: regular 
+
+### Predicting Mindy's heart weight
+
+.pull-left[
+My cat Mindy weighs about 3.18 kg (7 lbs). 
+
+What is her predicted heart weight? 
+]
+
+.pull-right[
+&lt;img src="img/05/mindy.JPG" width="60%" height="60%" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+
+.alert[
+$$
+`\begin{align}
+\hat{hwt} &amp;= -0.3567 + 4.0341 \times \color{red}{3.18} \\
+&amp;= 12.472 \text{ grams}
+\end{align}`
+$$
+]
+
+---
+
+class: regular 
+
+### Uncertainty in predictions
+
+- There is uncertainty in our predictions, so we need to calculate an a standard error (SE) to capture the uncertainty
+
+- The SE is different depending on whether you are predicting an average value or an individual value
+
+- SE is larger when predicting for an individual value than for an average value 
+
+---
+
+### Standard errors for predictions
+
+.alert[
+**Predicting the mean response**
+
+`$$SE(\hat{\mu}) = \hat{\sigma}\sqrt{\frac{1}{n} + \frac{(x-\bar{x})^2}{\sum\limits_{i=1}^n(x_i - \bar{x})^2}}$$`
+]
+&lt;br&gt;&lt;br&gt;
+
+--
+
+.alert[
+**Predicting an individual response**
+
+`$$SE(\hat{y}) = \hat{\sigma}\sqrt{1 + \frac{1}{n} + \frac{(x-\bar{x})^2}{\sum\limits_{i=1}^n(x_i - \bar{x})^2}}$$`
+]
+
+---
+
+### CI for predicted heart weight
+
+- Calculate a 95% prediction interval for Mindy's predicted heart weight. 
+
+
+
+
+```
+##        fit      lwr      upr
+## 1 12.47166 9.581804 15.36151
+```
+
+--
+
+
+- Calculate a 95% confidence interval for the predicted mean heart weight for the subset of cats who weigh 3.18 kg. 
+
+
+```
+##        fit      lwr      upr
+## 1 12.47166 12.14269 12.80063
+```
+
+
+---
+
+class: middle, center
+
+## Cautions 
+
+---
+
+### Caution: Extrapolation 
+
+- The regression is only useful for predictions for the response variable `\(y\)` in the range of the predictor variable `\(x\)` that was used to fit the regression 
+
+- It is risky to predict far beyond that range of `\(x\)`, since you don't have data to tell whether or not the relationship continues to follow a straight line
+
+
+---
+
+### Caution: Extrapolation
+
+.pull-left[
+My cat Andy weighs about 8.60 kg (10 lbs). 
+
+Should we use this regression model to predict his heart weight? 
+]
+
+.pull-right[
+&lt;img src="img/05/andy.JPG" width="50%" height="50%" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+
+| min|  q1| median|    q3| max|
+|---:|---:|------:|-----:|---:|
+|   2| 2.3|    2.7| 3.025| 3.9|
+
+The heaviest cat in this dataset weighs 3.9 kg (8.6 lbs). We should **&lt;u&gt;not&lt;/u&gt;** use this model to predict Andy's heart weight, since that would be a case of &lt;font class = "vocab"&gt;extrapolation&lt;/font&gt;.
+
+---
+
+## Recap
+
+--
+
+
+
+---
+
+class: title-slide 
+
+&lt;br&gt;&lt;br&gt;
+
+# Simple Linear Regression 
+## Prediction
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+### Dr. Maria Tackett
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

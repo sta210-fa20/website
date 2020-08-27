@@ -10,7 +10,7 @@
     
     
     <item>
-      <title>Week 01</title>
+      <title>Week 01: Intro</title>
       <link>/schedule/week-01/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
@@ -127,7 +127,7 @@ font-size: 18px;
     </item>
     
     <item>
-      <title>Week 02</title>
+      <title>Week 02: SLR</title>
       <link>/schedule/week-02/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
@@ -232,13 +232,102 @@ font-size: 18px;
     </item>
     
     <item>
-      <title>Week 03</title>
+      <title>Week 03: SLR</title>
       <link>/schedule/week-03/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-03/</guid>
-      <description>Check back for details!</description>
-      <content>&lt;p&gt;Check back for details!&lt;/p&gt;
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday SLR: Conditions Update AE 05    SLR: Prediction Update    Wednesday SLR: Partitioning variability Update AE 06    Readings          Update    Update     Assignments          HW 02 due Wed, Sep 9 11:59p   Lab 03 due Wed, Sep 9 at 11:59p    Announcements Computing workshops by the Center for Data and Visualization Sciences</description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Slides&lt;/th&gt;
+&lt;th&gt;Videos&lt;/th&gt;
+&lt;th&gt;Application Exercises (AE)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Monday&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/05-slr-conditions.html&#34;&gt;SLR: Conditions&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Update&lt;/td&gt;
+&lt;td&gt;AE 05&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/05-slr-prediction.html&#34;&gt;SLR: Prediction&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Update&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wednesday&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/06-partition-var.html&#34;&gt;SLR: Partitioning variability&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Update&lt;/td&gt;
+&lt;td&gt;AE 06&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Update&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Update&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/hw/hw-02.html&#34;&gt;HW 02&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Wed, Sep 9 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lab 03&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Wed, Sep 9 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;announcements&#34;&gt;Announcements&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Computing workshops by the Center for Data and Visualization Sciences&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://duke.libcal.com/event/6867861&#34;&gt;R for data science: getting started, EDA, data wrangling&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Tue, Sep 1, 10a - 12p&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://duke.libcal.com/event/6867914&#34;&gt;R for data science: visualization, pivot, join, regression&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Wed, Sep 9, 1p - 3p&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find a complete list of workshops &lt;a href=&#34;https://library.duke.edu/data/workshops&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
     </item>
     
