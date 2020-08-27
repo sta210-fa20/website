@@ -28,11 +28,11 @@ The primary goal of today's lab is to practice with some of the primary data wra
 
 # Getting Started
 
-Each of your assignments will begin with the steps outlined in this section. For more detailed instructions about getting started, see the [Lab 01 instructions](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html)
+Each of your assignments will begin with the steps outlined in this section. For more detailed instructions about getting started, see the [Lab 01 instructions](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html).
 
 ## Clone the repo & start new RStudio project
 
-- Go to the sta210-fa20 organization on GitHub (http://www.github.com/sta210-fa20). Click on the repo with the prefix **lab-02-slr-**. It contains the starter documents you need to complete the lab.
+- Go to the [sta210-fa20 organization](http://www.github.com/sta210-fa20) on GitHub . Click on the repo with the prefix **lab-02-slr-**. It contains the starter documents you need to complete the lab.
 
 - Click on the green **Code** button, select **Use HTTPS**. Click on the clipboard icon to copy the repo URL.
 
