@@ -16,7 +16,7 @@ font-size: 18px;
 |-----------|--------------------------|--------|--------|
 | Monday    | [SLR: Conditions](https://sta210-fa20.netlify.app/slides/05-slr-conditions.html) | Update | AE 05 |
 |     | [SLR: Prediction](https://sta210-fa20.netlify.app/slides/05-slr-prediction.html) | Update | |
-| Wednesday | [SLR: Partitioning variability](https://sta210-fa20.netlify.app/slides/06-partition-var.html)    | Update | AE 06 |
+| Wednesday | [SLR: Partitioning variability](https://sta210-fa20.netlify.app/slides/06-slr-partition-var.html)    | Update | AE 06 |
 
 
 ## Readings
