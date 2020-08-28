@@ -14,8 +14,8 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [SLR: Conditions](https://sta210-fa20.netlify.app/slides/05-slr-conditions.html) | Update | AE 05 |
-|     | [SLR: Prediction](https://sta210-fa20.netlify.app/slides/05-slr-prediction.html) | Update | |
+| Monday    | [SLR: Conditions](https://sta210-fa20.netlify.app/slides/05-slr-conditions.html) | [SLR: Conditions](https://warpwire.duke.edu/w/h08EAA/) | AE 05 |
+|     | [SLR: Prediction](https://sta210-fa20.netlify.app/slides/05-slr-prediction.html) |[SLR: Prediction](https://warpwire.duke.edu/w/E08EAA/) | |
 | Wednesday | [SLR: Partitioning variability](https://sta210-fa20.netlify.app/slides/06-slr-partition-var.html)    | Update | AE 06 |
 
 
