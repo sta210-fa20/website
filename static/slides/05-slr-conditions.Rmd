@@ -95,6 +95,67 @@ ggplot(data = movie_scores, mapping = aes(x = critics, y = audience)) +
 ```
 
 ---
+class: middle
+
+.eq[
+$$Y|X \sim N(\beta_0 + \beta_1 X, \sigma_\epsilon^2)$$
+]
+
+
+```{r fig.height = 3.5}
+##   Code modified from https://stackoverflow.com/questions/31794876/ggplot2-how-to-curve-small-gaussian-densities-on-a-regression-line?rq=1
+
+## Modified based on BYSH: https://bookdown.org/roback/bookdown-bysh/ch-MLRreview.html#ordinary-least-squares-ols-assumptions
+
+set.seed(0)
+dat <- data.frame(x=(x=runif(10000, 0, 50)),
+                  y=rnorm(10000, 10*x, 100))
+
+## breaks: where you want to compute densities
+breaks <- seq(0, max(dat$x), len=5)
+dat$section <- cut(dat$x, breaks)
+
+## Get the residuals
+dat$res <- residuals(lm(y ~ x, data=dat))
+
+## Compute densities for each section, and flip the axes, and add means of sections
+## Note: the densities need to be scaled in relation to the section size (2000 here)
+dens <- do.call(rbind, lapply(split(dat, dat$section), function(x) {
+    d <- density(x$res, n=50)
+    res <- data.frame(x=max(x$x)- d$y*2000, y=d$x+mean(x$y))
+    res <- res[order(res$y), ]
+    ## Get some data for normal lines as well
+    xs <- seq(min(x$res), max(x$res), len=50)
+    res <- rbind(res, data.frame(y=xs + mean(x$y),
+                                 x=max(x$x) - 2000*dnorm(xs, 0, sd(x$res))))
+    res$type <- rep(c("empirical", "normal"), each=50)
+    res
+}))
+dens$section <- rep(levels(dat$section), each=100)
+
+dens <- dens %>%
+  filter(type == "normal")
+
+## Plot both empirical and theoretical
+ggplot(dat, aes(x, y)) +
+  geom_point(alpha = 0.05, size = 0.2) +
+  geom_smooth(method="lm", fill=NA, se = FALSE, color = "steelblue") +
+  geom_path(data=dens, aes(x, y, group=interaction(section)), color = "red", lwd=1.1) +
+geom_vline(xintercept=breaks, lty=2, color = "grey") +
+  labs(x = "x", 
+       y = "y") +
+  theme_classic() + 
+  annotate("text", x = 10, y = 600, label = latex2exp::TeX("$\\mu_{Y|X} = \\beta_0 + \\beta_1X$"), color = "steelblue", size = 8) +
+  annotate("text", x = 20, y = 400, label = latex2exp::TeX("$\\sigma^2_\\epsilon$"), color = "red", size = 8) +
+  theme(axis.title = element_text(size = 16),
+        axis.ticks = element_blank(), 
+        axis.text.x = element_blank(), 
+       axis.text.y = element_blank()
+      )
+  
+```
+
+---
 
 ## Model conditions
 

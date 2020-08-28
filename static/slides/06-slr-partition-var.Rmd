@@ -138,7 +138,7 @@ include_graphics("img/06/model-anova.png")
 
 ## Response variable, $Y$
 
-```{r fig.height = 3}
+```{r out.width = "90%"}
 mean_y <- mean(cats$Hwt)
 
 ggplot(data = cats, aes(x = Bwt, y = Hwt)) +
