@@ -237,7 +237,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-03/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday SLR: Conditions SLR: Conditions AE 05    SLR: Prediction SLR: Prediction    Wednesday SLR: Partitioning variability Update AE 06    Readings          Update    Update     Assignments          HW 02 due Wed, Sep 9 11:59p   Lab 03 due Wed, Sep 9 at 11:59p    Announcements Computing workshops by the Center for Data and Visualization Sciences</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday SLR: Conditions SLR: Conditions AE 05    SLR: Prediction SLR: Prediction    Wednesday SLR: Partitioning variability SLR: Partitioning variability AE 06    Readings          Update    Update     Assignments          HW 02 due Wed, Sep 9 11:59p   Lab 03 due Wed, Sep 9 at 11:59p    Announcements Computing workshops by the Center for Data and Visualization Sciences</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -258,7 +258,7 @@ font-size: 18px;
 &lt;tr&gt;
 &lt;td&gt;Monday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/05-slr-conditions.html&#34;&gt;SLR: Conditions&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/h08EAA/&#34;&gt;SLR: Conditions&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/tU8EAA/&#34;&gt;SLR: Conditions&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;AE 05&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -270,7 +270,7 @@ font-size: 18px;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/06-slr-partition-var.html&#34;&gt;SLR: Partitioning variability&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Update&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/vU8EAA/&#34;&gt;SLR: Partitioning variability&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;AE 06&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
