@@ -23,8 +23,7 @@ font-size: 18px;
 
 |            |   |
 |------------|---|
-| Update |    |
-| Update |    |
+| [OpenIntro Statistics: 8.1 - 8.4 ](https://leanpub.com/openintro-statistics) <br> (click "Read Free Sample" to access PDF) | **Required**   |
 
 
 ## Assignments

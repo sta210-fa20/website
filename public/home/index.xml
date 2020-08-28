@@ -237,7 +237,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-03/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday SLR: Conditions SLR: Conditions AE 05    SLR: Prediction SLR: Prediction    Wednesday SLR: Partitioning variability SLR: Partitioning variability AE 06    Readings          Update    Update     Assignments          HW 02 due Wed, Sep 9 11:59p   Lab 03 due Wed, Sep 9 at 11:59p    Announcements Computing workshops by the Center for Data and Visualization Sciences</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday SLR: Conditions SLR: Conditions AE 05    SLR: Prediction SLR: Prediction    Wednesday SLR: Partitioning variability SLR: Partitioning variability AE 06    Readings          OpenIntro Statistics: 8.1 - 8.4  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required    Assignments          HW 02 due Wed, Sep 9 11:59p   Lab 03 due Wed, Sep 9 at 11:59p    Announcements Computing workshops by the Center for Data and Visualization Sciences</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -285,12 +285,8 @@ font-size: 18px;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Update&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Update&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://leanpub.com/openintro-statistics&#34;&gt;OpenIntro Statistics: 8.1 - 8.4 &lt;/a&gt; &lt;br&gt; (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF)&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
