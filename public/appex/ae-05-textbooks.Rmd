@@ -1,0 +1,191 @@
+---
+title: "AE 05: Price of Textbooks"
+subtitle: "Conditions + Prediction"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+
+## Class Announcements
+
+- Lab 02 due Wednesday at 11:59p
+- HW 01 due Wednesday at 11:59p
+
+## Announcement from Duke Acturarial Society 
+
+Duke Actuarial Society (DAS) is a student-run pre-professional organization that aims to empower Duke students interested in pursuing a career in actuarial science and risk management. DAS seeks to create and empower an actuarial community at Duke through student-led forums, annual speaker series, skill-building workshops, networking events and job-shadow days with outstanding industry professionals, participation in financial risk management case competitions and exam preparation.
+DAS is a community grounded in education, diversity, and mentorship that strives to guide the personal and professional development of Duke students and prepare them for the diverse career opportunities awaiting them at the crossroads of statistics, economics, mathematics, and computer science.
+
+At this time, we encourage you to apply to Duke Actuarial Society. 
+https://forms.gle/wEa2ZMcj618jupbq5 . **Applications close September 5th at 11:59 pm EST. **
+
+We also encourage you to attend our speaker series and come meet some Duke alums, ranging from investment bankers to actuaries, who are not only excited to meet you and offer insight into their professions but also discuss the industry as it is today. Please see the flyer attached. 
+If you have any questions/concerns, please contact [bhrij.patel@duke.edu](mailto:bhrij.patel@duke.edu]).
+ 
+## Principles of data analysis 
+
+### Vingette 2 from [Elements and Principles for Characterizing Variation
+between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf)
+
+*Rankings by Professor Tackett.*
+
+**Background**. Stephanie works as a data scientist at a small startup company that sells widgets over the Internet through an online store on the company’s web site. One day, the CEO comes by Stephanie’s desk and asks her how many customers have typically shown up at the store’s website
+each day for the past month. The CEO waits by Stephanie’s desk for the answer.
+
+**Analysis.** Stephanie launches her statistical analysis software and, typing directly into the software’s console, immediately pulls records from the company’s database for the past month. She then groups the records by day and tabulates the number of customers. From this daily
+tabulation she then calculates the mean and the median count. She then quickly produces a time series plot of the daily count of visitors to the web site over the past month.
+
+**Results.** Stephanie verbally reports the daily mean and median count to the CEO standing over her shoulder. While showing the results she briefly describes how the company’s database system collects information about visitors and its various strengths and weaknesses. She also notes that
+in the past month the web site experienced some unexpected down time when it was inaccessible to the world for a few hours.
+
+### Mapping to Principles
+
+- **Data Matching (5)**: The data are essentially perfectly matched to the problem.
+- **Exhaustive (3)**:  There is some exhaustiveness here as the analysis presented both the mean and the median (two different elements) as a summary of the typical number of customers per day.
+- **Skeptical(1)**: The analysis did not address any other hypotheses or questions.
+- **Second-order (4)**: Details about how the company’s database operates and noting that the web site experienced some downtime are second order details. The information may impact the interpretation of the data, but does not imply that the summary statistic is incorrect and does not directly impact the analysis.
+- **Transparent (4)**: The analysis is fairly simple and as such is transparent. The addition of the
+time series plot increases the transparency of the analysis.
+- **Reproducible (1)**: Given that the results were verbally relayed and that the analysis was conducted on the fly in the statistical software’s console, the analysis is not reproducible.
+
+## Questions? 
+
+## Clone a repo + start a new project
+
+See [Lab 01](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html) for instructions on cloning a repo and starting a new project in RStudio. 
+
+Once you have the new project, run the code below (filling in your github username and email address) to configure git. 
+
+```{r eval=FALSE}
+library(usethis)
+use_git_config(user.name= "your github username", user.email="your email")
+```
+
+## Price of Textbooks
+
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(broom)
+library(patchwork)
+```
+
+
+In this AE, we will look at the price of textbooks and how it varies based on the number of pages. The data contains the price and number of pages for a random sample of 30 college textbooks from the Cal Poly-San Luis Obispo bookstore in Fall 2006.
+
+```{r load-data, message=FALSE}
+textbooks <- read_csv("data/textbooks.csv")
+```
+
+We will use the following variables: 
+- `Pages`: Number of pages in the textbook
+- `Price`: Price of the textbook in US dollars
+
+### Visualize distributions 
+
+```{r, fig.height = 6}
+p1 <- ggplot(data = textbooks, aes(x = Price)) +
+  geom_histogram() + 
+  labs(title = "Price of Textbooks", 
+       subtitle = "in 2006")
+
+p2 <- ggplot(data = textbooks, aes(x = Pages)) +
+  geom_histogram() + 
+  labs(title = "Pages in Textbooks", 
+       subtitle = "in 2006")
+
+p3 <- ggplot(data = textbooks, aes(x = Pages, y = Price)) +
+  geom_point() + 
+  labs(y = "Price in US Dollars", 
+       title = "Price vs. Pages in Textbooks", 
+       subtitle = "in 2006")
+
+(p1 + p2) / p3
+```
+
+### Linear model 
+
+```{r model}
+textbook_model <- lm(Price ~ Pages, data = textbooks)
+tidy(textbook_model)
+```
+
+$$\hat{Price} = -3.422 + 0.147 \times Pages$$
+
+### Conditions for SLR
+
+We use the residuals to check the model conditions for SLR. We can calculate the residuals and fitted (predicted) values using the `augment` function. 
+
+```{r}
+textbook_aug <- augment(textbook_model)
+```
+
+```{r, fig.height  = 6}
+resid_fitted <- ggplot(data = textbook_aug, aes(x = .fitted, y = .resid)) +
+  geom_point() +
+  geom_hline(yintercept = 0, color = "red") +
+  labs(x = "Predicted values", 
+       y = "Residual", 
+       title = "Residuals vs. Predicted")
+                       
+resid_hist <- ggplot(data = textbook_aug, aes(x = .resid)) +
+  geom_histogram() +
+  labs(x = "Residuals", title = "Dist. of Residuals")
+
+resid_qq <- ggplot(data = textbook_aug, aes(sample = .resid)) +
+  stat_qq() + 
+  stat_qq_line() +
+  labs(title = "Normal QQ-plot of residuals")
+
+resid_fitted / (resid_hist + resid_qq)
+```
+
+Are the conditions satisfied? Briefly explain.
+
+- **Linearity**: 
+- **Constant variance**: 
+- **Normality**: 
+- **Independence**: 
+
+## Prediction
+
+Below are two prediction tasks: 
+
+1. Calculate the predicted price and associated 90% interval for a textbook with 500 pages. 
+2. Estimate the mean price and associated 90% interval for textbooks with 500 pages
+
+Which interval will we use to complete each tasks? 
+
+```{r}
+x0 <- data_frame(Pages = 500)
+```
+
+**Interval A**
+```{r}
+textbook_model %>% 
+  predict(x0, interval = "confidence", conf.level = 0.90)
+```
+
+**Interval B**
+
+```{r}
+textbook_model %>% 
+  predict(x0, interval = "prediction", conf.level = 0.90)
+```
+
+Knit your Rmd file to view the updated output. Commit your changes with an informative commit message, and push the updated files to GitHub. 
+
+<hr> 
+
+The data used in this exercise is from [*Stat2: Building Models for a World of Data*](http://www.stat2.org/datapage.html).
