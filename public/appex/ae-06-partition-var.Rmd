@@ -70,7 +70,8 @@ We will use the following variables:
 
 ```{r model}
 textbook_model <- lm(Price ~ Pages, data = textbooks)
-tidy(textbook_model)
+tidy(textbook_model) %>%
+  kable(digits = 3)
 ```
 
 $$\hat{Price} = -3.422 + 0.147 \times Pages$$

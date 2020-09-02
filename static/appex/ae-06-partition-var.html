@@ -389,11 +389,11 @@ summary {
 <ul>
 <li>We should be able to see <u>all</u> of your code.</li>
 </ul></li>
-<li>Name code chunks.</li>
 <li>Knit, commit, and push regularly.
 <ul>
 <li>Think about it like clicking to save regularly as you type a report.</li>
 </ul></li>
+<li>Name code chunks to help navigate the Rmd.</li>
 </ul>
 </div>
 <div id="questions" class="section level2">
@@ -417,12 +417,35 @@ library(knitr)</code></pre>
 <div id="linear-model" class="section level3">
 <h3>Linear model</h3>
 <pre class="r"><code>textbook_model &lt;- lm(Price ~ Pages, data = textbooks)
-tidy(textbook_model)</code></pre>
-<pre><code>## # A tibble: 2 x 5
-##   term        estimate std.error statistic      p.value
-##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;
-## 1 (Intercept)   -3.42    10.5       -0.327 0.746       
-## 2 Pages          0.147    0.0193     7.65  0.0000000245</code></pre>
+tidy(textbook_model) %&gt;%
+  kable(digits = 3)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">(Intercept)</td>
+<td align="right">-3.422</td>
+<td align="right">10.464</td>
+<td align="right">-0.327</td>
+<td align="right">0.746</td>
+</tr>
+<tr class="even">
+<td align="left">Pages</td>
+<td align="right">0.147</td>
+<td align="right">0.019</td>
+<td align="right">7.653</td>
+<td align="right">0.000</td>
+</tr>
+</tbody>
+</table>
 <p><span class="math display">\[\hat{Price} = -3.422 + 0.147 \times Pages\]</span></p>
 </div>
 <div id="analysis-of-variance-anova" class="section level3">
