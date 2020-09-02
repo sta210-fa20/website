@@ -18,12 +18,19 @@ knitr::opts_chunk$set(warning = FALSE,
 
 ## Class Announcements
 
-- Lab 02 due today at 11:59p
-- HW 01 due today at 11:59p
+- Lab 02 + HW 01 due today at 11:59p
 - Team labs start tomorrow
-- Quiz 01: Sep 10
-  - Week 01 - 03, Lab 01 - 03, HW 01 - 02
+- Quiz 01: Sep 10 - 11
+  - Week 01 - 03, Lab 01 - 02, HW 01, AE 01 - 06
   - Open book, open note
+  - Will have 2 hours to take quiz once you open it
+  - May include computing + conceptual + analysis in practice
+- Lab 01 grading + solutions (will be available on Sakai)
+- Regrade requests 
+  - On Gradescope 24 hours after assignment returned and due within a week
+  - Consult the solutions + attend office hours 
+  - Only submit if something was incorrectly graded.
+  - We reserve the right to regrade the entire assignment which could result in a lower grade
   
 ## Code styling + workflow 
 
