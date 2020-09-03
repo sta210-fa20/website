@@ -149,7 +149,7 @@ Find out more about density plots on the [`geom_density`](https://ggplot2.tidyve
 See the [patchwork](https://patchwork.data-imaginist.com/) reference page for more information.  
 ```
 
-1.Make a histogram and a density plot to visualize the distribution of the predictor variable `review_scores_cleanliness`. Use the patchwork function to display the plots side-by-side. 
+1. Make a histogram and a density plot to visualize the distribution of the predictor variable `review_scores_cleanliness`. Use the patchwork function to display the plots side-by-side. 
     - What are 1 - 2 ways a density plot is similar to a histogram?
     - What are 1 - 2 ways a density plot differs from a histogram? 
   
