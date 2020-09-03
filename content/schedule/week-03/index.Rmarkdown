@@ -31,7 +31,7 @@ font-size: 18px;
 |                        |   |
 |------------------------|---|
 | [HW 02](https://sta210-fa20.netlify.app/hw/hw-02.html)            |  **due Wed, Sep 9 11:59p** |
-| Lab 03          |  **due Wed, Sep 9 at 11:59p** |
+| [Lab 03](https://sta210-fa20.netlify.app/labs/lab-03-airbnb.html)            |  **due Wed, Sep 9 at 11:59p** |
 
 
 ## Announcements 

@@ -45,7 +45,8 @@ lessons:
     slides: "06-slr-partition-var.html"
     hw: "hw-02.html"
   - date: "Thu, Sep 03"
-    title: "Lab 03"
+    title: "Lab 03: Airbnbs in Nashville, TN"
+    lab: "lab-03-airbnb.html"
  
   - week: "Week 04"
     date: "Mon, Sep 07"
@@ -53,7 +54,7 @@ lessons:
   - date: "Wed, Sep 09"
     title: "Multiple linear regression (MLR)"
   - date: "Thu, Sep 10"
-    title: "Lab 04"
+    title: "No Lab"
     quiz: "quiz-01.html"
   
   - week: "Week 05"

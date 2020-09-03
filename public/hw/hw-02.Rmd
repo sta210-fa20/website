@@ -72,25 +72,25 @@ tidy(carb_model) %>%
 
 1. According to the [Starbucks menu](https://www.starbucks.com/menu/product/1255/single?parent=%2Ffood%2Fbakery%2Fmuffins-and-breads), pumpkin bread has 410 calories. 
 
-    **a.** How many grams of carbohydrates do you predict to be in pumpkin bread? Show how you obtain this answer. 
+    **a.** How many grams of carbohydrates do you predict to be in pumpkin bread? Show how you calculated this answer.
 
     **b. ** Show code and output to obtain a 90% confidence interval for the mean grams of carbohydrates in Starbucks food items with 410 calories.
 
     **c. ** Show code and output to obtain a 90% prediction interval for the grams of carbohydrates in food items with 410 calories. 
 
-    **d. ** You decide to purchase a piece of pumpkin bread, and you want to predict the amount of carbs in the piece. Should you use the interval from part b or part c? Briefly explain your choice. 
+    **d. ** You decide to purchase a piece of pumpkin bread, and you want to predict the amount of carbs in this piece. Should you use the interval from part b or part c? Briefly explain your choice. 
     
 1. Let's take a look at the model conditions. First, create a scatterplot of the residuals vs. predicted values. Show the code used to create the plot. Be sure your plot has informative axis labels and title. *Hint: You can use the `augment` function to calculate the residuals and predicted values for each observation.*
 
-1. Make a histogram and Normal quantile plot of the residuals. Show the code used to create each plot. Be sure your plot has informative axis labels and title.
+1. Make a histogram and Normal quantile plot of the residuals. Show the code used to create each plot. Be sure your plots have informative axis labels and titles.
 
-1. Are the model conditions satisfed? Briefly explain your reasoning for each condition? 
+1. Are the model conditions satisfied? Briefly explain your reasoning for each condition. 
     - Linearity
     - Constant variance
     - Normality 
     - Independence
   
-1. What percent of the variation in carbohydrates is explained by the calories in Starbucks food items? Show your work using the analysis of variance table. 
+1. What percent of the variation in carbohydrates is explained by the calories in Starbucks food items? Show how you calculated this value from the ANOVA table.
 
 ## Part 2: Wrapping up SLR
 
@@ -100,7 +100,7 @@ Write your responses to the following questions:
 
 - What is one thing you learned about simple linear regression? 
 
-You must write a substantive response to receive credit. Responses equivalent "I don't have any questions"will not receive credit. 
+You must write a substantive response to receive credit, i.e. responses equivalent to "I don't have any questions" are not considered substantive and will not receive credit. 
 
 # Submission
 Knit, commit, and push your final changes to GitHub, then submit your finalized PDF on Gradescope. See the [Lab 01 instructions](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html) for more details on submitting your work on Gradescope.
@@ -109,7 +109,7 @@ Knit, commit, and push your final changes to GitHub, then submit your finalized 
 
 | **Total** | **50** |
 |-------------------------------------------------------------|:--:|
-| Part 1: Conceptual Problems | 34 |
+| Part 1: Conceptual questions | 34 |
 | Part 2: Wrapping up SLR | 6 |
 | Document submitted as PDF with clear question headers 	| 3 | 
 | Name and date updated in YAML 	| 2 |
