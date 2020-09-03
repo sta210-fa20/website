@@ -121,6 +121,10 @@ See the [tidyr](https://tidyr.tidyverse.org/reference/extract.html) reference pa
 
 1. Let's update `price` so we can use it for regression analysis. To do so, we will first use the `extract` function in tidyr package to create a column of values with the numeric values. Then we can update `price` so it is a numeric data type. Fill in the code below to extract the values of the price and store them as a numeric variable. 
 
+```{r include = F}
+# need to remove commas before extra function using str_replace
+```
+
 ```{r eval = F}
 clean_airbnb <- clean_airbnb %>% 
   extract(price, "price") %>% #extract price values
