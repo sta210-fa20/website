@@ -325,12 +325,74 @@ font-size: 18px;
   </item>
   
 <item>
-  <title>Week 04</title>
+  <title>Week 04: ANOVA &#43; MLR</title>
   <link>/schedule/week-04/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/schedule/week-04/</guid>
-  <description>&lt;p&gt;Check back for details!&lt;/p&gt;
+  <description>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Slides&lt;/th&gt;
+&lt;th&gt;Videos&lt;/th&gt;
+&lt;th&gt;Application Exercises (AE)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Monday&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/07-anova.html&#34;&gt;Comparing means with ANOVA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/R2EEAA/&#34;&gt;Comparing means with ANOVA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;AE 07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wednesday&lt;/td&gt;
+&lt;td&gt;Multiple linear regression&lt;/td&gt;
+&lt;td&gt;Multiple linear regression&lt;/td&gt;
+&lt;td&gt;AE 08&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://leanpub.com/openintro-statistics&#34;&gt;OpenIntro Statistics: 7.5 &lt;/a&gt; &lt;br&gt; (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF)&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Quiz 01&lt;/td&gt;
+&lt;td&gt;Sep 10 - 11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;announcements&#34;&gt;Announcements&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Computing workshops by the Center for Data and Visualization Sciences&lt;/strong&gt;  Find a complete list of workshops &lt;a href=&#34;https://library.duke.edu/data/workshops&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
   </item>
   

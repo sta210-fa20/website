@@ -50,13 +50,17 @@ lessons:
  
   - week: "Week 04"
     date: "Mon, Sep 07"
-    title: "ANOVA"
+    title: "Comparing means with ANOVA"
+    slides: "07-anova.html"
   - date: "Wed, Sep 09"
     title: "Multiple linear regression (MLR)"
   - date: "Thu, Sep 10"
-    title: "No Lab"
+    title: "No Lab: Take Quiz 01"
     quiz: "quiz-01.html"
-  
+  - date: "Fri, Sep 11"
+    title: "Quiz 01 due"
+    quiz: "quiz-01.html"
+    
   - week: "Week 05"
     date: "Mon, Sep 14"
     title: "MLR: inference + conditions"

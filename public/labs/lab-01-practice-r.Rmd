@@ -303,6 +303,7 @@ current_trails %>%
 This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write informative commit message (e.g. "Completed exercises 4 - 7"), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty.
 </div>
 
+<!-- for future semesters: need to add something about listing the values and showing how many times each one occurs.--->
 8. Consider the distribution of `dogwalking`. 
     - What are the values of `dogwalking` in the dataset? Show the code and output to support your answer. 
     - What do you think is the most likely reason for the missing observations of `dogwalking`? In other words, what does a missing value of `dogwalking` indicate? 

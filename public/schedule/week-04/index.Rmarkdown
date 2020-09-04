@@ -1,6 +1,41 @@
 ---
-title: "Week 04"
+title: "Week 04: ANOVA + MLR"
 weight: 4
 ---
 
-Check back for details!
+<style>
+table {
+font-size: 18px;
+}
+
+</style>
+
+## Lectures
+
+|           | Slides                   | Videos | Application Exercises (AE) |
+|-----------|--------------------------|--------|--------|
+| Monday    | [Comparing means with ANOVA](https://sta210-fa20.netlify.app/slides/07-anova.html)| [Comparing means with ANOVA](https://warpwire.duke.edu/w/R2EEAA/) | AE 07|
+| Wednesday | Multiple linear regression | Multiple linear regression| AE 08 |
+
+
+## Readings
+
+|            |   |
+|------------|---|
+| [OpenIntro Statistics: 7.5 ](https://leanpub.com/openintro-statistics) <br> (click "Read Free Sample" to access PDF) | **Required**   |
+
+
+## Assignments
+
+|                        |   |
+|------------------------|---|
+| Quiz 01           |  Sep 10 - 11 |
+
+
+
+## Announcements 
+
+**Computing workshops by the Center for Data and Visualization Sciences**  Find a complete list of workshops [here](https://library.duke.edu/data/workshops). 
+
+
+
