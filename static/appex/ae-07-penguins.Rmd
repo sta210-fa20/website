@@ -1,0 +1,137 @@
+---
+title: "AE 07: Palmer Penguins"
+subtitle: "ANOVA"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+
+## Class Announcements
+
+- Lab 03 + HW 02 due Wednesday at 11:59p
+- Quiz 01: Sep 10 - 11
+  - Week 01 - 03, Lab 01 - 02, HW 01, AE 01 - 06
+  - Open book, open note
+  - Will have 2 hours to take quiz once you open it
+  - May include computing + conceptual + analysis in practice
+  - We'll talk about format on Wednesday 
+
+## Questions about Lab 03 + team work? 
+
+## Questions about *Comparing means with ANOVA* video? 
+
+
+## Clone a repo + start a new project
+
+Find the repo with the **ae-07-** prefix. Clone the repo and start a new project in RStudio. 
+
+See [Lab 01](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html) for instructions on cloning a repo and starting a new project in RStudio. 
+
+Once you have the new project, run the code below (filling in your github username and email address) to configure git. 
+
+```{r eval=FALSE}
+library(usethis)
+use_git_config(user.name= "your github username", user.email="your email")
+```
+
+## Palmer Penguins 
+
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(palmerpenguins)
+library(patchwork)
+library(broom)
+library(knitr)
+```
+
+In this AE, we will look at the `penguins` data set from the [palmerpenguins R package](v) maintained by Dr. Allison Horst. This data contains measurements and other characteristics for 344 penguins observed near Palmer Station Antarctica. The data were originally collected by Dr. Kristen Gorman. 
+
+
+We will use Analysis of Variance (ANOVA) to compare the mean body mass (`body_mass_g`), for the three penguin species (`species`) - Adélie, Chinstrap and Gentoo. 
+
+Click [here](https://allisonhorst.github.io/palmerpenguins/reference/penguins.html) to view the full codebook for the `penguins` data set. 
+
+### Some EDA
+
+```{r eda}
+p1 <- ggplot(data = penguins, aes(x = species, y = body_mass_g)) + 
+  geom_boxplot() + 
+  coord_flip()
+
+p2 <- ggplot(data = penguins, aes(x = body_mass_g, fill = species)) +
+  geom_histogram(alpha = 0.5)
+
+p1 + p2 
+```
+
+```{r sum-stats} 
+penguins %>%
+  group_by(species) %>%
+  summarise(n = n(), mean = mean(body_mass_g, na.rm = TRUE), sd = sd(body_mass_g, na.rm = TRUE))
+```
+
+### Comparing means with ANOVA
+
+We would like to test the following hypotheses: 
+
+$$\begin{align}&H_0: \mu_1 = \mu_2 = \mu_3\\
+&H_a: \text{ at least one species has a }\mu_i \text{ that differs from the others}\end{align}$$
+
+We will use the ANOVA table to test the hypotheses. 
+
+```{r}
+penguin_anova <- aov(body_mass_g ~ species, data = penguins)
+```
+
+```{r}
+tidy(penguin_anova) %>%
+  kable(format = "html", digits = 3)
+```
+
+1. State the null and alternative hypotheses in words. 
+
+2. What is the sum of squares used to measure
+  - variability of the group means about the overall mean
+  - variability of the observations about the overall mean
+  - variability of the observations about the group mean
+
+3. State the conclusion in the context of the data. 
+
+### Checking conditions 
+
+4. Are the conditions for ANOVA satisfied? Use the plots and summary statistics from the EDA. You can create more plots and calculate additional summary statistics as needed.
+
+- **Normality**
+- **Constant variance**
+- **Independence**
+
+## Next steps: Pairwise comparisions  
+
+Using the ANOVA test, we concluded that at least one species has a mean body mass that's different from the others. The next natural question is how does body mass compare across species. 
+
+- Issue with multiple comparison 
+  - Indvidiual vs. Family-wise error rate
+- Bonferonni correction 
+- Calculate multiple CI using Bonferonni correction 
+
+```{r}
+#install.packages(pairwiseCI, dependencies = TRUE)
+# run in console to install  package
+
+library(pairwiseCI) #show output and show how to interpret
+pairwiseCI(body_mass_g ~ species, data = penguins, conf.level = 0.95)
+```
+
+Knit your Rmd file to view the updated output. Commit your changes with an informative commit message, and push the updated files to GitHub. 
+
