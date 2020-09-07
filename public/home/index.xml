@@ -333,7 +333,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-04/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Comparing means with ANOVA Comparing means with ANOVA AE 07   Wednesday Multiple linear regression Multiple linear regression AE 08    Readings          OpenIntro Statistics: 7.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required    Assignments          Quiz 01 Sep 10 - 11    Announcements Computing workshops by the Center for Data and Visualization Sciences Find a complete list of workshops here.</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Comparing means with ANOVA Comparing means with ANOVA AE 07: Palmer Penguins   Wednesday Multiple linear regression Multiple linear regression AE 08    Readings          OpenIntro Statistics: 7.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required    Assignments          Quiz 01 Sep 10 - 11    Announcements Computing workshops by the Center for Data and Visualization Sciences Find a complete list of workshops here.</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -355,7 +355,7 @@ font-size: 18px;
 &lt;td&gt;Monday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/07-anova.html&#34;&gt;Comparing means with ANOVA&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/R2EEAA/&#34;&gt;Comparing means with ANOVA&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 07&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-07-penguins.html&#34;&gt;AE 07: Palmer Penguins&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
