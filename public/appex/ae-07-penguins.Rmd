@@ -26,6 +26,11 @@ knitr::opts_chunk$set(warning = FALSE,
   - May include computing + conceptual + analysis in practice
   - We'll talk about format on Wednesday 
 - Office hours
+  - Check in using the "Office Hours" note on Piazza if a member of the teaching team is not immediately availalbe. 
+- *Optional Text* -  
+  - *Applied Linear Statistical Models* by Kutner, Nachtsheim, John Neter, and  Li (Older editions called *Applied Linear Regression Models*)
+  - graduate-level text with more theoretical details
+  - available at Duke library.
 
 ## Questions about Lab 03 + team work or HW 02? 
 
@@ -47,7 +52,6 @@ use_git_config(user.name= "your github username", user.email="your email")
 
 ## Palmer Penguins 
 
-
 ```{r load-packages, message=FALSE}
 library(tidyverse)
 library(palmerpenguins)
@@ -56,7 +60,7 @@ library(broom)
 library(knitr)
 ```
 
-In this AE, we will look at the `penguins` data set from the [palmerpenguins R package](v) maintained by Dr. Allison Horst. This data contains measurements and other characteristics for 344 penguins observed near Palmer Station Antarctica. The data were originally collected by Dr. Kristen Gorman. 
+In this AE, we will look at the `penguins` data set from the [palmerpenguins R package](v) maintained by Dr. Allison Horst. This data contains measurements and other characteristics for 344 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman. 
 
 
 We will use Analysis of Variance (ANOVA) to compare the mean body mass (`body_mass_g`), for the three penguin species (`species`) - Adélie, Chinstrap and Gentoo. 
@@ -82,14 +86,23 @@ penguins %>%
   summarise(n = n(), mean = mean(body_mass_g, na.rm = TRUE), sd = sd(body_mass_g, na.rm = TRUE))
 ```
 
-### Comparing means with ANOVA
+### Checking conditions 
 
-We would like to test the following hypotheses: 
+We would like use ANOVA to test the following hypotheses: 
 
 $$\begin{align}&H_0: \mu_1 = \mu_2 = \mu_3\\
 &H_a: \text{ at least one species has a }\mu_i \text{ that differs from the others}\end{align}$$
 
-We will use the ANOVA table to test the hypotheses. 
+
+1. Are the conditions for ANOVA satisfied? Use the plots and summary statistics from the EDA to support your response. You can also create more plots and calculate additional summary statistics as needed.
+
+   - **Normality**
+   - **Constant variance**
+   - **Independence**
+
+### Comparing means using ANOVA
+
+Below is the ANOVA table to test our hypotheses.
 
 ```{r}
 penguin_anova <- aov(body_mass_g ~ species, data = penguins)
@@ -100,22 +113,15 @@ tidy(penguin_anova) %>%
   kable(digits = 3)
 ```
 
-1. State the null and alternative hypotheses in words. 
+2. State the null and alternative hypotheses in words. 
 
-2. What is the sum of squares used to measure
+3. What is the sum of squares used to measure
     - variability of the group means about the overall mean
     - variability of the observations about the overall mean
     - variability of the observations about the group mean
 
-3. State the conclusion in the context of the data. 
 
-### Checking conditions 
-
-4. Are the conditions for ANOVA satisfied? Use the plots and summary statistics from the EDA. You can create more plots and calculate additional summary statistics as needed.
-
-   - **Normality**
-   - **Constant variance**
-   - **Independence**
+4. State the conclusion in the context of the data. 
 
 ## Next steps
 
@@ -124,4 +130,5 @@ tidy(penguin_anova) %>%
 
 
 *Knit your Rmd file to view the updated output. Commit your changes with an informative commit message, and push the updated files to GitHub.*
+
 

@@ -381,7 +381,16 @@ summary {
 <li>May include computing + conceptual + analysis in practice</li>
 <li>We’ll talk about format on Wednesday</li>
 </ul></li>
-<li>Office hours</li>
+<li>Office hours
+<ul>
+<li>Check in using the “Office Hours” note on Piazza if a member of the teaching team is not immediately availalbe.</li>
+</ul></li>
+<li><em>Optional Text</em> -
+<ul>
+<li><em>Applied Linear Statistical Models</em> by Kutner, Nachtsheim, John Neter, and Li (Older editions called <em>Applied Linear Regression Models</em>)</li>
+<li>graduate-level text with more theoretical details</li>
+<li>available at Duke library.</li>
+</ul></li>
 </ul>
 </div>
 <div id="questions-about-lab-03-team-work-or-hw-02" class="section level2">
@@ -405,7 +414,7 @@ library(palmerpenguins)
 library(patchwork)
 library(broom)
 library(knitr)</code></pre>
-<p>In this AE, we will look at the <code>penguins</code> data set from the <a href="v">palmerpenguins R package</a> maintained by Dr. Allison Horst. This data contains measurements and other characteristics for 344 penguins observed near Palmer Station Antarctica. The data were originally collected by Dr. Kristen Gorman.</p>
+<p>In this AE, we will look at the <code>penguins</code> data set from the <a href="v">palmerpenguins R package</a> maintained by Dr. Allison Horst. This data contains measurements and other characteristics for 344 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman.</p>
 <p>We will use Analysis of Variance (ANOVA) to compare the mean body mass (<code>body_mass_g</code>), for the three penguin species (<code>species</code>) - Adélie, Chinstrap and Gentoo.</p>
 <p>Click <a href="https://allisonhorst.github.io/palmerpenguins/reference/penguins.html">here</a> to view the full codebook for the <code>penguins</code> data set.</p>
 <div id="some-eda" class="section level3">
@@ -429,12 +438,23 @@ p1 + p2 </code></pre>
 ## 2 Chinstrap    68 3733.  384.
 ## 3 Gentoo      124 5076.  504.</code></pre>
 </div>
-<div id="comparing-means-with-anova" class="section level3">
-<h3>Comparing means with ANOVA</h3>
-<p>We would like to test the following hypotheses:</p>
+<div id="checking-conditions" class="section level3">
+<h3>Checking conditions</h3>
+<p>We would like use ANOVA to test the following hypotheses:</p>
 <p><span class="math display">\[\begin{align}&amp;H_0: \mu_1 = \mu_2 = \mu_3\\
 &amp;H_a: \text{ at least one species has a }\mu_i \text{ that differs from the others}\end{align}\]</span></p>
-<p>We will use the ANOVA table to test the hypotheses.</p>
+<ol style="list-style-type: decimal">
+<li><p>Are the conditions for ANOVA satisfied? Use the plots and summary statistics from the EDA to support your response. You can also create more plots and calculate additional summary statistics as needed.</p>
+<ul>
+<li><strong>Normality</strong></li>
+<li><strong>Constant variance</strong></li>
+<li><strong>Independence</strong></li>
+</ul></li>
+</ol>
+</div>
+<div id="comparing-means-using-anova" class="section level3">
+<h3>Comparing means using ANOVA</h3>
+<p>Below is the ANOVA table to test our hypotheses.</p>
 <pre class="r"><code>penguin_anova &lt;- aov(body_mass_g ~ species, data = penguins)</code></pre>
 <pre class="r"><code>tidy(penguin_anova) %&gt;%
   kable(digits = 3)</code></pre>
@@ -468,7 +488,7 @@ p1 + p2 </code></pre>
 </tr>
 </tbody>
 </table>
-<ol style="list-style-type: decimal">
+<ol start="2" style="list-style-type: decimal">
 <li><p>State the null and alternative hypotheses in words.</p></li>
 <li><p>What is the sum of squares used to measure</p>
 <ul>
@@ -477,17 +497,6 @@ p1 + p2 </code></pre>
 <li>variability of the observations about the group mean</li>
 </ul></li>
 <li><p>State the conclusion in the context of the data.</p></li>
-</ol>
-</div>
-<div id="checking-conditions" class="section level3">
-<h3>Checking conditions</h3>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Are the conditions for ANOVA satisfied? Use the plots and summary statistics from the EDA. You can create more plots and calculate additional summary statistics as needed.</p>
-<ul>
-<li><strong>Normality</strong></li>
-<li><strong>Constant variance</strong></li>
-<li><strong>Independence</strong></li>
-</ul></li>
 </ol>
 </div>
 </div>
