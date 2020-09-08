@@ -44,11 +44,11 @@ library(patchwork) # use plot_grid function
 
 ---
 
-## House prices in Levittown (sec. 1.4)
+## House prices in Levittown 
 
 The data set contains the sales price and characteristics of  85 homes in Levittown, NY that sold between June 2010 and May 2011. 
 
-Levittown was built right after WWI and was the first planned suburban community built using mass production techniques. 
+Levittown was built right after WWII and was the first planned suburban community built using mass production techniques. 
 
 The article ["Levittown, the prototypical American suburb – a history of cities in 50 buildings, day 25"](https://www.theguardian.com/cities/2015/apr/28/levittown-america-prototypical-suburb-history-cities) gives an overview of Levittown's controversial history.
 
@@ -208,7 +208,7 @@ class: middle, center
 .eq[
 For a given observation $(x_{i1}, x_{i2} \ldots, x_{ip}, y_i)$
 
-$$y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \dots + \beta_p x_{ip} + \epsilon_{i} \hspace{8mm} \epsilon_i \sim N(0,\sigma^2)$$
+$$y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \dots + \beta_p x_{ip} + \epsilon_{i} \hspace{8mm} \epsilon_i \sim N(0,\sigma_\epsilon^2)$$
 ]
 
 ---
@@ -321,7 +321,7 @@ predict(price_model, x0, interval = "prediction",
 
 ## `r emo::ji("stop_sign")` Cautions
 
-- .vocab3[Do not extrapolate!] Because there are multiple explanatory variables, there is the potential to extrapolate in many directions
+- .vocab3[Do not extrapolate!] Because there are multiple predictor variables, there is the potential to extrapolate in many directions
 
 --
 
