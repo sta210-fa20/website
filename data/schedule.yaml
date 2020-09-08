@@ -54,6 +54,7 @@ lessons:
     slides: "07-anova.html"
   - date: "Wed, Sep 09"
     title: "Multiple linear regression (MLR)"
+    slides: "08-mlr-intro.html"
   - date: "Thu, Sep 10"
     title: "No Lab: Take Quiz 01"
     quiz: "quiz-01.html"

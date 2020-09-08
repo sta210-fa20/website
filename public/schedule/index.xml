@@ -333,7 +333,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-04/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Comparing means with ANOVA Comparing means with ANOVA AE 07: Palmer Penguins   Wednesday Multiple linear regression Multiple linear regression AE 08    Readings          OpenIntro Statistics: 7.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required    Assignments          Quiz 01 Sep 10 - 11    Announcements Computing workshops by the Center for Data and Visualization Sciences Find a complete list of workshops here.</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Comparing means with ANOVA Comparing means with ANOVA AE 07: Palmer Penguins   Wednesday Multiple linear regression Multiple linear regression AE 08    Readings          OpenIntro Statistics: 7.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required   OpenIntro Statistics: 9.</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -359,7 +359,7 @@ font-size: 18px;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
-&lt;td&gt;Multiple linear regression&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/08-mlr-intro.html&#34;&gt;Multiple linear regression&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Multiple linear regression&lt;/td&gt;
 &lt;td&gt;AE 08&lt;/td&gt;
 &lt;/tr&gt;
@@ -377,6 +377,10 @@ font-size: 18px;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://leanpub.com/openintro-statistics&#34;&gt;OpenIntro Statistics: 7.5 &lt;/a&gt; &lt;br&gt; (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF)&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://leanpub.com/openintro-statistics&#34;&gt;OpenIntro Statistics: 9.1 - 9.4 &lt;/a&gt; &lt;br&gt; (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF)&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

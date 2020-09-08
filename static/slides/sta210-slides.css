@@ -47,11 +47,13 @@ a, a > code {
 }
 .remark-code, .remark-inline-code { 
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
+  font-size: 22pt;
 }
 
 
 .remark-inline-code {
   font-weight: bold;
+  font-size: 22pt;
 }
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
