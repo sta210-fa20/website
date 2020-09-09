@@ -16,22 +16,22 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ## General instructions
 
-Quiz 01 will be released on **September 10 at 12a EST** and must be completed by **September 11 at 11:59p EST**. Once you open the quiz, you will have **2 hours** to complete it. The timer automatically stops when you open the quiz, and the quiz will automatically close when you hit the two-hour limit.
+Quiz 01 will be released on **September 10 at 12a EST** and must be completed by **September 11 at 11:59p EST**. Once you open the quiz, you will have **2 hours** to complete it. The timer automatically starts when you open the quiz, and the quiz will automatically close when you reach the time limit.
 
-During the time the quiz is available, you will see a **Quiz 01** assignment on Gradescope. Click that assignment to take the quiz; you will complete it directly on Gradescope. 
+During the time the quiz is available, you will see a **Quiz 01** assignment on Gradescope. Click on that assignment to take the quiz.
 
-In addition to the Quiz 01 assignment on Gradescope, you will find a repo called **quiz-01-[your_github_username]** in the [course GitHub organization](https://www.github.com/sta210-fa20). There is one question that requires you to do analysis in R. For this question, you will put all code and output used to support your conclusions in the .Rmd file, knit to a PDF, and upload that PDF where it asks on the quiz. **You do <u>not</u> have to write any narrative in the .Rmd file.** There will be questions on the Gradescope quiz where you will interpret the output and results from the analysis. 
+In addition to the Quiz 01 assignment on Gradescope, you will find a repo called **quiz-01-[your_github_username]** on [GitHub](https://www.github.com/sta210-fa20). There is one question that requires you to do analysis in R. For this question, you will put all code and output used to support your conclusions in the .Rmd file, knit to a PDF, and upload that PDF in the specified quiz question. **You do <u>not</u> need to write any narrative in the .Rmd file.** There will be questions on Gradescope asking you to interpret the output and results from the analysis. 
 
 ## Notes
 
-- The quiz is an individual assignment. You may <u>not</u> discuss the quiz with anyone else (either in the class or not). See the Academic Honesty guidelines in the [course syllabus](https://sta210-fa20.netlify.app/syllabus/#course-community).
+- The quiz is an individual assignment. You may <u>not</u> discuss the quiz with anyone else (either in the class or not). See the Academic Honesty guidelines in the [course syllabus](https://sta210-fa20.netlify.app/syllabus/#course-community) for more information.
 
 - The quiz is open-book, open-note, so you may use any materials from class (except other people!) as you take the quiz. 
 
-- Read all of the quiz instructions carefully!
+- Be sure to read all instructions and quiz questions carefully!
 
-- Piazza will be inactive during the duration of the quiz, so no one will be able to post questions on Piazza on Sep 10 or 11. If you have computing issues or trouble accessing the quiz, please email Professor Tackett with **STA 210 Quiz** in the subject line. 
+- Piazza will be inactive during the duration of the quiz, so no one will be able to post questions on Piazza on September 10 - 11. If you have computing issues or trouble accessing the quiz on Gradescope, please email Professor Tackett with **STA 210 Quiz** in the subject line. 
 
-- We will not answer questions about the quiz (outside of technical issues) while the quiz is active. This is to ensure all students have the same information regardless of when they take the quiz. 
+- The teaching team will not be able to answer questions about the quiz (outside of technical issues) while the quiz is active. This is to ensure all students have the same information regardless of when they take the quiz. 
 
-- See [this video by Gradescope](https://www.youtube.com/watch?v=j_kha2UkeMY&feature=youtu.be) **before** taking the quiz to get an idea of what to expect during the quiz.
+- See [this video by Gradescope](https://www.youtube.com/watch?v=j_kha2UkeMY&feature=youtu.be) **before** taking the quiz to get an idea of what to expect. 
