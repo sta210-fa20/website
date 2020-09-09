@@ -32,6 +32,8 @@ In addition to the Quiz 01 assignment on Gradescope, you will find a repo called
 
 - Piazza will be inactive during the duration of the quiz, so no one will be able to post questions on Piazza on September 10 - 11. If you have computing issues or trouble accessing the quiz on Gradescope, please email Professor Tackett with **STA 210 Quiz** in the subject line. 
 
+- There will be no office hours on Sep 10 or 11. Office hours will resume on Monday, September 14.
+
 - The teaching team will not be able to answer questions about the quiz (outside of technical issues) while the quiz is active. This is to ensure all students have the same information regardless of when they take the quiz. 
 
 - See [this video by Gradescope](https://www.youtube.com/watch?v=j_kha2UkeMY&feature=youtu.be) **before** taking the quiz to get an idea of what to expect. 
