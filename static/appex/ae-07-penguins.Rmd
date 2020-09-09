@@ -1,6 +1,5 @@
 ---
-title: "AE 07: Palmer Penguins"
-subtitle: "ANOVA"
+title: "AE 08: Week 01 - 03 Questions"
 date: "`r Sys.Date()`"
 output: 
   html_document: 
@@ -18,117 +17,17 @@ knitr::opts_chunk$set(warning = FALSE,
 
 ## Class Announcements
 
-- Lab 03 + HW 02 due Wednesday at 11:59p
-- Quiz 01: Sep 10 - 11
-  - Week 01 - 03, Lab 01 - 02, HW 01, AE 01 - 06
-  - Open book, open note
-  - Will have 2 hours to take quiz once you open it
-  - May include computing + conceptual + analysis in practice
-  - We'll talk about format on Wednesday 
-- Office hours
-  - Check in using the "Office Hours" note on Piazza if a member of the teaching team is not immediately availalbe. 
-- *Optional Text* -  
-  - *Applied Linear Statistical Models* by Kutner, Nachtsheim, John Neter, and  Li (Older editions called *Applied Linear Regression Models*)
-  - graduate-level text with more theoretical details
-  - available at Duke library.
+- Lab 03 + HW 02 due today at 11:59p
+- [Quiz 01](https://sta210-fa20.netlify.app/quiz/quiz-01.html): Sep 10 - 11
+- **No lab tomorrow!** Work on quiz
 
-## Questions about Lab 03 + team work or HW 02? 
+## Questions from Week 01 - 03? 
 
-## Questions about *Comparing means with ANOVA* video? 
+Take a few minutes to review your materials from weeks 01 - 03. What questions do you have? Submit them [here](https://docs.google.com/forms/d/e/1FAIpQLSdjiLhjwrKNpessuKWH_PE9yDeruz7vgf2TWroX8Sky9ilkzQ/viewform?usp=sf_link), and we will go over your questions for the remainder of class.
 
 
-## Clone a repo + start a new project
-
-Find the repo with the **ae-07-** prefix. Clone the repo and start a new project in RStudio. 
-
-See [Lab 01](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html) for instructions on cloning a repo and starting a new project in RStudio. 
-
-Once you have the new project, run the code below (filling in your github username and email address) to configure git. 
-
-```{r eval=FALSE}
-library(usethis)
-use_git_config(user.name= "your github username", user.email="your email")
-```
-
-## Palmer Penguins 
-
-```{r load-packages, message=FALSE}
-library(tidyverse)
-library(palmerpenguins)
-library(patchwork)
-library(broom)
-library(knitr)
-```
-
-In this AE, we will look at the `penguins` data set from the [palmerpenguins R package](v) maintained by Dr. Allison Horst. This data contains measurements and other characteristics for 344 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman. 
+**There is <u>NO</u> AE to submit on GitHub for today's class.**
 
 
-We will use Analysis of Variance (ANOVA) to compare the mean body mass (`body_mass_g`), for the three penguin species (`species`) - Adélie, Chinstrap and Gentoo. 
-
-Click [here](https://allisonhorst.github.io/palmerpenguins/reference/penguins.html) to view the full codebook for the `penguins` data set. 
-
-### Some EDA
-
-```{r eda}
-p1 <- ggplot(data = penguins, aes(x = species, y = body_mass_g)) + 
-  geom_boxplot() + 
-  coord_flip()
-
-p2 <- ggplot(data = penguins, aes(x = body_mass_g, fill = species)) +
-  geom_histogram(alpha = 0.5)
-
-p1 + p2 
-```
-
-```{r sum-stats} 
-penguins %>%
-  group_by(species) %>%
-  summarise(n = n(), mean = mean(body_mass_g, na.rm = TRUE), sd = sd(body_mass_g, na.rm = TRUE))
-```
-
-### Checking conditions 
-
-We would like use ANOVA to test the following hypotheses: 
-
-$$\begin{align}&H_0: \mu_1 = \mu_2 = \mu_3\\
-&H_a: \text{ at least one species has a }\mu_i \text{ that differs from the others}\end{align}$$
-
-
-1. Are the conditions for ANOVA satisfied? Use the plots and summary statistics from the EDA to support your response. You can also create more plots and calculate additional summary statistics as needed.
-
-   - **Normality**
-   - **Constant variance**
-   - **Independence**
-
-### Comparing means using ANOVA
-
-Below is the ANOVA table to test our hypotheses.
-
-```{r}
-penguin_anova <- aov(body_mass_g ~ species, data = penguins)
-```
-
-```{r}
-tidy(penguin_anova) %>%
-  kable(digits = 3)
-```
-
-2. State the null and alternative hypotheses in words. 
-
-3. What is the sum of squares used to measure
-    - variability of the group means about the overall mean
-    - variability of the observations about the overall mean
-    - variability of the observations about the group mean
-
-
-4. State the conclusion in the context of the data. 
-
-## Next steps
-
-5. Based on the analysis, at least one species has a mean body mass that differs from the others. What are 1 - 2 questions might examine as a next step in the analysis? 
-
-
-
-*Knit your Rmd file to view the updated output. Commit your changes with an informative commit message, and push the updated files to GitHub.*
 
 

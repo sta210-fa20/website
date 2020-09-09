@@ -333,7 +333,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-04/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Comparing means with ANOVA Comparing means with ANOVA AE 07: Palmer Penguins   Wednesday Multiple linear regression Multiple linear regression AE 08    Readings          OpenIntro Statistics: 7.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required   OpenIntro Statistics: 9.</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Comparing means with ANOVA Comparing means with ANOVA AE 07: Palmer Penguins   Wednesday Multiple linear regression Multiple linear regression AE 08: Week 01 - 03 Questions    Readings          OpenIntro Statistics: 7.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required   OpenIntro Statistics: 9.</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -361,7 +361,7 @@ font-size: 18px;
 &lt;td&gt;Wednesday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/08-mlr-intro.html&#34;&gt;Multiple linear regression&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/k2gEAA/&#34;&gt;Multiple linear regression&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 08&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-08-questions.html&#34;&gt;AE 08: Week 01 - 03 Questions&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
