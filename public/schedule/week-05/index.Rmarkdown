@@ -1,6 +1,39 @@
 ---
-title: "Week 05"
+title: "Week 05: MLR"
 weight: 5
 ---
 
-Check back for details!
+<style>
+table {
+font-size: 18px;
+}
+
+</style>
+
+## Lectures
+
+|           | Slides                   | Videos | Application Exercises (AE) |
+|-----------|--------------------------|--------|--------|
+| Monday    | [MLR: Inference](https://sta210-fa20.netlify.app/slides/09-mlr-inference.html)| [MLR: Inference](https://warpwire.duke.edu/w/G3EEAA/) | AE 09|
+| Wednesday | MLR: Types of predictors | mLR: Types of predictors | AE 10|
+
+
+## Readings
+
+|            |   |
+|------------|---|
+| [OpenIntro Statistics: 9.1 - 9.4 ](https://leanpub.com/openintro-statistics) <br> (click "Read Free Sample" to access PDF) | Optional  |
+
+
+
+## Assignments
+
+|                        |   |
+|------------------------|---|
+| [HW 03](https://sta210-fa20.netlify.app/hw/hw-03.html)| **due Wed, Sep 23** |
+| Lab 04          | **due Wed, Sep 23** |
+
+
+
+
+
