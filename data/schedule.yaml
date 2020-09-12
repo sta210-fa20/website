@@ -64,7 +64,8 @@ lessons:
     
   - week: "Week 05"
     date: "Mon, Sep 14"
-    title: "MLR: inference + conditions"
+    title: "MLR: Inference"
+    slides: "09-mlr-inference.html"
   - date: "Wed, Sep 16"
     title: "MLR: special predictors"
     hw: "hw-03.html"
@@ -73,6 +74,7 @@ lessons:
 
   - week: "Week 06"
     date: "Mon, Sep 21"
+    title: "MLR: Conditions"
     title: "MLR: Transformations"
   - date: "Wed, Sep 23"
     title: "MLR: Comparing models"
@@ -94,7 +96,7 @@ lessons:
     
   - week: "Week 08"
     date: "Mon, Oct 05"
-    title: "TBD"
+    title: "Statistics experience"
   - date: "Wed, Oct 07"
     title: "Odds + odds ratio"
     hw: "hw-05.html"
@@ -136,7 +138,7 @@ lessons:
     date: "Mon, Nov 02"
     title: "Weighted least squares"
   - date: "Wed, Nov 04"
-    title: "TBD"
+    title: "Statistics experience"
   - date: "Thu, Nov 05"
     title: "Lab 12"
     quiz: "quiz-04.html"
