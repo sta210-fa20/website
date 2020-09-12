@@ -29,7 +29,7 @@ class: middle, center
 
 ## Topics
 
-- Conduct a hypothesis testing for $\beta_j$
+- Conduct a hypothesis test for $\beta_j$
 
 - Calculate a confidence interval for $\beta_j$
 
@@ -123,18 +123,6 @@ tidy(price_model) %>%
 
 ---
 
-## Interpreting $\hat{\beta}_j$
-
-- An estimated coefficient $\hat{\beta}_j$ is the expected change in $y$ to change when $x_j$ increases by one unit **<u>holding the values of all other predictor variables constant</u>**.
-
---
-
-<br>
-
-- *Example:* The estimated coefficient for **`living_area`** is 65.90. This means for each additional square foot of living area, we expect the sale price of a house in Levittown, NY to increase by $65.90, on average, holding all other predictor variables constant.
-
----
-
 class: middle, center
 
 ## Hypothesis test for $\beta_j$
@@ -185,7 +173,7 @@ tidy(price_model) %>%
 .eq[
 $$\begin{align}
 &H_0: \beta_{living\_area} = 0 \\
-&H_0: \beta_{living\_area} \neq 0\end{align}$$
+&H_a: \beta_{living\_area} \neq 0\end{align}$$
 ]
 
 ---
@@ -223,7 +211,7 @@ price_model <- lm(sale_price ~ bedrooms + bathrooms + living_area + lot_size + y
                   data = homes)
 
 tidy(price_model) %>%
-  kable(format = "markdown", digits = 3) %>%
+  kable(format = "html", digits = 3) %>%
   row_spec(4, background = "#dce5b2")
 ```
 ]
@@ -238,13 +226,16 @@ $$\text{P-value} = P(|t| \geq |4.124|) = 0.00009$$
 
 ## `r emo::ji('three')` Calculate the p-value
 
-The p-value is calculated using a $t$ distribution with $n-p-1$ degrees of freedom.
-
-In this example, the p-value is calculated using a $t$ distribution $85-6-1 = 78$ degrees of freedom.
+The p-value is calculated using a $t$ distribution with $\color{purple}{n-p-1}$ degrees of freedom, where $p$ is the number of coefficients in the model.
 
 --
 
-<font class = "vocab"> Given </font>  $\beta_{living\_area}  = 0$ </font class = "vocab"> the probability of observing a slope at least as extreme as the one we've observed, 65.903, is 0.00009.</font>
+In this example, the p-value is calculated using a $t$ distribution with $\color{purple}{85-6-1 = 78}$ degrees of freedom.
+
+--
+
+.alert[ Given $\beta_{living\_area}  = 0$ the probability of observing a coefficient at least as extreme as the one we've observed, 65.903, is 0.00009.
+]
 
 ---
 
@@ -256,7 +247,7 @@ price_model <- lm(sale_price ~ bedrooms + bathrooms + living_area + lot_size + y
                   data = homes)
 
 tidy(price_model) %>%
-  kable(format = "markdown", digits = 3) %>%
+  kable(format = "html", digits = 3) %>%
   row_spec(4, background = "#dce5b2")
 ```
 ]
@@ -276,7 +267,7 @@ class: middle, center
 .eq[
 The $C%$ confidence interval for $\beta_j$ 
 $$\hat{\beta}_j \pm t^* SE(\hat{\beta}_j)$$
-where $t^*$ follows a $t$ distribution with with $n - p - 1$ degrees of freedom
+where $t^*$ follows a $t$ distribution with $n - p - 1$ degrees of freedom
 ]
 
 **General Interpretation**: We are $C%$ confident that the interval LB to UB contains the population coefficient of $x_j$. Therefore, for every one unit increase in $x_j$, we expect $y$ to change by LB to UB units, holding all else constant. 
@@ -292,7 +283,7 @@ price_model <- lm(sale_price ~ bedrooms + bathrooms + living_area + lot_size + y
                   data = homes)
 
 tidy(price_model, conf.int = TRUE) %>%
-  kable(format = "markdown", digits = 3)%>%
+  kable(format = "html", digits = 3)%>%
   row_spec(4, background = "#dce5b2")
 ```
 ]
@@ -348,7 +339,7 @@ $$y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \dots + \beta_p x_{ip} + \ep
 
 ---
 
-## Estimating $\sigma^2$
+## Estimating $\sigma_\epsilon^2$
 
 For a given observation $(x_{i1}, x_{i2}, \ldots,x_{ip}, y_i)$ the residual is 
 
@@ -361,7 +352,7 @@ $$e_i = y_{i} - (\hat{\beta}_0 + \hat{\beta}_1 x_{i1} + \hat{\beta}_{2} x_{i2} +
 The estimated value of the regression variance , $\sigma_{\epsilon}^2$, is 
 
 .eq[
-$$\hat{\sigma}_\epsilon^2  = \frac{RSS}{n-p-1} = \frac{\sum_{i=1}^ne_i^2}{n-p-1}$$
+$$\hat{\sigma}_\epsilon^2  = \frac{\sum_{i=1}^ne_i^2}{n-p-1}$$
 ]
 
 ---
@@ -382,7 +373,7 @@ This produces messy formulas, so instead we can use matrix notation for multiple
 
 ## Recap
 
-- Conduct a hypothesis testing for $\beta_j$
+- Conduct a hypothesis test for $\beta_j$
 
 - Calculate a confidence interval for $\beta_j$
 
