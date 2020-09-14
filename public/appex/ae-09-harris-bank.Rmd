@@ -16,7 +16,7 @@ knitr::opts_chunk$set(warning = FALSE,
 
 ## Questions from Multiple linear regression videos? 
 
-## Starting salaries at Harris Trust and Savings Bank
+## Histogram vs. density plot
 
 ```{r load-packages, message=FALSE}
 library(tidyverse)
@@ -24,10 +24,30 @@ library(broom)
 library(patchwork)
 ```
 
-
-```{r load-data, message=FALSE}
-porsche <- read_csv("data/PorschePrice.csv")
+```{r}
+x <- tibble(val = rnorm(1000, 0, 1))
 ```
+
+```{r}
+hist <- ggplot(data = x, aes(x = val)) +
+  geom_histogram()
+```
+
+```{r}
+density <- ggplot(data = x, aes(x = val)) +
+  geom_density()
+```
+
+```{r}
+hist + density
+```
+
+Density plot is derived using kernel density estimation, i.e. a nonparametric approach to estimate the the probability density function of a random variable. You can read more about the density function in R [here](https://www.math.ucla.edu/~anderson/rw1001/library/base/html/density.html).
+
+
+## Starting salaries at Harris Trust and Savings Bank
+
+
 
 ### Example: Starting Wages
 
