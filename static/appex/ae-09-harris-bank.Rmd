@@ -47,8 +47,6 @@ Density plot is derived using kernel density estimation, i.e. a nonparametric ap
 
 ## Starting salaries at Harris Trust and Savings Bank
 
-
-
 ### Example: Starting Wages
 
 In the 1970s Harris Trust and Savings Bank was sued for discrimination on the basis of sex. The report from the Department of Labor states, "Prior to filing this case, Treasury retained two statistical experts, Drs. Shafie and Cabral, 'To explore the feasibility of using to determine the existence of an affected class of employees in the
