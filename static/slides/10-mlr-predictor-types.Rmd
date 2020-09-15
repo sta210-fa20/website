@@ -52,6 +52,14 @@ library(kableExtra)
 
 Today's data is a sample of 50 loans made through a  peer-to-peer lending club. The data is in the `loan50` data frame in the openintro R package.
 
+
+```{r echo = F}
+ggplot(data = loan50, aes(x = interest_rate)) +
+  geom_histogram() + 
+  labs(x = "Interest rate", 
+       title = "Distribution of interest rate")
+```
+
 ---
 
 ## Variables
@@ -67,17 +75,6 @@ Today's data is a sample of 50 loans made through a  peer-to-peer lending club. 
 ```{r}
 loan50 <- loan50 %>%
   mutate(annual_income = annual_income / 1000)
-```
-
----
-
-## Response variable, `interest_rate`
-
-```{r echo = F}
-ggplot(data = loan50, aes(x = interest_rate)) +
-  geom_histogram() + 
-  labs(x = "Interest rate", 
-       title = "Distribution of interest rate")
 ```
 
 ---
@@ -139,24 +136,17 @@ int_model <- lm(interest_rate ~ debt_to_income + verified_income  + annual_incom
 tidy(int_model, conf.int = T) %>% kable(format = "markdown", digits = 3)
 ```
 
----
-
-class: middle, center
-
-## Mean-centered variables
-
----
-
-## Interpreting the Intercept 
-
-```{r echo=FALSE}
-kable(tidy(int_model),format = "markdown", digits = 3)
-```
+--
 
 .question[
 - Describe the subset of borrowers who are expected to get an interest rate of 10.726% baesd on our model
 - Is this interpretation meaningful? Why or why not?
 ]
+---
+
+class: middle, center
+
+## Mean-centered variables
 
 ---
 
@@ -185,22 +175,22 @@ loan50 <- loan50 %>%
 
 ```{r fig.height = 4, fig.width = 9}
 p1 <- ggplot(data = loan50, aes(x = debt_to_income)) +
-  geom_histogram() +
+  geom_density(fill = "steelblue", alpha = 0.7) +
   labs(x = "", 
        title = "Debt to income ratio")
 
 p2 <- ggplot(data = loan50, aes(x = debt_inc_cent)) +
-  geom_histogram() +
+  geom_density(fill = "steelblue", alpha = 0.7) +
   labs(x = "", 
        title = "Mean-centered Debt to income ratio")
 
 p3 <- ggplot(data = loan50, aes(x = annual_income)) +
-  geom_histogram(fill = "steelblue") +
+  geom_density(fill = "steelblue", alpha = 0.7) +
   labs(x = "", 
        title = "Annual income (in $1000s)")
 
 p4 <- ggplot(data = loan50, aes(x = annual_income_cent)) +
-  geom_histogram(fill = "steelblue") +
+  geom_density(fill = "steelblue", alpha = 0.7) +
   labs(x = "", 
        title = "Mean-centered Annual income (in $1000s)")
 
@@ -267,12 +257,12 @@ class: middle, center
 
 ---
 
-## Indicator variable for `annual_income`
+## Indicator variable for `verified_income`
 
 .small[
 ```{r echo = T}
 loan50 <- loan50 %>%
-  mutate(not_verified = #<<
+  mutate(not_verified = 
            if_else(verified_income == "Not Verified", 1, 0),
          source_verified = 
            if_else(verified_income == "Source Verified", 1, 0),
@@ -281,6 +271,8 @@ loan50 <- loan50 %>%
   )
 ```
 ]
+
+--
 
 .small[
 ```{r}
@@ -369,6 +361,8 @@ patchwork <- p1 + p2
 patchwork + plot_annotation(title = 'Interest rate vs. annual income')
 ```
 
+--
+
 The lines are .vocab[not parallel] indicating there is an .vocab[interaction effect]. The slope of annual income differs based on the income verification. 
 
 ---
@@ -381,8 +375,8 @@ model_w_int <- lm(interest_rate ~ debt_inc_cent  +  debt_inc_cent + annual_incom
 
 ```{r echo = F}
 tidy(model_w_int) %>%
-  kable(format = "markdown", digits = 3) %>%
-  row_spec(c(5,6), background = "#dce5b2")
+  kable(format = "html", digits = 3) %>%
+  row_spec(c(6,7), background = "#dce5b2")
 ```
 
 ---
