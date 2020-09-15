@@ -36,7 +36,7 @@ a, a > code {
   color: #008eaa;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 22pt;
+  font-size: 90%;
 }
 
 .footnote {
@@ -47,13 +47,13 @@ a, a > code {
 }
 .remark-code, .remark-inline-code { 
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
-  font-size: 22pt;
+  font-size: 100%;
 }
 
 
 .remark-inline-code {
   font-weight: bold;
-  font-size: 22pt;
+  font-size: 100%;
 }
 .remark-code-line-highlighted     { background-color: #ffff88; }
 

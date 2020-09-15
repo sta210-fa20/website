@@ -69,6 +69,7 @@ lessons:
     slides: "09-mlr-inference.html"
   - date: "Wed, Sep 16"
     title: "MLR: Types of predictors"
+    slides: "10-mlr-predictor-types.html"
   - title: "HW 03 assigned"
     hw: "hw-03.html"
   - date: "Thu, Sep 18"

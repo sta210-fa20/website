@@ -15,7 +15,7 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | [MLR: Inference](https://sta210-fa20.netlify.app/slides/09-mlr-inference.html)| [MLR: Inference](https://warpwire.duke.edu/w/G3EEAA/) | [AE 09: Wages at Harris Trust and Savings Bank](https://sta210-fa20.netlify.app/appex/ae-09-harris-bank.html)|
-| Wednesday | MLR: Types of predictors | MLR: Types of predictors | AE 10|
+| Wednesday | [MLR: Types of predictors](https://sta210-fa20.netlify.app/slides/10-mlr-predictor-types.html) | [MLR: Types of predictors] | AE 10|
 
 
 ## Readings
