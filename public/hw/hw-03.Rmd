@@ -79,10 +79,10 @@ We will use Analysis of Variance (ANOVA) to test whether there is an association
 
 5. Based on your table, 
 
-  a. What does the MS for group tell you? 
-  b. What does the MS for the residuals (error) tell you? 
+    a. What does the MS for group tell you? 
+    b. What does the MS for the residuals (error) tell you? 
   
-Write your responses in the context of the data. 
+  Write your responses in the context of the data. 
 
 6. State your conclusion in the context of the data. 
 
@@ -100,14 +100,10 @@ Let's consider their results for the model looking at the effect on **perceived 
 2. Interpret the coefficient of Place of residence in the context of the analysis. 
 3. Calculate a 95% confidence interval for the coefficient of Days in quarantine. Interpret the interval in the context of the data. *Note: There were 996 responses used for the analysis.*
 4. The model includes an interaction between Place of residence and Emotionality (capturing differential tendencies in to worry and be anxious). 
-  - What does the coefficient for the interaction (0.101) mean in the context of the data? 
-  - Interpret the effect of Emotionality for a person who lives in the US/Canada. 
-  - Interpret the effect of Emotionality for a person who lives in Europe.
+    - What does the coefficient for the interaction (0.101) mean in the context of the data? 
+    - Interpret the effect of Emotionality for a person who lives in the US/Canada. 
+    - Interpret the effect of Emotionality for a person who lives in Europe.
 
-
-2. 
-
-- 
 
 # Grading
 
