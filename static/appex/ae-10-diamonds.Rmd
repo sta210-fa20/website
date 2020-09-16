@@ -52,7 +52,7 @@ diamonds <- read_csv("data/diamonds.csv")
 ```
 
 
-## Part 1: Categorical predictors
+## Part 1: Categorical predictors (12 min)
 
 ### Model with single categorical predictor
 
@@ -75,7 +75,7 @@ tidy(model1) %>%
 
 ### Change baseline 
 
-We can change the baseline category using the `fct_relevel` function in the forcats package.
+We can change the baseline category using the `fct_relevel` function in the forcats R package. We will make `SI3` the baseline category.
 
 ```{r}
 diamonds <- diamonds %>%
@@ -88,15 +88,16 @@ Let's refit the model:
 ```{r}
 model1_relevel <- lm(TotalPrice ~ Clarity, data = diamonds)
 tidy(model1_relevel) %>%
+  select(term, estimate) %>%
   kable(digits = 3)
 ```
 
 5. Interpret the coefficient for `ClarityVVS1`. 
 
-6. How does the coefficient for `ClarityVVS1` compare to your response to Exercise 4 above? Is this what you expect? Why or why not?
+6. How does the coefficient for `ClarityVVS1` compare to your response to Exercise 4 above? Is this what you expected?
 
 
-## Part 2: Interaction terms
+## Part 2: Interaction terms (10 min)
 
 Now let's fit a model using `Clarity`, `Carat`, and the interaction between the two variables. 
 
@@ -109,14 +110,16 @@ tidy(model2) %>%
 
 1. Write the model equation for a diamond with `ClaritySI3`. 
 
-2. Interpret the coefficient of `ClarityVVS1:Carat`. 
+2. The coefficient of `Carat` is the relationship between carat and price for diamonds in what category of `Clarity`?  (This is called a "main effect".)
 
-3. Write the model equation for a diamond with `ClarityVVS1`. 
+3. Interpret the coefficient of `ClarityVVS1:Carat`. 
 
-4. Describe the effect of carat on the price of a diamond with `ClarityVVS1`.
+4. Write the model equation for a diamond with `ClarityVVS1`. 
+
+5. Describe the effect of carat on the price of a diamond with `ClarityVVS1`.
 
 
-## Part 3: Mean-center variables
+## Part 3: Mean-center variables (10 min)
 
 Mean-center `Carat` and refit the model from Part 2 using the mean-centered variable for carat.
 
@@ -131,9 +134,9 @@ Mean-center `Carat` and refit the model from Part 2 using the mean-centered vari
 ```
 
 
-1. Interpret the coefficient for the mean-centered version of carat.
+1. Describe the effect of carat on the total price for diamond with `ClarityIF`.
 
-2. Interpret the intercept. 
+2. Interpret the intercept in the context of the data.
 
 
 

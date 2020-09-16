@@ -402,8 +402,8 @@ library(knitr)</code></pre>
 <p>We will use the characteristics to understand variability in the price of diamonds.</p>
 <pre class="r"><code>diamonds &lt;- read_csv(&quot;data/diamonds.csv&quot;)</code></pre>
 </div>
-<div id="part-1-categorical-predictors" class="section level2">
-<h2>Part 1: Categorical predictors</h2>
+<div id="part-1-categorical-predictors-12-min" class="section level2">
+<h2>Part 1: Categorical predictors (12 min)</h2>
 <div id="model-with-single-categorical-predictor" class="section level3">
 <h3>Model with single categorical predictor</h3>
 <p>Let’s fit a model using <code>Clarity</code> to predict the price.</p>
@@ -421,35 +421,35 @@ tidy(model1) %&gt;%
 <tbody>
 <tr class="odd">
 <td align="left">(Intercept)</td>
-<td align="right">6396.563</td>
+<td align="right">3707.731</td>
 </tr>
 <tr class="even">
 <td align="left">ClaritySI1</td>
-<td align="right">-18.419</td>
+<td align="right">578.386</td>
 </tr>
 <tr class="odd">
 <td align="left">ClaritySI2</td>
-<td align="right">230.474</td>
+<td align="right">1608.849</td>
 </tr>
 <tr class="even">
 <td align="left">ClaritySI3</td>
-<td align="right">-2824.463</td>
+<td align="right">-135.631</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVS1</td>
-<td align="right">1234.228</td>
+<td align="right">1147.464</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVS2</td>
-<td align="right">1197.502</td>
+<td align="right">851.568</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVVS1</td>
-<td align="right">2279.808</td>
+<td align="right">-456.664</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVVS2</td>
-<td align="right">1171.769</td>
+<td align="right">-464.124</td>
 </tr>
 </tbody>
 </table>
@@ -462,91 +462,65 @@ tidy(model1) %&gt;%
 </div>
 <div id="change-baseline" class="section level3">
 <h3>Change baseline</h3>
-<p>We can change the baseline category using the <code>fct_relevel</code> function in the forcats package.</p>
+<p>We can change the baseline category using the <code>fct_relevel</code> function in the forcats R package. We will make <code>SI3</code> the baseline category.</p>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;%
   mutate(Clarity = fct_relevel(Clarity, c(&quot;SI3&quot;, &quot;IF&quot;, &quot;VVS1&quot;, &quot;VVS2&quot;, &quot;VS1&quot;, &quot;VS2&quot;, &quot;SI1&quot;, &quot;SI2&quot;))
   )</code></pre>
 <p>Let’s refit the model:</p>
 <pre class="r"><code>model1_relevel &lt;- lm(TotalPrice ~ Clarity, data = diamonds)
 tidy(model1_relevel) %&gt;%
+  select(term, estimate) %&gt;%
   kable(digits = 3)</code></pre>
 <table>
 <thead>
 <tr class="header">
 <th align="left">term</th>
 <th align="right">estimate</th>
-<th align="right">std.error</th>
-<th align="right">statistic</th>
-<th align="right">p.value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">(Intercept)</td>
 <td align="right">3572.100</td>
-<td align="right">5537.362</td>
-<td align="right">0.645</td>
-<td align="right">0.519</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityIF</td>
-<td align="right">2824.462</td>
-<td align="right">5873.259</td>
-<td align="right">0.481</td>
-<td align="right">0.631</td>
+<td align="right">135.631</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVVS1</td>
-<td align="right">5104.271</td>
-<td align="right">5713.195</td>
-<td align="right">0.893</td>
-<td align="right">0.372</td>
+<td align="right">-321.033</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVVS2</td>
-<td align="right">3996.231</td>
-<td align="right">5693.375</td>
-<td align="right">0.702</td>
-<td align="right">0.483</td>
+<td align="right">-328.493</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVS1</td>
-<td align="right">4058.691</td>
-<td align="right">5582.566</td>
-<td align="right">0.727</td>
-<td align="right">0.468</td>
+<td align="right">1283.095</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVS2</td>
-<td align="right">4021.965</td>
-<td align="right">5596.587</td>
-<td align="right">0.719</td>
-<td align="right">0.473</td>
+<td align="right">987.199</td>
 </tr>
 <tr class="odd">
 <td align="left">ClaritySI1</td>
-<td align="right">2806.044</td>
-<td align="right">5670.812</td>
-<td align="right">0.495</td>
-<td align="right">0.621</td>
+<td align="right">714.017</td>
 </tr>
 <tr class="even">
 <td align="left">ClaritySI2</td>
-<td align="right">3054.936</td>
-<td align="right">6019.747</td>
-<td align="right">0.507</td>
-<td align="right">0.612</td>
+<td align="right">1744.480</td>
 </tr>
 </tbody>
 </table>
 <ol start="5" style="list-style-type: decimal">
 <li><p>Interpret the coefficient for <code>ClarityVVS1</code>.</p></li>
-<li><p>How does the coefficient for <code>ClarityVVS1</code> compare to your response to Exercise 4 above? Is this what you expect? Why or why not?</p></li>
+<li><p>How does the coefficient for <code>ClarityVVS1</code> compare to your response to Exercise 4 above? Is this what you expected?</p></li>
 </ol>
 </div>
 </div>
-<div id="part-2-interaction-terms" class="section level2">
-<h2>Part 2: Interaction terms</h2>
+<div id="part-2-interaction-terms-10-min" class="section level2">
+<h2>Part 2: Interaction terms (10 min)</h2>
 <p>Now let’s fit a model using <code>Clarity</code>, <code>Carat</code>, and the interaction between the two variables.</p>
 <pre class="r"><code>model2 &lt;- lm(TotalPrice ~ Clarity + Carat + Clarity * Carat, data = diamonds)
 tidy(model2) %&gt;%
@@ -565,132 +539,133 @@ tidy(model2) %&gt;%
 <tr class="odd">
 <td align="left">(Intercept)</td>
 <td align="right">-2268.000</td>
-<td align="right">4097.975</td>
-<td align="right">-0.553</td>
-<td align="right">0.580</td>
+<td align="right">1428.898</td>
+<td align="right">-1.587</td>
+<td align="right">0.114</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityIF</td>
-<td align="right">-1672.429</td>
-<td align="right">4219.917</td>
-<td align="right">-0.396</td>
-<td align="right">0.692</td>
+<td align="right">1181.771</td>
+<td align="right">1517.647</td>
+<td align="right">0.779</td>
+<td align="right">0.437</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVVS1</td>
-<td align="right">-5422.802</td>
-<td align="right">4170.663</td>
-<td align="right">-1.300</td>
-<td align="right">0.194</td>
+<td align="right">499.216</td>
+<td align="right">1488.711</td>
+<td align="right">0.335</td>
+<td align="right">0.738</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVVS2</td>
-<td align="right">-6270.324</td>
-<td align="right">4147.038</td>
-<td align="right">-1.512</td>
-<td align="right">0.131</td>
+<td align="right">-113.350</td>
+<td align="right">1500.621</td>
+<td align="right">-0.076</td>
+<td align="right">0.940</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVS1</td>
-<td align="right">-5441.968</td>
-<td align="right">4132.161</td>
-<td align="right">-1.317</td>
-<td align="right">0.189</td>
+<td align="right">-904.187</td>
+<td align="right">1455.494</td>
+<td align="right">-0.621</td>
+<td align="right">0.535</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVS2</td>
-<td align="right">-4197.501</td>
-<td align="right">4142.542</td>
-<td align="right">-1.013</td>
-<td align="right">0.312</td>
+<td align="right">-1426.577</td>
+<td align="right">1469.590</td>
+<td align="right">-0.971</td>
+<td align="right">0.333</td>
 </tr>
 <tr class="odd">
 <td align="left">ClaritySI1</td>
-<td align="right">-3674.854</td>
-<td align="right">4186.955</td>
-<td align="right">-0.878</td>
-<td align="right">0.381</td>
+<td align="right">-1392.974</td>
+<td align="right">1516.065</td>
+<td align="right">-0.919</td>
+<td align="right">0.359</td>
 </tr>
 <tr class="even">
 <td align="left">ClaritySI2</td>
-<td align="right">-3717.259</td>
-<td align="right">4614.007</td>
-<td align="right">-0.806</td>
-<td align="right">0.421</td>
+<td align="right">-14.773</td>
+<td align="right">1695.575</td>
+<td align="right">-0.009</td>
+<td align="right">0.993</td>
 </tr>
 <tr class="odd">
 <td align="left">Carat</td>
 <td align="right">5562.000</td>
-<td align="right">3587.270</td>
-<td align="right">1.550</td>
-<td align="right">0.122</td>
+<td align="right">1250.823</td>
+<td align="right">4.447</td>
+<td align="right">0.000</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityIF:Carat</td>
-<td align="right">7379.460</td>
-<td align="right">3734.671</td>
-<td align="right">1.976</td>
-<td align="right">0.049</td>
+<td align="right">2208.757</td>
+<td align="right">1457.253</td>
+<td align="right">1.516</td>
+<td align="right">0.131</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVVS1:Carat</td>
-<td align="right">12037.111</td>
-<td align="right">3656.369</td>
-<td align="right">3.292</td>
-<td align="right">0.001</td>
+<td align="right">2293.206</td>
+<td align="right">1384.919</td>
+<td align="right">1.656</td>
+<td align="right">0.099</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVVS2:Carat</td>
-<td align="right">12634.673</td>
-<td align="right">3632.460</td>
-<td align="right">3.478</td>
-<td align="right">0.001</td>
+<td align="right">3226.995</td>
+<td align="right">1422.740</td>
+<td align="right">2.268</td>
+<td align="right">0.024</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVS1:Carat</td>
-<td align="right">9754.905</td>
-<td align="right">3620.276</td>
-<td align="right">2.695</td>
-<td align="right">0.007</td>
+<td align="right">4091.650</td>
+<td align="right">1290.517</td>
+<td align="right">3.171</td>
+<td align="right">0.002</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVS2:Carat</td>
-<td align="right">7648.140</td>
-<td align="right">3625.363</td>
-<td align="right">2.110</td>
-<td align="right">0.036</td>
+<td align="right">4153.341</td>
+<td align="right">1309.744</td>
+<td align="right">3.171</td>
+<td align="right">0.002</td>
 </tr>
 <tr class="odd">
 <td align="left">ClaritySI1:Carat</td>
-<td align="right">6572.540</td>
-<td align="right">3668.823</td>
-<td align="right">1.791</td>
-<td align="right">0.074</td>
+<td align="right">3743.727</td>
+<td align="right">1375.395</td>
+<td align="right">2.722</td>
+<td align="right">0.007</td>
 </tr>
 <tr class="even">
 <td align="left">ClaritySI2:Carat</td>
-<td align="right">4837.944</td>
-<td align="right">3950.082</td>
-<td align="right">1.225</td>
-<td align="right">0.222</td>
+<td align="right">1198.990</td>
+<td align="right">1474.424</td>
+<td align="right">0.813</td>
+<td align="right">0.417</td>
 </tr>
 </tbody>
 </table>
 <ol style="list-style-type: decimal">
 <li><p>Write the model equation for a diamond with <code>ClaritySI3</code>.</p></li>
+<li><p>The coefficient of <code>Carat</code> is the relationship between carat and price for diamonds in what category of <code>Clarity</code>? (This is called a “main effect”.)</p></li>
 <li><p>Interpret the coefficient of <code>ClarityVVS1:Carat</code>.</p></li>
 <li><p>Write the model equation for a diamond with <code>ClarityVVS1</code>.</p></li>
 <li><p>Describe the effect of carat on the price of a diamond with <code>ClarityVVS1</code>.</p></li>
 </ol>
 </div>
-<div id="part-3-mean-center-variables" class="section level2">
-<h2>Part 3: Mean-center variables</h2>
+<div id="part-3-mean-center-variables-10-min" class="section level2">
+<h2>Part 3: Mean-center variables (10 min)</h2>
 <p>Mean-center <code>Carat</code> and refit the model from Part 2 using the mean-centered variable for carat.</p>
 <pre class="r"><code>#write code to mean-center</code></pre>
 <pre class="r"><code>## code to refit model model</code></pre>
 <ol style="list-style-type: decimal">
-<li><p>Interpret the coefficient for the mean-centered version of carat.</p></li>
-<li><p>Interpret the intercept.</p></li>
+<li><p>Describe the effect of carat on the total price for diamond with <code>ClarityIF</code>.</p></li>
+<li><p>Interpret the intercept in the context of the data.</p></li>
 </ol>
 </div>
 <div class="footnotes">

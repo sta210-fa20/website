@@ -410,7 +410,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-05/</guid>
-      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday MLR: Inference MLR: Inference AE 09: Wages at Harris Trust and Savings Bank   Wednesday MLR: Types of predictors MLR: Types of predictors AE 10    Readings          OpenIntro Statistics: 9.1 - 9.4  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Optional    Assignments          HW 03 due Wed, Sep 23   Lab 04 due Wed, Sep 23    </description>
+      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday MLR: Inference MLR: Inference AE 09: Wages at Harris Trust and Savings Bank   Wednesday MLR: Types of predictors MLR: Types of predictors AE 10: Price of diamonds    Readings          OpenIntro Statistics: 9.1 - 9.4  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Optional    Assignments          HW 03 due Wed, Sep 23   Lab 04 due Wed, Sep 23    </description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -438,7 +438,7 @@ font-size: 18px;
 &lt;td&gt;Wednesday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/10-mlr-predictor-types.html&#34;&gt;MLR: Types of predictors&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/d3UEAA/&#34;&gt;MLR: Types of predictors&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-10-diamonds.html&#34;&gt;AE 10: Price of diamonds&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

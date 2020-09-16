@@ -390,7 +390,7 @@ summary {
 library(broom)
 library(patchwork)
 library(knitr)</code></pre>
-<p>Today’s data set contains the price and characteristics for 351 diamonds randomly selected from AwesomeGems.com in July 2005.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The variables in the data set are</p>
+<p>Today’s data set contains the price and characteristics for 271diamonds randomly selected from AwesomeGems.com in July 2005.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The variables in the data set are</p>
 <ul>
 <li><code>Carat</code>: Size of the diamond (in carats)</li>
 <li><code>Color</code>: Coded as D (most white/bright) through J</li>
@@ -400,11 +400,10 @@ library(knitr)</code></pre>
 <li><code>TotalPrice</code>: Price for the diamond (in dollars)</li>
 </ul>
 <p>We will use the characteristics to understand variability in the price of diamonds.</p>
-<pre class="r"><code>diamonds &lt;- read_csv(&quot;data/diamonds.csv&quot;) %&gt;%
-  filter(TotalPrice &lt;= 10000)</code></pre>
+<pre class="r"><code>diamonds &lt;- read_csv(&quot;data/diamonds.csv&quot;)</code></pre>
 </div>
-<div id="part-1-categorical-predictors" class="section level2">
-<h2>Part 1: Categorical predictors</h2>
+<div id="part-1-categorical-predictors-12-min" class="section level2">
+<h2>Part 1: Categorical predictors (12 min)</h2>
 <div id="model-with-single-categorical-predictor" class="section level3">
 <h3>Model with single categorical predictor</h3>
 <p>Let’s fit a model using <code>Clarity</code> to predict the price.</p>
@@ -463,91 +462,65 @@ tidy(model1) %&gt;%
 </div>
 <div id="change-baseline" class="section level3">
 <h3>Change baseline</h3>
-<p>We can change the baseline category using the <code>fct_relevel</code> function in the forcats package.</p>
+<p>We can change the baseline category using the <code>fct_relevel</code> function in the forcats R package. We will make <code>SI3</code> the baseline category.</p>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;%
   mutate(Clarity = fct_relevel(Clarity, c(&quot;SI3&quot;, &quot;IF&quot;, &quot;VVS1&quot;, &quot;VVS2&quot;, &quot;VS1&quot;, &quot;VS2&quot;, &quot;SI1&quot;, &quot;SI2&quot;))
   )</code></pre>
 <p>Let’s refit the model:</p>
 <pre class="r"><code>model1_relevel &lt;- lm(TotalPrice ~ Clarity, data = diamonds)
 tidy(model1_relevel) %&gt;%
+  select(term, estimate) %&gt;%
   kable(digits = 3)</code></pre>
 <table>
 <thead>
 <tr class="header">
 <th align="left">term</th>
 <th align="right">estimate</th>
-<th align="right">std.error</th>
-<th align="right">statistic</th>
-<th align="right">p.value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">(Intercept)</td>
 <td align="right">3572.100</td>
-<td align="right">1774.729</td>
-<td align="right">2.013</td>
-<td align="right">0.045</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityIF</td>
 <td align="right">135.631</td>
-<td align="right">1906.365</td>
-<td align="right">0.071</td>
-<td align="right">0.943</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVVS1</td>
 <td align="right">-321.033</td>
-<td align="right">1857.318</td>
-<td align="right">-0.173</td>
-<td align="right">0.863</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVVS2</td>
 <td align="right">-328.493</td>
-<td align="right">1834.906</td>
-<td align="right">-0.179</td>
-<td align="right">0.858</td>
 </tr>
 <tr class="odd">
 <td align="left">ClarityVS1</td>
 <td align="right">1283.095</td>
-<td align="right">1794.125</td>
-<td align="right">0.715</td>
-<td align="right">0.475</td>
 </tr>
 <tr class="even">
 <td align="left">ClarityVS2</td>
 <td align="right">987.199</td>
-<td align="right">1799.904</td>
-<td align="right">0.548</td>
-<td align="right">0.584</td>
 </tr>
 <tr class="odd">
 <td align="left">ClaritySI1</td>
 <td align="right">714.017</td>
-<td align="right">1824.731</td>
-<td align="right">0.391</td>
-<td align="right">0.696</td>
 </tr>
 <tr class="even">
 <td align="left">ClaritySI2</td>
 <td align="right">1744.480</td>
-<td align="right">1944.118</td>
-<td align="right">0.897</td>
-<td align="right">0.370</td>
 </tr>
 </tbody>
 </table>
 <ol start="5" style="list-style-type: decimal">
 <li><p>Interpret the coefficient for <code>ClarityVVS1</code>.</p></li>
-<li><p>How does the coefficient for <code>ClarityVVS1</code> compare to your response to Exercise 4 above? Is this what you expect? Why or why not?</p></li>
+<li><p>How does the coefficient for <code>ClarityVVS1</code> compare to your response to Exercise 4 above? Is this what you expected?</p></li>
 </ol>
 </div>
 </div>
-<div id="part-2-interaction-terms" class="section level2">
-<h2>Part 2: Interaction terms</h2>
+<div id="part-2-interaction-terms-10-min" class="section level2">
+<h2>Part 2: Interaction terms (10 min)</h2>
 <p>Now let’s fit a model using <code>Clarity</code>, <code>Carat</code>, and the interaction between the two variables.</p>
 <pre class="r"><code>model2 &lt;- lm(TotalPrice ~ Clarity + Carat + Clarity * Carat, data = diamonds)
 tidy(model2) %&gt;%
@@ -679,25 +652,26 @@ tidy(model2) %&gt;%
 </table>
 <ol style="list-style-type: decimal">
 <li><p>Write the model equation for a diamond with <code>ClaritySI3</code>.</p></li>
+<li><p>The coefficient of <code>Carat</code> is the relationship between carat and price for diamonds in what category of <code>Clarity</code>? (This is called a “main effect”.)</p></li>
 <li><p>Interpret the coefficient of <code>ClarityVVS1:Carat</code>.</p></li>
 <li><p>Write the model equation for a diamond with <code>ClarityVVS1</code>.</p></li>
 <li><p>Describe the effect of carat on the price of a diamond with <code>ClarityVVS1</code>.</p></li>
 </ol>
 </div>
-<div id="part-3-mean-center-variables" class="section level2">
-<h2>Part 3: Mean-center variables</h2>
+<div id="part-3-mean-center-variables-10-min" class="section level2">
+<h2>Part 3: Mean-center variables (10 min)</h2>
 <p>Mean-center <code>Carat</code> and refit the model from Part 2 using the mean-centered variable for carat.</p>
 <pre class="r"><code>#write code to mean-center</code></pre>
 <pre class="r"><code>## code to refit model model</code></pre>
 <ol style="list-style-type: decimal">
-<li><p>Interpret the coefficient for the mean-centered version of carat.</p></li>
-<li><p>Interpret the intercept.</p></li>
+<li><p>Describe the effect of carat on the total price for diamond with <code>ClarityIF</code>.</p></li>
+<li><p>Interpret the intercept in the context of the data.</p></li>
 </ol>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Data set is from the Stat2Data R Package.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>Data set adapted from the Diamonds data set in the Stat2Data R Package.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
