@@ -1,0 +1,143 @@
+---
+title: "AE 10: Price of diamonds"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+
+## Announcements
+
+- HW 03 due Sep 23 at 11:59p (available after class)
+- Zoom waiting room for all class meetings going forward
+- **Upcoming event:**: [ICPSR Data Fair: Data in Real Life](https://www.icpsr.umich.edu/web/pages/membership/datafair/)     
+    - Sep 21 - 25
+    - Free to attend but you need to register
+    - Can count towards a Stats Experience (more on these Monday!)
+    
+## Questions from video?
+
+## Price of Diamonds
+
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(broom)
+library(patchwork)
+library(knitr)
+```
+
+Today's data set contains the price and characteristics for 271diamonds randomly selected from AwesomeGems.com in July 2005.^[Data set adapted from the Diamonds data set in the Stat2Data R Package.] The variables in the data set are 
+
+- `Carat`: Size of the diamond (in carats)
+- `Color`: Coded as D (most white/bright) through J
+- `Clarity`: Coded as IF (internally flawless), VVS1, VVS2, VS1, VS2, SI1, SI2, or SI3 (slightly clouded)
+- `Depth`:	Depth (as a percentage of diameter)
+- `PricePerCt`:	Price per carat
+- `TotalPrice`: Price for the diamond (in dollars)
+
+We will use the characteristics to understand variability in the price of diamonds. 
+
+```{r}
+diamonds <- read_csv("data/diamonds.csv")
+```
+
+
+## Part 1: Categorical predictors
+
+### Model with single categorical predictor
+
+Let's fit a model using `Clarity` to predict the price.
+
+```{r}
+model1 <- lm(TotalPrice ~ Clarity, data = diamonds)
+tidy(model1) %>%
+  select(term, estimate) %>%
+  kable(digits = 3)
+```
+
+1. What is the baseline level? 
+
+2. What is the interpretation of `ClaritySI1`?
+
+3. What is the expected price of a diamond with `ClarityVVS2`?
+
+4. What is the difference in the expected price between a diamond with `ClaritySI3` and a diamond with `ClarityVVS1`? 
+
+### Change baseline 
+
+We can change the baseline category using the `fct_relevel` function in the forcats package.
+
+```{r}
+diamonds <- diamonds %>%
+  mutate(Clarity = fct_relevel(Clarity, c("SI3", "IF", "VVS1", "VVS2", "VS1", "VS2", "SI1", "SI2"))
+  )
+```
+
+Let's refit the model: 
+
+```{r}
+model1_relevel <- lm(TotalPrice ~ Clarity, data = diamonds)
+tidy(model1_relevel) %>%
+  kable(digits = 3)
+```
+
+5. Interpret the coefficient for `ClarityVVS1`. 
+
+6. How does the coefficient for `ClarityVVS1` compare to your response to Exercise 4 above? Is this what you expect? Why or why not?
+
+
+## Part 2: Interaction terms
+
+Now let's fit a model using `Clarity`, `Carat`, and the interaction between the two variables. 
+
+```{r}
+model2 <- lm(TotalPrice ~ Clarity + Carat + Clarity * Carat, data = diamonds)
+tidy(model2) %>%
+  kable(digits = 3)
+```
+
+
+1. Write the model equation for a diamond with `ClaritySI3`. 
+
+2. Interpret the coefficient of `ClarityVVS1:Carat`. 
+
+3. Write the model equation for a diamond with `ClarityVVS1`. 
+
+4. Describe the effect of carat on the price of a diamond with `ClarityVVS1`.
+
+
+## Part 3: Mean-center variables
+
+Mean-center `Carat` and refit the model from Part 2 using the mean-centered variable for carat.
+
+```{r}
+#write code to mean-center
+
+```
+
+```{r}
+## code to refit model model
+
+```
+
+
+1. Interpret the coefficient for the mean-centered version of carat.
+
+2. Interpret the intercept. 
+
+
+
+
+
+
+

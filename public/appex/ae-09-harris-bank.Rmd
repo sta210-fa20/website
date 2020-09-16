@@ -111,4 +111,3 @@ Fit the linear regression model and output the results. Include `conf.int = TRUE
 <hr> 
 *The data used in this exercise is originally from the Sleuth3 R package.*
 
-
