@@ -72,8 +72,9 @@ lessons:
     slides: "10-mlr-predictor-types.html"
   - title: "HW 03 assigned"
     hw: "hw-03.html"
-  - date: "Thu, Sep 18"
-    title: "Lab 05"
+  - date: "Thu, Sep 17"
+    title: "Lab 04: Candy!"
+    lab: "lab-04-candy.html"
 
   - week: "Week 06"
     date: "Mon, Sep 21"
