@@ -510,6 +510,9 @@ text-decoration: underline;
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#merge-conflicts-uh-oh">Merge Conflicts (uh oh)</a></li>
+<li><a href="#the-data">The data</a></li>
+<li><a href="#exercises">Exercises</a></li>
+<li><a href="#submission">Submission</a></li>
 </ul>
 </div>
 
@@ -548,8 +551,9 @@ text-decoration: underline;
 <p>This time, no merge conflicts should occur, since you edited a different part of the document from Members 1 and 2. Read the error to your teammates. You can also show them the error by sharing your screen.</p>
 <p>Click to pull. <em>Then, knit, commit, and push.</em></p>
 </div>
-<div id="the-data" class="section level2">
-<h2>The data</h2>
+</div>
+<div id="the-data" class="section level1">
+<h1>The data</h1>
 <p>The data from this lab comes from the the article FiveThirtyEight <a href="https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking"><em>The Ultimate Halloween Candy Power Ranking</em></a> by Walt Hickey. To collect data, Hickey and collaborators at FiveThirtyEight set up an experiment people could vote on a series of randomly generated candy matchups (e.g. Reeses vs. Skittles). Click <a href="http://walthickey.com/2017/10/18/whats-the-best-halloween-candy/">here</a> to check out some of the matchups.</p>
 <p>The goal of this analysis is to fit a linear regression model to help determine what makes the best candy. The data set contains the characteristics and win percentage from 85 candies in the experiment. The data set includes the following variables:</p>
 <table>
@@ -617,16 +621,16 @@ text-decoration: underline;
 <p>Use the code below to load the data directly from the <a href="https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking">FiveThirtyEight’s github repo</a>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>candy &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv&quot;</span>)</span></code></pre></div>
 </div>
-<div id="exercises" class="section level2">
-<h2>Exercises</h2>
+<div id="exercises" class="section level1">
+<h1>Exercises</h1>
 <ol style="list-style-type: decimal">
-<li>You hypothesize that the amount of sugar and whether the candy is chocolate will be important predictors of the candy’s win percentage, so you want to start with a model that includes these two variables. Create plots to visualize the relationship between each predictor and the response variable. Arrange the plots side-by-side using functions from <a href="https://patchwork.data-imaginist.com/"><code>patchwork</code></a> or a similar package.</li>
+<li>Let’s see how sugar and whether the candy is chocolate impact a candy’s win percentage. Create plots to visualize the relationship between each of these predictors and the response variable. Arrange the plots side-by-side using functions from <a href="https://patchwork.data-imaginist.com/"><code>patchwork</code></a> or a similar package.</li>
 </ol>
-<p><em>Hint: Make <code>chocolate</code> a factor, so R correctly treats it as a categorical variable.</em></p>
+<p><em>Hint: Recode <code>chocolate</code> to make it factor, so R correctly treats it as a categorical variable.</em></p>
 <ol style="list-style-type: decimal">
 <li><p>Describe the relationship between the response and each predictor variable based on the plots from the previous exercise.</p></li>
-<li><p>Fit a model using <code>sugarpercent</code> and <code>chocolate</code> to predict <code>winpercent</code>.</p></li>
-<li><p>Using the model from the previous exercise</p></li>
+<li><p>Fit a main effects model (i.e. no interactions) using <code>sugarpercent</code> and <code>chocolate</code> to predict <code>winpercent</code>. Display the code and output for your model.</p></li>
+<li><p>Based on the model from the previous exercise</p></li>
 </ol>
 <ul>
 <li>Interpret the coefficient of <code>sugarpercent</code> in the context of the data.</li>
@@ -634,7 +638,7 @@ text-decoration: underline;
 <li>What is the intercept in the model for candy that <strong>is</strong> chocolate?</li>
 </ul>
 <ol style="list-style-type: decimal">
-<li>Let’s see if there’s a potential interaction between the sugar percentile and chocolate. Plot the relationship between <code>winpercent</code> and <code>sugarpercent</code> based on the <code>chocolate</code>, including lines to summarize the relationship between the variables.</li>
+<li>Let’s see if there’s a potential interaction between the sugar percentile and chocolate. Plot the relationship between <code>winpercent</code> and <code>sugarpercent</code> based on the <code>chocolate</code>, including lines to help more clearly see the relationships between the variables.</li>
 </ol>
 <p>Based on this plot, do you think there’s an interaction effect between <code>sugarpercent</code> and <code>chocolate</code>? Briefly explain why or why not.</p>
 <ol style="list-style-type: decimal">
@@ -642,9 +646,9 @@ text-decoration: underline;
 <li><p>Using the model above,</p></li>
 </ol>
 <ul>
-<li>Describe the type of candy that is expected to not win any matchups.</li>
-<li>What does the coefficient for the interaction between <code>suagrpercent</code> and <code>winpercent</code> mean?</li>
-<li>Describe the effect of <code>sugarpercent</code> on <code>winpercent</code> for candy that is not chocolate.</li>
+<li>What is the intercept? The intercept is the expected win percentage for what type of candy?</li>
+<li>What does the coefficient for the interaction between <code>suagrpercent</code> and <code>winpercent</code> tell us?</li>
+<li>Describe the effect of <code>sugarpercent</code> on <code>winpercent</code> for candy that is chocolate.</li>
 </ul>
 <ol style="list-style-type: decimal">
 <li><p>Does the data provide sufficient evidence that the effect of <code>sugarpercent</code> on <code>winpercent</code> differs based on whether the candy is chocolate? Briefly explain why or why not.</p></li>
@@ -653,18 +657,16 @@ text-decoration: underline;
 <ul>
 <li>Plot the relationship between <code>winpercent</code> and your new variable.</li>
 <li>Fit a regression model using <code>suarpercent</code>, <code>chocolate</code>, your variable, and an interaction between the variable and either <code>sugarpercet</code> or <code>chocolate</code>.</li>
-<li>Interpret the main effect term for the variable you chose.</li>
-<li>Interpret the main effect term for the variable you chose</li>
+<li>Use the main effect and interaction to describe how your variable affects the win percentage.</li>
 </ul>
 <ol style="list-style-type: decimal">
 <li>Based on the model from the previous exercise, how might you describe the “best” candy - the candy that wins as much as possible.</li>
 </ol>
 </div>
-<div id="submission" class="section level2">
-<h2>Submission</h2>
+<div id="submission" class="section level1">
+<h1>Submission</h1>
 <p>Upload the team’s PDF to Gradescope. Be sure to include every team member’s name in the Gradescope submission Associate the “Overall” graded section with the first page of your PDF, and mark where each answer is to the exercises. If any answer spans multiple pages, then mark all pages.</p>
 <p>There should only be <strong><u>one</u></strong> submission per team on Gradescope. <strong>Be sure to include every team member’s name in the Gradescope submission.</strong></p>
-</div>
 </div>
 
 

@@ -84,7 +84,7 @@ the document from Members 1 and 2. Read the error to your teammates. You can als
 
 Click to pull.  *Then, knit, commit, and push.*
 
-## The data 
+# The data 
 
 The data from this lab comes from the the article FiveThirtyEight [*The Ultimate Halloween Candy Power Ranking*](https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking) by Walt Hickey. To collect data, Hickey and collaborators at FiveThirtyEight set up an experiment people could vote on a series of randomly generated candy matchups (e.g. Reeses vs. Skittles). Click [here](http://walthickey.com/2017/10/18/whats-the-best-halloween-candy/) to check out some of the matchups.
 
@@ -111,44 +111,44 @@ Use the code below to load the data directly from the [FiveThirtyEight's github 
 candy <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv")
 ```
 
-## Exercises 
+# Exercises 
 
-1. You hypothesize that the amount of sugar and whether the candy is chocolate will be important predictors of the candy's win percentage, so you want to start with a model that includes these two variables. Create plots to visualize the relationship between each predictor and the response variable. Arrange the plots side-by-side using functions from [`patchwork`](https://patchwork.data-imaginist.com/) or a similar package.
+1. Let's see how sugar and whether the candy is chocolate impact a candy's win percentage. Create plots to visualize the relationship between each of these predictors and the response variable. Arrange the plots side-by-side using functions from [`patchwork`](https://patchwork.data-imaginist.com/) or a similar package.
 
-*Hint: Make `chocolate` a factor, so R correctly treats it as a categorical variable.*
+*Hint: Recode `chocolate` to make it factor, so R correctly treats it as a categorical variable.*
 
 1. Describe the relationship between the response and each predictor variable based on the plots from the previous exercise. 
 
-1. Fit a model using `sugarpercent` and `chocolate` to predict `winpercent`.
+1. Fit a main effects model (i.e. no interactions) using `sugarpercent` and `chocolate` to predict `winpercent`. Display the code and output for your model.
 
-1. Using the model from the previous exercise 
+1. Based on the model from the previous exercise
   - Interpret the coefficient of `sugarpercent` in the context of the data. 
   - What is the intercept in the model for candy that is **<u>not**</u> chocolate? 
   - What is the intercept in the model for candy that **is** chocolate?
 
-1. Let's see if there's a potential interaction between the sugar percentile and chocolate. Plot the relationship between `winpercent` and `sugarpercent` based on the `chocolate`, including lines to summarize the relationship between the variables. 
+1. Let's see if there's a potential interaction between the sugar percentile and chocolate. Plot the relationship between `winpercent` and `sugarpercent` based on the `chocolate`, including lines to help more clearly see the relationships between the variables. 
 
   Based on this plot, do you think there's an interaction effect between `sugarpercent` and `chocolate`? Briefly explain why or why not.
 
 1. Fit the model including `sugarpercent`, `chocolate`, and their interaction. Display the code and model output. 
 
 1. Using the model above, 
-  - Describe the type of candy that is expected to not win any matchups. 
-  - What does the coefficient for the interaction between `suagrpercent` and `winpercent` mean?
-  - Describe the effect of `sugarpercent` on `winpercent` for candy that is not chocolate. 
+  - What is the intercept? The intercept is the expected win percentage for what type of candy? 
+  - What does the coefficient for the interaction between `suagrpercent` and `winpercent` tell us?
+  - Describe the effect of `sugarpercent` on `winpercent` for candy that is chocolate.
 
 1. Does the data provide sufficient evidence that the effect of `sugarpercent` on `winpercent` differs based on whether the candy is chocolate? Briefly explain why or why not. 
 
 1. Select a variable of your choice. (*If you choose a categorical variable, be sure to convert it to a factor variable first.*) What variable did you choose?
   - Plot the relationship between `winpercent` and your new variable.
   - Fit a regression model using `suarpercent`, `chocolate`, your variable, and an interaction between the variable and either `sugarpercet` or `chocolate`.
-  - Interpret the main effect term for the variable you chose. 
-  - Interpret the main effect term for the variable you chose
+  - Use the main effect and interaction to describe how your variable affects the win percentage.
+
 
 1. Based on the model from the previous exercise, how might you describe the "best" candy  - the candy that wins as much as possible. 
 
 
-## Submission 
+# Submission 
 
 Upload the team's PDF to Gradescope. Be sure to include every team member's name in the Gradescope submission Associate the "Overall" graded section with the first page of your PDF, and mark where each answer is  to the exercises. If any answer spans multiple pages, then mark all pages.
 
