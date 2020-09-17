@@ -79,8 +79,8 @@ We will use Analysis of Variance (ANOVA) to test whether there is an association
 
 5. Based on your table, 
 
-    a. What does the MS for group tell you? 
-    b. What does the MS for the residuals (error) tell you? 
+    - What does the MS for group tell you? 
+    - What does the MS for the residuals (error) tell you? 
   
   Write your responses in the context of the data. 
 
