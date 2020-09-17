@@ -187,3 +187,8 @@ div .commit {
   color: #aa008e;
   text-decoration: italic;
 }
+
+a {
+color: #aa008e;
+text-decoration: underline;
+}

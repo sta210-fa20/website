@@ -105,7 +105,7 @@ Variable | Description
 `pricepercent` | The unit price percentile compared to the rest of the set.
 `winpercent` | The overall win percentage according to 269,000 matchups.
 
-Use the code below to load the data directly from the [FiveThirtyEight's github repo](https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking.
+Use the code below to load the data directly from the [FiveThirtyEight's github repo](https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking).
 
 ```{r}
 candy <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv")
