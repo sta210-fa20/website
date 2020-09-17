@@ -134,7 +134,7 @@ candy <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master
 
 1. Using the model above, 
   - What is the intercept? The intercept is the expected win percentage for what type of candy? 
-  - What does the coefficient for the interaction between `suagrpercent` and `winpercent` tell us?
+  - What does the coefficient for the interaction between `suagrpercent` and `chocolate` tell us?
   - Describe the effect of `sugarpercent` on `winpercent` for candy that is chocolate.
 
 1. Does the data provide sufficient evidence that the effect of `sugarpercent` on `winpercent` differs based on whether the candy is chocolate? Briefly explain why or why not. 
