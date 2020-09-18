@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Multiple Linear Regression</title>
+    <title>Variable transformations</title>
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Maria Tackett" />
     <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
@@ -10,8 +10,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Multiple Linear Regression
-## Transformations
+# Variable transformations
 ### Prof. Maria Tackett
 
 ---
@@ -22,11 +21,11 @@ class: center, middle, inverse, title-slide
 
 class: middle, center
 
-## [Click here for PDF of slides](11-mlr-transformations.pdf)
+## [Click here for PDF of slides](11-transformations.pdf)
 
 ---
 
-### Topics
+## Topics
 
 - Log transformation on the response
 
@@ -35,11 +34,6 @@ class: middle, center
 
 
 
----
-
-class: middle, center
-
-## Log transformation on the response
 
 ---
 
@@ -103,11 +97,11 @@ class: middle, center
 
 class: middle, center
 
-## Log transformations
+## Log transformation on the response
 
 ---
 
-### Need to transform `\(Y\)` 
+## Need to transform `\(Y\)` 
 
 - Typically, a "fan-shaped" residual plot indicates the need for a transformation of the response variable `\(y\)`
   + .vocab[log(Y)] is the most straightforward to interpret
@@ -122,18 +116,16 @@ class: middle, center
 
 ---
 
-### Log transformation on `\(Y\)`
-
-- Use when the residual plot shows "fan-shaped" pattern
+## Log transformation on `\(Y\)`
 
 - If we apply a log transformation to the response variable, we want to estimate the parameters for the model...
 .alert[
-`$$\hat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 x$$`
+`$$\widehat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 X$$`
 ]
 
 --
 
-- We want to interpret the model in terms of `\(y\)` not `\(\log(y)\)`, so we write all interpretations in terms of 
+- We want to interpret the model in terms of `\(y\)` not `\(\log(Y)\)`, so we write all interpretations in terms of 
 
 .alert[
 `$$y = \exp\{\hat{\beta}_0 + \hat{\beta}_1 X\} = \exp\{\hat{\beta}_0\}\exp\{\hat{\beta}_1X\}$$`
@@ -141,58 +133,97 @@ class: middle, center
 
 ---
 
-### Mean and logs
+## Mean and logs
 
 Suppose we have a set of values
 
 
+```r
+x &lt;- c(3, 5, 6, 8, 10, 14, 19)
+```
 
 --
 
-Let's find the mean of the logged values of x, i.e. `\(\overline{\log(x)}\)`
+.pull-left[
+Let's calculate `\(\overline{\log(x)}\)`
 
+.small[
+
+```r
+log_x &lt;- log(x)
+mean(log_x)
+```
 
 ```
 ## [1] 2.066476
 ```
+]
+]
 
 --
 
-Let's find mean of x and then log the mean value, i.e. `\(\log(\bar{x})\)`
+.pull-right[
+Let's calculate `\(\log(\bar{x})\)`
 
+.small[
+
+```r
+xbar &lt;- mean(x)
+log(xbar)
+```
 
 ```
 ## [1] 2.228477
 ```
-
+]
+]
 ---
 
-### Median and logs
+## Median and logs
 
 
-
---
-
-Let's find the median of the logged values of x, i.e. `\(\text{Median}(\log(x))\)`
-
-
-```
-## [1] 2.079442
+```r
+x &lt;- c(3, 5, 6, 8, 10, 14, 19)
 ```
 
 --
 
-Let's find median of x and then log the mean value, i.e. `\(\log(\text{Median}(x))\)`
+.pull-left[
+Let's calculate `\(\text{Median}(\log(x))\)`
 
+.small[
+
+```r
+log_x &lt;- log(x)
+median(log_x)
+```
 
 ```
 ## [1] 2.079442
 ```
+]
+]
+--
 
+.pull-right[
+Let's calculate `\(\log(\text{Median}(x))\)`
+
+.small[
+
+```r
+median_x &lt;- median(x)
+log(median_x)
+```
+
+```
+## [1] 2.079442
+```
+]
+]
 
 ---
 
-### Mean, Median, and log
+## Mean, Median, and log
 
 
 
@@ -224,7 +255,7 @@ median(log_x) == log(median_x)
 
 ---
 
-### Mean and median of `\(\log(Y)\)`
+## Mean and median of `\(\log(Y)\)`
 
 - Recall that `\(y= \beta_0 + \beta_1 x_i\)` is the **mean** value of `\(y\)` at the given value `\(x_i\)`. This doesn't hold when we log-transform `\(y\)`
 
@@ -239,7 +270,7 @@ median(log_x) == log(median_x)
 
 ---
 
-### Mean and median of `\(\log(y)\)`
+## Mean and median of `\(\log(y)\)`
 
 - However, the median of the logged values **is** equal to the log of the median value. Therefore,
 
@@ -255,9 +286,9 @@ median(log_x) == log(median_x)
 ]
 ---
 
-### Interpretation with log-transformed `\(y\)`
+## Interpretation with log-transformed `\(y\)`
 
-- Given the previous facts, if `\(\hat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 x\)`, then 
+- Given the previous facts, if `\(\widehat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 x\)`, then 
 .alert[
 `$$\text{Median}(\hat{Y}) = \exp\{\hat{\beta}_0\}\exp\{\hat{\beta}_1 x\}$$`
 ]
@@ -274,7 +305,7 @@ median(log_x) == log(median_x)
 
 ---
 
-### log(Rate) vs. Age
+## log(Rate) vs. Age
 
 
 
@@ -282,7 +313,7 @@ median(log_x) == log(median_x)
 
 ---
 
-### log(Rate) vs. Age
+## log(Rate) vs. Age
 
 
 
@@ -290,17 +321,20 @@ median(log_x) == log(median_x)
 
 ---
 
-### log(Rate) vs. Age
+## log(Rate) vs. Age
 
 
 |term        | estimate| std.error| statistic| p.value| conf.low| conf.high|
 |:-----------|--------:|---------:|---------:|-------:|--------:|---------:|
 |(Intercept) |    3.845|     0.013|   304.500|       0|     3.82|     3.870|
 |Age         |   -0.019|     0.001|   -25.839|       0|    -0.02|    -0.018|
+
+
+--
+
 &lt;br&gt;
 
-
-.vocab[Intercept]: The median respiratory rate for a new born child is 46.759 (exp{3.845}) breaths per minute.
+.vocab[Intercept]: The median respiratory rate for a new born child is expected to be 46.759 (exp{3.845}) breaths per minute.
 
 --
 
@@ -308,7 +342,7 @@ median(log_x) == log(median_x)
 
 ---
 
-### Confidence interval for `\(\beta_j\)`
+## Confidence interval for `\(\beta_j\)`
 
 - The confidence interval for the coefficient of `\(X\)` describing its relationship with `\(\log(Y)\)` is
 
@@ -324,7 +358,7 @@ median(log_x) == log(median_x)
 
 ---
 
-### Coefficient of `Age`
+## Coefficient of `Age`
 
 &lt;table&gt;
  &lt;thead&gt;
@@ -364,7 +398,14 @@ median(log_x) == log(median_x)
 
 ---
 
-### Log Transformation on `\(x\)`
+class: middle, center
+
+## Log transformation on the predictor
+
+---
+
+## Log Transformation on `\(X\)`
+
 
 
 
@@ -378,7 +419,7 @@ Try a transformation on `\(X\)` if the scatterplot shows some curvature but the 
 
 ---
 
-### Model with Transformation on `\(Z\)`
+## Model with Transformation on `\(X\)`
 
 .alert[
 `$$\hat{Y} = \hat{\beta}_0 + \hat{\beta}_1 \log(X)$$`
@@ -396,32 +437,43 @@ Try a transformation on `\(X\)` if the scatterplot shows some curvature but the 
 
 ---
 
-### Rate vs. log(Age)
+## Rate vs. log(Age)
 
 &lt;img src="11-mlr-transformations_files/figure-html/unnamed-chunk-24-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 
-### Rate vs. Age
+## Rate vs. log(Age)
 
 
 |term        | estimate| std.error| statistic| p.value| conf.low| conf.high|
 |:-----------|--------:|---------:|---------:|-------:|--------:|---------:|
 |(Intercept) |   50.135|     0.632|    79.330|       0|   48.893|    51.376|
 |log_age     |   -5.982|     0.263|   -22.781|       0|   -6.498|    -5.467|
+
+--
+
 &lt;br&gt; 
 
 .vocab[Intercept]: The expected (mean) respiratory rate for children who are 1 month old (log(1) = 0) is 50.135	breaths per minute.
 
 --
 
-.vocab[Slope]: If a child's age doubles, we expect their respiratory rate to decrease by -4.146 (-5.982*log(2)) breaths per minute.
+.vocab[Slope]: If a child's age doubles, we expect their respiratory rate to decrease by 4.146 (-5.982*log(2)) breaths per minute.
 
 ---
 
 class: middle 
 
 See [Log Transformations in Linear Regression](https://github.com/sta210-sp20/supplemental-notes/blob/master/log-transformations.pdf) for more details about interpreting regression models with log-transformed variables.
+
+---
+
+## Recap
+
+- Log transformation on the response
+
+- Log transformation on the predictor
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

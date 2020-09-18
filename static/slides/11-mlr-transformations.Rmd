@@ -1,6 +1,5 @@
 ---
-title: "Multiple Linear Regression"
-subtitle: "Transformations"
+title: "Variable transformations"
 author: "Prof. Maria Tackett"
 output:
   xaringan::moon_reader:
@@ -23,11 +22,11 @@ editor_options:
 
 class: middle, center
 
-## [Click here for PDF of slides](11-mlr-transformations.pdf)
+## [Click here for PDF of slides](11-transformations.pdf)
 
 ---
 
-### Topics
+## Topics
 
 - Log transformation on the response
 
@@ -42,11 +41,6 @@ library(Sleuth3)
 library(patchwork)
 ```
 
----
-
-class: middle, center
-
-## Log transformation on the response
 
 ---
 
@@ -93,11 +87,11 @@ ggplot(data=respiratory, aes(x=predicted, y=residuals)) +
 
 class: middle, center
 
-## Log transformations
+## Log transformation on the response
 
 ---
 
-### Need to transform $Y$ 
+## Need to transform $Y$ 
 
 - Typically, a "fan-shaped" residual plot indicates the need for a transformation of the response variable $y$
   + .vocab[log(Y)] is the most straightforward to interpret
@@ -112,18 +106,16 @@ class: middle, center
 
 ---
 
-### Log transformation on $Y$
-
-- Use when the residual plot shows "fan-shaped" pattern
+## Log transformation on $Y$
 
 - If we apply a log transformation to the response variable, we want to estimate the parameters for the model...
 .alert[
-$$\hat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 x$$
+$$\widehat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 X$$
 ]
 
 --
 
-- We want to interpret the model in terms of $y$ not $\log(y)$, so we write all interpretations in terms of 
+- We want to interpret the model in terms of $y$ not $\log(Y)$, so we write all interpretations in terms of 
 
 .alert[
 $$y = \exp\{\hat{\beta}_0 + \hat{\beta}_1 X\} = \exp\{\hat{\beta}_0\}\exp\{\hat{\beta}_1X\}$$
@@ -131,62 +123,75 @@ $$y = \exp\{\hat{\beta}_0 + \hat{\beta}_1 X\} = \exp\{\hat{\beta}_0\}\exp\{\hat{
 
 ---
 
-### Mean and logs
+## Mean and logs
 
 Suppose we have a set of values
 
-```{r}
+```{r echo = TRUE}
 x <- c(3, 5, 6, 8, 10, 14, 19)
 ```
 
 --
 
-Let's find the mean of the logged values of x, i.e. $\overline{\log(x)}$
+.pull-left[
+Let's calculate $\overline{\log(x)}$
 
-```{r}
+.small[
+```{r, echo = TRUE}
 log_x <- log(x)
 mean(log_x)
 ```
+]
+]
 
 --
 
-Let's find mean of x and then log the mean value, i.e. $\log(\bar{x})$
+.pull-right[
+Let's calculate $\log(\bar{x})$
 
-```{r}
+.small[
+```{r, echo = TRUE}
 xbar <- mean(x)
 log(xbar)
 ```
-
+]
+]
 ---
 
-### Median and logs
+## Median and logs
 
-```{r}
+```{r echo = TRUE}
 x <- c(3, 5, 6, 8, 10, 14, 19)
 ```
 
 --
 
-Let's find the median of the logged values of x, i.e. $\text{Median}(\log(x))$
+.pull-left[
+Let's calculate $\text{Median}(\log(x))$
 
-```{r}
+.small[
+```{r , echo = TRUE}
 log_x <- log(x)
 median(log_x)
 ```
-
+]
+]
 --
 
-Let's find median of x and then log the mean value, i.e. $\log(\text{Median}(x))$
+.pull-right[
+Let's calculate $\log(\text{Median}(x))$
 
-```{r}
+.small[
+```{r, echo = TRUE}
 median_x <- median(x)
 log(median_x)
 ```
-
+]
+]
 
 ---
 
-### Mean, Median, and log
+## Mean, Median, and log
 
 ```{r}
 x <- c(3, 5, 6, 8, 10, 14, 19)
@@ -210,7 +215,7 @@ median(log_x) == log(median_x)
 
 ---
 
-### Mean and median of $\log(Y)$
+## Mean and median of $\log(Y)$
 
 - Recall that $y= \beta_0 + \beta_1 x_i$ is the **mean** value of $y$ at the given value $x_i$. This doesn't hold when we log-transform $y$
 
@@ -225,7 +230,7 @@ $$\begin{aligned}\exp\{\text{Mean}(\log(y))\} \neq \text{Mean}(y) \\[5pt]
 
 ---
 
-### Mean and median of $\log(y)$
+## Mean and median of $\log(y)$
 
 - However, the median of the logged values **is** equal to the log of the median value. Therefore,
 
@@ -241,9 +246,9 @@ $$\text{Median}(\log(y)) = \text{Mean}(\log(y))$$
 ]
 ---
 
-### Interpretation with log-transformed $y$
+## Interpretation with log-transformed $y$
 
-- Given the previous facts, if $\hat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 x$, then 
+- Given the previous facts, if $\widehat{\log(Y)} = \hat{\beta}_0 + \hat{\beta}_1 x$, then 
 .alert[
 $$\text{Median}(\hat{Y}) = \exp\{\hat{\beta}_0\}\exp\{\hat{\beta}_1 x\}$$
 ]
@@ -260,7 +265,7 @@ $$\text{Median}(\hat{Y}) = \exp\{\hat{\beta}_0\}\exp\{\hat{\beta}_1 x\}$$
 
 ---
 
-### log(Rate) vs. Age
+## log(Rate) vs. Age
 
 ```{r}
 respiratory <- respiratory %>% mutate(log_rate = log(Rate))
@@ -274,7 +279,7 @@ ggplot(data=respiratory, aes(x=Age,y=log_rate)) +
 
 ---
 
-### log(Rate) vs. Age
+## log(Rate) vs. Age
 
 ```{r}
 log_model <- lm(log_rate ~ Age, data = respiratory)
@@ -291,15 +296,18 @@ ggplot(data=respiratory, aes(x=predict(log_model), y=resid(log_model))) +
 
 ---
 
-### log(Rate) vs. Age
+## log(Rate) vs. Age
 
 ```{r echo = F}
 kable(tidy(log_model, conf.int=TRUE),format="markdown", digits=3)
 ```
+
+
+--
+
 <br>
 
-
-.vocab[Intercept]: The median respiratory rate for a new born child is `r round(exp(3.845),3)` (exp{3.845}) breaths per minute.
+.vocab[Intercept]: The median respiratory rate for a new born child is expected to be `r round(exp(3.845),3)` (exp{3.845}) breaths per minute.
 
 --
 
@@ -307,7 +315,7 @@ kable(tidy(log_model, conf.int=TRUE),format="markdown", digits=3)
 
 ---
 
-### Confidence interval for $\beta_j$
+## Confidence interval for $\beta_j$
 
 - The confidence interval for the coefficient of $X$ describing its relationship with $\log(Y)$ is
 
@@ -323,7 +331,7 @@ $$\exp\big\{\hat{\beta}_j \pm t^* SE(\hat{\beta_j})\big\}$$
 
 ---
 
-### Coefficient of `Age`
+## Coefficient of `Age`
 
 ```{r echo = F}
 kable(tidy(log_model, conf.int=TRUE),format="html", digits=3)
@@ -333,7 +341,13 @@ kable(tidy(log_model, conf.int=TRUE),format="html", digits=3)
 
 ---
 
-### Log Transformation on $x$
+class: middle, center
+
+## Log transformation on the predictor
+
+---
+
+## Log Transformation on $X$
 
 ```{r,echo=F}
 set.seed(1)
@@ -352,7 +366,7 @@ p2 <- ggplot(data=s,aes(x=predicted, y=residuals)) +
 geom_point(alpha = 0.7)+
 geom_hline(yintercept=0,color="red") +
   ggtitle("Residual vs. Predicted")+
-  xlab("X")+
+  xlab("Predicted")+
   ylab("residuals") 
 ```
 
@@ -367,7 +381,7 @@ Try a transformation on $X$ if the scatterplot shows some curvature but the vari
 
 ---
 
-### Model with Transformation on $Z$
+## Model with Transformation on $X$
 
 .alert[
 $$\hat{Y} = \hat{\beta}_0 + \hat{\beta}_1 \log(X)$$
@@ -385,7 +399,7 @@ $$\hat{Y} = \hat{\beta}_0 + \hat{\beta}_1 \log(X)$$
 
 ---
 
-### Rate vs. log(Age)
+## Rate vs. log(Age)
 
 ```{r,echo=F}
 ex0824 <- ex0824 %>% mutate(log_age = log(Age))
@@ -398,25 +412,36 @@ ggplot(data=ex0824,aes(x=log_age,y=Rate)) +
 
 ---
 
-### Rate vs. Age
+## Rate vs. log(Age)
 
 ```{r,echo=F}
 mod3 <- lm(Rate ~ log_age,data=ex0824)
 kable(tidy(mod3, conf.int=TRUE),format="markdown", digits = 3)
 ```
+
+--
+
 <br> 
 
 .vocab[Intercept]: The expected (mean) respiratory rate for children who are 1 month old (log(1) = 0) is 50.135	breaths per minute.
 
 --
 
-.vocab[Slope]: If a child's age doubles, we expect their respiratory rate to decrease by `r round(-5.982*log(2),3)` (-5.982*log(2)) breaths per minute.
+.vocab[Slope]: If a child's age doubles, we expect their respiratory rate to decrease by `r round(5.982*log(2),3)` (-5.982*log(2)) breaths per minute.
 
 ---
 
 class: middle 
 
 See [Log Transformations in Linear Regression](https://github.com/sta210-sp20/supplemental-notes/blob/master/log-transformations.pdf) for more details about interpreting regression models with log-transformed variables.
+
+---
+
+## Recap
+
+- Log transformation on the response
+
+- Log transformation on the predictor 
 
 
 
