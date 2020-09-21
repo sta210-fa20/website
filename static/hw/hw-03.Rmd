@@ -73,7 +73,7 @@ We will use Analysis of Variance (ANOVA) to test whether there is an association
 
 2. What do you observe from the visualizations and summary statistics? In your response, describe how the centers and spreads compare across groups, presence of outliers, and whether there appears to be a relationship between the testing conditions and heart rate.
 
-3. Make an ANOVA table for this data. Show your code ad output.
+3. Make an ANOVA table for this data. Show your code and output.
 
 4. State the hypotheses that are being tested in the ANOVA table using (i) words and (ii) statistical notation. *Hint: You can use [this guide](https://www.caam.rice.edu/~heinken/latex/symbols.pdf) to find the LaTex code needed to write the hypotheses.*
 
