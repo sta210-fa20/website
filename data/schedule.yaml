@@ -111,18 +111,18 @@ lessons:
 
   - week: "Week 09"
     date: "Mon, Oct 12"
-    title: "Logistic regression"
+    title: "Statistics experience"
   - date: "Wed, Oct 14"
-    title: "Logistic: predictions + conditions"
+    title: "Logistic regression"
     hw: "hw-06.html"
   - date: "Thu, Oct 15"
     title: "Lab 09"
 
   - week: "Week 10"
     date: "Mon, Oct 19"
-    title: "Logistic: inference"
+    title: "Logistic: predictions + conditions"
   - date: "Wed, Oct 21"
-    title: "Multinomial logistic regression"
+    title: "Logistic regression: inference"
   - date: "Thu, Oct 22"
     title: "Lab 10"
     quiz: "quiz-03.html"
@@ -130,19 +130,17 @@ lessons:
   - week: "Week 11"
     date: "Mon, Oct 26"
     title: "Multinomial logistic regression"
-  
-  - date: "UNIT 03"
-    title: "LOOKING AHEAD"
-  
   - date: "Wed, Oct 28"
-    title: "Log-linear models"
+    title: "Multinomial logistic regression"
   - date: "Thu, Oct 29"
     title: "Lab 11"
-
+    
+  - date: "UNIT 03"
+    title: "LOOKING AHEAD"
    
   - week: "Week 12"
     date: "Mon, Nov 02"
-    title: "Weighted least squares"
+    title: "Log-linear models"
   - date: "Wed, Nov 04"
     title: "Statistics experience"
   - date: "Thu, Nov 05"
@@ -151,7 +149,7 @@ lessons:
     
   - week: "Week 13"
     date: "Mon, Nov 09"
-    title: "Missing data"
+    title: "Dealing with missing data"
   - date: "Wed, Nov 11"
     title: "Modeling in practice"
   - date: "Thu, Nov 12"
