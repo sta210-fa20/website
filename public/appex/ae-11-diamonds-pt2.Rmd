@@ -51,7 +51,7 @@ diamonds <- read_csv("data/diamonds.csv")
 ```
 
 
-## Part 1: Mean-centered variablesInteractions 
+## Part 1: Mean-centered variables + Interactions 
 
 ### Original model 
 
@@ -115,7 +115,7 @@ Let's use the mean-centered version of the model to answer the following questio
 (c) (6298.339, 9243.176)
 (d) (283.132, 3482.653)
 
-### Transformations
+## Transformations
 
 Let's take a look at the plot of residuals vs. fitted.  
 
