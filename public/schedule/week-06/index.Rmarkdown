@@ -22,7 +22,7 @@ font-size: 18px;
 
 |            |   |
 |------------|---|
-| **TBD** | Optional  |
+| [Influence of perceived threat of Covid-19 and HEXACO personality traits on toilet paper stockpiling](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0234232#abstract0)  | Optional  |
 
 
 

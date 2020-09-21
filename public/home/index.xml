@@ -485,7 +485,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-06/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Variable transformations Variable transformations AE 11: Back to diamonds   Wednesday Comparing models Comparing models AE 12    Readings          TBD Optional    Assignments          HW 04 due Wed, Sep 30   Lab 05 due Wed, Sep 30    Announcements From the StatSci Majors Union (both events count towards stats experiences) If you are interested in statistics, machine learning, or data science and wondering about your possible pathways after Duke, the StatSci Majors Union and the Department of Statistical Science have got you covered!</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Variable transformations Variable transformations AE 11: Back to diamonds   Wednesday Comparing models Comparing models AE 12    Readings          Influence of perceived threat of Covid-19 and HEXACO personality traits on toilet paper stockpiling Optional    Assignments          HW 04 due Wed, Sep 30   Lab 05 due Wed, Sep 30    Announcements From the StatSci Majors Union (both events count towards stats experiences) If you are interested in statistics, machine learning, or data science and wondering about your possible pathways after Duke, the StatSci Majors Union and the Department of Statistical Science have got you covered!</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -527,7 +527,7 @@ font-size: 18px;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TBD&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0234232#abstract0&#34;&gt;Influence of perceived threat of Covid-19 and HEXACO personality traits on toilet paper stockpiling&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Optional&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
