@@ -133,7 +133,7 @@ ggplot(data = model_aug, aes(x = .fitted, y  = .resid)) +
 ```
 
 
-1. Based on what you learned about conditions for SLR, which condition(s) appear to be violated? *Select all that apply.*
+1. Based on what you learned about conditions for SLR, which condition(s) appear to be violated? *Select all that apply.* (Zoom poll)
 
 (a) Linearity
 (b) Constant variance
