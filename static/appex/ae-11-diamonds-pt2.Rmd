@@ -80,19 +80,40 @@ tidy(mean_cent_model, conf.int = TRUE) %>%
 
 2. Let's compare the original and mean-centered model for `ClarityIF`. 
 
-3. Let's compare the original and mean-centered models for `Clarity SI1`.
+3. Let's compare the original and mean-centered models for `ClaritySI1`.
 
-### Testing coefficients
+### Testing coefficients (Zoom poll)
 
 Let's use the mean-centered version of the model to answer the following questions: 
 
-1. Suppose we wish to test if the mean price for diamonds with `Clarity = "SI3"` differs significantly from diamonds with `Clarity = "IF"`. Which coefficient should we use to answer this question? 
+1. Suppose we wish to test if the mean price for diamonds with `Clarity = "SI3"` differs significantly from diamonds with `Clarity = "IF"`. We should use the inferential statistics for which term to conduct this test?
 
-2. Suppose we wish to test if the effect of carat for diamonds with `Clarity = "SI3"` differs significantly from diamonds with `Clarity = "IF"`. Which coefficient should we use to answer this question? 
+(a) Intercept
+(b) ClaritySI3
+(c) carat_cent
+(d) ClaritySI3:carat_cent
 
-3. What are the degrees of freedom associated with the regression standard error, $\hat{\sigma}$, and thus the degrees of freedom associated with the two test above? 
+2. Suppose we wish to test if the effect of carat for diamonds with `Clarity = "SI3"` differs significantly from diamonds with `Clarity = "IF"`. We should use the inferential statistics for which term to conduct this test?
+
+(a) Intercept
+(b) ClaritySI3
+(c) carat_cent
+(d) ClaritySI3:carat_cent
+
+3. What are the degrees of freedom associated with the regression standard error, $\hat{\sigma}$, and therefore the degrees of freedom associated with the two tests mentioned above? *Note: There are 271 observations in the diamonds data set.*
+
+(a) 269
+(b) 268
+(d) 256
+(c) 255
+
 
 4. What is the 95% confidence interval for the amount by which the slope of carat for diamonds with `Clarity = VS1` differs from the slope of carat for diamonds with `Clarity = IF`?
+
+(a) (4659.287, 5691.504)
+(b) (-1110.613,	-26.858)
+(c) (6298.339, 9243.176)
+(d) (283.132, 3482.653)
 
 ### Transformations
 
@@ -112,7 +133,12 @@ ggplot(data = model_aug, aes(x = .fitted, y  = .resid)) +
 ```
 
 
-1. Based on what you learned about conditions for SLR, which condition(s) appear to be violated? 
+1. Based on what you learned about conditions for SLR, which condition(s) appear to be violated? *Select all that apply.*
+
+(a) Linearity
+(b) Constant variance
+(c) Normality 
+(d) Independence
 
 2. Let's use a log-transformation on the total price and refit the model.
 
@@ -160,7 +186,10 @@ Let's take a look at a plot of log(TotalPrice) vs. carat and the residuals vs. c
 
 ```{r}
 ggplot(data = diamonds, aes(x = carat_cent, y =log_total_price )) +
-  geom_point()
+  geom_point() +
+  labs(x= "Mean-Centered Carat", 
+       y  = "Log-transformed Total Price)", 
+       title = "Log-transformed total price vs. Mean-Centered Carat")
 ```
 
 ```{r}
@@ -169,21 +198,23 @@ ggplot(data = log_model_aug, aes(x = carat_cent, y = .resid)) +
   geom_hline(yintercept = 0, color = "red") +
   labs(x = "Mean-Centered Carat", 
        y = "Residual", 
-       x = "Residuals vs. Mean-Centered Carat")
+       title = "Residuals vs. Mean-Centered Carat")
 ```
 
 
 1. Let's add a quadratic term to the model. 
 
 ```{r}
-log_model_v2 <- lm(log_total_price ~ Clarity + carat_cent + Clarity*carat_cent + I(carat_cent^2) , data = diamonds)
+log_model_v2 <- lm(log_total_price ~ Clarity + carat_cent + Clarity*carat_cent + I(carat_cent^2), 
+                   data = diamonds)
 tidy(log_model_v2, conf.int = TRUE) %>%
   kable(digits = 3)
 ```
 
 2. Write the model equation for `Clarity = IF`. 
 
-3. Let's interpret the effect of carat on the total price for diamonds with Clarity = IF that have a carat size within 1 standard deviation of the mean.
+3. Let's interpret the effect of carat on the total price for diamonds with Clarity = IF that have a carat size within 0.2 carats of the mean (~Q1 and Q3).
+
 
 
  
