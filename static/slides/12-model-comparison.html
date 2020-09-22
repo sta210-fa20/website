@@ -28,7 +28,7 @@ class: middle, center
 
 ## Topics
 
-- ANOVA for Regression 
+- ANOVA for Multiple Linear Regression
 
 - Nested F Test
 
@@ -548,7 +548,7 @@ class: middle, center
 
 ## `\(R^2\)` 
 
-**Recall**: `\(\purple{R^2}\)` is the proportion of the variation in the response variable explained by the regression model
+**Recall**: `\(\color{purple}{R^2}\)` is the proportion of the variation in the response variable explained by the regression model
 
 --
 
@@ -564,7 +564,7 @@ If we only use `\(R^2\)` to choose a best fit model, we will be prone to choose 
 
 ## Adjusted `\(R^2\)`
 
-.vocab[Adjusted `\(R^2\)`]: measure that includes a penalty for unnecessary predictor variables
+.vocab[Adjusted R&lt;sup&gt;2&lt;/sup&gt;]: measure that includes a penalty for unnecessary predictor variables
 
 --
 
@@ -604,6 +604,7 @@ Use `\(R^2\)` when describing the relationship between the response and predicto
 
 Let's compare two models: 
 
+.small[
 
 ```r
 model1 &lt;- lm(Tip ~ Party + Age + Meal, data = tips)
@@ -629,10 +630,6 @@ glance(model2) %&gt;% select(r.squared, adj.r.squared)
 ##       &lt;dbl&gt;         &lt;dbl&gt;
 ## 1     0.683         0.662
 ```
-
-
-.question[
-Which model would we choose based on `\(R^2\)`? Based on `\(Adj. R^2\)`?
 ]
 
 ---
@@ -661,7 +658,7 @@ See the [supplemental note](https://github.com/sta210-sp20/supplemental-notes/bl
 
 &lt;br&gt; 
 
-First Term: Decreases as *p* increases
+.vocab3[First Term: Decreases as *p* increases]
 
 ---
 
@@ -672,7 +669,7 @@ First Term: Decreases as *p* increases
 
 &lt;br&gt; 
 
-Second Term: Fixed for a given sample size *n*
+.vocab3[Second Term: Fixed for a given sample size *n*]
 
 ---
 
@@ -683,7 +680,7 @@ Second Term: Fixed for a given sample size *n*
 
 &lt;br&gt; 
 
-Third Term: Increases as *p* increases
+.vocab3[Third Term: Increases as *p* increases]
 
 ---
 
@@ -702,6 +699,7 @@ Third Term: Increases as *p* increases
 
 ## Tips: AIC &amp; BIC
 
+.small[
 
 ```r
 model1 &lt;- lm(Tip ~ Party + Age + Meal, data = tips)
@@ -727,17 +725,13 @@ glance(model2) %&gt;% select(AIC, BIC)
 ##   &lt;dbl&gt; &lt;dbl&gt;
 ## 1  720.  757.
 ```
-
-
-.question[
-Which model would we choose based on AIC? Based on BIC?
 ]
 
 ---
 
 ## Recap
 
-- ANOVA for Regression 
+- ANOVA for Multiple Linear Regression
 
 - Nested F Test
 

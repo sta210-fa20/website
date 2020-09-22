@@ -81,9 +81,8 @@ Describe the relationship between the votes for Buchanan and votes for Bush.
     - Interpret the coefficient of `Bush2000_cent`in terms of the number of votes for Buchanan. 
 
 
-6. Now let's fit a model using `Buchanan2000` as the response and the log-transformed `Bush2000_cent` as the predictor.
- 
-   - Interpret the intercept in terms of the number of votes for Buchanan. 
+6. Now let's fit a model using `Buchanan2000` as the response and the log-transformed `Bush2000` as the predictor.
+
    - Interpret the coefficient of associated with Bush2000 in t   erms of the number of votes for Buchanan. 
 
 7. Compare the three models fit in Question 4 - 6. Which model best fits the data? Show any relevant analysis and/or statistics used to choose the best fit model. 

@@ -28,7 +28,7 @@ class: middle, center
 
 ## Topics
 
-- ANOVA for Regression 
+- ANOVA for Multiple Linear Regression
 
 - Nested F Test
 
@@ -383,7 +383,7 @@ class: middle, center
 
 ## $R^2$ 
 
-**Recall**: $\purple{R^2}$ is the proportion of the variation in the response variable explained by the regression model
+**Recall**: $\color{purple}{R^2}$ is the proportion of the variation in the response variable explained by the regression model
 
 --
 
@@ -399,7 +399,7 @@ If we only use $R^2$ to choose a best fit model, we will be prone to choose the 
 
 ## Adjusted $R^2$
 
-.vocab[Adjusted $R^2$]: measure that includes a penalty for unnecessary predictor variables
+.vocab[Adjusted R<sup>2</sup>]: measure that includes a penalty for unnecessary predictor variables
 
 --
 
@@ -439,6 +439,7 @@ Use $R^2$ when describing the relationship between the response and predictor va
 
 Let's compare two models: 
 
+.small[
 ```{r echo = T}
 model1 <- lm(Tip ~ Party + Age + Meal, data = tips)
 glance(model1) %>% select(r.squared, adj.r.squared)
@@ -448,10 +449,6 @@ glance(model1) %>% select(r.squared, adj.r.squared)
 model2 <- lm(Tip ~ Party + Age + Meal + Day, data = tips)
 glance(model2) %>% select(r.squared, adj.r.squared)
 ```
-
-
-.question[
-Which model would we choose based on $R^2$? Based on $Adj. R^2$?
 ]
 
 ---
@@ -480,7 +477,7 @@ $$\begin{aligned} & AIC = \color{blue}{n\log(SS_\text{Error})} - n \log(n) + 2(p
 
 <br> 
 
-First Term: Decreases as *p* increases
+.vocab3[First Term: Decreases as *p* increases]
 
 ---
 
@@ -491,7 +488,7 @@ $$\begin{aligned} & AIC = n\log(SS_\text{Error}) - \color{blue}{n \log(n)} + 2(p
 
 <br> 
 
-Second Term: Fixed for a given sample size *n*
+.vocab3[Second Term: Fixed for a given sample size *n*]
 
 ---
 
@@ -502,7 +499,7 @@ $$\begin{aligned} & AIC = n\log(SS_\text{Error}) - n\log(n) + \color{blue}{2(p+1
 
 <br> 
 
-Third Term: Increases as *p* increases
+.vocab3[Third Term: Increases as *p* increases]
 
 ---
 
@@ -521,6 +518,7 @@ $$\begin{aligned} & AIC = n\log(RSS) - n \log(n) + \color{red}{2(p+1)} \\
 
 ## Tips: AIC & BIC
 
+.small[
 ```{r echo = T}
 model1 <- lm(Tip ~ Party + Age + Meal, data = tips)
 glance(model1) %>% select(AIC, BIC)
@@ -530,17 +528,13 @@ glance(model1) %>% select(AIC, BIC)
 model2 <- lm(Tip ~ Party + Age + Meal + Day, data = tips)
 glance(model2) %>% select(AIC, BIC)
 ```
-
-
-.question[
-Which model would we choose based on AIC? Based on BIC?
 ]
 
 ---
 
 ## Recap
 
-- ANOVA for Regression 
+- ANOVA for Multiple Linear Regression
 
 - Nested F Test
 
