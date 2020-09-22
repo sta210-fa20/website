@@ -1,5 +1,5 @@
 ---
-title: "Week 06: Transformations + compare models"
+title: "Week 06: Transformations + model comparison"
 weight: 5
 ---
 
