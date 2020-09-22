@@ -45,11 +45,6 @@ library(patchwork)
 library(kableExtra)
 ```
 
----
-
-class: middle, center
-
-## Model Assessment & Selection
 
 ---
 
@@ -505,8 +500,8 @@ $$\begin{aligned} & AIC = n\log(SS_\text{Error}) - n\log(n) + \color{blue}{2(p+1
 
 ## Using AIC & BIC
 
-$$\begin{aligned} & AIC = n\log(RSS) - n \log(n) + \color{red}{2(p+1)} \\
-& BIC = n\log(RSS) - n\log(n) + \color{red}{\log(n)\times(p+1)} \end{aligned}$$
+$$\begin{aligned} & AIC = n\log(SS_{Error}) - n \log(n) + \color{red}{2(p+1)} \\
+& BIC = n\log(SS_{Error}) - n\log(n) + \color{red}{\log(n)\times(p+1)} \end{aligned}$$
 <br>
 <br>
 

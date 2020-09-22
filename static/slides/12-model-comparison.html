@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Maria Tackett" />
     <script src="libs/font-awesome/kePrint/kePrint.js"></script>
+    <link href="libs/font-awesome/lightable/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
   </head>
   <body>
@@ -39,11 +40,6 @@ class: middle, center
 
 
 
----
-
-class: middle, center
-
-## Model Assessment &amp; Selection
 
 ---
 
@@ -686,8 +682,8 @@ See the [supplemental note](https://github.com/sta210-sp20/supplemental-notes/bl
 
 ## Using AIC &amp; BIC
 
-`$$\begin{aligned} &amp; AIC = n\log(RSS) - n \log(n) + \color{red}{2(p+1)} \\
-&amp; BIC = n\log(RSS) - n\log(n) + \color{red}{\log(n)\times(p+1)} \end{aligned}$$`
+`$$\begin{aligned} &amp; AIC = n\log(SS_{Error}) - n \log(n) + \color{red}{2(p+1)} \\
+&amp; BIC = n\log(SS_{Error}) - n\log(n) + \color{red}{\log(n)\times(p+1)} \end{aligned}$$`
 &lt;br&gt;
 &lt;br&gt;
 
