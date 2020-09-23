@@ -15,7 +15,7 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | [Variable transformations](https://sta210-fa20.netlify.app/slides/11-transformations.html)| [Variable transformations](https://warpwire.duke.edu/w/J30EAA/) | [AE 11: Back to diamonds](https://sta210-fa20.netlify.app/appex/ae-11-diamonds-pt2.html)|
-| Wednesday | [Model comparison](https://sta210-fa20.netlify.app/slides/12-model-comparison.html) | [Model comparison](https://warpwire.duke.edu/w/-4MEAA/) | AE 12|
+| Wednesday | [Model comparison](https://sta210-fa20.netlify.app/slides/12-model-comparison.html) | [Model comparison](https://warpwire.duke.edu/w/-4MEAA/) | [AE 12: Model comparison](https://sta210-fa20.netlify.app/appex/ae-12-model-comparison.html)|
 
 
 ## Readings
