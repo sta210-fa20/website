@@ -1,0 +1,134 @@
+---
+title: "AE 12: Model comparison"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+
+## Announcements
+
+- HW 03 due today at 11:59p
+- HW 04 available after class due Sep 30 at 11:59p
+
+## Questions from video?
+
+## Price of Diamonds
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(broom)
+library(patchwork)
+library(knitr)
+```
+
+Today's data set contains the price and characteristics for 271diamonds randomly selected from AwesomeGems.com in July 2005.^[Data set adapted from the Diamonds data set in the Stat2Data R Package.] The variables in the data set are 
+
+- `Carat`: Size of the diamond (in carats)
+- `Color`: Coded as D (most white/bright) through J
+- `Clarity`: Coded as IF (internally flawless), VVS1, VVS2, VS1, VS2, SI1, SI2, or SI3 (slightly clouded)
+- `Depth`:	Depth (as a percentage of diameter)
+- `PricePerCt`:	Price per carat
+- `TotalPrice`: Price for the diamond (in dollars)
+
+We will use the characteristics to understand variability in the price of diamonds. 
+
+```{r}
+diamonds <- read_csv("data/diamonds.csv")
+```
+
+```{r}
+diamonds <- diamonds %>%
+  mutate(carat_cent = Carat - mean(Carat), 
+         log_total_price = log(TotalPrice))
+```
+
+```{r}
+log_model <- lm(log_total_price ~ Clarity + carat_cent + Clarity*carat_cent, data = diamonds)
+tidy(log_model, conf.int = TRUE) %>%
+  kable(digits = 3)
+```
+
+```{r}
+log_model_aug <- augment(log_model)
+```
+
+```{r}
+ggplot(data = log_model_aug, aes(x = .fitted, y  = .resid)) +
+  geom_point() +
+  geom_hline(yintercept = 0, color = "Red") +
+  labs(x = "Predicted", 
+      y = "Residual", 
+      title = "Residuals vs. Predcited")
+```
+
+It looks like we fixed the constant variance issue, but linearity is still violated!
+
+## Higher-order terms
+
+Let's take a look at a plot of log(TotalPrice) vs. carat and the residuals vs. carat. 
+
+```{r}
+ggplot(data = diamonds, aes(x = carat_cent, y =log_total_price )) +
+  geom_point() +
+  labs(x= "Mean-Centered Carat", 
+       y  = "Log-transformed Total Price)", 
+       title = "Log-transformed total price vs. Mean-Centered Carat")
+```
+
+```{r}
+ggplot(data = log_model_aug, aes(x = carat_cent, y = .resid)) +
+  geom_point() + 
+  geom_hline(yintercept = 0, color = "red") +
+  labs(x = "Mean-Centered Carat", 
+       y = "Residual", 
+       title = "Residuals vs. Mean-Centered Carat")
+```
+
+
+1. Let's add a quadratic term to the model. 
+
+```{r}
+log_model_v2 <- lm(log_total_price ~ Clarity + carat_cent + Clarity*carat_cent + I(carat_cent^2), 
+                   data = diamonds)
+tidy(log_model_v2, conf.int = TRUE) %>%
+  kable(digits = 3)
+```
+
+2. Write the model equation for `Clarity = IF`. 
+
+3. Let's interpret the effect of carat on the total price for diamonds with Clarity = IF that have a carat size within 0.2 carats of the mean (approx. Q1 and Q3).
+
+### Nested F test
+
+Suppose we have the following model: 
+
+```{r}
+orig_model <- lm(log_total_price ~ Carat + Depth, data = diamonds)
+tidy(orig_model, conf.int = TRUE) %>%
+  kable(digits = 3)
+```
+
+1. Conduct a nested F test to determine if we should add `Carat` to the model shown above. 
+
+   - State the null and alternative hypotheses in words. 
+   - Show the code and output for the nested F test. 
+   - State your conclusion in the context of the data. 
+  
+### Model comparison 
+
+2. Compare the original model and the model that includes Color using $Adj. R^2$, $AIC$ and $BIC$. Which model would you select based on each criteria?  
+
+
+
+
+ 
