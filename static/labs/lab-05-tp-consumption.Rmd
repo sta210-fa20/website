@@ -77,8 +77,9 @@ The variables we'll use in this analysis are
 - `public_transport`: Local restrictions on public transportation
 - `europe`: 1: respondent lives in EU, 0: respondent lives in US/Canada
 - `date_diff_z`: Standardized number of days between first reported case in locality and taking the survey
-- `consc`: Standardized measure of conscientiousness (organization, diligence, perfectionism, prudence)
-- `open`: Standardized measure of openness to experience (aesthetic appreciation, inquisitiveness, creativity, unconventionality)
+- `consc`: Standardized measure of conscientiousness (higher score means stronger traits such as organization, diligence, perfectionism, prudence)
+- `open`: Standardized measure of openness to experience (higher score means stronger traits such as aesthetic appreciation, inquisitiveness, creativity, unconventionality)
+- `perceived_threat`: Standardized measure of perceived threat of Covid-19 (higher score means greater perceived threat)
 
 ## Exercises
 
@@ -127,3 +128,6 @@ Upload the team's PDF to Gradescope. Be sure to include every team member's name
 
 There should only be **<u>one</u>** submission per team on Gradescope. **Be sure to include every team member's name in the Gradescope submission.**
 
+<hr>
+
+Click [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0234232#abstract0) to access the paper, copy of the survey, original data, and other supplemental materials.
