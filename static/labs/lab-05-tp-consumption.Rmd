@@ -77,6 +77,8 @@ The variables we'll use in this analysis are
 - `public_transport`: Local restrictions on public transportation
 - `europe`: 1: respondent lives in EU, 0: respondent lives in US/Canada
 - `date_diff_z`: Standardized number of days between first reported case in locality and taking the survey
+- `consc`: Standardized measure of conscientiousness (organization, diligence, perfectionism, prudence)
+- `open`: Standardized measure of openness to experience (aesthetic appreciation, inquisitiveness, creativity, unconventionality)
 
 ## Exercises
 
