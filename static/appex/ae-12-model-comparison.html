@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2020-09-23" />
+<meta name="date" content="2020-09-24" />
 
 <title>AE 12: Model comparison</title>
 
@@ -363,7 +363,7 @@ summary {
 
 
 <h1 class="title toc-ignore">AE 12: Model comparison</h1>
-<h4 class="date">2020-09-23</h4>
+<h4 class="date">2020-09-24</h4>
 
 </div>
 
@@ -762,9 +762,16 @@ tidy(log_model_v2, conf.int = TRUE) %&gt;%
 </tbody>
 </table>
 <ol start="2" style="list-style-type: decimal">
-<li><p>Write the model equation for <code>Clarity = IF</code>.</p></li>
-<li><p>Let’s interpret the effect of carat on the total price for diamonds with Clarity = IF that have a carat size within 0.2 carats of the mean (approx. Q1 and Q3).</p></li>
+<li>Write the model equation for <code>Clarity = IF</code>.</li>
 </ol>
+<p><span class="math display">\[\hat{\log(TotalPrice)} = 8.598 + 1.892\times \text{carat_cent} - 1.860\times \text{carat_cent}^2\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Let’s interpret the effect of carat on the total price for diamonds with Clarity = IF that have a carat size within 0.2 carats of the mean (approx. Q1 and Q3).</li>
+</ol>
+<p>Based on the model, the effect on <span class="math inline">\(\log(TotalPrice)\)</span> is <span class="math display">\[1.892*(0.2 - (-0.2)) - 1.860*(0.2^2 - (-0.2)^2) = 0.7568\]</span></p>
+<p>Interpretation in terms of <span class="math inline">\(\log(TotalPrice)\)</span>: For diamonds with clarity IF, if we go from a diamond that is 0.2 carats below the mean carat weight to one that is 0.2 carats above the mean carat weight, we expect the log price to increase by 0.7568 on average.</p>
+<p>Interpretation in terms of price: For diamonds with clarity IF, diamonds that weigh 0.2 carats above the mean carat weight are expected to have a median price that is 2.131, exp(0.7568) times the median price of diamonds that weigh 0.2 carats below the mean carat weight.</p>
+<p>Alternate interpretation: For diamonds with clarity IF, if we go from a diamond that weighs 0.2 carats below the mean carat weight to one that weighs 0.2 carats more the mean carat weight, we expect the price to multiply by a factor of 2.131, exp(0.7568).</p>
 <div id="nested-f-test" class="section level3">
 <h3>Nested F test</h3>
 <p>Suppose we have the following model:</p>
@@ -817,16 +824,72 @@ tidy(orig_model, conf.int = TRUE) %&gt;%
 <li><p>Conduct a nested F test to determine if we should add <code>Carat</code> to the model shown above.</p>
 <ul>
 <li>State the null and alternative hypotheses in words.</li>
+</ul>
+<p><span class="math inline">\(H_0\)</span>: All of the coefficients for Color are 0</p>
+<p><span class="math inline">\(H_a\)</span>: At least one coefficient for Color is not 0</p>
+<ul>
 <li>Show the code and output for the nested F test.</li>
-<li>State your conclusion in the context of the data.</li>
 </ul></li>
 </ol>
+<pre class="r"><code>proposed_model &lt;- lm(log_total_price ~ Carat + Depth + Color, data = diamonds)</code></pre>
+<pre class="r"><code>anova(orig_model, proposed_model) %&gt;%
+  tidy() %&gt;%
+  kable(digits = 3)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right">res.df</th>
+<th align="right">rss</th>
+<th align="right">df</th>
+<th align="right">sumsq</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">268</td>
+<td align="right">16.050</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+</tr>
+<tr class="even">
+<td align="right">262</td>
+<td align="right">12.962</td>
+<td align="right">6</td>
+<td align="right">3.088</td>
+<td align="right">10.404</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>State your conclusion in the context of the data.</li>
+</ul>
+<p>The p-value is very small, so we reject <span class="math inline">\(H_0\)</span>. There is at least one coefficient associated with Color that is not 0, so we should include Color in the model.</p>
 </div>
 <div id="model-comparison" class="section level3">
 <h3>Model comparison</h3>
 <ol start="2" style="list-style-type: decimal">
 <li>Compare the original model and the model that includes Color using <span class="math inline">\(Adj. R^2\)</span>, <span class="math inline">\(AIC\)</span> and <span class="math inline">\(BIC\)</span>. Which model would you select based on each criteria?</li>
 </ol>
+<pre class="r"><code>glance(orig_model) %&gt;%
+  select(adj.r.squared, AIC, BIC)</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   adj.r.squared   AIC   BIC
+##           &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1         0.854  11.1  25.5</code></pre>
+<pre class="r"><code>glance(proposed_model) %&gt;%
+  select(adj.r.squared, AIC, BIC)</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   adj.r.squared   AIC   BIC
+##           &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1         0.879 -34.8  1.22</code></pre>
+<p>Based on <span class="math inline">\(Adj. R^2\)</span>, the proposed model that includes Color is a better fit since the <span class="math inline">\(Adj. R^2\)</span> is higher.</p>
+<p>Based on <span class="math inline">\(AIC\)</span>, the proposed model that includes Color is a better fit, since <span class="math inline">\(AIC\)</span> is lower.</p>
+<p>Based on <span class="math inline">\(BIC\)</span>, the proposed model that includes Color is a better fit, since <span class="math inline">\(BIC\)</span> is lower.</p>
 </div>
 </div>
 <div class="footnotes">

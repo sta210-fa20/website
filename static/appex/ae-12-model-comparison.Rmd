@@ -106,7 +106,19 @@ tidy(log_model_v2, conf.int = TRUE) %>%
 
 2. Write the model equation for `Clarity = IF`. 
 
+$$\hat{\log(TotalPrice)} = 8.598 + 1.892\times \text{carat_cent} - 1.860\times \text{carat_cent}^2$$
+ 
 3. Let's interpret the effect of carat on the total price for diamonds with Clarity = IF that have a carat size within 0.2 carats of the mean (approx. Q1 and Q3).
+
+Based on the model, the effect on $\log(TotalPrice)$ is 
+$$1.892*(0.2 - (-0.2)) - 1.860*(0.2^2 - (-0.2)^2) = 0.7568$$
+
+Interpretation in terms of $\log(TotalPrice)$: For diamonds with clarity IF, if we go from a diamond that is 0.2 carats below the mean carat weight to one that is 0.2 carats above the mean carat weight, we expect the log price to increase by 0.7568 on average. 
+
+Interpretation in terms of price: For diamonds with clarity IF, diamonds that weigh 0.2 carats above the mean carat weight are expected to have a median price that is `r round(exp(0.7568),3)`, exp(0.7568) times the median price of diamonds that weigh 0.2 carats below the mean carat weight. 
+
+Alternate interpretation: For diamonds with clarity IF, if we go from a diamond that weighs 0.2 carats below the mean carat weight to one that weighs 0.2 carats more the mean carat weight, we expect the price to multiply by a factor of `r round(exp(0.7568),3)`, exp(0.7568).
+
 
 ### Nested F test
 
@@ -121,14 +133,45 @@ tidy(orig_model, conf.int = TRUE) %>%
 1. Conduct a nested F test to determine if we should add `Carat` to the model shown above. 
 
    - State the null and alternative hypotheses in words. 
+   
+   $H_0$: All of the coefficients for Color are 0
+   
+   $H_a$: At least one coefficient for Color is not 0
+   
    - Show the code and output for the nested F test. 
-   - State your conclusion in the context of the data. 
+
+```{r}
+proposed_model <- lm(log_total_price ~ Carat + Depth + Color, data = diamonds)
+```
+
+```{r}
+anova(orig_model, proposed_model) %>%
+  tidy() %>%
+  kable(digits = 3)
+```
+
+   - State your conclusion in the context of the data.
+   
+   The p-value is very small, so we reject $H_0$. There is at least one coefficient associated with Color that is not 0, so we should include Color in the model. 
   
 ### Model comparison 
 
 2. Compare the original model and the model that includes Color using $Adj. R^2$, $AIC$ and $BIC$. Which model would you select based on each criteria?  
 
+```{r}
+glance(orig_model) %>%
+  select(adj.r.squared, AIC, BIC)
+```
 
+```{r}
+glance(proposed_model) %>%
+  select(adj.r.squared, AIC, BIC)
+```
 
+Based on $Adj. R^2$, the proposed model that includes Color is a better fit since the $Adj. R^2$ is higher. 
+
+Based on $AIC$, the proposed model that includes Color is a better fit, since $AIC$ is lower. 
+
+Based on $BIC$, the proposed model that includes Color is a better fit, since $BIC$ is lower.
 
  
