@@ -86,8 +86,9 @@ lessons:
   - title: "HW 04 assigned" 
     hw: "hw-04.html"
   - date: "Thu, Sep 24"
-    title: "Lab 06"
- 
+    title: "Lab 05: Stockpiling toilet paper"
+    lab: "lab-05-tp-consumption.html"
+    
   - week: "Week 07"
     date: "Mon, Sep 28"
     title: "MLR: Model selection"

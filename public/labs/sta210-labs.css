@@ -86,7 +86,7 @@ strong {
 @media screen and (max-width: 760px) {
 	pre {
 		width: 100%;
-		font-size: 15px;
+		font-size: 16px;
      	overflow-x: auto;
 	}
 }
@@ -116,6 +116,8 @@ pre.r {
 	background-color: #F5F5F5;	
 	/*border-color: #CCCCCC*/
 	 white-space: inherit;
+	 font-size: 17px;
+	
 }
 
 

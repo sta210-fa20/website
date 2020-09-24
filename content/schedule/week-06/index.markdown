@@ -31,7 +31,7 @@ font-size: 18px;
 |                        |   |
 |------------------------|---|
 | [HW 04](https://sta210-fa20.netlify.app/hw/hw-04.html)| **due Wed, Sep 30** |
-| Lab 05         | **due Wed, Sep 30** |
+| [Lab 05](https://sta210-fa20.netlify.app/labs/lab-05-tp-consumption.html)         | **due Wed, Sep 30** |
 
 
 ## Announcements
