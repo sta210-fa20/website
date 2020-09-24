@@ -1,0 +1,112 @@
+---
+title: "Lab 05: "
+subtitle:  ""
+output: 
+  tufte::tufte_html:
+    css: "./sta210-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 10
+    toc: true
+    toc_depth: 1
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE, 
+                      message=FALSE,
+                      eval=FALSE)
+```
+
+<!--
+<p><span class="marginnote shownote">
+<img src="img/04-anova/diamonds.png" alt=" " width="527"  />
+</span></p>
+-->
+<!-- Diamonds photo obtained from Google images: https://www.diamondbanc.com/ -->
+
+When doing statistical analyses in practice, there is often a lot of time spent on cleaning and preparing the data. The goal of today's lab is to practice cleaning messy data, so it can be used in a regression analysis. You will also practice interpreting the results from a regression model that has numeric and categorical predictors and a log-transformed response variable. 
+
+
+# Getting Started 
+
+- Go to the sta210-fa20 organization on GitHub ([https://github.com/sta210-fa20](https://github.com/sta210-fa20)). Click on the repo with the prefix **lab-05-**. It contains the starter documents you need to complete the warmup exercise. 
+
+- Clone the repo and create a new project in your RStudio Docker Container ([https://vm-manage.oit.duke.edu](https://vm-manage.oit.duke.edu)). 
+
+- Configure git by typing the following in the **console**.
+
+```{r eval=FALSE}
+library(usethis)
+use_git_config(user.name="github username", user.email="your email")
+```
+
+## Password caching
+
+If you would like your git password cached for a week for this project, type the following in the **Terminal**:
+
+```{bash eval=FALSE}
+git config --global credential.helper 'cache --timeout 604800'
+```
+
+You will need to enter your GitHub username and password one more time after caching the password. After that you won't need to enter your credentials for 604800 seconds = 7 days.
+
+
+## Packages
+
+We will use the following packages in today's lab. You may need to install the package `skimr` using the `install.packages()` command in your console.
+
+```{r load-packages}
+library(tidyverse)
+library(broom)
+library(knitr)
+```
+
+## Data 
+
+## Exercises
+
+1. The started by fitting a baseline model with the variables `politics`, `gender`, `age`, `household`, `duration`, `mobility`, `europe`, and `date_diff`. Briefly explain why the authors started by fitting this baseline model before including the variables measuring perceived threat from Covid-19 or personality traits. 
+
+1. The authors used the standardized version of the numeric predictor variables in the model. Briefly explain why the authors used the standardized values for the numeric predictors rather than the raw variables. *Hint: Consider how using the standardized variables can make it easier to draw conclusions from the models.*
+
+
+1. Fit the baseline model that includes the variables `politics`, `gender`, `age`, `household`, `duration`, `mobility`, `public_transport`, `europe`, and `date_diff_z`. 
+
+  - Describe the subset of people included in the intercept. 
+  - Interpret the coefficient `household` in the context of the data. *Note: The standard deviation for household is 1.57 $\approx 2$*.
+  
+1. Does the perceived threat of Covid-19 help explain the variation in the toilet paper consumption after adjusting for the baseline variables? Show the code and output used to derive your answer. 
+
+1. Does the effect of Covid-19 differ based on gender? Let's a Nested F test to answer this question. 
+
+- State the null and alternative hypotheses in words in the context of the data. 
+- Show the code and output from the test. 
+- State the conclusion in the context of the data.
+
+**Use the best fit model based on the results of the Nested F test for the next exercise.**
+
+1. Calculate the model fit statistics - $Adj. R^2$, $AIC$, and $BIC$ - for the model selected in the previous exercise.
+
+1. Now let's consider the personality traits conscientiousness  and openness to experiences, the two traits identified by the authors. Fit a model that includes all of the variables in the model chosen in Exercise 5 along with conscientiousness and openness to experiences. 
+
+In addition to the model output, display the model fit statistics - $Adj. R^2$, $AIC$, and $BIC$.  
+
+1. Now let's compare the model chosen in Exercise 5 to the model fit in Exercise 7. 
+
+- Based on Adjusted $R^2$, which model better fits the data? Briefly explain. 
+- Based on Adjusted $AIC$, which model better fits the data? Briefly explain.  
+- Based on Adjusted $BIC$, which model better fits the data? Briefly explain. 
+
+1. Briefly explain why we didn't use $R^2$ to choose the model of best fit in the previous question. 
+
+
+1. Select a final model and briefly explain why you selected that model. Use the model to describe the factors that are associated with an increase in of toilet paper rolls. 
+
+# Submission 
+
+Upload the team's PDF to Gradescope. Be sure to include every team member's name in the Gradescope submission Associate the "Overall" graded section with the first page of your PDF, and mark where each answer is  to the exercises. If any answer spans multiple pages, then mark all pages.
+
+There should only be **<u>one</u>** submission per team on Gradescope. **Be sure to include every team member's name in the Gradescope submission.**
+
