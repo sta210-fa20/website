@@ -120,7 +120,7 @@ In addition to the model output, display the model fit statistics - $Adj. R^2$, 
 1. Briefly explain why we didn't use $R^2$ to choose the model of best fit in the previous question. 
 
 
-1. Select a final model and briefly explain why you selected that model. Use the model to describe the factors that are associated with an increase in of toilet paper rolls. 
+1. Select a final model and briefly explain why you selected that model. Use the model to describe the factors that are associated with an increase in the number of toilet paper rolls. 
 
 # Submission 
 
