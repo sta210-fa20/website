@@ -91,15 +91,15 @@
   </url>
   
   <url>
-    <loc>/project/</loc>
-  </url>
-  
-  <url>
     <loc>/schedule/</loc>
   </url>
   
   <url>
     <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
   </url>
   
   <url>
