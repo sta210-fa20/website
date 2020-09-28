@@ -49,6 +49,13 @@ Proposal due **Oct 09**
 
 ## Questions from video?
 
+---
+title: "AE 13: Model selection"
+date: "`r Sys.Date()`"
+author: "Your name"
+output: html_document
+---
+
 ## Understanding state-wide performance on the SAT
 
 This data set contains the average SAT score (out of 1600) and other variables that may be associated with SAT performance for each of the 50 U.S. states. The data is based on test takers for the 1982 exam.
@@ -66,6 +73,11 @@ sat_scores <- read_csv("data/sat-scores.csv") %>%
   select(-State)
 ```
 
+
+```{r}
+lm(SAT ~ 1, data = sat_scores)
+```
+
 ## Part 1: Manual backward selection
 
 Use the `drop1` function to manually perform backward selection using AIC as the selection criterion. To help you get started, the code for the full model and the first are below.
@@ -76,7 +88,29 @@ full_model <- lm(SAT ~ ., data = sat_scores)
 ```
 
 ```{r}
+int_only_model <- lm(SAT ~ 1, data = sat_scores)
+```
+
+```{r}
 drop1(full_model)
+```
+
+```{r}
+#remove income
+current_model <- lm(SAT ~ Takers + Years + Public + Expend + Rank, data = sat_scores)
+drop1(current_model)
+```
+
+```{r}
+#remove takers
+current_model <- lm(SAT ~ Years + Public + Expend + Rank, data = sat_scores)
+drop1(current_model)
+```
+
+**Final Model**
+
+```{r}
+tidy(current_model)
 ```
 
 
@@ -93,7 +127,9 @@ int_only_model <- lm(SAT ~ 1, data = sat_scores)
 ```
 
 ```{r}
-step(int_only_model, scope = formula(full_model), direction = "forward")
+selected_model <- step(int_only_model, scope = formula(full_model), direction = "forward")
+
+tidy(selected_model)
 ```
 
 Now let's perform backward selection using the `step` function 
@@ -102,11 +138,25 @@ Now let's perform backward selection using the `step` function
 step(full_model, scope = formula(int_only_model), direction = "backward")
 ```
 
+### BAckward selection with the `step` function and BIC
+
+**The output will still say "AIC" even though BIC is being used as the selection criterion!**
+
+```{r}
+n <- nrow(sat_scores)
+
+step(full_model, scope = formula(int_only_model), direction = "backward", 
+     k = log(n))
+```
+
+
 ### Backward selection using `regsubsets`
 
 Use the `regsubsets` function in the **leap** package to perform backward selection with BIC as the selection criterion.
 
 First may need to install the leaps package. To do so, type the code below in the console: 
+
+You only need to install the package one time.
 
 ```{r eval = F}
 install.packges(leaps)
@@ -115,28 +165,33 @@ install.packges(leaps)
 Uncomment the code below to load the leaps package and perform backward selection with BIC as the selection criterion. 
 
 ```{r}
-#library(leaps)
+library(leaps)
 ```
 
 ```{r}
-#reg_backward <- regsubsets(SAT ~ ., data = sat_scores, method="backward)
+reg_backward <- regsubsets(SAT ~ ., data = sat_scores, method="backward")
 ```
 
 Get a summary of the selection results
 
 ```{r}
-#sel_summary <- summary(reg_backward)
+sel_summary <- summary(reg_backward)
 ```
 
 Choose the model with the minimum value of BIC: 
 
 ```{r}
-#coef(regfit_backward, which.min(sel_summary$bic))
+coef(reg_backward, which.min(sel_summary$bic))
+```
+
+```{r}
+selected_model <- lm(SAT ~ Years + Expend + Rank, data = sat_scores)
 ```
 
 Now select the coefficients corresponding to the model selected using $Adj R^2$ (`adjr2`) as the criterion.
 
 ```{r}
-#choose model using Adjusted R-squared
+coef(reg_backward, which.max(sel_summary$adjr2))
 ```
+
 
