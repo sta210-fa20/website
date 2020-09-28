@@ -862,7 +862,7 @@ Draft report due Wednesday, October 28
 Peer feedback due Thursday, November 5
 Final report due Tuesday, November 17
 Presentation video, slides, repo due Friday, November 20
-Presentation comments due Sunday, November 21
+Presentation comments due Sunday, November 22
 Introduction TL;DR: Pick a dataset and do a regression analysis. That is your final project.
 The goal of the final project is for you to use regression analysis to analyze a dataset of your own choosing.</description>
       <content>&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;
@@ -871,7 +871,7 @@ The goal of the final project is for you to use regression analysis to analyze a
 &lt;p&gt;Peer feedback due &lt;strong&gt;Thursday, November 5&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Final report due &lt;strong&gt;Tuesday, November 17&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Presentation video, slides, repo due &lt;strong&gt;Friday, November 20&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Presentation comments due &lt;strong&gt;Sunday, November 21&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Presentation comments due &lt;strong&gt;Sunday, November 22&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: &lt;em&gt;Pick a dataset and do a regression analysis. That is your
 final project.&lt;/em&gt;&lt;/p&gt;
@@ -917,7 +917,7 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;td&gt;20 pts&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Peer feedback&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Peer review&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;15 pts&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1052,16 +1052,17 @@ exactly upon knitting.&lt;/p&gt;
 &lt;h3 id=&#34;discussion&#34;&gt;Discussion&lt;/h3&gt;
 &lt;p&gt;This section is a conclusion and discussion. This will require a
 summary of what you have learned about your research question along with statistical arguments supporting your conclusions. Also, critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Includ 1 - 2 paragraphs on what you would do differently if you were able to start over with the project or what you would do next if you were going to continue work on the project should also be included.&lt;/p&gt;
-&lt;h2 id=&#34;peer-feedback&#34;&gt;Peer feedback&lt;/h2&gt;
+&lt;h2 id=&#34;peer-review&#34;&gt;Peer review&lt;/h2&gt;
 &lt;p&gt;Critically reviewing others&amp;rsquo; work is a crucial part of the scientific process, and STA 199 is no exception. You will be assigned a team to review. As part of the review process, you must provide your partner team a copy of your current report by &lt;strong&gt;Wednesday, October 28&lt;/strong&gt;. After giving the report to your partner team, they will have until &lt;strong&gt;Friday, November 5&lt;/strong&gt; to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience
 reading and constructively critiquing the work of others.&lt;/p&gt;
-&lt;p&gt;During the peer feedback process, you will be provided read-only access to your  partner team&amp;rsquo;s GitHub repo. Provide your feedback in the form of GitHub issues to your partner team&amp;rsquo;s GitHub repo.&lt;/p&gt;
-&lt;p&gt;Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&amp;rsquo;s report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. You must have at least some of these results available for your partner team to review.&lt;/p&gt;
+&lt;p&gt;During the peer review process, you will be provided read-only access to your  partner team&amp;rsquo;s GitHub repo. Provide your review in the form of GitHub issues to your partner team&amp;rsquo;s GitHub repo.&lt;/p&gt;
+&lt;p&gt;Peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&amp;rsquo;s report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. You must have at least some of these results available for your partner team to review.&lt;/p&gt;
+&lt;p&gt;The final report is due on &lt;strong&gt;Tuesday, November 17.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;presentation-slides&#34;&gt;Presentation Slides&lt;/h2&gt;
 &lt;p&gt;In addition to the write-up, your team must also create presentation
-slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. For submission, convert these slides to a .pdf document to be submitted to Gradescope. The slides are due on &lt;strong&gt;Tuesday, November 17&lt;/strong&gt;.&lt;/p&gt;
+slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. For submission, convert these slides to a .pdf document to be submitted to Gradescope. The slides are due on &lt;strong&gt;Friday, November 20&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;video-presentation&#34;&gt;Video presentation&lt;/h2&gt;
-&lt;p&gt;Sometime before &lt;strong&gt;Tuesday, November 17&lt;/strong&gt;, you/your group will upload a video presentation of your project to Warpwire. Note that all members must present, and that a ten-minute time limit is &lt;strong&gt;strictly enforced&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Sometime before &lt;strong&gt;Friday, November 20&lt;/strong&gt;, you/your group will upload a video presentation of your project to Warpwire. Note that all members must present, and that a ten-minute time limit is &lt;strong&gt;strictly enforced&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For the presentation, you can speak over your slide deck, similar to the lecture content videos. I recommend using Zoom to record your presentation; however, you can use whatever platform works best for your group. Below are a few resources to help you record video presentations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://kb.siue.edu/61721&#34;&gt;Recording presentations in Zoom&lt;/a&gt;&lt;/li&gt;
@@ -1089,7 +1090,7 @@ for relevant variables&lt;/li&gt;
 &lt;li&gt;Presentation (if using Keynote/PowerPoint/Google Slides, export to PDF and put in repo, in a &lt;code&gt;/presentation&lt;/code&gt; folder)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted.&lt;/p&gt;
-&lt;p&gt;The repository must be finalized by &lt;strong&gt;Tuesday, November 17&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The repository must be finalized by &lt;strong&gt;Friday, November 20&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;peer-teamwork-evaluation&#34;&gt;Peer teamwork evaluation&lt;/h2&gt;
 &lt;p&gt;You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
 provide some explanation. If any individual gets an average peer score

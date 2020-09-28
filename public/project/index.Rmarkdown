@@ -14,7 +14,7 @@ Final report due **Tuesday, November 17**
 
 Presentation video, slides, repo due **Friday, November 20**
 
-Presentation comments due **Sunday, November 21**
+Presentation comments due **Sunday, November 22**
 
 ## Introduction 
 
@@ -47,7 +47,7 @@ Total                                                   | 115 pts
 **Slides**                                              | 15 pts
 **Repository**                                          | 5 pts
 **Video presentation + comments**                       | 20 pts
-**Peer feedback**                                       | 15 pts
+**Peer review**                                         | 15 pts
 
 **<i>Note: No late projects are accepted.</i>**
 
@@ -177,24 +177,25 @@ Additionally, interpret the key results from the model. The goal is not to inter
 This section is a conclusion and discussion. This will require a 
 summary of what you have learned about your research question along with statistical arguments supporting your conclusions. Also, critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Includ 1 - 2 paragraphs on what you would do differently if you were able to start over with the project or what you would do next if you were going to continue work on the project should also be included.
 
-## Peer feedback
+## Peer review
 
 Critically reviewing others' work is a crucial part of the scientific process, and STA 199 is no exception. You will be assigned a team to review. As part of the review process, you must provide your partner team a copy of your current report by **Wednesday, October 28**. After giving the report to your partner team, they will have until **Friday, November 5** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience 
 reading and constructively critiquing the work of others.
 
-During the peer feedback process, you will be provided read-only access to your  partner team's GitHub repo. Provide your feedback in the form of GitHub issues to your partner team's GitHub repo. 
+During the peer review process, you will be provided read-only access to your  partner team's GitHub repo. Provide your review in the form of GitHub issues to your partner team's GitHub repo. 
 
-Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. You must have at least some of these results available for your partner team to review.
+Peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. You must have at least some of these results available for your partner team to review.
 
+The final report is due on **Tuesday, November 17.**
 
 ## Presentation Slides
 
 In addition to the write-up, your team must also create presentation
-slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. For submission, convert these slides to a .pdf document to be submitted to Gradescope. The slides are due on **Tuesday, November 17**.
+slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. For submission, convert these slides to a .pdf document to be submitted to Gradescope. The slides are due on **Friday, November 20**.
 
 ## Video presentation
 
-Sometime before **Tuesday, November 17**, you/your group will upload a video presentation of your project to Warpwire. Note that all members must present, and that a ten-minute time limit is **strictly enforced**.
+Sometime before **Friday, November 20**, you/your group will upload a video presentation of your project to Warpwire. Note that all members must present, and that a ten-minute time limit is **strictly enforced**.
 
 For the presentation, you can speak over your slide deck, similar to the lecture content videos. I recommend using Zoom to record your presentation; however, you can use whatever platform works best for your group. Below are a few resources to help you record video presentations:
 
@@ -225,7 +226,7 @@ for relevant variables
 
 Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted.
 
-The repository must be finalized by **Tuesday, November 17**.
+The repository must be finalized by **Friday, November 20**.
 
 ## Peer teamwork evaluation
 
