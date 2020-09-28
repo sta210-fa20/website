@@ -119,7 +119,7 @@ Uncomment the code below to load the leaps package and perform backward selectio
 ```
 
 ```{r}
-#reg_backward <- regsubsets(SAT ~ ., data = sat_scores, method="forward")
+#reg_backward <- regsubsets(SAT ~ ., data = sat_scores, method="backward)
 ```
 
 Get a summary of the selection results
@@ -131,7 +131,7 @@ Get a summary of the selection results
 Choose the model with the minimum value of BIC: 
 
 ```{r}
-#coef(regfit_backward, which.max(sel_summary$bic))
+#coef(regfit_backward, which.min(sel_summary$bic))
 ```
 
 Now select the coefficients corresponding to the model selected using $Adj R^2$ (`adjr2`) as the criterion.
