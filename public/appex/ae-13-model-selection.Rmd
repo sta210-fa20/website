@@ -1,0 +1,142 @@
+---
+title: "AE 13: Model selection"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+
+```{r load-packages}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(leaps)
+```
+
+## Announcements
+
+### Tea with a TA!
+
+Hang out with the TAs from STA 210! This is a casual conversation and a fun opportunity to meet the members of the STA 210 teaching team. The only rule is these can't turn into office hours! 
+
+Tea with a TA counts as a statistics experience.
+
+- **Betsy Bersson**, Wed, Oct 7, 9:30 - 10:30 am
+  - [Click here](https://forms.gle/naEn88fnJDEZhdVL7) to sign up. Zoom details will be emailed before the event.
+
+
+### Project 
+
+Link: https://sta210-fa20.netlify.app/project
+
+Proposal due **Oct 09**
+
+### Quiz 02
+
+- Covers material weeks 04 - 06
+- Active Oct 1 at 12a - Oct 2 at 11:59p; 2 hours to complete it
+- Format similar to Quiz 01
+
+## Questions from video?
+
+## Understanding state-wide performance on the SAT
+
+This data set contains the average SAT score (out of 1600) and other variables that may be associated with SAT performance for each of the 50 U.S. states. The data is based on test takers for the 1982 exam.
+
+- `SAT`, average total SAT score
+- `Takers` percentage of high school seniors who took exam
+- `Income`: median income of families of test-takers ($ hundreds)
+- `Years`: average number of years test-takers had formal sciences, natural sciences, and humanities
+- `Public`: percentage of test-takers who attended public high school
+- `Expend`: total state expenditure on high schools ($ hundreds per student)
+- `Rank`: median percentile rank of test-takers within their high school classes
+
+```{r}
+sat_scores <- read_csv("data/sat-scores.csv") %>%
+  select(-State)
+```
+
+## Part 1: Manual backward selection
+
+Use the `drop1` function to manually perform backward selection using AIC as the selection criterion. To help you get started, the code for the full model and the first are below.
+
+
+```{r}
+full_model <- lm(SAT ~ ., data = sat_scores)
+```
+
+```{r}
+drop1(full_model)
+```
+
+
+## Part 2: Model selection functions in R
+
+### `step` function 
+
+If AIC is the selection criterion, we can use the `step` function in R. 
+
+Let's perform forward selection using the `step` function. 
+
+```{r}
+int_only_model <- lm(SAT ~ 1, data = sat_scores)
+```
+
+```{r}
+step(int_only_model, scope = formula(full_model), direction = "forward")
+```
+
+Now let's perform backward selection using the `step` function 
+
+```{r}
+step(full_model, scope = formula(int_only_model), direction = "backward")
+```
+
+### Backward selection using `regsubsets`
+
+Use the `regsubsets` function in the **leap** package to perform backward selection with BIC as the selection criterion.
+
+First may need to install the leaps package. To do so, type the code below in the console: 
+
+```{r eval = F}
+install.packges(leaps)
+```
+
+Uncomment the code below to load the leaps package and perform backward selection with BIC as the selection criterion. 
+
+```{r}
+#library(leaps)
+```
+
+```{r}
+#reg_backward <- regsubsets(SAT ~ ., data = sat_scores, method="forward")
+```
+
+Get a summary of the selection results
+
+```{r}
+#sel_summary <- summary(reg_backward)
+```
+
+Choose the model with the minimum value of BIC: 
+
+```{r}
+#coef(regfit_backward, which.max(sel_summary$bic))
+```
+
+Now select the coefficients corresponding to the model selected using $Adj R^2$ (`adjr2`) as the criterion.
+
+```{r}
+#choose model using Adjusted R-squared
+```
+
