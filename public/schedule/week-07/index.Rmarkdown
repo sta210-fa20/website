@@ -15,8 +15,8 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | [Model selection](https://sta210-fa20.netlify.app/slides/13-model-selection.html) | [Model selection](https://warpwire.duke.edu/w/g4oEAA/) | [AE 13: Model selection](https://sta210-fa20.netlify.app/appex/ae-13-model-selection.html)|
-| Wednesday | Model conditions | Model conditions | AE 14|
-|  | Model diagnostics | Model diagnostics | |
+| Wednesday | [Model diagnostics](https://sta210-fa20.netlify.app/slides/14-model-diagnostics.html)| [Model diagnostics](https://warpwire.duke.edu/w/2Y4EAA/) | AE 14|
+|  | Model conditions | No video | |
 
 
 ## Readings

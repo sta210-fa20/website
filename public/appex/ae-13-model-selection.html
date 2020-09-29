@@ -9,6 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Your name" />
 
 <meta name="date" content="2020-09-28" />
 
@@ -363,6 +364,7 @@ summary {
 
 
 <h1 class="title toc-ignore">AE 13: Model selection</h1>
+<h4 class="author">Your name</h4>
 <h4 class="date">2020-09-28</h4>
 
 </div>
@@ -416,11 +418,20 @@ library(leaps)</code></pre>
 </ul>
 <pre class="r"><code>sat_scores &lt;- read_csv(&quot;data/sat-scores.csv&quot;) %&gt;%
   select(-State)</code></pre>
+<pre class="r"><code>lm(SAT ~ 1, data = sat_scores)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = SAT ~ 1, data = sat_scores)
+## 
+## Coefficients:
+## (Intercept)  
+##       947.9</code></pre>
 </div>
 <div id="part-1-manual-backward-selection" class="section level2">
 <h2>Part 1: Manual backward selection</h2>
 <p>Use the <code>drop1</code> function to manually perform backward selection using AIC as the selection criterion. To help you get started, the code for the full model and the first are below.</p>
 <pre class="r"><code>full_model &lt;- lm(SAT ~ ., data = sat_scores)</code></pre>
+<pre class="r"><code>int_only_model &lt;- lm(SAT ~ 1, data = sat_scores)</code></pre>
 <pre class="r"><code>drop1(full_model)</code></pre>
 <pre><code>## Single term deletions
 ## 
@@ -434,6 +445,43 @@ library(leaps)</code></pre>
 ## Public  1     445.8 30288 332.32
 ## Expend  1    4744.9 34587 338.96
 ## Rank    1   11223.0 41065 347.54</code></pre>
+<pre class="r"><code>#remove income
+current_model &lt;- lm(SAT ~ Takers + Years + Public + Expend + Rank, data = sat_scores)
+drop1(current_model)</code></pre>
+<pre><code>## Single term deletions
+## 
+## Model:
+## SAT ~ Takers + Years + Public + Expend + Rank
+##        Df Sum of Sq   RSS    AIC
+## &lt;none&gt;              29844 331.59
+## Takers  1     401.3 30246 330.25
+## Years   1    9219.7 39064 343.05
+## Public  1     495.5 30340 330.41
+## Expend  1    6904.4 36749 339.99
+## Rank    1   11645.9 41490 346.06</code></pre>
+<pre class="r"><code>#remove takers
+current_model &lt;- lm(SAT ~ Years + Public + Expend + Rank, data = sat_scores)
+drop1(current_model)</code></pre>
+<pre><code>## Single term deletions
+## 
+## Model:
+## SAT ~ Years + Public + Expend + Rank
+##        Df Sum of Sq    RSS    AIC
+## &lt;none&gt;               30246 330.25
+## Years   1      8837  39083 341.07
+## Public  1      1462  31708 330.62
+## Expend  1      7343  37589 339.12
+## Rank    1    184786 215032 426.33</code></pre>
+<p><strong>Final Model</strong></p>
+<pre class="r"><code>tidy(current_model)</code></pre>
+<pre><code>## # A tibble: 5 x 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept) -205.      118.        -1.74 8.90e- 2
+## 2 Years         21.9       6.04       3.63 7.31e- 4
+## 3 Public        -0.664     0.450     -1.48 1.47e- 1
+## 4 Expend         2.24      0.678      3.31 1.87e- 3
+## 5 Rank          10.0       0.603     16.6  8.67e-21</code></pre>
 </div>
 <div id="part-2-model-selection-functions-in-r" class="section level2">
 <h2>Part 2: Model selection functions in R</h2>
@@ -442,7 +490,7 @@ library(leaps)</code></pre>
 <p>If AIC is the selection criterion, we can use the <code>step</code> function in R.</p>
 <p>Let’s perform forward selection using the <code>step</code> function.</p>
 <pre class="r"><code>int_only_model &lt;- lm(SAT ~ 1, data = sat_scores)</code></pre>
-<pre class="r"><code>step(int_only_model, scope = formula(full_model), direction = &quot;forward&quot;)</code></pre>
+<pre class="r"><code>selected_model &lt;- step(int_only_model, scope = formula(full_model), direction = &quot;forward&quot;)</code></pre>
 <pre><code>## Start:  AIC=427.06
 ## SAT ~ 1
 ## 
@@ -492,13 +540,15 @@ library(leaps)</code></pre>
 ## &lt;none&gt;                30246 330.25
 ## + Takers  1    401.32 29844 331.59
 ## + Income  1     70.95 30175 332.14</code></pre>
-<pre><code>## 
-## Call:
-## lm(formula = SAT ~ Rank + Years + Expend + Public, data = sat_scores)
-## 
-## Coefficients:
-## (Intercept)         Rank        Years       Expend       Public  
-##   -204.5982      10.0032      21.8905       2.2416      -0.6638</code></pre>
+<pre class="r"><code>tidy(selected_model)</code></pre>
+<pre><code>## # A tibble: 5 x 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept) -205.      118.        -1.74 8.90e- 2
+## 2 Rank          10.0       0.603     16.6  8.67e-21
+## 3 Years         21.9       6.04       3.63 7.31e- 4
+## 4 Expend         2.24      0.678      3.31 1.87e- 3
+## 5 Public        -0.664     0.450     -1.48 1.47e- 1</code></pre>
 <p>Now let’s perform backward selection using the <code>step</code> function</p>
 <pre class="r"><code>step(full_model, scope = formula(int_only_model), direction = &quot;backward&quot;)</code></pre>
 <pre><code>## Start:  AIC=333.58
@@ -541,20 +591,82 @@ library(leaps)</code></pre>
 ## (Intercept)        Years       Public       Expend         Rank  
 ##   -204.5982      21.8905      -0.6638       2.2416      10.0032</code></pre>
 </div>
+<div id="backward-selection-with-the-step-function-and-bic" class="section level3">
+<h3>BAckward selection with the <code>step</code> function and BIC</h3>
+<p><strong>The output will still say “AIC” even though BIC is being used as the selection criterion!</strong></p>
+<pre class="r"><code>n &lt;- nrow(sat_scores)
+
+step(full_model, scope = formula(int_only_model), direction = &quot;backward&quot;, 
+     k = log(n))</code></pre>
+<pre><code>## Start:  AIC=346.97
+## SAT ~ Takers + Income + Years + Public + Expend + Rank
+## 
+##          Df Sum of Sq   RSS    AIC
+## - Income  1       2.0 29844 343.06
+## - Takers  1     332.4 30175 343.61
+## - Public  1     445.8 30288 343.80
+## &lt;none&gt;                29842 346.97
+## - Expend  1    4744.9 34587 350.43
+## - Years   1    8897.8 38740 356.10
+## - Rank    1   11223.0 41065 359.02
+## 
+## Step:  AIC=343.06
+## SAT ~ Takers + Years + Public + Expend + Rank
+## 
+##          Df Sum of Sq   RSS    AIC
+## - Takers  1     401.3 30246 339.81
+## - Public  1     495.5 30340 339.97
+## &lt;none&gt;                29844 343.06
+## - Expend  1    6904.4 36749 349.55
+## - Years   1    9219.7 39064 352.61
+## - Rank    1   11645.9 41490 355.62
+## 
+## Step:  AIC=339.81
+## SAT ~ Years + Public + Expend + Rank
+## 
+##          Df Sum of Sq    RSS    AIC
+## - Public  1      1462  31708 338.26
+## &lt;none&gt;                 30246 339.81
+## - Expend  1      7343  37589 346.77
+## - Years   1      8837  39083 348.72
+## - Rank    1    184786 215032 433.97
+## 
+## Step:  AIC=338.26
+## SAT ~ Years + Expend + Rank
+## 
+##          Df Sum of Sq    RSS    AIC
+## &lt;none&gt;                 31708 338.26
+## - Expend  1      5918  37626 342.91
+## - Years   1     16160  47868 354.95
+## - Rank    1    185667 217375 430.60</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = SAT ~ Years + Expend + Rank, data = sat_scores)
+## 
+## Coefficients:
+## (Intercept)        Years       Expend         Rank  
+##    -303.724       26.095        1.861        9.826</code></pre>
+</div>
 <div id="backward-selection-using-regsubsets" class="section level3">
 <h3>Backward selection using <code>regsubsets</code></h3>
 <p>Use the <code>regsubsets</code> function in the <strong>leap</strong> package to perform backward selection with BIC as the selection criterion.</p>
 <p>First may need to install the leaps package. To do so, type the code below in the console:</p>
+<p>You only need to install the package one time.</p>
 <pre class="r"><code>install.packges(leaps)</code></pre>
 <p>Uncomment the code below to load the leaps package and perform backward selection with BIC as the selection criterion.</p>
-<pre class="r"><code>#library(leaps)</code></pre>
-<pre class="r"><code>#reg_backward &lt;- regsubsets(SAT ~ ., data = sat_scores, method=&quot;forward&quot;)</code></pre>
+<pre class="r"><code>library(leaps)</code></pre>
+<pre class="r"><code>reg_backward &lt;- regsubsets(SAT ~ ., data = sat_scores, method=&quot;backward&quot;)</code></pre>
 <p>Get a summary of the selection results</p>
-<pre class="r"><code>#sel_summary &lt;- summary(reg_backward)</code></pre>
+<pre class="r"><code>sel_summary &lt;- summary(reg_backward)</code></pre>
 <p>Choose the model with the minimum value of BIC:</p>
-<pre class="r"><code>#coef(regfit_backward, which.max(sel_summary$bic))</code></pre>
+<pre class="r"><code>coef(reg_backward, which.min(sel_summary$bic))</code></pre>
+<pre><code>## (Intercept)       Years      Expend        Rank 
+## -303.724295   26.095227    1.860866    9.825794</code></pre>
+<pre class="r"><code>selected_model &lt;- lm(SAT ~ Years + Expend + Rank, data = sat_scores)</code></pre>
 <p>Now select the coefficients corresponding to the model selected using <span class="math inline">\(Adj R^2\)</span> (<code>adjr2</code>) as the criterion.</p>
-<pre class="r"><code>#choose model using Adjusted R-squared</code></pre>
+<pre class="r"><code>coef(reg_backward, which.max(sel_summary$adjr2))</code></pre>
+<pre><code>## (Intercept)       Years      Public      Expend        Rank 
+## -204.598232   21.890482   -0.663798    2.241640   10.003169</code></pre>
 </div>
 </div>
 
