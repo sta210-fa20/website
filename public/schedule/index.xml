@@ -581,7 +581,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-07/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Model selection Model selection AE 13: Model selection   Wednesday Model diagnostics Model diagnostics AE 14    Model conditions No video     Readings None.
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Model selection Model selection AE 13: Model selection   Wednesday Model diagnostics Model diagnostics AE 14    Checkin conditions for MLR No video     Readings None.
 Assignments          Quiz 02 Oct 1 - 2   Project proposal due Oct 09    Announcements Hang out with the TAs from STA 210!</description>
       <content>&lt;style&gt;
 table {
@@ -614,7 +614,7 @@ font-size: 18px;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Model conditions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/14-mlr-conditions.html&#34;&gt;Checkin conditions for MLR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;No video&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
