@@ -49,13 +49,6 @@ Proposal due **Oct 09**
 
 ## Questions from video?
 
----
-title: "AE 13: Model selection"
-date: "`r Sys.Date()`"
-author: "Your name"
-output: html_document
----
-
 ## Understanding state-wide performance on the SAT
 
 This data set contains the average SAT score (out of 1600) and other variables that may be associated with SAT performance for each of the 50 U.S. states. The data is based on test takers for the 1982 exam.
