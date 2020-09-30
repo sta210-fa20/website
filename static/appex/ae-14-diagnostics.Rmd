@@ -77,7 +77,7 @@ tips_aug <- augment(tips_model) %>%
    mutate(obs_num = row_number()) #add row number to help with graphing
 ```
 
-### Leverage 
+## Leverage 
 
 1. What is the threshold used to identify observations with high leverage? Calculate the threshold and save as `leverage_threshold`. 
 
