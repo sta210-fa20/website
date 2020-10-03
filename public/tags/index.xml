@@ -648,12 +648,89 @@ font-size: 18px;
   </item>
   
 <item>
-  <title>Week 08</title>
+  <title>Week 08: Logistic regression</title>
   <link>/schedule/week-08/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/schedule/week-08/</guid>
-  <description>&lt;p&gt;Check back for details!&lt;/p&gt;
+  <description>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Slides&lt;/th&gt;
+&lt;th&gt;Videos&lt;/th&gt;
+&lt;th&gt;Application Exercises (AE)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Monday&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/15-logistic-odds.html&#34;&gt;Odds + probabilities&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/WZQEAA/&#34;&gt;Odds + probabilities&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;AE 15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wednesday&lt;/td&gt;
+&lt;td&gt;Logistic regression: Coefficients + odds ratios&lt;/td&gt;
+&lt;td&gt;Logistic regression: Coefficients + odds ratios&lt;/td&gt;
+&lt;td&gt;AE 16&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
+&lt;p&gt;None.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://leanpub.com/openintro-statistics&#34;&gt;OpenIntro Statistics: 9.5 &lt;/a&gt; &lt;br&gt; (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF)&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Team Feedback #1 (email from Teammates)&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Oct 07&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/project/#project-proposal&#34;&gt;Project proposal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Oct 09&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lab 06&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Oct 14&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;announcements&#34;&gt;Announcements&lt;/h2&gt;
+&lt;p&gt;Hang out with the TAs from STA 210! This is a casual conversation and a fun opportunity to meet the members of the STA 210 teaching team. The only rule is these can&amp;rsquo;t turn into office hours!&lt;/p&gt;
+&lt;p&gt;Tea with a TA counts as a statistics experience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Upcoming teas&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.linkedin.com/in/betsy-bersson-37171570/&#34;&gt;Betsy Bersson&lt;/a&gt;&lt;/strong&gt;, Wed, Oct 7, 9:30 - 10:30 am&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://forms.gle/naEn88fnJDEZhdVL7&#34;&gt;Click here&lt;/a&gt; to sign up. Zoom details will be emailed before the event.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
   </item>
   

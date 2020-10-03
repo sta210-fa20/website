@@ -110,10 +110,10 @@ lessons:
     
   - week: "Week 08"
     date: "Mon, Oct 05"
-    title: "Odds + odds ratio"
+    title: "Logistic: Odds + probabilities"
+    slides: "15-logistic-odds.html"
   - date: "Wed, Oct 07"
-    title: "Logistic regression"
-    hw: "hw-05.html"
+    title: "Logistic: Coefficients"
   - date: "Thu, Oct 08"
     title: "Lab 08"
   - date: "Fri, Oct 09"
@@ -125,7 +125,7 @@ lessons:
     title: "Statistics experience"
   - date: "Wed, Oct 14"
     title: "Logistic regression"
-    hw: "hw-06.html"
+    hw: "hw-05.html"
   - date: "Thu, Oct 15"
     title: "Lab 09"
 
