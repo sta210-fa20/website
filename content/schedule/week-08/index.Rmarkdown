@@ -44,8 +44,9 @@ Tea with a TA counts as a statistics experience.
 
 **Upcoming teas**: 
 
-**[Betsy Bersson](https://www.linkedin.com/in/betsy-bersson-37171570/)**, Wed, Oct 7, 9:30 - 10:30 am
+[**Betsy Bersson**](https://www.linkedin.com/in/betsy-bersson-37171570/), Wed, Oct 7, 9:30 - 10:30 am
   - [Click here](https://forms.gle/naEn88fnJDEZhdVL7) to sign up. Zoom details will be emailed before the event.
 
-
+[**Emily Tallman**](http://linkedin.com/in/emily-tallman), Thu, Oct 15 11a - 12p
+  - [Click here](https://forms.gle/fZANces6Qw1gpwcc6)
 
