@@ -42,7 +42,7 @@ Tea with a TA counts as a statistics experience.
 
 ## Questions from the video? 
 
-# high risk of heart disease
+# High risk of heart disease
 
 This dataset is from an ongoing cardiovascular study on residents of the town of Framingham, Massachusetts. We want to use the total cholesterol to predict if a randomly selected adult has a high risk of having coronary heart disease in the next 10 years. 
 
@@ -53,7 +53,7 @@ This dataset is from an ongoing cardiovascular study on residents of the town of
 
 - `totChol`: total cholesterol (mg/dL)
 
-```{r echo = F}
+```{r}
 heart <- read_csv("data/framingham.csv") %>%
   select(totChol, TenYearCHD) %>%
   filter(!is.na(totChol)) %>% #remove observations with missing cholesterol
@@ -62,9 +62,9 @@ heart <- read_csv("data/framingham.csv") %>%
 
 ## Calculating probablity and odds
 
-1. What is the probability a randomly selected person in the study has a **<u>not</u>** high risk of heart disease? 
+1. What is the probability a randomly selected person in the study does **<u>not</u>** have a high risk of heart disease? 
 
-2. What are the odds a randomly selected person in the study does **<u>not</u>** have a high risk of heart disease? 
+2. What are the **odds** a randomly selected person in the study does **<u>not</u>** have a high risk of heart disease? 
 
 ## Logistic regression model
 
@@ -72,20 +72,22 @@ heart <- read_csv("data/framingham.csv") %>%
 
 
 2. Based on the model, if a randomly selected person has a total cholesterol of 225, 
-
-  - what are the log-odds they have a  high risk of heart disease? 
-  - what are the **odds** have a high risk of heart disease? 
-  - what is the probability have a high risk of heart disease? Calculate the answer "manually" using the odds or log-odds. 
+  
+    - what are the log-odds they have a  high risk of heart disease? 
+    - what are the **odds** they have a high risk of heart disease?   
+    - what is the probability they have a high risk of heart disease? *Calculate the answer "manually" using the odds or log-odds.*
+  
   
 3. Based on the model, if a randomly selected person has a total cholesterol of 226, 
-   - what are the log-odds they have a high risk of heart disease? 
-  - what are the **odds** they have a high risk of heart disease? 
-  - what is the probability they have a high risk of heart disease? 
+  
+     - what are the log-odds they have a high risk of heart disease? 
+    - what are the **odds** they have a high risk of heart disease?
+    - what is the probability they have a high risk of heart disease? 
 
 ## Comparing log-odds and odds
 
 1. Based on your answers in the previous section, how do the log-odds change when going from a person with total cholesterol of 225 mg/dL to a person with total cholesterol of 226 mg/dL? 
 
-2. Based on your previous answer, how might you interpret the coefficient of `totlChol` in terms of the **log-odds**?
+2. How would you interpret the coefficient of `totlChol` in terms of the **log-odds**?
 
 3. What would be the interpretation of `totChol` in terms of the **odds**?
