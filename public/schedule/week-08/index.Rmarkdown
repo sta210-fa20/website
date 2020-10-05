@@ -14,7 +14,7 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [Odds + probabilities](https://sta210-fa20.netlify.app/slides/15-logistic-odds.html)| [Odds + probabilities](https://warpwire.duke.edu/w/WZQEAA/)  | AE 15|
+| Monday    | [Odds + probabilities](https://sta210-fa20.netlify.app/slides/15-logistic-odds.html)| [Odds + probabilities](https://warpwire.duke.edu/w/WZQEAA/)  | [AE 15: Risk of heart disease](https://sta210-fa20.netlify.app/appex/ae-15-odds.html) |
 | Wednesday | Logistic regression: Coefficients + odds ratios| Logistic regression: Coefficients + odds ratios | AE 16|
 
 ## Readings

@@ -1,0 +1,91 @@
+---
+title: "AE 15: Risk of heart disease"
+subtitle: "Odds + probabilities"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+
+```{r load-packages, echo = F}
+library(tidyverse)
+library(knitr)
+library(broom)
+```
+
+## Announcements
+
+### Tea with a TA!
+
+Hang out with the TAs from STA 210! This is a casual conversation and a fun opportunity to meet the members of the STA 210 teaching team. The only rule is these can't turn into office hours! 
+
+Tea with a TA counts as a statistics experience.
+
+- **Betsy Bersson**, Wed, Oct 7, 9:30 - 10:30 am
+  - [Click here](https://forms.gle/naEn88fnJDEZhdVL7) to sign up. Zoom details will be emailed before the event.
+
+## Other announcements
+
+- **Team Feedback #1** due **Wed, Oct 7 at 11:59p**. You will receive an email from Teammates with a link to the feedback from. Email Professor Tackett if you did not receive the email (check your spam folder first!). Team feedback is part of the participation grade. 
+
+- **Project proposal** due Fri, Oct 9 at 11:59p.
+
+## Questions from the video? 
+
+# high risk of heart disease
+
+This dataset is from an ongoing cardiovascular study on residents of the town of Framingham, Massachusetts. We want to use the total cholesterol to predict if a randomly selected adult has a high risk of having coronary heart disease in the next 10 years. 
+
+ 
+- `high_risk`: 
+  - 1: High risk of having heart disease in next 10 years
+  - 0: Not high risk of having heart disease in next 10 years
+
+- `totChol`: total cholesterol (mg/dL)
+
+```{r echo = F}
+heart <- read_csv("data/framingham.csv") %>%
+  select(totChol, TenYearCHD) %>%
+  filter(!is.na(totChol)) %>% #remove observations with missing cholesterol
+  mutate(high_risk = as.factor(TenYearCHD))
+```
+
+## Calculating probablity and odds
+
+1. What is the probability a randomly selected person in the study has a **<u>not</u>** high risk of heart disease? 
+
+2. What are the odds a randomly selected person in the study does **<u>not</u>** have a high risk of heart disease? 
+
+## Logistic regression model
+
+1. Fit the appropriate model to predict whether a person has a high risk of heart disease given their total cholesterol. 
+
+
+2. Based on the model, if a randomly selected person has a total cholesterol of 225, 
+
+  - what are the log-odds they have a  high risk of heart disease? 
+  - what are the **odds** have a high risk of heart disease? 
+  - what is the probability have a high risk of heart disease? Calculate the answer "manually" using the odds or log-odds. 
+  
+3. Based on the model, if a randomly selected person has a total cholesterol of 226, 
+   - what are the log-odds they have a high risk of heart disease? 
+  - what are the **odds** they have a high risk of heart disease? 
+  - what is the probability they have a high risk of heart disease? 
+
+## Comparing log-odds and odds
+
+1. Based on your answers in the previous section, how do the log-odds change when going from a person with total cholesterol of 225 mg/dL to a person with total cholesterol of 226 mg/dL? 
+
+2. Based on your previous answer, how might you interpret the coefficient of `totlChol` in terms of the **log-odds**?
+
+3. What would be the interpretation of `totChol` in terms of the **odds**?

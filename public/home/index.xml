@@ -661,7 +661,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-08/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Odds + probabilities Odds + probabilities AE 15   Wednesday Logistic regression: Coefficients + odds ratios Logistic regression: Coefficients + odds ratios AE 16    Readings None.
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Odds + probabilities Odds + probabilities AE 15: Risk of heart disease   Wednesday Logistic regression: Coefficients + odds ratios Logistic regression: Coefficients + odds ratios AE 16    Readings None.
          OpenIntro Statistics: 9.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required    Assignments          Team Feedback #1 (email from Teammates) due Oct 07   Project proposal due Oct 09   Lab 06 due Oct 14    Announcements Hang out with the TAs from STA 210!</description>
       <content>&lt;style&gt;
 table {
@@ -684,7 +684,7 @@ font-size: 18px;
 &lt;td&gt;Monday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/15-logistic-odds.html&#34;&gt;Odds + probabilities&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/WZQEAA/&#34;&gt;Odds + probabilities&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 15&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-15-odds.html&#34;&gt;AE 15: Risk of heart disease&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
