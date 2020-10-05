@@ -408,8 +408,8 @@ summary {
   select(totChol, TenYearCHD) %&gt;%
   filter(!is.na(totChol)) %&gt;% #remove observations with missing cholesterol
   mutate(high_risk = as.factor(TenYearCHD))</code></pre>
-<div id="calculating-probablity-and-odds" class="section level2">
-<h2>Calculating probablity and odds</h2>
+<div id="calculating-probability-and-odds" class="section level2">
+<h2>Calculating probability and odds</h2>
 <ol style="list-style-type: decimal">
 <li><p>What is the probability a randomly selected person in the study does <strong><u>not</u></strong> have a high risk of heart disease?</p></li>
 <li><p>What are the <strong>odds</strong> a randomly selected person in the study does <strong><u>not</u></strong> have a high risk of heart disease?</p></li>

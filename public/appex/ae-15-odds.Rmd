@@ -60,7 +60,7 @@ heart <- read_csv("data/framingham.csv") %>%
   mutate(high_risk = as.factor(TenYearCHD))
 ```
 
-## Calculating probablity and odds
+## Calculating probability and odds
 
 1. What is the probability a randomly selected person in the study does **<u>not</u>** have a high risk of heart disease? 
 
