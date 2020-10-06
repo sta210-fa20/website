@@ -15,11 +15,9 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | [Odds + probabilities](https://sta210-fa20.netlify.app/slides/15-logistic-odds.html)| [Odds + probabilities](https://warpwire.duke.edu/w/WZQEAA/)  | [AE 15: Risk of heart disease](https://sta210-fa20.netlify.app/appex/ae-15-odds.html) |
-| Wednesday | [Logistic regression: Odds ratios](https://sta210-fa20.netlify.app/slides/16-logistic-odds-ratios.html) | Logistic regression: Odds ratios | AE 16|
+| Wednesday | [Logistic regression: Odds ratios](https://sta210-fa20.netlify.app/slides/16-logistic-odds-ratios.html) | [Logistic regression: Odds ratios](https://warpwire.duke.edu/w/RZgEAA/) | AE 16|
 
 ## Readings
-
-None.
 
 |            |   |
 |------------|---|
@@ -33,7 +31,6 @@ None.
 |------------------------|---|
 | Team Feedback #1 (email from Teammates) | **due Oct 07** |
 | [Project proposal](https://sta210-fa20.netlify.app/project/#project-proposal) | **due Oct 09** |
-| Lab 06 | **due Oct 14**
 
 
 ## Announcements

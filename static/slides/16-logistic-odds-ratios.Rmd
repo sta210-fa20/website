@@ -323,7 +323,7 @@ tidy(risk_model_3) %>%
 
 ---
 
-## Interpretation in terms of the log-odds
+## Interpretation in terms of the odds
 
 
 ```{r}
@@ -336,7 +336,7 @@ tidy(risk_model_3) %>%
 
 ---
 
-## Interpretation in terms of the log-odds
+## Interpretation in terms of the odds
 
 
 ```{r}

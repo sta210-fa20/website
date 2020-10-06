@@ -661,8 +661,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-08/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Odds + probabilities Odds + probabilities AE 15: Risk of heart disease   Wednesday Logistic regression: Odds ratios Logistic regression: Odds ratios AE 16    Readings None.
-         OpenIntro Statistics: 9.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required    Assignments          Team Feedback #1 (email from Teammates) due Oct 07   Project proposal due Oct 09   Lab 06 due Oct 14    Announcements Hang out with the TAs from STA 210!</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Odds + probabilities Odds + probabilities AE 15: Risk of heart disease   Wednesday Logistic regression: Odds ratios Logistic regression: Odds ratios AE 16    Readings          OpenIntro Statistics: 9.5  (click &amp;ldquo;Read Free Sample&amp;rdquo; to access PDF) Required    Assignments          Team Feedback #1 (email from Teammates) due Oct 07   Project proposal due Oct 09    Announcements Hang out with the TAs from STA 210!</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -689,13 +688,12 @@ font-size: 18px;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/16-logistic-odds-ratios.html&#34;&gt;Logistic regression: Odds ratios&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Logistic regression: Odds ratios&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/RZgEAA/&#34;&gt;Logistic regression: Odds ratios&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;AE 16&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
-&lt;p&gt;None.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -726,10 +724,6 @@ font-size: 18px;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/project/#project-proposal&#34;&gt;Project proposal&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;due Oct 09&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Lab 06&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;due Oct 14&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
