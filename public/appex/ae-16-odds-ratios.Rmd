@@ -93,6 +93,12 @@ $$\log\big(\frac{\hat{\pi}}{1-\hat{\pi}}\big) = \hat{\beta}_0 + \hat{\beta}_1 \t
 
 What is the value of the estimated coefficient $\hat{\beta}_1$?
 
+```{r}
+m <- glm(high_risk ~ prevalentHyp, data = heart, family = "binomial")
+tidy(m)
+```
+
+
 3. Based on this model, what are the **odds** of being high risk of heart disease for people with no family history of hypertension? 
 
 ## Part 2: Add systolic blood pressure.

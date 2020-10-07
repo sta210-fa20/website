@@ -117,6 +117,7 @@ lessons:
     slides: "16-logistic-odds-ratios.html"
   - date: "Thu, Oct 08"
     title: "Lab: Project proposal work day"
+    lab: "oct8-lab.html"
   - date: "Fri, Oct 09"
     title: "Projet proposal due"
     project: "#project-proposal"
