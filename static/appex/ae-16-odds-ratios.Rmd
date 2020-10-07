@@ -44,7 +44,7 @@ Tea with a TA counts as a statistics experience.
 
 ## Schedule udpate 
 
-`r emo::ji("maple_leaf")` Happy STA 21- Fall break! `r emo::ji("maple_leaf")`
+`r emo::ji("maple_leaf")` Happy STA 210 - Fall break! `r emo::ji("maple_leaf")`
 
 - Tomorrow's lab: Mid-semester feedback + Project proposal work day
 - HW 05 will be assigned on **Wed, Oct 14**
@@ -63,7 +63,7 @@ This dataset is from an ongoing cardiovascular study on residents of the town of
   - 0: Not high risk of having heart disease in next 10 years
 
 - `sysBP`: systolic blood pressure (mmHg)
-- `prevalentHyp`: 0 = Hypertension not prevalent in family history; 1 = Hypertension prevalent in family history
+- `prevalentHyp`: No = Hypertension not prevalent in family history; Yes = Hypertension prevalent in family history
 
 ```{r}
 heart <- read_csv("data/framingham.csv") %>%
