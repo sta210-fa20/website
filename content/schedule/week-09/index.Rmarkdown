@@ -15,7 +15,7 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | Statistics experience| | No AE 17 |
-| Wednesday | [Logistic regression: inference](http://sta210-fa20.netlify.app/slides/18-logistic-inference.html) | Logistic regression: inference | AE 18|
+| Wednesday | [Logistic regression: inference](http://sta210-fa20.netlify.app/slides/18-logistic-inference.html) | [Logistic regression: inference](https://warpwire.duke.edu/w/W6IEAA/) | AE 18|
 
 ## Readings
 

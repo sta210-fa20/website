@@ -71,7 +71,7 @@ heart <- read_csv("https://raw.githubusercontent.com/sta210-sp20/datasets/master
 
 ```{r}
 risk_m <- glm(TenYearCHD ~ age + education, 
-              data = heart, family = binomial)
+              data = heart, family = "binomial")
 tidy(risk_m, conf.int = TRUE) %>% 
   kable(format = "markdown", digits = 3)
 ```
@@ -83,7 +83,11 @@ $$\small{\log\Big(\frac{\hat{\pi}}{1-\hat{\pi}}\Big) = -5.385 + 0.073 ~ \text{ag
 
 .vocab[Hypotheses]: $H_0: \beta_j = 0 \hspace{2mm} \text{ vs } \hspace{2mm} H_a: \beta_j \neq 0$
 
-.vocab[Test Statistic]: $$z = \frac{\hat{\beta}_j - 0}{SE(\hat{\beta_j})}$$
+--
+
+.vocab[Test Statistic]: $$z = \frac{\hat{\beta}_j - 0}{SE_{\hat{\beta}_j}}$$
+
+--
 
 .vocab[P-value]: $P(|Z| > |z|)$, 
 
@@ -97,7 +101,7 @@ where $Z \sim N(0, 1)$, the Standard Normal distribution
 We can calculate the .vocab[C% confidence interval] for $\beta_j$ as the following: 
 
 .eq[
-$$\Large{\hat{\beta}_j \pm z^* SE(\hat{\beta}_j)}$$
+$$\Large{\hat{\beta}_j \pm z^* SE_{\hat{\beta}_j}}$$
 where $z^*$ is calculated from the $N(0,1)$ distribution
 
 ]
@@ -114,12 +118,12 @@ This is an interval for the change in the log-odds for every one unit increase i
 The change in **odds** for every one unit increase in $x_j$. 
 
 .eq[
-$$\Large{\exp\{\hat{\beta}_j \pm z^* SE(\hat{\beta}_j)\}}$$
+$$\Large{\exp\{\hat{\beta}_j \pm z^* SE_{\hat{\beta}_j}\}}$$
 ]
 
 --
 
-.vocab[Interpretation]: We are $C\%$ confident that for every one unit change in $x_j$, the odds multiply by a factor of $\exp\{\hat{\beta}_j - z^* SE(\hat{\beta}_j)\}$ to $\exp\{\hat{\beta}_j + z^* SE(\hat{\beta}_j)\}$, holding all else constant.
+.vocab[Interpretation]: We are $C\%$ confident that for every one unit increase in $x_j$, the odds multiply by a factor of $\exp\{\hat{\beta}_j - z^* SE_{\hat{\beta}_j}\}$ to $\exp\{\hat{\beta}_j + z^* SE_{\hat{\beta}_j}\}$, holding all else constant.
 
 
 ---
@@ -128,7 +132,7 @@ $$\Large{\exp\{\hat{\beta}_j \pm z^* SE(\hat{\beta}_j)\}}$$
 
 ```{r echo = F}
 risk_m <- glm(high_risk ~ age + education, data = heart, 
-         family = binomial)
+         family = "binomial")
 tidy(risk_m, conf.int = TRUE) %>% kable(format = "markdown", digits = 3)
 ```
 
@@ -234,9 +238,15 @@ class: middle, center
 $$\log L = \sum\limits_{i=1}^n[y_i \log(\hat{\pi}_i) + (1 - y_i)\log(1 - \hat{\pi}_i)]$$
 ]
 
+--
+
 - Measure of how well the model fits the data 
 
+--
+
 - Higher values of $\log L$ are better
+
+--
 
 - .vocab[Deviance] = $-2 \log L$
   - $-2 \log L$ follows a $\chi^2$ distribution with $n - p - 1$ degrees of freedom
@@ -249,9 +259,13 @@ $$\log L = \sum\limits_{i=1}^n[y_i \log(\hat{\pi}_i) + (1 - y_i)\log(1 - \hat{\p
     - Reduced Model includes predictors $x_1, \ldots, x_q$
     - Full Model includes predictors $x_1, \ldots, x_q, x_{q+1}, \ldots, x_p$
 
+--
+
 - We want to test the hypotheses
 $$\begin{aligned}&H_0: \beta_{q+1} = \dots = \beta_p = 0 \\
 & H_a: \text{ at least 1 }\beta_j \text{ is not } 0\end{aligned}$$
+
+--
 
 - To do so, we will use the .vocab[Drop-in-deviance test] (also known as the Nested Likelihood Ratio test)
 
@@ -263,8 +277,11 @@ $$\begin{aligned}&H_0: \beta_{q+1} = \dots = \beta_p = 0 \\
 $$\begin{aligned}&H_0: \beta_{q+1} = \dots = \beta_p = 0 \\
 & H_a: \text{ at least 1 }\beta_j \text{ is not } 0\end{aligned}$$
 
+--
 
 .vocab[Test Statistic]: $$G = (-2 \log L_{reduced}) - (-2 \log L_{full})$$
+
+--
 
 .vocab[P-value]: $P(\chi^2 > G)$, 
 
@@ -300,10 +317,10 @@ legend("topright",
 
 .small[
 ```{r}
-model_reduced <- glm(TenYearCHD ~ age + education, 
-              data = heart, family = binomial)
-model_full <- glm(TenYearCHD ~ age + education + currentSmoker,
-              data = heart, family = binomial)
+model_reduced <- glm(high_risk ~ age + education, 
+              data = heart, family = "binomial")
+model_full <- glm(high_risk ~ age + education + currentSmoker,
+              data = heart, family = "binomial")
 ```
 ]
 
@@ -324,14 +341,14 @@ Should we add `currentSmoker` to this model?
 ## Should we add `currentSmoker` to the model?
 
 ```{r echo = T, eval = F}
-model_reduced <- glm(TenYearCHD ~ age + education, 
-              data = heart, family = binomial)
+model_reduced <- glm(high_risk ~ age + education, 
+              data = heart, family = "binomial")
 ```
 
 ```{r echo = T, eval = F}
-model_full <- glm(TenYearCHD ~ age + education + 
+model_full <- glm(high_risk ~ age + education + 
                     currentSmoker, #<<
-              data = heart, family = binomial)
+              data = heart, family = "binomial")
 ```
 
 ---
@@ -397,7 +414,7 @@ $$\begin{align}&AIC = - 2 * \log L - \color{red}{n\log(n)}+ 2(p +1)\\[5pt]
 Let's look at the AIC for the model that includes `age`, `education`, and `currentSmoker`
 
 ```{r echo = T}
-glance(model_reduced)$AIC
+glance(model_full)$AIC
 ```
 
 --
@@ -405,7 +422,7 @@ glance(model_reduced)$AIC
 **Calculating AIC**
 
 ```{r echo = T}
-- 2 * glance(model_reduced)$logLik + 2 * (4 + 1)
+- 2 * glance(model_full)$logLik + 2 * (5 + 1)
 ```
 
 ---

@@ -62,7 +62,11 @@ class: middle, center
 
 .vocab[Hypotheses]: `\(H_0: \beta_j = 0 \hspace{2mm} \text{ vs } \hspace{2mm} H_a: \beta_j \neq 0\)`
 
-.vocab[Test Statistic]: `$$z = \frac{\hat{\beta}_j - 0}{SE(\hat{\beta_j})}$$`
+--
+
+.vocab[Test Statistic]: `$$z = \frac{\hat{\beta}_j - 0}{SE_{\hat{\beta}_j}}$$`
+
+--
 
 .vocab[P-value]: `\(P(|Z| &gt; |z|)\)`, 
 
@@ -76,7 +80,7 @@ where `\(Z \sim N(0, 1)\)`, the Standard Normal distribution
 We can calculate the .vocab[C% confidence interval] for `\(\beta_j\)` as the following: 
 
 .eq[
-`$$\Large{\hat{\beta}_j \pm z^* SE(\hat{\beta}_j)}$$`
+`$$\Large{\hat{\beta}_j \pm z^* SE_{\hat{\beta}_j}}$$`
 where `\(z^*\)` is calculated from the `\(N(0,1)\)` distribution
 
 ]
@@ -93,12 +97,12 @@ This is an interval for the change in the log-odds for every one unit increase i
 The change in **odds** for every one unit increase in `\(x_j\)`. 
 
 .eq[
-`$$\Large{\exp\{\hat{\beta}_j \pm z^* SE(\hat{\beta}_j)\}}$$`
+`$$\Large{\exp\{\hat{\beta}_j \pm z^* SE_{\hat{\beta}_j}\}}$$`
 ]
 
 --
 
-.vocab[Interpretation]: We are `\(C\%\)` confident that for every one unit change in `\(x_j\)`, the odds multiply by a factor of `\(\exp\{\hat{\beta}_j - z^* SE(\hat{\beta}_j)\}\)` to `\(\exp\{\hat{\beta}_j + z^* SE(\hat{\beta}_j)\}\)`, holding all else constant.
+.vocab[Interpretation]: We are `\(C\%\)` confident that for every one unit increase in `\(x_j\)`, the odds multiply by a factor of `\(\exp\{\hat{\beta}_j - z^* SE_{\hat{\beta}_j}\}\)` to `\(\exp\{\hat{\beta}_j + z^* SE_{\hat{\beta}_j}\}\)`, holding all else constant.
 
 
 ---
@@ -496,9 +500,15 @@ class: middle, center
 `$$\log L = \sum\limits_{i=1}^n[y_i \log(\hat{\pi}_i) + (1 - y_i)\log(1 - \hat{\pi}_i)]$$`
 ]
 
+--
+
 - Measure of how well the model fits the data 
 
+--
+
 - Higher values of `\(\log L\)` are better
+
+--
 
 - .vocab[Deviance] = `\(-2 \log L\)`
   - `\(-2 \log L\)` follows a `\(\chi^2\)` distribution with `\(n - p - 1\)` degrees of freedom
@@ -511,9 +521,13 @@ class: middle, center
     - Reduced Model includes predictors `\(x_1, \ldots, x_q\)`
     - Full Model includes predictors `\(x_1, \ldots, x_q, x_{q+1}, \ldots, x_p\)`
 
+--
+
 - We want to test the hypotheses
 `$$\begin{aligned}&amp;H_0: \beta_{q+1} = \dots = \beta_p = 0 \\
 &amp; H_a: \text{ at least 1 }\beta_j \text{ is not } 0\end{aligned}$$`
+
+--
 
 - To do so, we will use the .vocab[Drop-in-deviance test] (also known as the Nested Likelihood Ratio test)
 
@@ -525,8 +539,11 @@ class: middle, center
 `$$\begin{aligned}&amp;H_0: \beta_{q+1} = \dots = \beta_p = 0 \\
 &amp; H_a: \text{ at least 1 }\beta_j \text{ is not } 0\end{aligned}$$`
 
+--
 
 .vocab[Test Statistic]: `$$G = (-2 \log L_{reduced}) - (-2 \log L_{full})$$`
+
+--
 
 .vocab[P-value]: `\(P(\chi^2 &gt; G)\)`, 
 
@@ -567,15 +584,15 @@ Should we add `currentSmoker` to this model?
 
 
 ```r
-model_reduced &lt;- glm(TenYearCHD ~ age + education, 
-              data = heart, family = binomial)
+model_reduced &lt;- glm(high_risk ~ age + education, 
+              data = heart, family = "binomial")
 ```
 
 
 ```r
-model_full &lt;- glm(TenYearCHD ~ age + education + 
+model_full &lt;- glm(high_risk ~ age + education + 
 *                   currentSmoker,
-              data = heart, family = binomial)
+              data = heart, family = "binomial")
 ```
 
 ---
@@ -673,11 +690,11 @@ Let's look at the AIC for the model that includes `age`, `education`, and `curre
 
 
 ```r
-glance(model_reduced)$AIC
+glance(model_full)$AIC
 ```
 
 ```
-## [1] 3310.135
+## [1] 3291.359
 ```
 
 --
@@ -686,11 +703,11 @@ glance(model_reduced)$AIC
 
 
 ```r
-- 2 * glance(model_reduced)$logLik + 2 * (4 + 1)
+- 2 * glance(model_full)$logLik + 2 * (5 + 1)
 ```
 
 ```
-## [1] 3310.135
+## [1] 3291.359
 ```
 
 ---
