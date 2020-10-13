@@ -15,7 +15,7 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | Statistics experience| | No AE 17 |
-| Wednesday | Logistic regression: inference | Logistic regression: inference | AE 18|
+| Wednesday | [Logistic regression: inference](http://sta210-fa20.netlify.app/slides/18-logistic-inference.html) | Logistic regression: inference | AE 18|
 
 ## Readings
 
@@ -43,7 +43,7 @@ Tea with a TA counts as a statistics experience.
 **Upcoming teas**: 
 
 [**Emily Tallman**](http://linkedin.com/in/emily-tallman), Thu, Oct 15 11a - 12p
-  - [Click here](https://forms.gle/fZANces6Qw1gpwcc6)
+  - [Click here](https://forms.gle/fZANces6Qw1gpwcc6) to sign up
 
 ### This is Statistics Fall Data Challenge
 
