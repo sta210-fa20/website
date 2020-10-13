@@ -129,7 +129,7 @@ lessons:
     title: "Logistic regression: Inference"
     slides: "18-logistic-inference.html"
   - title: "HW 05 assigned"
-  - hw: "hw-05.html"
+    hw: "hw-05.html"
   - date: "Thu, Oct 15"
     title: "Lab 06"
 
