@@ -1,5 +1,5 @@
 ---
-title: "AE 16: Response to Leukemia Treatment"
+title: "AE 18: Response to Leukemia Treatment"
 subtitle: "Inference for logistic regression"
 date: "`r Sys.Date()`"
 output: 
@@ -65,7 +65,7 @@ leukemia <- read_csv("data/leukemia.csv")
 
 ### Part 1: Age
 
-1. Fit a model using `Age` to predict whether or not a patient responded to the treatment. Display the model output including confidence intervals. *You will need to make `Resp` a factor before fitting the model.*
+1. Fit a model using `Age` to predict whether or not a patient responded to the treatment. *You will need to make `Resp` a factor before fitting the model.*
 
 2. Interpret the coefficient of `Age` in the context of the data.
 
