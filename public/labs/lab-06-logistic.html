@@ -542,16 +542,8 @@ text-decoration: underline;
 </div>
 <div id="data" class="section level2">
 <h2>Data</h2>
-<p>The data for this lab are from the 2016 General Social Survey. The original data set contains 2867 observations and 935 variables. Given the size of the dataset, we will handle it differently in our workflow than we’ve handled data in previous assignments.</p>
-<p><label for="tufte-mn-1" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-1" class="margin-toggle"><span class="marginnote"><span style="display: block;"><a href="https://help.github.com/en/articles/working-with-large-files">Working with large files</a></span></span></p>
-<p>The size of this dataset is 34.3 MB. GitHub will not allow you to push files larger than 100 MB and will give you a warning when you push files as large as 50 MB. Though we could push the file we’re working with today to GitHub, it’s large enough that we’d still prefer not to.</p>
-<p>You have may noticed that each repo contains a file called <code>.gitignore</code>. It contains a list of the files you don’t want commit or push to GitHub. If you look at the <code>.gitignore</code> file for today’s lab, you will notice that <code>gss2016.csv</code> is listed at the bottom.</p>
-<ul>
-<li>Click <a href="https://sta210-fa20.netlify.app/data/gss2016.csv"><strong>here</strong></a> to download <code>gss2016.csv</code>.</li>
-<li>Upload <code>gss2016.csv</code> into the data folder of your project.</li>
-<li>Notice that <code>gss2016.csv</code> does not appear in your Git pane. This is because it is being ignored by git, since it is listed in the <code>.gitignore</code> file.</li>
-</ul>
-<p>You will use the following variables in the lab:</p>
+<p>The data for this lab are from the 2016 General Social Survey. The original data set contains 2867 observations and 935 variables. Given the size of the dataset, we’ll load it into the R Markdown file from the internet rather than keeping it in the data folder of our RStudio project.</p>
+<p>We will use the following variables in the lab:</p>
 <ul>
 <li><p><code>natmass</code>: Respondent’s answer to the following prompt:</p>
 <p>“We are faced with many problems in this country, none of which can be solved easily or inexpensively. I’m going to name some of these problems, and for each one I’d like you to tell me whether you think we’re spending too much money on it, too little money, or about the right amount…are we spending too much, too little, or about the right amount on mass transportation?”</p></li>
@@ -582,7 +574,7 @@ text-decoration: underline;
 <li><p>The goal of the analysis is to understand the factors that are associated with a person being satisfied with the current spending on mass transportation. Create a new variable that is equal to “1” if a person said spending on mass transportation is about right and “0” otherwise.</p></li>
 <li><p>Recode <code>polviews</code> so it is a factor variable type with levels that are in an order that is consistent with question on the survey. <em>Note how the categories are spelled in the data.</em></p>
 <p>Make a plot of the distribution of <code>polviews</code>. Which political view occurs most frequently in this data set?</p></li>
-<li><p>Make a plot displaying the relationship between satisfaction with mass transportation spending and <code>polviews</code>. Use the plot to describe the relationship between a person’s political views and whether they are satisfied with spending on mass transportation.</p></li>
+<li><p>Make a plot displaying the relationship between satisfaction with mass transportation spending and political views. Use the plot to describe the relationship between a person’s political views and whether they are satisfied with spending on mass transportation.</p></li>
 <li><p>We’d like to use <code>age</code> as a quantitative variable in your model; however, it is currently a character data type because some observations are coded as <code>&quot;89 or older&quot;</code>. Recode <code>age</code> so that is a numeric variable. <em>Note: Before making the variable numeric, you will need to replace the values <code>&quot;89 or older&quot;</code> with a single value.</em></p></li>
 </ol>
 </div>
@@ -591,11 +583,11 @@ text-decoration: underline;
 <ol start="5" style="list-style-type: decimal">
 <li><p>Briefly explain why we should use a logistic regression model to predict the odds a randomly selected person is satisfied with spending on mass transportation.</p></li>
 <li><p>Let’s start by fitting a model using the demographic factors - <code>age</code>, <code>sex</code>, <code>sei10</code>, and <code>region</code> - to predict the odds a person is satisfied with spending on mass transportation. Make any necessary adjustments to the variables so the intercept will have a meaningful interpretation.</p></li>
-<li><p>Interpret the intercept in the context of the data.</p></li>
+<li><p>Interpret the intercept in the context of the data. Include any relevant values in your response.</p></li>
 <li><p>Consider the relationship between age and one’s opinion about spending on mass transportation. Interpret the coefficient of age in terms of the <strong>odds</strong> of being satisfied with spending on mass transportation.</p></li>
 <li><p>Now let’s see whether a person’s political views has a significant impact on their odds of being satisfied with spending on mass transportation, after accounting for the demographic factors.</p></li>
 </ol>
-<p>Conduct a drop-in-deviance test to determine if <code>polviews</code> is a significant predictor of attitude towards spending on mass transportation. State the null and alternative hypothesis, display all relevant code and output, and state your conclusion in the context of the problem.</p>
+<p>Conduct a drop-in-deviance test to determine if <code>polviews</code> is a significant predictor of attitude towards spending on mass transportation. State the null and alternative hypotheses in words, display all relevant code and output, and state your conclusion in the context of the problem.</p>
 <ol start="10" style="list-style-type: decimal">
 <li>Use the model the relationship between one’s political views and their attitude towards spending on mass transportation. Be sure your answer includes the interpretation of the model coefficients and associated hypothesis tests or confidence intervals used to support your response.</li>
 </ol>
@@ -605,11 +597,6 @@ text-decoration: underline;
 <h1>Submission</h1>
 <p>Upload the team’s PDF to Gradescope. Be sure to include every team member’s name in the Gradescope submission Associate the “Overall” graded section with the first page of your PDF, and mark where each answer is to the exercises. If any answer spans multiple pages, then mark all pages.</p>
 <p>There should only be <strong><u>one</u></strong> submission per team on Gradescope. <strong>Be sure to include every team member’s name in the Gradescope submission.</strong></p>
-<hr>
-<div id="acknowledgements" class="section level2">
-<h2>Acknowledgements</h2>
-<p>The “Data” section is largely inspired by <a href="https://datasciencebox.org/">datasciencebox.org</a>.</p>
-</div>
 </div>
 
 
