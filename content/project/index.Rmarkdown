@@ -183,8 +183,10 @@ Critically reviewing others' work is a crucial part of the scientific process, a
 reading and constructively critiquing the work of others.
 
 During the peer review process, you will be provided read-only access to your  partner team's GitHub repo. Provide your review in the form of GitHub issues to your partner team's GitHub repo. 
+Peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
 
-Peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. You must have at least some of these results available for your partner team to review.
+As you work on the draft, the focus should be on the analysis and less on crafting the final report.  **Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, modeling, and preliminary inferential conclusions.**
+
 
 The final report is due on **Tuesday, November 17.**
 
