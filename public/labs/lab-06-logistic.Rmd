@@ -122,7 +122,7 @@ Note also that only the variables of interest will be loaded, not the entire dat
 
   Conduct a drop-in-deviance test to determine if `polviews` is a significant predictor of attitude towards spending on mass transportation. State the null and alternative hypotheses in words, display all relevant code and output, and state your conclusion in the context of the problem.
 
-10. Use the model the relationship between one's political views and their attitude towards spending on mass transportation. Be sure your answer includes the interpretation of the model coefficients and associated hypothesis tests or confidence intervals used to support your response.
+10. Use the model to describe the relationship between one's political views and their attitude towards spending on mass transportation. Be sure your answer includes the interpretation of the model coefficients and associated hypothesis tests or confidence intervals used to support your response.
 
 
 # Submission 
