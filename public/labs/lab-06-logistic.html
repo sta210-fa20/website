@@ -555,9 +555,9 @@ text-decoration: underline;
 <p>“We hear a lot of talk these days about liberals and conservatives. I’m going to show you a seven-point scale on which the political views that people might hold are arranged from extremely liberal - point 1 - to extremely conservative - point 7. Where would you place yourself on this scale?”</p></li>
 </ul>
 <p>Use the code below to read in the data.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>gss &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;data/gss2016.csv&quot;</span>, </span>
-<span id="cb4-2"><a href="#cb4-2"></a>  <span class="dt">na =</span> <span class="kw">c</span>(<span class="st">&quot;&quot;</span>, <span class="st">&quot;Don&#39;t know&quot;</span>, <span class="st">&quot;No answer&quot;</span>, <span class="co">#assign NA if no answer </span></span>
-<span id="cb4-3"><a href="#cb4-3"></a>         <span class="st">&quot;Not applicable&quot;</span>),  </span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>gss &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://sta210-fa20.netlify.app/data/gss2016.csv&quot;</span>,</span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="dt">na =</span> <span class="kw">c</span>(<span class="st">&quot;&quot;</span>, <span class="st">&quot;Don&#39;t know&quot;</span>, <span class="st">&quot;No answer&quot;</span>, </span>
+<span id="cb4-3"><a href="#cb4-3"></a>         <span class="st">&quot;Not applicable&quot;</span>), </span>
 <span id="cb4-4"><a href="#cb4-4"></a>         <span class="dt">guess_max =</span> <span class="dv">2867</span>) <span class="op">%&gt;%</span></span>
 <span id="cb4-5"><a href="#cb4-5"></a><span class="st">  </span><span class="kw">select</span>(natmass, age, sex, sei10, region, polviews) <span class="op">%&gt;%</span></span>
 <span id="cb4-6"><a href="#cb4-6"></a><span class="st">  </span><span class="kw">drop_na</span>()</span></code></pre></div>

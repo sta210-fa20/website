@@ -131,7 +131,8 @@ lessons:
   - title: "HW 05 assigned"
     hw: "hw-05.html"
   - date: "Thu, Oct 15"
-    title: "Lab 06"
+    title: "Lab 06: Logistic regression"
+    lab: "lab-06-logistic.html"
 
   - week: "Week 10"
     date: "Mon, Oct 19"

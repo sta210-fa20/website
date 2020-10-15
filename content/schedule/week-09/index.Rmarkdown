@@ -31,7 +31,7 @@ font-size: 18px;
 |------------------------|---|
 | [Statistics experience](https://sta210-fa20.netlify.app/hw/stat-experience.html) | **due Oct 18 at 11:59p** |
 | [HW 05](https://sta210-fa20.netlify.app/hw/hw-05.html) | **due Oct 21 at 11:59p** |
-| Lab 06 | **due Oct 21 at 11:59p** |
+| [Lab 06](https://sta210-fa20.netlify.app/labs/lab-06-logistic.html) | **due Oct 21 at 11:59p** |
 
 
 ## Announcements
