@@ -47,7 +47,7 @@ In 2009, reporter Gina Kolata reported the story "Picture Emerging on Genetic Ri
 
 1. Use the calculated results to construct a table displaying the relationship between the whether or not the mother used IVF and whether or not the baby had a birth defect. 
 
-2. Calculate the odds that a baby will be born with a birth defect. 
+2. Calculate the odds that a baby in this study was born with a birth defect. 
 
 3. The conclusion from the report was the following: 
 
