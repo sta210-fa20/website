@@ -1,6 +1,6 @@
 ---
 title: "Week 09: Logistic regression"
-weight: 8
+weight: 9
 ---
 
 <style>

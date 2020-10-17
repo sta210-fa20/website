@@ -189,7 +189,8 @@ predict(risk_m, x0)
 **Predicted probability**
 
 ```{r echo = T}
-predict(risk_m, x0, type = "response") 
+predict(risk_m, x0, 
+      type = "response") 
 ```
 ]
 
