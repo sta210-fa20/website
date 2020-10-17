@@ -136,9 +136,10 @@ lessons:
 
   - week: "Week 10"
     date: "Mon, Oct 19"
-    title: "Logistic regression"
+    title: "Logistic regression: Prediction"
+    slides: "19-logistic-prediction.html"
   - date: "Wed, Oct 21"
-    title: "Logistic regression"
+    title: "Logistic regression: Conditions"
   - date: "Thu, Oct 22"
     title: "Lab 07"
     quiz: "quiz-03.html"
