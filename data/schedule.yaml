@@ -141,8 +141,13 @@ lessons:
   - date: "Wed, Oct 21"
     title: "Logistic regression: Conditions"
   - date: "Thu, Oct 22"
-    title: "Lab 07"
+    title: "No lab: Take Quiz 03"
+  - title: "Quiz 03 assigned"
     quiz: "quiz-03.html"
+  - date: "Fri, Oct 23"
+    title: "Quiz 03 due"
+    quiz: "quiz-03.html"
+  
   
   - week: "Week 11"
     date: "Mon, Oct 26"
