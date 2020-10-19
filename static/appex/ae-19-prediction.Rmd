@@ -42,12 +42,21 @@ Tea with a TA counts as a statistics experience.
 
 ### Big data and public policy event on Oct 26
 
-### Final project 
 
+### Final project - Draft due Oct 28
 
+- Write the draft in the `written-report.Rmd` file in the project repo. 
+- Draft should include 
+   - exploratory data analysis
+   - initial model selection  (main effects + interactions)
+   - initial interpretations / conclusions from model
+   
 ## Quiz 02
+- Question 1.5
+- Question 2
+- Question 3 - D and E
 
-## Questions from the video?
+
 
 ## Response to Leukemia treatment
 
