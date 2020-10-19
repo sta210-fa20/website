@@ -1,0 +1,90 @@
+---
+title: "AE 19: Response to Leukemia Treatment"
+subtitle: "Prediction"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+---
+
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center", 
+                      echo = F)
+```
+
+
+```{r load-packages, echo = F}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(yardstick)
+```
+
+## Announcements
+
+### Tea with a TA!
+
+Hang out with the TAs from STA 210! This is a casual conversation and a fun opportunity to meet the members of the STA 210 teaching team. The only rule is these can't turn into office hours! 
+
+Tea with a TA counts as a statistics experience.
+
+- [**Meredith Brown**](https://meredithb3.github.io/), Tue, Oct 27 at 7p
+  - [Click here](https://forms.gle/fx3rUyhSYTZ9EmnE7) to sign up. Zoom details will be emailed before the event.
+
+### This is Statistics Fall Data Challenge
+
+[Click here](https://thisisstatistics.org/falldatachallenge/) for details on the Get out the Vote! Fall Data Challenge by the American Statistical Association (ASA). Submissions are due **November 11**.
+
+### Big data and public policy event on Oct 26
+
+### Final project 
+
+
+## Quiz 02
+
+## Questions from the video?
+
+## Response to Leukemia treatment
+
+Today's data  is from a study where 51 untreated adult patients with acute myeloblastic leukemia who were given a course of treatment, and they were assessed as to their response to the treatment.^[The data set is from the Stat2Data R package] 
+
+The goal of today's analysis is to use pre-treatment to predict how likely it is a patient will respond to the treatment. 
+
+We will use the following variables: 
+
+- `Age`: Age at diagnosis (in years)
+- `Smear`: Differential percentage of blasts
+- `Infil`: Percentage of absolute marrow leukemia infiltrate
+- `Index`: 	Percentage labeling index of the bone marrow leukemia cells
+- `Blasts`: Absolute number of blasts, in thousands
+- `Temp`: Highest temperature of the patient prior to treatment, in degrees Fahrenheit
+- `Resp`: 1 = responded to treatment or 0 = failed to respond
+
+
+```{r, message = F}
+leukemia <- read_csv("data/leukemia.csv")
+```
+
+1. Fit a model using `Age`, `Index` and `Temp` to predict the odds a patient will respond to the treatment. 
+
+2. Use the augment function to obtain the predicted probability each patient in the data set will respond to the treatment.
+
+3. Construct a confusion matrix using 0.5 as the decision-making threshold.
+
+4. Use your confusion matrix from the previous exercise to calculate the following: 
+
+- Sensitivity
+- Specificity
+- Misclassification rate
+
+5. Create the ROC curve for this model. 
+
+6. What is the area under the curve? Is this model a good fit for the data?
+
+7. Suppose a doctor wants to use your model to determine if she should recommend this particular treatment for her patients with leukemia. Based on the data from the ROC curve, what decision-making threshold do you recommend the doctor use to select patients for this treatment? What factors did you consider to determine the threshold? 
+
