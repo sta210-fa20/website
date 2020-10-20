@@ -82,13 +82,11 @@ The .vocab[empirical logit] is the log of the observed odds
 `$$\text{logit}(\hat{p}) = \log\Big(\frac{\hat{p}}{1 - \hat{p}}\Big) = \log\Big(\frac{\# \text{Yes}}{\# \text{No}}\Big)$$` 
 ]
 
-We can examine a plot of empirical logit versus each predictor to assess linearity 
-
 ---
 
 ## Calculating emprical logit (categorical predictor)
 
-If the predictor is categorical, we can calculate the empirical logit for each level of the predictor
+If the predictor is categorical, we can calculate the empirical logit for each level of the predictor.
 
 .midi[
 
@@ -123,15 +121,15 @@ If the predictor is categorical, we can calculate the empirical logit for each l
 ## Calculating empirical logit (quantitative predictor)
 
 1. Divide the range of the predictor into intervals with approximately equal number of cases. 
-  - If you have enough observations, use 5 - 10 groups.
+  - If you have enough observations, use 5 - 10 intervals.
   
 2. Calculate the mean value of the predictor in each interval. 
 
-3. Compute the empirical logit for each interval
+3. Compute the empirical logit for each interval.
 
 --
 
-Then, we can create a plot of the empirical logit versus the mean value of the predictor. 
+Then, we can create a plot of the empirical logit versus the mean value of the predictor in each interval.
 
 ---
 
