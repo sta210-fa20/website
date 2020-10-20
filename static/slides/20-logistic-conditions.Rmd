@@ -106,7 +106,7 @@ $$\text{logit}(\hat{p}) = \log\Big(\frac{\hat{p}}{1 - \hat{p}}\Big) = \log\Big(\
 
 ---
 
-## Calculating emprical logit (categorical predictor)
+## Calculating empirical logit (categorical predictor)
 
 If the predictor is categorical, we can calculate the empirical logit for each level of the predictor.
 
@@ -123,7 +123,7 @@ heart %>%
 
 ---
 
-## Calculating emprical logit (categorical predictor)
+## Calculating empirical logit (categorical predictor)
 
 If the predictor is categorical, we can calculate the empirical logit for each level of the predictor
 
