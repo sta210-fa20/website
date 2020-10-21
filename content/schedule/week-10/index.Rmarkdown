@@ -15,7 +15,7 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | [Logistic regression: Prediction](https://sta210-fa20.netlify.app/slides/19-logistic-prediction.html#1) | [Logistic regression: Prediction](https://warpwire.duke.edu/w/lakEAA/) | [AE 19: Predicting Response to Leukemia Treatment](https://sta210-fa20.netlify.app/appex/ae-19-prediction.html) |
-| Wednesday | [Logistic regression: Conditions](https://sta210-fa20.netlify.app/slides/20-logistic-conditions.html) | [Logistic Regression: Conditions](https://warpwire.duke.edu/w/Z60EAA/) | AE 20 |
+| Wednesday | [Logistic regression: Conditions](https://sta210-fa20.netlify.app/slides/20-logistic-conditions.html) | [Logistic Regression: Conditions](https://warpwire.duke.edu/w/Z60EAA/) | [AE 20: Predictions + Conditions](https://sta210-fa20.netlify.app/appex/ae-20-conditions.html) |
 
 ## Readings
 
