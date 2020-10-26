@@ -967,7 +967,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-11/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Multinomial logistic regression: Introduction Multinomial logistic regression: Introduction AE 21   Wednesday Multinomial logistic regression: Prediction Multinomial logistic regression: Prediction AE 22    Assignments          Project Draft due Oct 28 at 11:59p   Project peer review due Nov 5 at 11:59p    Announcements Tea with a TA Hang out with the TAs from STA 210!</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Multinomial logistic regression: Introduction Multinomial logistic regression: Introduction AE 21: Sesame Street   Wednesday Multinomial logistic regression: Prediction Multinomial logistic regression: Prediction AE 22    Assignments          Project Draft due Oct 28 at 11:59p   Project peer review due Nov 5 at 11:59p    Announcements Tea with a TA Hang out with the TAs from STA 210!</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -989,7 +989,7 @@ font-size: 18px;
 &lt;td&gt;Monday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/21-multinom-logistic.html&#34;&gt;Multinomial logistic regression: Introduction&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/BbMEAA/&#34;&gt;Multinomial logistic regression: Introduction&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 21&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-21-sesame-street.html&#34;&gt;AE 21: Sesame Street&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
@@ -1035,7 +1035,7 @@ font-size: 18px;
 &lt;li&gt;&lt;a href=&#34;https://forms.gle/fx3rUyhSYTZ9EmnE7&#34;&gt;Click here&lt;/a&gt; to sign up. Zoom details will be emailed before the event.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;I am a junior at Duke University majoring in Computer Science and Statistics with a Math minor. I’m from Raleigh, North Carolina, where I grew up an avid UNC basketball fan - it’s been quite the adjustment. My research interests focus on the intersection of public health and data science, such as how social determinants of health can aid in predicting hospital admissions or, more recently, how the COVID-19 pandemic impacts healthcare utilization at Duke. In my free time, you can find me playing soccer, doing the NYT crossword, or cheering for Duke basketball.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;www.linkedin.com/in/cody-coombs-3b8034158&#34;&gt;&lt;strong&gt;Cody Coombs&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;www.linkedin.com/in/cody-coombs-3b8034158&#34;&gt;&lt;strong&gt;Cody Coombs&lt;/strong&gt;&lt;/a&gt;, Thu, Nov 5, 4p - 5p&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://forms.gle/qCm63S4jUUXdnmFJ9&#34;&gt;Click here&lt;/a&gt; to sign up. Zoom details will be emailed before the event.&lt;/li&gt;
 &lt;/ul&gt;

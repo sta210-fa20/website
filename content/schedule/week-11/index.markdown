@@ -14,7 +14,7 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [Multinomial logistic regression: Introduction](https://sta210-fa20.netlify.app/slides/21-multinom-logistic.html) | [Multinomial logistic regression: Introduction](https://warpwire.duke.edu/w/BbMEAA/) | AE 21|
+| Monday    | [Multinomial logistic regression: Introduction](https://sta210-fa20.netlify.app/slides/21-multinom-logistic.html) | [Multinomial logistic regression: Introduction](https://warpwire.duke.edu/w/BbMEAA/) | [AE 21: Sesame Street](https://sta210-fa20.netlify.app/appex/ae-21-sesame-street.html) |
 | Wednesday | Multinomial logistic regression: Prediction  | Multinomial logistic regression: Prediction | AE 22  |
 
 <!--
@@ -45,12 +45,13 @@ Tea with a TA counts as a statistics experience.
 **Upcoming teas**: 
 
 [**Meredith Brown**](https://meredithb3.github.io/), Tue, Oct 27 at 7p
+
 - [Click here](https://forms.gle/fx3rUyhSYTZ9EmnE7) to sign up. Zoom details will be emailed before the event.
 
 *I am a junior at Duke University majoring in Computer Science and Statistics with a Math minor. I’m from Raleigh, North Carolina, where I grew up an avid UNC basketball fan - it’s been quite the adjustment. My research interests focus on the intersection of public health and data science, such as how social determinants of health can aid in predicting hospital admissions or, more recently, how the COVID-19 pandemic impacts healthcare utilization at Duke. In my free time, you can find me playing soccer, doing the NYT crossword, or cheering for Duke basketball.*
 
 
-[**Cody Coombs**](www.linkedin.com/in/cody-coombs-3b8034158)
+[**Cody Coombs**](www.linkedin.com/in/cody-coombs-3b8034158), Thu, Nov 5, 4p - 5p
 
 - [Click here](https://forms.gle/qCm63S4jUUXdnmFJ9) to sign up. Zoom details will be emailed before the event. 
 
