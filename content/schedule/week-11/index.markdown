@@ -15,7 +15,7 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Monday    | [Multinomial logistic regression: Introduction](https://sta210-fa20.netlify.app/slides/21-multinom-logistic.html) | [Multinomial logistic regression: Introduction](https://warpwire.duke.edu/w/BbMEAA/) | [AE 21: Sesame Street](https://sta210-fa20.netlify.app/appex/ae-21-sesame-street.html) |
-| Wednesday | Multinomial logistic regression: Prediction  | Multinomial logistic regression: Prediction | AE 22  |
+| Wednesday | [Multinomial logistic regression: Prediction](https://sta210-fa20.netlify.app/slides/22-multinom-logistic-pt2.html)  | Multinomial logistic regression: Prediction | AE 22  |
 
 <!--
 ## Readings
