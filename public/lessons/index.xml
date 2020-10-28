@@ -967,7 +967,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-11/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Multinomial logistic regression: Introduction Multinomial logistic regression: Introduction AE 21: Sesame Street   Wednesday Multinomial logistic regression, Part 2 Multinomial logistic regression, Part 2 AE 22    Assignments          Project Draft due Oct 28 at 11:59p   Project peer review due Nov 5 at 11:59p    Announcements Tea with a TA Hang out with the TAs from STA 210!</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Multinomial logistic regression: Introduction Multinomial logistic regression: Introduction AE 21: Sesame Street   Wednesday Multinomial logistic regression, Part 2 Multinomial logistic regression, Part 2 AE 22: Multinomial logistic Q+A and Project    Assignments          Project Draft due Oct 28 at 11:59p   Project peer review due Nov 5 at 11:59p    Announcements Tea with a TA Hang out with the TAs from STA 210!</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -995,7 +995,7 @@ font-size: 18px;
 &lt;td&gt;Wednesday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/22-multinom-logistic-pt2.html&#34;&gt;Multinomial logistic regression, Part 2&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/UbcEAA/&#34;&gt;Multinomial logistic regression, Part 2&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 22&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-22-project.html&#34;&gt;AE 22: Multinomial logistic Q+A and Project&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
