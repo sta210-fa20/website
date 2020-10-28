@@ -161,7 +161,7 @@ lessons:
     project: "#written-report"
   - date: "Thu, Oct 29"
     title: "Lab: Project peer review"
-    project: "#peer-review"
+    lab: "peer-review.html"
     
   - date: "UNIT 03"
     title: "LOOKING AHEAD"
@@ -176,7 +176,7 @@ lessons:
   - title: "Quiz 04 assigned"
     quiz: "quiz-04.html"
   - title: "Peer review due"
-    project: "#peer-review"
+    lab: "peer-review.html"
   - date: "Fri, Nov 06"
     title: "Quiz 04 due"
     quiz: "quiz-04.html"

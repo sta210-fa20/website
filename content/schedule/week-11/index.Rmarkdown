@@ -31,7 +31,7 @@ font-size: 18px;
 |                        |   |
 |------------------------|---|
 | [Project Draft](https://sta210-fa20.netlify.app/project) | **due Oct 28 at 11:59p** |
-| [Project peer review](https://sta210-fa20.netlify.app/project) | **due Nov 5 at 11:59p** |
+| [Project peer review](https://sta210-fa20.netlify.app/labs/peer-review.html) | **due Nov 5 at 11:59p** |
 
 
 ## Announcements
