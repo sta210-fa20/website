@@ -169,6 +169,7 @@ lessons:
   - week: "Week 12"
     date: "Mon, Nov 02"
     title: "Log-linear models"
+    slides: "23-poisson.html"
   - date: "Wed, Nov 04"
     title: "Statistics experience"
   - date: "Thu, Nov 05"

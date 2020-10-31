@@ -47,7 +47,7 @@ a, a > code {
 }
 .remark-code, .remark-inline-code { 
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
-  font-size: 100%;
+font-size: 100%;
 }
 
 

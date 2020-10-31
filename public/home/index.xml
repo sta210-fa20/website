@@ -1068,13 +1068,91 @@ font-size: 18px;
     </item>
     
     <item>
-      <title>Week 12</title>
+      <title>Week 12: Log-linear models</title>
       <link>/schedule/week-12/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-12/</guid>
-      <description>Check back for details!</description>
-      <content>&lt;p&gt;Check back for details!&lt;/p&gt;
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Log-linear models Log-linear models AE 23   Wednesday   No AE: Stats experience    Readings          Beyond multiple linear regression: Poisson regression Optional    Assignments          Project peer review due Nov 5 at 11:59p   Quiz 04 Opens Nov 5 at 12a, due Nov 6 at 11:59p   Stats Experience #2 due Nov 8 at 11:59p    Announcements Tea with a TA Hang out with the TAs from STA 210!</description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Slides&lt;/th&gt;
+&lt;th&gt;Videos&lt;/th&gt;
+&lt;th&gt;Application Exercises (AE)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Monday&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/23-poisson.html&#34;&gt;Log-linear models&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Log-linear models&lt;/td&gt;
+&lt;td&gt;AE 23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wednesday&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;No AE: Stats experience&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html#introduction-to-poisson-regression&#34;&gt;Beyond multiple linear regression: Poisson regression&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/labs/peer-review.html&#34;&gt;Project peer review&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Nov 5 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/labs/quiz-04.html&#34;&gt;Quiz 04&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Opens Nov 5 at 12a,  due Nov 6 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/hw/stat-experience.html&#34;&gt;Stats Experience #2&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Nov 8 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;announcements&#34;&gt;Announcements&lt;/h2&gt;
+&lt;h3 id=&#34;tea-with-a-ta&#34;&gt;Tea with a TA&lt;/h3&gt;
+&lt;p&gt;Hang out with the TAs from STA 210! This is a casual conversation and a fun opportunity to meet the members of the STA 210 teaching team. The only rule is these can&amp;rsquo;t turn into office hours!&lt;/p&gt;
+&lt;p&gt;Tea with a TA counts as a statistics experience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Upcoming teas&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;www.linkedin.com/in/cody-coombs-3b8034158&#34;&gt;&lt;strong&gt;Cody Coombs&lt;/strong&gt;&lt;/a&gt;, Thu, Nov 5, 4p - 5p&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://forms.gle/qCm63S4jUUXdnmFJ9&#34;&gt;Click here&lt;/a&gt; to sign up. Zoom details will be emailed before the event.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Cody Coombs is a current senior at Duke University. He plans on earning a B.S. in Economics with a Finance concentration, as well as a minor in Statistical Science. Last summer he worked remotely as a Business Analyst Intern at Capital One. There he worked on risk analysis of multicard customers, and creating lending policy recommendations for the Credit Line Increase Program. After graduation, he is looking to go into strategy consulting. In his free time, he enjoys watching sports, playing poker, and going golfing.&lt;/em&gt;&lt;/p&gt;
 </content>
     </item>
     
