@@ -162,10 +162,6 @@ If the observed values $Y_i$ are Poisson, then we can model using a <font class=
 .alert[
 $$\log(\lambda_i) = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \dots + \beta_p x_{pi}$$
 ]
-
-
-Note that we don't have an error term, since $\lambda$ determines the mean and variance of the Poisson random variable
-
 ---
  
 ## Interpreting Model Coefficients
@@ -173,7 +169,7 @@ Note that we don't have an error term, since $\lambda$ determines the mean and v
 - <font class="vocab">Slope, $\beta_j$: </font>
     - **Quantitative Predictor**:  When $x_j$ increases by one unit, the mean of $y$ is expected to multiply by a factor of $\exp\{\beta_j\}$, (*holding all else constant*).
     
-    - **Categorical Predictor**: The mean of $y$ for category $k$ is $\exp\{\beta_j\}$ times the mean of $y$  for the baseline category, (*holding all else constant*).
+    - **Categorical Predictor**: The mean of $y$ for category $k$ is expected to be $\exp\{\beta_j\}$ times the mean of $y$  for the baseline category, (*holding all else constant*).
 
 --
 
@@ -261,7 +257,7 @@ tidy(model1, conf.int = T) %>%
 ```
 ]
 
-$$\color{#87037B}{\log(\text{total}) = 1.302 - 0.0047 \times \text{age}}$$
+$$\color{#87037B}{\log(\overline{\text{total}}) = 1.303 - 0.0047 \times \text{ageCent}}$$
 
 ---
 
@@ -274,11 +270,11 @@ tidy(model1, conf.int = T) %>%
 
 --
 
-For each additional year older the head of the household is, we expect the mean number in the house to multiply by a factor of `r round(exp(-0.0047),3)` (exp(-0.0.0047)). 
+For each additional year older the head of the household is, we expect the mean number in the house to multiply by a factor of `r round(exp(-0.0047),3)` (exp(-0.0047)). 
 
 --
 
-For households with a head of the household who is `r round(mean(hh$age),3)` years old, we expect the mean number of people in the household to be `r round(exp(1.302),3)` (exp(1.302)).
+For households with a head of the household who is `r round(mean(hh$age),3)` years old, we expect the mean number of people in the household to be `r round(exp(1.303),3)` (exp(1.303)).
 
 
 ---
@@ -289,12 +285,13 @@ We can use a .vocab[drop-in-deviance test] to compare nested models (similar to 
 
 Let's try adding `ageCent^2` to the model. 
 
-$$H_0: \beta_{age^2} = 0 \text{ vs. }\beta_{age^2} \neq 0$$
+$$H_0: \beta_{ageCent^2} = 0 \text{ vs. }H_a: \beta_{ageCent^2} \neq 0$$
 
 .midi[
 ```{r echo=T}
 model1 <- glm(total ~ ageCent, data = hh, family = "poisson")
-model2 <- glm(total ~ ageCent + I(ageCent^2), data = hh, family = "poisson")
+model2 <- glm(total ~ ageCent + I(ageCent^2),
+              data = hh, family = "poisson")
 ```
 
 ```{r echo = T, eval = F}
@@ -328,13 +325,13 @@ tidy(model2, conf.int = T) %>%
 
 ## Model Assumptions 
 
-1. .vocab[Poisson Response]: The response follows a Poisson distribution for each level of the predictor
+1. .vocab[Poisson Response]: The response follows a Poisson distribution for each level of the predictor.
 
-2. .vocab[Independence]: The observations are independent of one another
+2. .vocab[Independence]: The observations are independent of one another.
 
-3. .vocab[Mean = variance]: The mean value of the response equals the variance of the response for each level of the predictor 
+3. .vocab[Mean = variance]: The mean value of the response equals the variance of the response for each level of the predictor.
 
-4. .vocab[Linearity]: $\log(\lambda)$ is a linear function of the predictors
+4. .vocab[Linearity]: $\log(\lambda)$ is a linear function of the predictors.
 
 ---
 
@@ -404,17 +401,17 @@ It appears the assumption is violated in some age groups; however, the violation
 
 ## Linearity 
 
-The raw residual for the $i^{th}$ observation, $y_i - \hat{\lambda}_i$, is difficult to interpret since the variance is equal to the mean in the Poisson distribution
+The raw residual for the $i^{th}$ observation, $y_i - \hat{\lambda}_i$, is difficult to interpret since the variance is equal to the mean in the Poisson distribution.
 
 --
 
 
-Instead, we can analyze a standardized residual called the .vocab[Pearson residual]
+Instead, we can analyze a standardized residual called the .vocab[Pearson residual].
 $$r_i = \frac{y_i - \hat{\lambda}_i}{\sqrt{\hat{\lambda}_i}}$$
 
 --
 
-We will examine a plot of the Pearson residuals versus the predicted values to check the linearity assumption 
+We will examine a plot of the Pearson residuals versus the predicted values to check the linearity assumption.
 
 ---
 
