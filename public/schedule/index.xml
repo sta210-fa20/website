@@ -1073,7 +1073,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-12/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Log-linear models Log-linear models AE 23   Wednesday   No AE: Stats experience    Readings          Beyond multiple linear regression: Poisson regression Optional    Assignments          Project peer review due Nov 5 at 11:59p   Quiz 04 Opens Nov 5 at 12a, due Nov 6 at 11:59p   Stats Experience #2 due Nov 8 at 11:59p    Announcements Tea with a TA Hang out with the TAs from STA 210!</description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Log-linear models Log-linear models AE 23: Multinomial + Log-linear   Wednesday   No AE: Stats experience    Readings          Beyond multiple linear regression: Poisson regression Optional    Assignments          Project peer review due Nov 5 at 11:59p   Quiz 04 Opens Nov 5 at 12a, due Nov 6 at 11:59p   Stats Experience #2 due Nov 8 at 11:59p    Announcements Tea with a TA Hang out with the TAs from STA 210!</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -1095,7 +1095,7 @@ font-size: 18px;
 &lt;td&gt;Monday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/23-poisson.html&#34;&gt;Log-linear models&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/r70EAA/&#34;&gt;Log-linear models&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 23&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-23-multinom.html&#34;&gt;AE 23: Multinomial + Log-linear&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;

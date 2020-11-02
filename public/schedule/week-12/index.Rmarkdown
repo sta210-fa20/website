@@ -14,7 +14,7 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [Log-linear models](https://sta210-fa20.netlify.app/slides/23-poisson.html) | [Log-linear models](https://warpwire.duke.edu/w/r70EAA/) | AE 23|
+| Monday    | [Log-linear models](https://sta210-fa20.netlify.app/slides/23-poisson.html) | [Log-linear models](https://warpwire.duke.edu/w/r70EAA/) | [AE 23: Multinomial + Log-linear](https://sta210-fa20.netlify.app/appex/ae-23-multinom.html)|
 | Wednesday |  | |No AE: Stats experience |
 
 ## Readings
