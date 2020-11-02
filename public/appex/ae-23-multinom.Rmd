@@ -65,6 +65,16 @@ Q 4.2 thrown out (3 free points, +1 bonus if correct)
 After fitting a logistic regression, you compute the raw residual,  $y_i - \hat{\pi}_i$, for each observation. 20% of the raw residuals are positive, and 80% are negative.
 Because there are far more raw residuals below zero than above zero, this logistic regression does not fit the data well.
 
+## Quiz 04
+
+Thu, Nov 5 - Sun, Nov 8, not timed.
+
+Basic premise: You will be given a case study scenario and a few question prompts. You will apply what you've learned throughout the semester to the given scenario.
+
+You will submit your answer in narrative form. 
+
+More details will be emailed Thursday morning.
+
 ## Questions about election 
 
 [Click here](https://sta210-fa20.netlify.app/slides/election-questions.html) for slides.
