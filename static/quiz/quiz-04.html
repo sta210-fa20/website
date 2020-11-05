@@ -1362,18 +1362,18 @@ src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(data:
 @charset "UTF-8";
 
 html {
-font-size: 13pt;
-}
-p {
-font-size: 13pt;
+font-size: 17px;
 }
 body {
 font-family: 'Source Sans Pro', sans-serif;
-font-weight: 350;
+font-weight: 400;
 background-color: #fefefe;
 color: #222;
 counter-reset: li;
-font-size: 13pt;
+font-size: 17px;
+}
+p {
+font-size: 17px;
 }
 h1.title {
 font-weight: 700;
@@ -1391,10 +1391,9 @@ font-family: 'Source Sans Pro', sans-serif;
 font-weight: 400;
 color: #008eaa;
 }
-h3 {
-font-family: 'Source Sans Pro', sans-serif;
+h3.subtitle {
+font-style: normal;
 color: #008eaa;
-font-weight: 400;
 }
 h4 {
 font-style: normal;
@@ -1407,15 +1406,15 @@ line-height: 1;
 h4.author,
 h4.date {
 font-family: 'Source Sans Pro', sans-serif;
-font-weight: 300;
+font-weight: 350;
 }
 .numeral {
 font-family: "Source Sans Pro";
-font-weight: 300;
+font-weight: 350;
 }
 em {
 font-style: italic;
-font-weight: 300;
+font-weight: 350;
 font-family: "Source Sans Pro";
 }
 strong {
@@ -1427,34 +1426,39 @@ font-family: "Source Sans Pro";
 @media screen and (max-width: 760px) {
 pre {
 width: 100%;
-font-size: 16px;
+font-size: 15px;
+overflow-x: auto;
 }
 }
 code {
 font-family: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace;
-font-size: 15px;
+font-size: 17px;
 line-height: 1.6;
 }
-pre code {
-font-size: 15px;
+pre {
+background-color: #FFFFFF;
+
+
+border-width: 0px;
+border-radius: 4px;*/
+overflow-x: auto;
+padding: 1em;
+white-space: inherit;
+word-break: normal;
+word-wrap: normal;
+}
+pre.r {
+background-color: #F5F5F5;	
+white-space: inherit;
 }
 .marginnote code,
 .sidenote code {
-font-size: 1rem;
-}
-.marginnote{
-font-size: 13px;
-}
-pre {
-width: 100%;
-font-size: 16px;
-overflow-x: auto;
+font-size: 14px;
 }
 
 ol {
 
 padding-left: 0;
-font-size: 13pt;
 }
 ol>li {
 
@@ -1464,9 +1468,8 @@ list-style: none;
 width: 90%;
 padding-top: 10px;
 padding-bottom: 10px;
-padding-right: 0;
-padding-left: 90px;
-font-size: 13pt;
+padding-right: 0px;
+padding-left: 110px;
 }
 ol>li:before {
 
@@ -1474,22 +1477,34 @@ content: "Question " counter(li)".";
 
 counter-increment: li;
 position: absolute;
-color: #339898;
+color: #008eaa;
 left: -0.5px;
 font-weight: bold;
+margin-right: 10px;
 }
-ol ol>li:before {
-counter-reset: sub-item;
-
-
-position: absolute;
-color: #339898;
-left: -0.5px;
-font-weight: bold;
-padding-left: 90px;
+ol ul {
+width: 92%;
 }
-.td {
-font-size: 10pt;
+ol ol {
+counter-reset: subitem;
+}
+td {
+font-size: 15px;
+}
+
+.footer {
+left: 0;
+bottom: 0;
+width: 100%;
+color: #7C878E;
+font-size: 14px;
+}
+
+div .commit {
+font-size: 16px;
+font-weight: 400;
+color: #aa008e;
+text-decoration: italic;
 }
 </style>
 
@@ -1674,11 +1689,90 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Quiz 04</h1>
+<h3 class="subtitle">open Thu, Nov 5 at 12; due Sun, Nov 8 at 11:59p</h3>
 
 </div>
 
 
-<p>Instructions will be posted once the quiz is assigned.</p>
+<div id="general-instructions" class="section level2">
+<h2>General instructions</h2>
+<p><strong>Be sure to read all instructions and quiz questions carefully!</strong></p>
+<ul>
+<li><p>Quiz 04 will be released by <strong>November 5 12a EST</strong> and must be completed by <strong>November 8 at 11:59p EST</strong>. The quiz is not timed, so you may submit it any time before the deadline.</p></li>
+<li><p>During the time the quiz is available, you will see a <strong>Quiz 04</strong> assignment on Gradescope to submit the quiz.</p></li>
+<li><p><strong>The quiz is an individual assignment</strong>. You may <strong><u>not</u></strong> discuss the quiz with anyone else (either in the class or not). See the Academic Honesty guidelines in the <a href="https://sta210-fa20.netlify.app/syllabus/#course-community">course syllabus</a> for more information about academic conduct.</p></li>
+<li><p>The quiz is open-book, open-note, so you may use any materials from class (except other people!) as you take the quiz.</p></li>
+<li><p>Write your responses using a Word processor (e.g. Word, Pages, Google Docs, etc.). You do <strong><u>not</u></strong> have to use RStudio/R Markdown for any part of this quiz. <strong>Your quiz submission should be no more than 1 page single-spaced. Any content over 1 page will <u>not</u> be considered for grading.</strong></p></li>
+</ul>
+</div>
+<div id="scenario" class="section level2">
+<h2>Scenario</h2>
+<p>Suppose you are a statistician for an email platform (e.g. Gmail or Hotmail), and you have been tasked with building a model that will be used to determine whether or not an email is spam. If it is determined that an email is spam, it will automatically be put into a <em>junk</em> folder instead of the user’s regular <em>inbox</em>. The company wants to use you model so they’re able to effectively identify spam emails without putting too many non-spam emails in the junk folder.</p>
+</div>
+<div id="the-data" class="section level2">
+<h2>The Data</h2>
+<p>The data set contains incoming emails for one user’s email account from January 2012 through March 2012. All personally identifiable information has been removed.</p>
+<p>You can find a full list of the variables in the data set at the bottom of the instructions.</p>
+</div>
+<div id="questions" class="section level2">
+<h2>Questions</h2>
+<p>Answer the questions below describing how you would approach the regression analysis. For each question, in addition to stating the choice(s) you would make, include a brief explanation about why you’ve made the choice(s). Your responses should demonstrate your knowledge of the statistical concepts and how they applies in a real world scenario.</p>
+<p>Type your responses to the questions below using any word processor (e.g. Word, Pages, Google Docs, etc.). Include your name at the top of the document. You do <strong><u>not</u></strong> have to use R/R Markdown for any part of this quiz. <strong>Your quiz submission should be no more than 1 page single-spaced. Any content over 1 page will <u>not</u> be considered for grading.</strong></p>
+<p><strong>Question 1 (5pt)</strong> What type of model would you use for this analysis? Explain your choice.</p>
+<p><strong>Question 2 (15pt)</strong> Describe the process you would use to select variables for the final model. In your description, include the model selection strategy and procedure, any potential interactions you might consider, and an explanation about why you made these choices.</p>
+<p><strong>Question 3 (10pt)</strong> The goal is to determine whether a particular email is spam and should be sent directly to the junk folder. Describe how you would use the output from your model to classify emails as spam or not spam. Be specific in your description and include explanation about your choices.</p>
+<p><strong>Question 4 (10pt)</strong> What are some potential limitations to your model or analysis? Limit your response to no more than 3 limitations.</p>
+<p><strong>Question 5 (5pt)</strong> Based on the limitations from Question 4, what are some next steps you might explore to improve your model?</p>
+</div>
+<div id="grading-rubric" class="section level2">
+<h2>Grading rubric</h2>
+<p>Each question will be graded using the following rubric:</p>
+<ul>
+<li><strong>Full credit:</strong> Answer clearly demonstrates a clear understanding of the statistical concepts and how to apply them to this specific scenario.</li>
+<li><strong>80% credit</strong>: Answer demonstrates an general understanding of the statistical concepts but lacks clarity about how to apply them to this specific scenario.</li>
+<li><strong>60%</strong>: Answer displays a lack of understanding of the general concepts and/or makes to attempt to apply them to this specific scenario.</li>
+<li><strong>No credit</strong>: No answer provided.</li>
+</ul>
+<p>There will also be <strong>5pt</strong> for the overall narrative awarded as follows:</p>
+<ul>
+<li><strong>5pt</strong>: The narrative describes a cohesive and thoughtful analysis.</li>
+<li><strong>3pt</strong>: The narrative has some inconsistencies or inaccuracies.</li>
+<li><strong>1pt</strong>: The narrative lacks overall cohesion and/or has major inaccuracies.</li>
+</ul>
+</div>
+<div id="submission" class="section level2">
+<h2>Submission</h2>
+<p>Submit a <strong>PDF</strong> of your narrative on Gradescope by <strong>Sunday, Nov 8 at 11:59p</strong>. Be sure your name is at the top of your document.</p>
+<p><strong>No late work will be accepted for this quiz.</strong></p>
+</div>
+<div id="full-variable-list" class="section level2">
+<h2>Full variable list</h2>
+<ul>
+<li><code>spam</code> - Indicator for whether the email was spam.</li>
+<li><code>to_multiple</code> - Indicator for whether the email was addressed to more than the recipient.</li>
+<li><code>from</code> - Whether the message was listed as from anyone (this is usually set default for regular outgoing email).</li>
+<li><code>cc</code> - Indicator for whether anyone was CCed.</li>
+<li><code>sent_email</code> - Indicator for whether the sender had been sent an email in the last 30 days.</li>
+<li><code>time</code> - Time at which email was sent.</li>
+<li><code>image</code> - The number of images attached.</li>
+<li><code>attach</code> - The number of attached files.</li>
+<li><code>dollar</code> - The number of times a dollar sign or the word “dollar” appeared in the email.</li>
+<li><code>winner</code> - Indicates whether “winner” appeared in the email.</li>
+<li><code>inherit</code> - The number of times “inherit” (or an extension, such as “inheritance”) appeared in the email.</li>
+<li><code>viagra</code> - The number of times “viagra” appeared in the email.</li>
+<li><code>password</code> - The number of times “password” appeared in the email.</li>
+<li><code>num_char</code> - The number of characters in the email, in thousands.</li>
+<li><code>line_breaks</code> - The number of line breaks in the email (does not count text wrapping).</li>
+<li><code>format</code> - Indicates whether the email was written using HTML (e.g. may have included bolding or active links).</li>
+<li><code>re_subj</code> - Whether the subject started with “Re:”, “RE:”, “re:”, or “rE:”</li>
+<li><code>exclaim_subj</code> - Whether there was an exclamation point in the subject.</li>
+<li><code>urgent_subj</code> - Whether the word “urgent” was in the email subject.</li>
+<li><code>exclaim_mess</code> - The number of exclamation points in the email message.</li>
+<li><code>period_mess</code> - The number of periods in the message.</li>
+<li><code>signoff</code> - Whether a sign-off of “Cheers”, “Regards”, or “Best” (also, “Best Regards”) was used.</li>
+<li><code>number</code> - Factor variable saying whether there was no number, a small number (under 1 million), or a big number.</li>
+</ul>
+</div>
 
 
 
