@@ -1,6 +1,6 @@
 ---
 title: "Quiz 04"
-subtitle: "open Thu, Nov 5 at 12; due Sun, Nov 8 at 11:59p"
+subtitle: "due Sun, Nov 8 at 11:59p"
 author: ""
 date: ""
 output: 
