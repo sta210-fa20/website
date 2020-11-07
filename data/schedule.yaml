@@ -185,6 +185,7 @@ lessons:
   - week: "Week 13"
     date: "Mon, Nov 09"
     title: "Dealing with missing data"
+    slides: "25-missing-data.html"
   - date: "Wed, Nov 11"
     title: "Modeling in practice"
   - date: "Thu, Nov 12"
