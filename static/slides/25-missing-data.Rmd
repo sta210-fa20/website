@@ -104,12 +104,12 @@ Example: The U.S. Census
 
 ## Types of missingness
 
-- <font class="vocab">Missing Not at Random (MNAR)</font>: Missingness dependents on the variable itself
-    - Example: People with higher incomes are less likely to share them on a survey
+- <font class="vocab">Missing Not at Random (MNAR)</font>: Missingness depends on the variable itself
+    - Example: People with higher incomes are less likely to share their income on a survey
 
 ---
 
-## How to deal with missing?
+## How to deal with missing data?
 
 1. Only use observations with no missingness (complete-case analysis)
 

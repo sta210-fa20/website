@@ -14,7 +14,7 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [Missing data](https://sta210-fa20.netlify.app/slides/25-missing-data.html) | Missing data | AE 25 |
+| Monday    | [Missing data](https://sta210-fa20.netlify.app/slides/25-missing-data.html) | [Missing data](https://warpwire.duke.edu/w/R8kEAA/) | AE 25 |
 | Wednesday | | | |
 
 <!--
