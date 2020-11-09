@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2020-11-08" />
+<meta name="date" content="2020-11-09" />
 
 <title>AE 25: Missing data</title>
 
@@ -363,7 +363,7 @@ summary {
 
 
 <h1 class="title toc-ignore">AE 25: Missing data</h1>
-<h4 class="date">2020-11-08</h4>
+<h4 class="date">2020-11-09</h4>
 
 </div>
 
@@ -391,24 +391,22 @@ summary {
 </div>
 <div id="dealing-with-missing-data" class="section level2">
 <h2>Dealing with Missing Data</h2>
-<p>We will use the <code>nhanes2</code> data set from the mice R package. This data set is small subset of the NHANES data set specifically used to demonstrate imputation methods.</p>
+<p>We will use the <code>nhanes2</code> data set from the mice R package. This is a small subset of the NHANES data specifically used to demonstrate imputation methods.</p>
 <pre class="r"><code>library(tidyverse)
 nhanes2 &lt;- mice::nhanes2</code></pre>
 </div>
 <div id="bmi" class="section level2">
 <h2>bmi</h2>
 <ol style="list-style-type: decimal">
-<li>Let’s take a look at the variable <code>bmi</code> (body mass index).</li>
-</ol>
+<li><p>Let’s take a look at the variable <code>bmi</code> (body mass index).</p>
 <ul>
 <li>How many observations have missing values for <code>bmi</code>?</li>
 <li>Visualize the distribution of <code>bmi</code>.</li>
 <li>What is the standard deviation of <code>bmi</code> for the observations that have values for <code>bmi</code>?</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
+</ul></li>
 <li><p>Impute the missing values of <code>bmi</code> using mean imputation.</p></li>
 <li><p>Visualize the distribution of <code>bmi</code> with the imputed values and calculate the standard deviation. How did the distribution of <code>bmi</code> change when we filled in missing values using mean imputation?</p></li>
-<li><p>What are some potential limitations of mean imputations?</p></li>
+<li><p>What are some potential limitations of using mean imputation to fill in missing values?</p></li>
 </ol>
 </div>
 <div id="hyp" class="section level2">

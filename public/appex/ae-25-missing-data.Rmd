@@ -38,7 +38,7 @@ library(tidyverse)
 
 ## Dealing with Missing Data
 
-We will use the `nhanes2` data set from the mice R package. This data set is small subset of the NHANES data set specifically used to demonstrate imputation methods. 
+We will use the `nhanes2` data set from the mice R package. This is a small subset of the NHANES data specifically used to demonstrate imputation methods. 
 
 ```{r echo = T}
 library(tidyverse)
@@ -48,15 +48,15 @@ nhanes2 <- mice::nhanes2
 ## bmi 
 
 1. Let's take a look at the variable `bmi` (body mass index). 
-- How many observations have missing values for `bmi`? 
-- Visualize the distribution of `bmi`. 
-- What is the standard deviation of `bmi` for the observations that have values for `bmi`?
+    - How many observations have missing values for `bmi`? 
+    - Visualize the distribution of `bmi`. 
+    - What is the standard deviation of `bmi` for the observations that have values for `bmi`?
 
 2. Impute the missing values of `bmi` using mean imputation. 
 
 3. Visualize the distribution of `bmi` with the imputed values and calculate the standard deviation. How did the distribution of `bmi` change when we filled in missing values using mean imputation? 
 
-4. What are some potential limitations of mean imputations? 
+4. What are some potential limitations of using mean imputation to fill in missing values?
 
 ## hyp
 
