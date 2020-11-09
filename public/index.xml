@@ -1170,13 +1170,13 @@ font-size: 18px;
 &lt;td&gt;Monday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/slides/25-missing-data.html&#34;&gt;Missing data&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/R8kEAA/&#34;&gt;Missing data&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;AE 25&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-25-missing-data.html&#34;&gt;AE 25: Missing data&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Wednesday&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Communicating results&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1187,15 +1187,34 @@ font-size: 18px;
 |------------|---|
 | [Beyond multiple linear regression: Poisson regression](https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html#introduction-to-poisson-regression)| Optional   |
 
-
-## Assignments
-
-|                        |   |
-|------------------------|---|
-| [Project peer review](https://sta210-fa20.netlify.app/labs/peer-review.html) | **due Nov 5 at 11:59p** |
-| [Quiz 04](https://sta210-fa20.netlify.app/labs/quiz-04.html) | **Opens Nov 5 at 12a,  due Nov 6 at 11:59p** |
-| [Stats Experience #2](https://sta210-fa20.netlify.app/hw/stat-experience.html) | **due Nov 8 at 11:59p** |
 --&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta199-fa20-002.netlify.app/project/#written-report&#34;&gt;Written report&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Tue, Nov 17 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta199-fa20-002.netlify.app/project/#presentation-slides&#34;&gt;Video presentation&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due due Fri, Nov 20 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta199-fa20-002.netlify.app/project/#project-repository&#34;&gt;Final repo&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;due Fri, Nov 20 at 11:59p&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta199-fa20-002.netlify.app/project/#peer-feedback&#34;&gt;Watch and comment on presentations&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Nov 20 - Nov 22&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
   </item>
   

@@ -14,8 +14,8 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [Missing data](https://sta210-fa20.netlify.app/slides/25-missing-data.html) | [Missing data](https://warpwire.duke.edu/w/R8kEAA/) | AE 25 |
-| Wednesday | | | |
+| Monday    | [Missing data](https://sta210-fa20.netlify.app/slides/25-missing-data.html) | [Missing data](https://warpwire.duke.edu/w/R8kEAA/) | [AE 25: Missing data](https://sta210-fa20.netlify.app/appex/ae-25-missing-data.html) |
+| Wednesday | | | Communicating results |
 
 <!--
 ## Readings
@@ -24,14 +24,15 @@ font-size: 18px;
 |------------|---|
 | [Beyond multiple linear regression: Poisson regression](https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html#introduction-to-poisson-regression)| Optional   |
 
+-->
 
 ## Assignments
 
 |                        |   |
 |------------------------|---|
-| [Project peer review](https://sta210-fa20.netlify.app/labs/peer-review.html) | **due Nov 5 at 11:59p** |
-| [Quiz 04](https://sta210-fa20.netlify.app/labs/quiz-04.html) | **Opens Nov 5 at 12a,  due Nov 6 at 11:59p** |
-| [Stats Experience #2](https://sta210-fa20.netlify.app/hw/stat-experience.html) | **due Nov 8 at 11:59p** |
--->
+|[Written report](https://sta199-fa20-002.netlify.app/project/#written-report) | **due Tue, Nov 17 at 11:59p**|
+|[Video presentation](https://sta199-fa20-002.netlify.app/project/#presentation-slides) | **due due Fri, Nov 20 at 11:59p**|
+|[Final repo](https://sta199-fa20-002.netlify.app/project/#project-repository) | **due Fri, Nov 20 at 11:59p**|
+|[Watch and comment on presentations](https://sta199-fa20-002.netlify.app/project/#peer-feedback) | **Nov 20 - Nov 22**|
 
 

@@ -1,0 +1,68 @@
+---
+title: "AE 25: Missing data"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+  theme: readable
+  toc: true
+  toc_depth: 2
+---
+
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center", 
+                      echo = F)
+```
+
+
+```{r load-packages, echo = F}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(nnet)
+```
+
+## Announcements
+
+### Assignments 
+
+- [Written report](https://sta210-fa20.netlify.app/project/#written-report) due Tue, Nov 17
+- [Video presentation](https://sta210-fa20.netlify.app/project/#presentation-slides) due Fri, Nov 20
+  - [Presentation slides](https://sta210-fa20.netlify.app/project/#presentation-slides)
+- [Final repo](https://sta210-fa20.netlify.app/project/#project-repository) due Fri, Nov 20
+  - Includes codebook (a list of variables and their definitions) in the `data` folder
+- [Watch and comment on presentations](https://sta210-fa20.netlify.app/project/#peer-feedback) Nov 20 - Nov 22
+
+## Exercises 
+
+## Dealing with Missing Data
+
+```{r}
+mice::nhanes2
+```
+
+## bmi 
+
+1. Let's take a look at the variable `bmi` (body mass index). 
+- How many observations have missing values for `bmi`? 
+- Visualize the distribution of `bmi`. 
+- What is the standard deviation of `bmi` for the observations that have values for `bmi`?
+
+2. Impute the missing values of `bmi` using mean imputation. 
+
+3. Visualize the distribution of `bmi` with the imputed values and calculate the standard deviation. How did the distribution of `bmi` change when we filled in missing values using mean imputation? 
+
+4. What are some potential limitations of mean imputations? 
+
+## hyp
+
+1. Let's consider the variable `hyp` (hypertension). How many observations have missing values for `hyp`? 
+
+2. What are two strategies you can use to impute values for `hyp`? 
+
+3. What are the advantages and potential limitations of the strategies you proposed?
+
