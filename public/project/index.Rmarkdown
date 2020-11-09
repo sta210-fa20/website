@@ -149,7 +149,7 @@ Your final report must match your GitHub repository *exactly*. The mandatory com
 
 Please be judicious in what you include in your final write-up.
 
-The written report is worth 60 points, broken down as
+The written report is worth 60 points, broken down as follows
 
 Total                                                   | 60 pts
 --------------------------------------------------------|--------
@@ -162,9 +162,20 @@ Total                                                   | 60 pts
 
 This section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.
 
+#### Grading criteria
+
+**(10 pts)** The research question and motivation are clearly stated in the introduction. The data are clearly described, including a description about how the data were originally collected and a concise definition of the relevant variables for the analysis. The explanatory data analysis helps the reader better understand the observations in the data set and interesting relationships between the variables. 
+
+
 ### Methodology 
 
 This section includes a brief description of your modeling process. Explain the reasoning for the type of model you're fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process. 
+
+
+#### Grading criteria
+
+**(20 pts)** The analysis steps are appropriate for the data and research question. The group used a thoughtful approach to select the final model that took into account potential interaction effects and addressed violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed as appropriate for the model. If violations of model conditions still exist, there was a reasonable attempt to address them, i.e. based on what we’ve learned this semester.
+
 
 ### Results 
 
@@ -172,10 +183,21 @@ This is also where you will output the final model and include a brief discussio
 
 Additionally, interpret the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in answering your research question using the results from the analysis. Focus on the variables that help you answer the research question and that provide relevant context for the reader. 
 
+#### Grading criteria 
+
+**(20 pts)** The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is assessed.
+
 ### Discussion
 
 This section is a conclusion and discussion. This will require a 
-summary of what you have learned about your research question along with statistical arguments supporting your conclusions. Also, critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Includ 1 - 2 paragraphs on what you would do differently if you were able to start over with the project or what you would do next if you were going to continue work on the project should also be included.
+summary of what you have learned about your research question along with statistical arguments supporting your conclusions. Also, critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Include 1 - 2 paragraphs on what you would do differently if you were able to start over with the project or what you would do next if you were going to continue work on the project should also be included.
+
+#### Grading criteria 
+
+**(5 pts)** Overall conclusions from analysis are clearly described. The group has thoughtfully considered potential limitations of their data and/or analysis and presented potential ideas to address these limitations and avenues to explore in future work. 
+
+**(5 pts)** The final write up is neatly organized with clear section headers and appropriately sized figures with informative labels. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
+
 
 ## Peer review
 
