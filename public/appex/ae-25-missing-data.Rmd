@@ -21,9 +21,6 @@ knitr::opts_chunk$set(warning = FALSE,
 
 ```{r load-packages, echo = F}
 library(tidyverse)
-library(knitr)
-library(broom)
-library(nnet)
 ```
 
 ## Announcements
@@ -41,8 +38,11 @@ library(nnet)
 
 ## Dealing with Missing Data
 
-```{r}
-mice::nhanes2
+We will use the `nhanes2` data set from the mice R package. This data set is small subset of the NHANES data set specifically used to demonstrate imputation methods. 
+
+```{r echo = T}
+library(tidyverse)
+nhanes2 <- mice::nhanes2
 ```
 
 ## bmi 
