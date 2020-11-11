@@ -1162,7 +1162,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-13/</guid>
-      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Missing data Missing data AE 25: Missing data   Wednesday No slides No video Communicating results    Assignments          Written report due Tue, Nov 17 at 11:59p   Video presentation due due Fri, Nov 20 at 11:59p   Final repo due Fri, Nov 20 at 11:59p   Watch and comment on presentations Nov 20 - Nov 22    </description>
+      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Monday Missing data Missing data AE 25: Missing data   Wednesday No slides No video Project info + communicating results    Assignments          Written report due Tue, Nov 17 at 11:59p   Video presentation due due Fri, Nov 20 at 11:59p   Final repo due Fri, Nov 20 at 11:59p   Watch and comment on presentations Nov 20 - Nov 22    </description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -1190,7 +1190,7 @@ font-size: 18px;
 &lt;td&gt;Wednesday&lt;/td&gt;
 &lt;td&gt;No slides&lt;/td&gt;
 &lt;td&gt;No video&lt;/td&gt;
-&lt;td&gt;Communicating results&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-26-communication.html&#34;&gt;Project info + communicating results&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
