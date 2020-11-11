@@ -484,7 +484,7 @@ tidy(model) %>%
 - **Know your audience:** Your report should be written for a general audience who has an understanding of statistics at the level of STA 199.
 - **Avoid subject matter jargon:** Don't assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term. 
 - **Tell the "so what":** Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation. 
-  - ✅ For every one unit increase in horsepower, we expect the miles per gallon to decrease by 0.68 units, on average.
+  - ❌ For every one unit increase in horsepower, we expect the miles per gallon to decrease by 0.68 units, on average.
   - ✅ If the priority is to have good fuel economy, then one should choose a car with lower horsepower. Based on our model, the fuel economy is expected to decrease, on average, by 0.68 miles per gallon for each additional 10 units of horsepower.
 - **Tell a story:** All visualizations, tables, model output, and narrative should tell a cohesive story!
 - **Use one voice:** Though multiple people are writing the report, it should read as if it's from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.
