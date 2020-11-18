@@ -229,7 +229,7 @@ The slide deck should have no more than 6 content slides + 1 title slide. Here i
 
 ## Video presentation
 
-Sometime before **Friday, November 20**, you/your group will upload a video presentation of your project to Warpwire. Note that all members must present, and that a ten-minute time limit is **strictly enforced**.
+By **Friday, November 20**, your group will upload a video presentation of your project to Warpwire. Note that all members must present, and that a ten-minute time limit is **strictly enforced**.
 
 For the presentation, you can speak over your slide deck, similar to the lecture content videos. I recommend using Zoom to record your presentation; however, you can use whatever platform works best for your group. Below are a few resources to help you record video presentations:
 
