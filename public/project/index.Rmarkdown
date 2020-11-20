@@ -149,14 +149,14 @@ Your final report must match your GitHub repository *exactly*. The mandatory com
 
 Please be judicious in what you include in your final write-up.
 
-The written report is worth 60 points, broken down as follows
+The written report is worth 50 points, broken down as follows
 
-Total                                                   | 60 pts
+Total                                                   | 50 pts
 --------------------------------------------------------|--------
-**Introduction/data**                                   | 10 pts
-**Methodology**                                         | 20 pts
-**Results**                                             | 20 pts
-**Discussion**                                          | 10 pts
+**Introduction/data**                                   | 8 pts
+**Methodology**                                         | 17 pts
+**Results**                                             | 17 pts
+**Discussion**                                          | 8 pts
 
 ### Introduction and data
 
@@ -164,7 +164,7 @@ This section includes an introduction to the project motivation, data, and resea
 
 #### Grading criteria
 
-**(10 pts)** The research question and motivation are clearly stated in the introduction. The data are clearly described, including a description about how the data were originally collected and a concise definition of the relevant variables for the analysis. The explanatory data analysis helps the reader better understand the observations in the data set and interesting relationships between the variables. 
+**(8 pts)** The research question and motivation are clearly stated in the introduction. The data are clearly described, including a description about how the data were originally collected and a concise definition of the relevant variables for the analysis. The explanatory data analysis helps the reader better understand the observations in the data set and interesting relationships between the variables. 
 
 
 ### Methodology 
@@ -174,7 +174,7 @@ This section includes a brief description of your modeling process. Explain the 
 
 #### Grading criteria
 
-**(20 pts)** The analysis steps are appropriate for the data and research question. The group used a thoughtful approach to select the final model that took into account potential interaction effects and addressed violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed as appropriate for the model. If violations of model conditions still exist, there was a reasonable attempt to address them, i.e. based on what we’ve learned this semester.
+**(17 pts)** The analysis steps are appropriate for the data and research question. The group used a thoughtful approach to select the final model that took into account potential interaction effects and addressed violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed as appropriate for the model. If violations of model conditions still exist, there was a reasonable attempt to address them, i.e. based on what we’ve learned this semester.
 
 
 ### Results 
@@ -185,7 +185,7 @@ Additionally, interpret the key results from the model. The goal is not to inter
 
 #### Grading criteria 
 
-**(20 pts)** The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is assessed.
+**(17 pts)** The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is assessed.
 
 ### Discussion
 
@@ -194,9 +194,9 @@ summary of what you have learned about your research question along with statist
 
 #### Grading criteria 
 
-**(5 pts)** Overall conclusions from analysis are clearly described. The group has thoughtfully considered potential limitations of their data and/or analysis and presented potential ideas to address these limitations and avenues to explore in future work. 
+**(4 pts)** Overall conclusions from analysis are clearly described. The group has thoughtfully considered potential limitations of their data and/or analysis and presented potential ideas to address these limitations and avenues to explore in future work. 
 
-**(5 pts)** The final write up is neatly organized with clear section headers and appropriately sized figures with informative labels. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
+**(4 pts)** The final write up is neatly organized with clear section headers and appropriately sized figures with informative labels. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
 
 
 ## Peer review
@@ -261,6 +261,16 @@ discussion forum.
 - You’re done! 
 
 You can see the Teaching team example in Sakai. 
+
+## Presentation comments 
+
+Each student will be assigned 2 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EfYgmTXEMs1ImpYXagtwYbQBbaUa9_bPI_2D7cTBSdhJ8w?e=O2eeUD) to see your viewing assignments. 
+
+Watch the group's video, then click "Reply" to post a question for the group. You may not post a question that's already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn't be "Why did you use a bar plot instead of a pie chart"?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group's specific presentation, i.e demonstrating that you've watched the presentation. 
+
+You may start posting questions and comments on Sat, Nov 21 at 12 EST. **All questions must be posted by Sun, Nov 22 at 11:59p EST**. 
+
+**<i>This portion of the project will be assessed individually.</i>**
 
 ## Project repository
 
