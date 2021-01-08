@@ -48,7 +48,7 @@
     weight = 70
     
 [[main]]
-    url = "https://www.github.com/sta210-fa20"
+    url = "https://www.github.com/sta210-sp21"
     # pre = "<i class='fab fa-github fa-lg'></i>"
     name  = "<i class='fab fa-github fa-lg'></i>"
     weight = 80
