@@ -1,8 +1,8 @@
 # Website for STA 210: Spring 2021 at Duke University
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/826377b9-9955-4f1c-bf37-1506b8e35643/deploy-status)](https://app.netlify.com/sites/sta210-fa20/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/21070d0e-e12c-4685-9a83-d9144dd3a351/deploy-status)](https://app.netlify.com/sites/sta210-sp21/deploys)
 
-:link:  [sta210-fa20.netlify.app](https://sta210-fa20.netlify.app)
+:link:  [sta210-sp21.netlify.app](https://sta210-sp21.netlify.app)
 
 - Hugo version: 0.70.0
 
