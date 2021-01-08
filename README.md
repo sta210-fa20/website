@@ -4,6 +4,8 @@
 
 :link:  [sta210-fa20.netlify.app](https://sta210-fa20.netlify.app)
 
+- Hugo version: 0.70.0
+
 ## Colors 
 
 - primary color: #008eaa
