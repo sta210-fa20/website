@@ -6,7 +6,7 @@
 
 - Hugo version: 0.70.0
 
-## Colors 
+## Colors
 
 - primary color: #008eaa
 - main accent: #aa008e
