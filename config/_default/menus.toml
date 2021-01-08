@@ -54,7 +54,7 @@
     weight = 80
     
 [[main]]
-    url = "https://piazza.com/class/kdtk5we3l333ns"
+    url = "https://sakai.duke.edu"
     # pre = "<i class='fab fa-github fa-lg'></i>"
     name  = "<i class=\"ai ai-piazza ai-lg\"></i>"
     weight = 90
