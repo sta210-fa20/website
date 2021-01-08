@@ -1,4 +1,4 @@
-# Website for STA 210: Fall 2020 at Duke University
+# Website for STA 210: Spring 2021 at Duke University
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/826377b9-9955-4f1c-bf37-1506b8e35643/deploy-status)](https://app.netlify.com/sites/sta210-fa20/deploys)
 
@@ -11,7 +11,7 @@
 
 ## Acknowledgements
 
-This site is derived from [tidymodels.org](https://www.tidymodels.org) with inspiration from [datavizm20](https://datavizm20.classes.andrewheiss.com) and [introds.org](https://introds.org/).
+The site design is derived from [tidymodels.org](https://www.tidymodels.org) with inspiration from [datavizm20](https://datavizm20.classes.andrewheiss.com) and [introds.org](https://introds.org/).
 
 <hr> 
 
