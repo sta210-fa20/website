@@ -1,7 +1,7 @@
 ---
 title: Syllabus
 ---
-
+<!--
 **[Click here](https://sta210-fa20.netlify.app/syllabus.pdf) to download a PDF copy of the syllabus.**
 
 ## Course learning objectives
@@ -214,3 +214,5 @@ There are times may need help with the class that is beyond what can be provided
 - **Oct 30**: Last day to withdraw with W
 - **Nov 16**: Classes end
 - **Nov 21**: Final exam period, 9a - 12p
+
+-->
