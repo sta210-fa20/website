@@ -24,22 +24,22 @@ title: Course info
   <tr>
     <td class="tg-0pky">Lecture</td>
     <td class="tg-0pky">All Students</td>
-    <td class="tg-0pky">Mon and Wed 3:30p - 4:45p</td>
+    <td class="tg-0pky">Tue and Thu 10:15a - 11:30a</td>
   </tr>
   <tr>
     <td class="tg-0pky">Labs</td>
     <td class="tg-0pky">Lab 01</td>
-    <td class="tg-0pky">Thu 8:30a - 9:45a</td>
+    <td class="tg-0pky">Mon 12p - 1:15p</td>
   </tr>
   <tr>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Lab 02</td>
-    <td class="tg-0pky">Thu 12p - 1:15p</td>
+    <td class="tg-0pky">Mon 1:45p - 3p</td>
   </tr>
   <tr>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Lab 03</td>
-    <td class="tg-0pky">Thu 5:15p - 6:30p</td>
+    <td class="tg-0pky">Mon 5:15p - 6:30p</td>
   </tr>
   <tr>
     <td class="tg-0pky"></td>
