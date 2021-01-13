@@ -217,7 +217,7 @@ No grades will be changed after the final project presentations.
 
 ### Additional resources
 
-Please see the [Resources](https://sta210-sp21.netlify.app/resources/) page for additional academic and wellness resources.
+Please see the [Resources](../resources/) page for additional academic and wellness resources.
 
 ### Important dates
 

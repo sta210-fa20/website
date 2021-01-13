@@ -37,8 +37,8 @@
 
 [[main]]
    # pre = "<i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i>"
-    name = "Help"
-    url = "/help/"
+    name = "Resources"
+    url = "/resources/"
     weight = 60
     
 [[main]]
