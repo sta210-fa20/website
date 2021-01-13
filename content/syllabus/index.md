@@ -215,24 +215,11 @@ Regrade requests must be submitted on Gradescope within a week of when an assign
 
 No grades will be changed after the final project presentations. 
 
-## Additional resources
+### Additional resources
 
-### Academic Resource Center 
-
-.
-
-
-There are times may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The [Academic Resource Center (ARC)](https://arc.duke.edu) offers free services to all students during their undergraduate careers at Duke.  Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact <a href="mailto:arc@duke.edu" title="email">ARC@duke.edu</a>, 919-684-5917.
-
-### CAPS
-
-[Duke Counseling & Pyschological Services (CAPS)](https://studentaffairs.duke.edu/caps) helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. CAPS recognizes that we are living in unprecedented times and that the changes, challenges and stressors brought on by the COVID-19 pandemic have impacted everyone, often in ways that are tax our well-being. CAPS offers many services to Duke undergraduate students, including brief individual and group counseling, couples counseling and more. CAPS staff also provides outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life. CAPS provides services to students via Telehealth. To initiate services, you can contact their front desk at 919-660-1000.
+Please see the [Help](https://sta210-sp21.netlify.app/help/) page for additional academic and wellness resources.
 
 ### Important dates
 
-- **Aug 17**: Classes begin
-- **Aug 28**: Drop/add ends
-- **Oct 30**: Last day to withdraw with W
-- **Nov 16**: Classes end
-- **Nov 21**: Final exam period, 9a - 12p
+You can find important dates on the  [Spring 2021 Academic Calendar](https://registrar.duke.edu/spring-2021-academic-calendar). 
 
