@@ -17,12 +17,26 @@ By the end of the semester, you will be able to...
 
 ## Course community 
 
-### Duke Community Standard 
+### Duke Compact & Community Standard 
 
-As a student in this course, you have agreed to uphold the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) as well as the practices specific to this course. 
+**The Duke Compact**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_KN97j30ST4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+The Duke Compact recognizes our shared responsibility for our collective health and well- being. Please be reminded that by signing your name to this pledge, you have acknowledged that you understand the conditions for being on campus. These include complying with university, state, and local requirements and acting to protect yourself and those around you. For complete language and updated policies, please visit [returnto.duke.edu/compact/](https://returnto.duke.edu/compact/).
 
+
+**Duke Community Standard**
+
+All students, whether residing on campus or learning remotely, must adhere to the [Duke Community Standard (DCS)](https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct): Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, and accountability. Citizens of this community commit to reflect upon these principles in all academic and non- academic endeavors, and to protect and promote a culture of integrity.
+To uphold the Duke Community Standard:
+         
+Students affirm their commitment to uphold the values of the Duke University community by signing a pledge that states:
+
+> I will not lie, cheat, or steal in my academic endeavors;
+> I will conduct myself honorably in all my endeavors;
+> I will act if the Standard is compromised
+
+Regardless of course delivery format, it is the responsibility of all students to understand and follow Duke policies regarding academic integrity, including doing one's own work, following proper citation of sources, and adhering to guidance around group work
+projects. Ignoring these requirements is a violation of the Duke Community Standard. If you have any questions about how to follow these requirements, please contact [Jeanna McCullers](mailto:jeanna.mccullers@duke.edu), Director of the Office of Student Conduct.
 
 ### Inclusive community
 
@@ -33,14 +47,13 @@ Furthermore, I would like to create a learning environment for my students that 
 - If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.
 - I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.
 
-### Accessibility 
-
-If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make accommodations. 
+### Accessibility
 
 In addition to accessibility issues experienced during the typical academic year, I recognize that remote learning may present additional challenges. Students may be experiencing unreliable wi-fi, lack of access to quiet study spaces, varied time-zones, or additional responsibilities while studying at home. If you are experiencing these or other difficulties, please contact me to discuss possible accommodations. 
 
-The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update accommodations](https://access.duke.edu/requests) under these circumstances. 
+**Academic accommodations** 
 
+The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) will continue to be available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update](https://access.duke.edu/requests) accommodations under these circumstances. Zoom has the ability to provide live closed captioning. If you are not seeing this, and but would like to see this feature, please reach out to your instructor for assistance.
 
 ### Academic honesty
 
@@ -198,15 +211,16 @@ If there are circumstnaces that are having a longer-term impact on your academic
 
 ### Regrade Requests
 
-Regrade requests should be submitted through the regrade request from on Gradescope. **Requests for a regrade must be made within a week of when the assignment is returned; requests submitted later will not be considered.** You should only submit a regrade request if there is an error in the grade calculation or a correct answer was mistakenly marked as incorrect. You should not submit a regrade to dispute the number of points deducted for an incorrect response. *Please note that by submitting a regrade request, your entire assignment may be regraded and you may potentially lose points.* 
+Regrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question may be regraded and you may potentially lose points.
 
-Due to the time consuming nature of responding to regrade requests, you should attend office hours and ask a member of the teaching team about the feedback before submitting the request. When you submit a request, please indicate which member of the teaching team you spoke with. *Note: Grades can only be changed by Professor Tackett. Teaching Assistants cannot change grades on returned assignments.*
-
-**No grades will be changed after the final project presentations.**
+No grades will be changed after the final project presentations. 
 
 ## Additional resources
 
 ### Academic Resource Center 
+
+.
+
 
 There are times may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The [Academic Resource Center (ARC)](https://arc.duke.edu) offers free services to all students during their undergraduate careers at Duke.  Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact <a href="mailto:arc@duke.edu" title="email">ARC@duke.edu</a>, 919-684-5917.
 
