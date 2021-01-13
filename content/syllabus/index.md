@@ -1,18 +1,19 @@
 ---
 title: Syllabus
 ---
-<!--
+
 **[Click here](https://sta210-fa20.netlify.app/syllabus.pdf) to download a PDF copy of the syllabus.**
 
 ## Course learning objectives
 
-By the end of the semester, you will…
+By the end of the semester, you will be able to...
 
-- know methods for analyzing multivariate datasets, with an emphasis on interpretation
-- know how to check whether proposed statistical models are appropriate for given data
-- develop proficiency in addressing complex research questions using statistical evidence
-- develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git
-- understand the process of data-based research by working on an independent research project
+- Analyze real-world data to answer questions about multivariable relationships.
+- Fit and evaluate linear and logistic regression models.
+- Assess whether a proposed model is appropriate and describe its limitations.
+- Use R Markdown to write reproducible reports and GitHub for version control and collaboration. 
+- Use GitHub for version control and collaboration.
+- Communicate statistical analyses to a general audience.
 
 ## Course community 
 
@@ -47,26 +48,26 @@ The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) 
 
 Please abide by the following as you work on assignments in this course:
 
-- You may not discuss or otherwise work with others on the quizzes. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.
-- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. 
-- On individual assignments, you may not directly share code or write up with other students. On team assignments, you may not directly share code or write up with another team. Unauthorized sharing of the code or write up will be considered a violation for all students involved.
+- On individual assignments such as homework, you may discuss the assignment with other students; however, you may not directly share code or your write up with any other student. On team assignments such as labs, you may discuss the assignment with other teams; however, you may not directly share code or your write up with another team. Unauthorized sharing of the code or the write up is considered a violation of the standards for academic honesty for all students involved.
+- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism and a violation of the standards for academic honesty.
+- You may not discuss or otherwise work with anyone on quizzes. Unauthorized collaboration or use of unauthorized materials is considered a violation of the standards for academic honesty for all students involved. More specific details about academic honesty will be provided with the quiz instructions.
 
 Any violations in academic honesty standards as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
 
-### Communication 
+### Course communication
 
-All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta20-fa20.netlify.app . 
+All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta210-sp21.netlify.app/, specifically on the [**Schedule**](https://sta210-sp21.netlify.app/schedule/) page.
 
-I will also email announcements through Sakai periodically to ensure everyone has the current information. Please check your email and/or the Announcements page regularly. 
+We will also use Sakai to email periodic announcements to the class. Please regulalry check your email or check the **Announcements** tab in Sakai to ensure you have up-to-date information about the course.
 
 
-### Getting Help
+### Asking for help
 
-- If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone. 
-- The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
+- **If you have a question during lecture or lab, please to ask it!** There are likely other students with the same question, so by asking you will create a learning opportunity for everyone. 
+- The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered through discussion rather than email, so office hours are a valuable resource. Please use them!
 - Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza. There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond! 
 
-Check out the [Help](/help/) tab for more information about getting help and resources.
+Check out the [Help](/help/) tab for more information about finding help and additional resources.
 
 ### Email 
 
@@ -75,21 +76,23 @@ If there is a question that's not appropriate for the public forum (Piazza), you
 
 ## Activities & Assessment
 
-The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional projects.
+The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional settings.
 
 ### A Week in STA 210!
 
+<br> 
+
 <center> 
 
-| **Monday**    | Attend live lecture session 10:15a - 11:30a |
+|    **Day**           | **Activity**   |
 |---------------|---------------------------------------------|
-| **Tuesday**   | Watch lecture content videos for Wednesday  |
-|               | Monday's AE due                             |
-| **Wednesday** | Attend live lecture session 10:15a - 11:30a |
-|               | Previous week's lab due                     |
-| **Thursday**  | Attend lab session / start new lab          |
-|               | Wednesday's AE due                          |
-| **Friday**    | Watch lecture content videos for Monday     |   
+| **Monday**    | Attend lab   |
+|               | Watch lecture content video for Tuesday   |
+| **Tuesday**   | Attend live lecture session 10:15a - 11:30a |
+| **Wednesday** | Tuesday's application exercise due          |
+|               | Watch lecture content video for Thursday    |
+| **Thursday**  | Attend live lecture session 10:15a - 11:30a |
+| **Friday**    | Thursday's application exercise due         |   
 
 </center> 
 
@@ -97,7 +100,7 @@ Lectures will have two components:
 
 - **Lecture content videos**: These are pre-recorded videos that contain the content. You can think of these as a "video textbook". You should watch the content videos before we meet for the live sessions. 
 
-- **Live lecture sessions**: These sessions will be on Zoom Mondays and Wednesdays 10:15a - 11:30a. During this time, we will answer questions from the live lecture videos and most of the time will be used to work on exercises where you apply the material from the content videos.
+- **Live lecture sessions**: These sessions will be on Zoom Tuesday and Thursdays 10:15a - 11:30a EST. During this time, we will answer questions from the live lecture videos and work through application exercises (AE) to apply what you learned in the content videos. 
 
 ### Labs
 
@@ -120,13 +123,15 @@ Individual homework extensions will only be given for extenuating circumstances.
 
 ### Quizzes 
 
-There will be four quizzes during the semester. The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Quizzes will be timed and must be completed during the time period specified. 
+There will be three quizzes during the semester. The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Quizzes will be timed and must be completed during the time period specified. 
 
 **Quiz dates cannot be changed and no make-up quizzes will be given.** If extenuating circumstances prohibit you from taking a quiz, please let Professor Tackett know before the start of the quiz. 
 
 ### Final Project 
 
 The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided a few weeks into the semester. 
+
+### Participation
 
 The participation of the course grade will be based primarily on individual Application Exercises (AEs), which give you an opportunity to practice using the statistical concepts and/or code discussed in lecture on short data analyses. AEs will be linked in lecture slides and time will be set aside during the optional live sessions to work on them. These AEs are due by the end of the next day; for instance, an AE associated with a lecture on Monday will be due Tuesday at 11:59p. AEs will be graded based on a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 90% of AEs will result in full points for AEs; anything lower than that will be assigned points accordingly. 
 
@@ -147,12 +152,11 @@ The final course grade will be calculated as follows:
 
  <span></span>   Category  | <span></span> Percentage 
 -----------|---------------------------------
-Quizzes| 35%
-Homework | 25%
+Homework | 35%
+Quizzes | 30%
 Labs | 15%
 Final Project | 15%
 Participation | 5%
-Stats Experience | 5%
 
 </center>
 
@@ -215,4 +219,3 @@ There are times may need help with the class that is beyond what can be provided
 - **Nov 16**: Classes end
 - **Nov 21**: Final exam period, 9a - 12p
 
--->
