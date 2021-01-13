@@ -117,13 +117,15 @@ Your lowest lab grade will be dropped at the end of the semester.
 
 In most homework assignemnts, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope. 
 
-One homework assignment will be dedicated towards experiencing statistis. The goal of these experiences are for you to think about how the material you're learning in the course can connect with your experiences and society at large. 
+One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, particpating in a data analysis competition, listening to related podcasts, etc. More details will be provided during the semester.
 
 Your lowest homework grade will be dropped at the end of the semester. 
 
 ### Quizzes 
 
 The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical aspects of regression. More details will be provided before each quiz. 
+
+Less weight will be given to your lowest quiz grade in the calculation of your overall quiz average.
 
 
 ### Final Project 
@@ -179,14 +181,20 @@ F  | < 60
 </center>
 
 
-### Late Work
+### Late work + extensions
 
-You will have a 24 hour grace period after the due date of homework and lab assignments to turn them in with no penalty. I recommend using this policy as little as possible, but they are there to provide some relief and to accommodate multiple time zones. After the grace period, there is a 20% penalty for each day the assignment is late. 
+The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accoommdate such cirumstances. 
 
-If there are extenuating circumstances that prevent you from completing an assignment by the stated due date, please let Professor Tackett know as soon as possible.
+**Late work policy**
+- Homework and labs may be submitted up to 3 days late with a 5% penalty each day. 
+- There is no late work accepted for application exercises or quizzes.
+- The late work policy for the project will be provided with the project instructions. 
 
-**Late work will not be accepted for the quizzes or the final project**
+**Waiver for extenuating circumstances** 
 
+If there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, please email Professor Tackett before the deadline, to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used once, so only use it for a truly extenuating circumstance. 
+
+If there are circumstnaces that are having a longer-term impact on your academic performance, please notify your academic dean. 
 
 ### Regrade Requests
 
