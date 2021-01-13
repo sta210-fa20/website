@@ -2,7 +2,7 @@
 title: Syllabus
 ---
 
-**[Click here](https://sta210-fa20.netlify.app/syllabus.pdf) to download a PDF copy of the syllabus.**
+**[Click here](sta210-sp21-syllabus.pdf) to download a PDF copy of the syllabus.**
 
 ## Course learning objectives
 
