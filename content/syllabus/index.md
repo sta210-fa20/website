@@ -49,7 +49,7 @@ Furthermore, I would like to create a learning environment for my students that 
 - If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.
 - I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.
 
-### Accessibility
+## Accessibility
 
 In addition to accessibility issues experienced during the typical academic year, I recognize that remote learning may present additional challenges. Students may be experiencing unreliable wi-fi, lack of access to quiet study spaces, varied time-zones, or additional responsibilities while studying at home. If you are experiencing these or other difficulties, please contact me to discuss possible accommodations. 
 
@@ -57,26 +57,28 @@ In addition to accessibility issues experienced during the typical academic year
 
 The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) will continue to be available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update](https://access.duke.edu/requests) accommodations under these circumstances. Zoom has the ability to provide live closed captioning. If you are not seeing this, and but would like to see this feature, please reach out to your instructor for assistance.
 
-### Academic honesty
+## Academic conduct
 
 **TL;DR: Don't cheat!** 
 
 Please abide by the following as you work on assignments in this course:
 
-- On individual assignments such as homework, you may discuss the assignment with other students; however, you may not directly share code or your write up with any other student. On team assignments such as labs, you may discuss the assignment with other teams; however, you may not directly share code or your write up with another team. Unauthorized sharing of the code or the write up is considered a violation of the standards for academic honesty for all students involved.
-- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism and a violation of the standards for academic honesty.
-- You may not discuss or otherwise work with anyone on quizzes. Unauthorized collaboration or use of unauthorized materials is considered a violation of the standards for academic honesty for all students involved. More specific details about academic honesty will be provided with the quiz instructions.
+- On individual assignments such as homework, you may discuss the assignment with other students; however, you may not directly share code or your write up with any other student. On team assignments such as labs, you may discuss the assignment with other teams; however, you may not directly share code or your write up with another team. Unauthorized sharing of the code or the write up is considered an instance of academic misconduct for all students involved.
 
-Any violations in academic honesty standards as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
+- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism and an instance of academic misconduct.
 
-### Course communication
+- You may not discuss or otherwise work with anyone on quizzes. Unauthorized collaboration or use of unauthorized materials is considered a violation of the standards for academic honesty for all students involved. More specific details about standards for academic conduct will be provided with the quiz instructions.
+
+Any violations in the standards for academic conduct as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
+
+## Course communication
 
 All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta210-sp21.netlify.app/, specifically on the [**Schedule**](https://sta210-sp21.netlify.app/schedule/) page.
 
 We will also use Sakai to email periodic announcements to the class. Please regularly check your email or check the **Announcements** tab in Sakai to ensure you have up-to-date information about the course.
 
 
-### Asking for help
+## Asking for help
 
 - **If you have a question during lecture or lab, please to ask it!** There are likely other students with the same question, so by asking you will create a learning opportunity for everyone. 
 - The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered through discussion rather than email, so office hours are a valuable resource. Please use them!
@@ -84,7 +86,7 @@ We will also use Sakai to email periodic announcements to the class. Please regu
 
 Check out the [Help](/help/) tab for more information about finding help and additional resources.
 
-### Email 
+## Email 
 
 If there is a question that's not appropriate for the public forum (Piazza), you are welcome to email me directly. **If you email me, please include "STA 210" in the subject line.** Barring extenuating circumstances, I will respond to STA 210 emails within 48 hours Monday - Friday. I have more limited access to email on weekends.
 
@@ -196,7 +198,7 @@ F  | < 60
 </center>
 
 
-### Late work + extensions
+## Late work & extensions
 
 The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accommodate such circumstances. 
 
@@ -211,17 +213,17 @@ If there are circumstances that prevent you from completing a lab or homework as
 
 If there are circumstances that are having a longer-term impact on your academic performance, please notify your academic dean. 
 
-### Regrade Requests
+## Regrade Requests
 
 Regrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question may be regraded and you may potentially lose points.
 
 No grades will be changed after the final project presentations. 
 
-### Additional resources
+## Additional resources
 
 Please see the [Resources](../resources/) page for additional academic and wellness resources.
 
-### Important dates
+## Important dates
 
 You can find important dates on the  [Spring 2021 Academic Calendar](https://registrar.duke.edu/spring-2021-academic-calendar). 
 
