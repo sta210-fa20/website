@@ -2,6 +2,8 @@
 title: "STA 210 Final Project"
 ---
 
+Details about the project will be posted at a later date. 
+
 <!--
 ## Timeline
 
