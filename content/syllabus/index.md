@@ -104,45 +104,40 @@ Lectures will have two components:
 
 ### Labs
 
-In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. Most lab assignments will be performed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's Git repository on the course's GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab, and you will also be asked to evaluate your team members' engagement periodically during the semester. Lab assignments will be completed using R Markdown, correspond to an appropriate GitHub repository, and submitted as a .pdf file to Gradescope. 
+In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. Most lab assignments will be performed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's Git repository in the [STA 210 GitHub organization](https://github.com/sta210-sp21) as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab, and you will also be asked to evaluate your team members' engagement periodically during the semester. Lab assignments will be completed using R Markdown, correspond to an appropriate GitHub repository, and submitted to Gradescope.
 
 **Sections 01L - 03L**: If you are in one of these sections, you are expected to attend lab during the scheduled time. You will spend most time working with your team to complete that week's assignment. There will be teaching assistants available if you have questions as you work. 
 
-**Section 04L:** Though you do not have a scheduled lab time, you will find a time with your team to work on the weekly lab assignment. The teaching team will provide tips and resources to help you establish a plan for collaboration. You will be able to ask questions during office hours and on Piazza.  
+**Section 04L:** Though you do not have a scheduled lab time, you will be assigned a team to work on the weekly lab assignment. You will be sent a short video to introduce each lab, and the teaching team will provide lab hours specifically for asynchronous lab students.
 
-*To accommodate unexpected events, the lowest lab grade will be dropped at the end of the semester for all students.*
+Your lowest lab grade will be dropped at the end of the semester. 
 
 
 ### Homework
 
-In homework, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted in Gradescope. 
+In most homework assignemnts, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope. 
 
-Individual homework extensions will only be given for extenuating circumstances. Please contact Professor Tackett if you have an extenuating circumstance that prohibits you from completing the homework by the stated due date.
+One homework assignment will be dedicated towards experiencing statistis. The goal of these experiences are for you to think about how the material you're learning in the course can connect with your experiences and society at large. 
 
-*To accommodate unexpected events, the lowest homework grade will be dropped at the end of the semester.*
+Your lowest homework grade will be dropped at the end of the semester. 
 
 ### Quizzes 
 
-There will be three quizzes during the semester. The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Quizzes will be timed and must be completed during the time period specified. 
+The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical aspects of regression. More details will be provided before each quiz. 
 
-**Quiz dates cannot be changed and no make-up quizzes will be given.** If extenuating circumstances prohibit you from taking a quiz, please let Professor Tackett know before the start of the quiz. 
 
 ### Final Project 
 
-The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided a few weeks into the semester. 
+The purpose of the project is to apply what you’ve learned throughout the semester to explore an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided later in the semester.
 
 ### Participation
 
-The participation of the course grade will be based primarily on individual Application Exercises (AEs), which give you an opportunity to practice using the statistical concepts and/or code discussed in lecture on short data analyses. AEs will be linked in lecture slides and time will be set aside during the optional live sessions to work on them. These AEs are due by the end of the next day; for instance, an AE associated with a lecture on Monday will be due Tuesday at 11:59p. AEs will be graded based on a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 90% of AEs will result in full points for AEs; anything lower than that will be assigned points accordingly. 
+The participation cmoponent of the grade will be based on two components: 
 
-In addition to AEs will be periodic activities help build a learning community. These will be short, fun activities that will help everyone in the class connect throughout the semester. 
+- **Participating in lecture.** This includes watching the lecture content videos and completing the Application Exercises (AEs) from the corresponding live lecture session. AEs are due on GitHub within one week of the live lecture. AEs will graded based on making a good-faith effort on the activity. You will receive full credit for this portion of the participation grade if you watch the lecture content video and complete the AE in a timely manner for at least 80% of the lectures.
 
-The last component of participation will be based on periodic team feedback about each team member's overall contribution to labs and the project. 
+- **Teamwork** This will be based periodic team feedback and commits to team labs and the final program.  
 
-### Statistics Experiences
-
-
-During the course of the semester, there will be periodic opportunities for you to experience statistics and data science outside of the classroom. The goal of these experiences are for you to think about how the material you're learning in the course can connect with your experiences and society at large. 
 
 ## Grading
 
