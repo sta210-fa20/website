@@ -2,15 +2,33 @@
 title: Resources
 ---
 
-## Resources for the course
+## R Resources 
 
-- [OpenIntro Statistics 4th ed](https://leanpub.com/openintro-statistics) by David Diez, Mine &Ccedil;etinkaya-Rundel, and Christopher Barr
+**Getting started** 
+
+- [RStudio IDE Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+- [R Markdown Reference Guide](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+- [R for Data Science](https://r4ds.had.co.nz/)
+
+**Data Visualization**
+
+- [ggplot2 Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+- [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org/)
+
+**Data Wrangling**
+
+- [dplyr Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
+- [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)
+
+
+## Statistics resources
+
+- [Introduction to Modern Statistics](https://openintro-ims.netlify.app/index.html) by Mine &Ccedil;etinkaya-Rundel and Jo Hardin (free online)
   
-- [R for Data Science](https://r4ds.had.co.nz/) by Garret Grolemund and Hadley Wickham
+- [Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/) by Chester Ismay and Albert Kim (free online)
 
-- [Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/) by Chester Ismay and Albert Kim
-
-- [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf) by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani
+- [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf) by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani (free online)
 
 ## Mental heath and wellness support 
 

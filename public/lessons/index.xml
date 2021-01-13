@@ -71,24 +71,39 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/resources/</guid>
-      <description>Resources for the course   OpenIntro Statistics 4th ed by David Diez, Mine Çetinkaya-Rundel, and Christopher Barr
-  R for Data Science by Garret Grolemund and Hadley Wickham
-  Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by Chester Ismay and Albert Kim
-  Introduction to Statistical Learning by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani
-  Mental heath and wellness support If your mental health concerns and/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, many resources are available to you, including ones listed below.</description>
-      <content>&lt;h2 id=&#34;resources-for-the-course&#34;&gt;Resources for the course&lt;/h2&gt;
+      <description>R Resources Getting started
+ RStudio IDE Cheatsheet Happy Git and GitHub for the useR R Markdown Reference Guide R for Data Science  Data Visualization
+ ggplot2 Cheatsheet ggplot2.tidyverse.org  Data Wrangling
+ dplyr Cheatsheet dplyr.tidyverse.org  Statistics resources   Introduction to Modern Statistics by Mine Çetinkaya-Rundel and Jo Hardin (free online)
+  Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by Chester Ismay and Albert Kim (free online)</description>
+      <content>&lt;h2 id=&#34;r-resources&#34;&gt;R Resources&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf&#34;&gt;RStudio IDE Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/&#34;&gt;Happy Git and GitHub for the useR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&#34;&gt;R Markdown Reference Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Visualization&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf&#34;&gt;ggplot2 Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;ggplot2.tidyverse.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Wrangling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf&#34;&gt;dplyr Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;dplyr.tidyverse.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;statistics-resources&#34;&gt;Statistics resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://leanpub.com/openintro-statistics&#34;&gt;OpenIntro Statistics 4th ed&lt;/a&gt; by David Diez, Mine Çetinkaya-Rundel, and Christopher Barr&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openintro-ims.netlify.app/index.html&#34;&gt;Introduction to Modern Statistics&lt;/a&gt; by Mine Çetinkaya-Rundel and Jo Hardin (free online)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt; by Garret Grolemund and Hadley Wickham&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://moderndive.com/&#34;&gt;Statistical Inference via Data Science: A ModernDive into R and the Tidyverse&lt;/a&gt; by Chester Ismay and Albert Kim (free online)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://moderndive.com/&#34;&gt;Statistical Inference via Data Science: A ModernDive into R and the Tidyverse&lt;/a&gt; by Chester Ismay and Albert Kim&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf&#34;&gt;Introduction to Statistical Learning&lt;/a&gt; by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf&#34;&gt;Introduction to Statistical Learning&lt;/a&gt; by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani (free online)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;mental-heath-and-wellness-support&#34;&gt;Mental heath and wellness support&lt;/h2&gt;
