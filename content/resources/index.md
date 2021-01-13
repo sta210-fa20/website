@@ -2,7 +2,7 @@
 title: Resources
 ---
 
-## R Resources 
+## R resources 
 
 **Getting started** 
 

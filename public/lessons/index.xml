@@ -71,12 +71,12 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/resources/</guid>
-      <description>R Resources Getting started
+      <description>R resources Getting started
  RStudio IDE Cheatsheet Happy Git and GitHub for the useR R Markdown Reference Guide R for Data Science  Data Visualization
  ggplot2 Cheatsheet ggplot2.tidyverse.org  Data Wrangling
  dplyr Cheatsheet dplyr.tidyverse.org  Statistics resources   Introduction to Modern Statistics by Mine Çetinkaya-Rundel and Jo Hardin (free online)
   Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by Chester Ismay and Albert Kim (free online)</description>
-      <content>&lt;h2 id=&#34;r-resources&#34;&gt;R Resources&lt;/h2&gt;
+      <content>&lt;h2 id=&#34;r-resources&#34;&gt;R resources&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf&#34;&gt;RStudio IDE Cheatsheet&lt;/a&gt;&lt;/li&gt;
