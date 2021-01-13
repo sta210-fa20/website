@@ -32,7 +32,9 @@ To uphold the Duke Community Standard:
 Students affirm their commitment to uphold the values of the Duke University community by signing a pledge that states:
 
 > I will not lie, cheat, or steal in my academic endeavors;
+
 > I will conduct myself honorably in all my endeavors;
+
 > I will act if the Standard is compromised
 
 Regardless of course delivery format, it is the responsibility of all students to understand and follow Duke policies regarding academic integrity, including doing one's own work, following proper citation of sources, and adhering to guidance around group work
