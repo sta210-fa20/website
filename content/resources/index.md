@@ -1,5 +1,5 @@
 ---
-title: Help
+title: Resources
 ---
 
 ## Getting help in the course

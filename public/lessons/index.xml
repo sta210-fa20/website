@@ -66,11 +66,11 @@
     </item>
     
     <item>
-      <title>Help</title>
-      <link>/help/</link>
+      <title>Resources</title>
+      <link>/resources/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
-      <guid>/help/</guid>
+      <guid>/resources/</guid>
       <description>Getting help in the course We expect everyone will have questions at some point in the semester, so we encourage you to use the following resources for help:
 Ask questions during lectures and lab If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
 Office hours The teaching team is here to help you be successful in the course.</description>
@@ -921,7 +921,7 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;p&gt;Regrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question may be regraded and you may potentially lose points.&lt;/p&gt;
 &lt;p&gt;No grades will be changed after the final project presentations.&lt;/p&gt;
 &lt;h3 id=&#34;additional-resources&#34;&gt;Additional resources&lt;/h3&gt;
-&lt;p&gt;Please see the &lt;a href=&#34;https://sta210-sp21.netlify.app/help/&#34;&gt;Help&lt;/a&gt; page for additional academic and wellness resources.&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href=&#34;https://sta210-sp21.netlify.app/resources/&#34;&gt;Resources&lt;/a&gt; page for additional academic and wellness resources.&lt;/p&gt;
 &lt;h3 id=&#34;important-dates&#34;&gt;Important dates&lt;/h3&gt;
 &lt;p&gt;You can find important dates on the  &lt;a href=&#34;https://registrar.duke.edu/spring-2021-academic-calendar&#34;&gt;Spring 2021 Academic Calendar&lt;/a&gt;.&lt;/p&gt;
 </content>
