@@ -705,7 +705,7 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;p&gt;Any violations in academic honesty standards as outlined in the &lt;a href=&#34;https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard&#34;&gt;Duke Community Standard&lt;/a&gt; and those specific to this course will automatically result in a 0 for the assignment and will be reported to the &lt;a href=&#34;https://studentaffairs.duke.edu/conduct&#34;&gt;Office of Student Conduct&lt;/a&gt; for further action.&lt;/p&gt;
 &lt;h3 id=&#34;course-communication&#34;&gt;Course communication&lt;/h3&gt;
 &lt;p&gt;All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, &lt;a href=&#34;https://sta210-sp21.netlify.app/,&#34;&gt;https://sta210-sp21.netlify.app/,&lt;/a&gt; specifically on the &lt;a href=&#34;https://sta210-sp21.netlify.app/schedule/&#34;&gt;&lt;strong&gt;Schedule&lt;/strong&gt;&lt;/a&gt; page.&lt;/p&gt;
-&lt;p&gt;We will also use Sakai to email periodic announcements to the class. Please regulalry check your email or check the &lt;strong&gt;Announcements&lt;/strong&gt; tab in Sakai to ensure you have up-to-date information about the course.&lt;/p&gt;
+&lt;p&gt;We will also use Sakai to email periodic announcements to the class. Please regularly check your email or check the &lt;strong&gt;Announcements&lt;/strong&gt; tab in Sakai to ensure you have up-to-date information about the course.&lt;/p&gt;
 &lt;h3 id=&#34;asking-for-help&#34;&gt;Asking for help&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;If you have a question during lecture or lab, please to ask it!&lt;/strong&gt; There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.&lt;/li&gt;
@@ -774,8 +774,8 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;p&gt;&lt;strong&gt;Section 04L:&lt;/strong&gt; Though you do not have a scheduled lab time, you will be assigned a team to work on the weekly lab assignment. You will be sent a short video to introduce each lab, and the teaching team will provide lab hours specifically for asynchronous lab students.&lt;/p&gt;
 &lt;p&gt;Your lowest lab grade will be dropped at the end of the semester.&lt;/p&gt;
 &lt;h3 id=&#34;homework&#34;&gt;Homework&lt;/h3&gt;
-&lt;p&gt;In most homework assignemnts, you will apply what you&amp;rsquo;ve learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope.&lt;/p&gt;
-&lt;p&gt;One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, particpating in a data analysis competition, listening to related podcasts, etc. More details will be provided during the semester.&lt;/p&gt;
+&lt;p&gt;In most homework assignments, you will apply what you&amp;rsquo;ve learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope.&lt;/p&gt;
+&lt;p&gt;One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, participating in a data analysis competition, listening to related podcasts, etc. More details will be provided during the semester.&lt;/p&gt;
 &lt;p&gt;Your lowest homework grade will be dropped at the end of the semester.&lt;/p&gt;
 &lt;h3 id=&#34;quizzes&#34;&gt;Quizzes&lt;/h3&gt;
 &lt;p&gt;The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical aspects of regression. More details will be provided before each quiz.&lt;/p&gt;
@@ -783,7 +783,7 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;h3 id=&#34;final-project&#34;&gt;Final Project&lt;/h3&gt;
 &lt;p&gt;The purpose of the project is to apply what you’ve learned throughout the semester to explore an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided later in the semester.&lt;/p&gt;
 &lt;h3 id=&#34;participation&#34;&gt;Participation&lt;/h3&gt;
-&lt;p&gt;The participation cmoponent of the grade will be based on two components:&lt;/p&gt;
+&lt;p&gt;The participation component of the grade will be based on two components:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Participating in lecture.&lt;/strong&gt; This includes watching the lecture content videos and completing the Application Exercises (AEs) from the corresponding live lecture session. AEs are due on GitHub within one week of the live lecture. AEs will graded based on making a good-faith effort on the activity. You will receive full credit for this portion of the participation grade if you watch the lecture content video and complete the AE in a timely manner for at least 80% of the lectures.&lt;/p&gt;
@@ -889,7 +889,7 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;/table&gt;
 &lt;/center&gt;
 &lt;h3 id=&#34;late-work--extensions&#34;&gt;Late work + extensions&lt;/h3&gt;
-&lt;p&gt;The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accoommdate such cirumstances.&lt;/p&gt;
+&lt;p&gt;The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accommodate such circumstances.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Late work policy&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Homework and labs may be submitted up to 3 days late with a 5% penalty each day.&lt;/li&gt;
@@ -898,7 +898,7 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Waiver for extenuating circumstances&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, please email Professor Tackett before the deadline, to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used once, so only use it for a truly extenuating circumstance.&lt;/p&gt;
-&lt;p&gt;If there are circumstnaces that are having a longer-term impact on your academic performance, please notify your academic dean.&lt;/p&gt;
+&lt;p&gt;If there are circumstances that are having a longer-term impact on your academic performance, please notify your academic dean.&lt;/p&gt;
 &lt;h3 id=&#34;regrade-requests&#34;&gt;Regrade Requests&lt;/h3&gt;
 &lt;p&gt;Regrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question may be regraded and you may potentially lose points.&lt;/p&gt;
 &lt;p&gt;No grades will be changed after the final project presentations.&lt;/p&gt;

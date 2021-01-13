@@ -73,7 +73,7 @@ Any violations in academic honesty standards as outlined in the [Duke Community 
 
 All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta210-sp21.netlify.app/, specifically on the [**Schedule**](https://sta210-sp21.netlify.app/schedule/) page.
 
-We will also use Sakai to email periodic announcements to the class. Please regulalry check your email or check the **Announcements** tab in Sakai to ensure you have up-to-date information about the course.
+We will also use Sakai to email periodic announcements to the class. Please regularly check your email or check the **Announcements** tab in Sakai to ensure you have up-to-date information about the course.
 
 
 ### Asking for help
@@ -130,9 +130,9 @@ Your lowest lab grade will be dropped at the end of the semester.
 
 ### Homework
 
-In most homework assignemnts, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope. 
+In most homework assignments, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope. 
 
-One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, particpating in a data analysis competition, listening to related podcasts, etc. More details will be provided during the semester.
+One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, participating in a data analysis competition, listening to related podcasts, etc. More details will be provided during the semester.
 
 Your lowest homework grade will be dropped at the end of the semester. 
 
@@ -149,7 +149,7 @@ The purpose of the project is to apply what you’ve learned throughout the seme
 
 ### Participation
 
-The participation cmoponent of the grade will be based on two components: 
+The participation component of the grade will be based on two components: 
 
 - **Participating in lecture.** This includes watching the lecture content videos and completing the Application Exercises (AEs) from the corresponding live lecture session. AEs are due on GitHub within one week of the live lecture. AEs will graded based on making a good-faith effort on the activity. You will receive full credit for this portion of the participation grade if you watch the lecture content video and complete the AE in a timely manner for at least 80% of the lectures.
 
@@ -198,7 +198,7 @@ F  | < 60
 
 ### Late work + extensions
 
-The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accoommdate such cirumstances. 
+The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accommodate such circumstances. 
 
 **Late work policy**
 - Homework and labs may be submitted up to 3 days late with a 5% penalty each day. 
@@ -209,7 +209,7 @@ The due dates for assignments are there to help you keep up with the course mate
 
 If there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, please email Professor Tackett before the deadline, to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used once, so only use it for a truly extenuating circumstance. 
 
-If there are circumstnaces that are having a longer-term impact on your academic performance, please notify your academic dean. 
+If there are circumstances that are having a longer-term impact on your academic performance, please notify your academic dean. 
 
 ### Regrade Requests
 
