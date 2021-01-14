@@ -9,6 +9,7 @@ lessons:
   
   - week: "Week 02"
     date: "Mon, Jan 25 "
+    title: "Lab 01"
   - date: "Tue, Jan 26"
     title: "Multivariable relationships"
   - date: "Thu, Jan 28" 
@@ -19,6 +20,7 @@ lessons:
   
   - week: "Week 03"
     date: "Mon, Feb 01"
+    title: "Lab 02"
   - date: "Tue, Feb 02"
     title: "Simple linear regression (SLR)"
   - date: "Thu, Feb 04"
@@ -28,6 +30,7 @@ lessons:
   
   - week: "Week 04"
     date: "Mon, Feb 08"
+    title: "Lab 03"
   - date: "Tue, Feb 09"
     title: "SLR: Conditions"
   - title: "SLR: Prediction"
@@ -38,6 +41,7 @@ lessons:
   
   - week: "Week 05"
     date: "Mon, Feb 15"
+    title: "Lab 04"
   - date: "Tue, Feb 16"
     title: "Analysis of Variance (ANOVA)"
   - date: "Thu, Feb 18"
@@ -45,6 +49,7 @@ lessons:
     
   - week: "Week 06"
     date: "Mon, Feb 22"
+    title: "Lab 05"
   - date: "Tue, Feb 23"
     title: "Multiple linear regression (MLR)"
   - date: "Thu, Feb 25"
@@ -55,6 +60,7 @@ lessons:
   
   - week: "Week 07"
     date: "Mon, Mar 01"
+    title: "Writing lab"
   - date: "Tue, Mar 02"
     title: "Variable types"
   - date: "Thu, Mar 04"
@@ -64,6 +70,7 @@ lessons:
 
   - week: "Week 08"
     date: "Mon, Mar 08"
+    title: "Lab 06"
   - date: "Tue, Mar 09"
     title: "No class"
   - date: "Thu, Mar 11"
@@ -73,6 +80,7 @@ lessons:
     
   - week: "Week 09"
     date: "Mon, Mar 15"
+    title: "Lab 07"
   - date: "Tue, Mar 16"
     title: "Model selection"
   - date: "Thu, Mar 18"
@@ -83,6 +91,7 @@ lessons:
     
   - week: "Week 10"
     date: "Mon, Mar 22"
+    title: "Lab 08"
   - date: "Tue, Mar 23"
     title: "Probabilities + Odds"
   - date: "Thu, Mar 25"
@@ -92,6 +101,7 @@ lessons:
   
   - week: "Week 11"
     date: "Mon, Mar 29"
+    title: "Writing lab"
   - date: "Tue, Mar 30"
     title: "Logistic regression: Inference"
   - title: "Logistic regression: Conditions"
@@ -102,6 +112,7 @@ lessons:
  
   - week: "Week 12"
     date: "Mon, Apr 05"
+    title: "Lab 09"
   - date: "Tue, Apr 06"
     title: "Multinomial logistic regression"
   - date: "Thu, Apr 08"
@@ -128,6 +139,7 @@ lessons:
 
   - week: "Week 14"
     date: "Mon, Apr 19"
+    title: "Writing lab"
   - date: "Tue, Apr 20"
     title: "Communicating results"
   - date: "Thu, Apr 22"
