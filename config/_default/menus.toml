@@ -1,18 +1,19 @@
 # Navigation Bar Links
 #   The weight parameter defines the order that the links will appear in.
 
-[[main]]
-    name = "Schedule"
- #    pre = "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>"
-    url = "/schedule/"
-    weight = 10
 
 [[main]]
    # pre = "<i class=\"fa fa-info-circle\"></i>"
     name = "Syllabus"
     url = "/syllabus/"
-    weight = 20
+    weight = 10
     
+[[main]]
+    name = "Schedule"
+ #    pre = "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>"
+    url = "/schedule/"
+    weight = 20
+
 [[main]]
    # pre = "<i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i>"
     name = "Resources"
