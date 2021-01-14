@@ -8,8 +8,8 @@
 
 ## Colors
 
-- primary color: #008eaa
-- main accent: #aa008e
+- primary color: #338EA0
+- main accent: #871d89
 
 ## Acknowledgements
 
