@@ -1,0 +1,17 @@
+---
+title: "Quiz 01"
+subtitle: ""
+output: 
+  html_document:
+    css: "sta210-quiz.css"
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE,
+                      message=FALSE)
+```
+
+Instructions will be posted when the quiz is assigned.

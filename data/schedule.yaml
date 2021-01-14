@@ -50,6 +50,8 @@ lessons:
   - date: "Thu, Feb 25"
     title: "MLR: Inference"
   - title: "MLR: Conditions"
+  - title: "Quiz 01 assigned"
+    quiz: "quiz-01.html"
   
   - week: "Week 07"
     date: "Mon, Mar 01"
@@ -85,6 +87,8 @@ lessons:
     title: "Probabilities + Odds"
   - date: "Thu, Mar 25"
     title: "Logistic regression"
+  - title: "Quiz 02 assigned"
+    quiz: "quiz-02.html"
   
   - week: "Week 11"
     date: "Mon, Mar 29"
@@ -119,6 +123,8 @@ lessons:
     title: "Log-linear models"
   - date: "Thu, Apr 15"
     title: "Weighted least squares"
+  - title: "Quiz 03 assigned"
+    quiz: "quiz-03.html"
 
   - week: "Week 14"
     date: "Mon, Apr 19"
