@@ -81,8 +81,8 @@ lessons:
   - week: "Week 11"
     date: "Mon, Mar 29"
   - date: "Tue, Mar 30"
-    title: "Logistic reg: Inference"
-  - title: "Logistic reg: Conditions"
+    title: "Logistic regression: Inference"
+  - title: "Logistic regression: Conditions"
   - date: "Thu, Apr 01"
     title: "Logistic reg: Prediction"
  

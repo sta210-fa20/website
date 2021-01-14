@@ -20,7 +20,7 @@ title: Teaching team and office hours
   
 |            |                     |     |
 |------------|---------------------|-----|
-| Instructor | [Prof. Maria Tackett](mailto:maria.tackett@duke.edu) | TBD |
+| Instructor | [Prof. Maria Tackett](mailto:maria.tackett@duke.edu) | Wed 10a - 12p |
 | TA         | [Martha Aboagye](mailto:martha.aboagye@duke.edu)      | TBD |
 | TA         | [Betsy Bersson](mailto:elb75@duke.edu)      | TBD |
 | TA         | [Meredith Brown](mailto:meredith.brown@duke.edu)     | TBD |
