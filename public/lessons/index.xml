@@ -10,6 +10,263 @@
     
     
     <item>
+      <title>Week 01</title>
+      <link>/schedule/week-01/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-01/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+&lt;!-- ## Lectures --&gt;
+&lt;!--     | Slides                   | Videos | Application Exercises (AE) | --&gt;
+&lt;!-- |-----------|--------------------------|--------|--------| --&gt;
+&lt;!-- | Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | [Welcome to STA 210!](https://warpwire.duke.edu/w/uyAEAA/) | [Live lecture slides](https://sta210-fa20.netlify.app/appex/01-intro.html)| --&gt;
+&lt;!-- |  |  | [Tour of website + Sakai](https://warpwire.duke.edu/w/8R4EAA/) | [Movie Revenues](https://sta210-fa20.netlify.app/appex/01-movies.html) | --&gt;
+&lt;!-- | Wednesday | [Motivating regression](https://sta210-fa20.netlify.app/slides/02-motivate-regression.html)    | [Motivating regression](https://warpwire.duke.edu/w/RS0EAA/)    | [Tour of RStudio + GitHub](https://sta210-fa20.netlify.app/appex/02-rstudio-tour.html) | --&gt;
+&lt;!-- |  |     [Meet the Toolkit](https://sta210-fa20.netlify.app/slides/02-meet-toolkit.html)  | [Meet the Toolkit](https://warpwire.duke.edu/w/RSwEAA/)     | | --&gt;
+&lt;!-- ## Readings --&gt;
+&lt;!-- |            |   | --&gt;
+&lt;!-- |------------|---| --&gt;
+&lt;!-- | [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf)  | **Required**   | --&gt;
+&lt;!-- | [How to read an R help page](https://socviz.co/appendix.html#a-little-more-about-r)  | **Required**   | --&gt;
+&lt;!-- |  [ROpenSci&#39;s Reproducibility Guide](https://ropensci.github.io/reproducibility-guide/sections/introduction/)          | Optional  | --&gt;
+&lt;!-- |  [1500 scientists lift the lid on reproducibility](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)          | Optional  | --&gt;
+&lt;!-- ## Assignments --&gt;
+&lt;!-- |                        |   | --&gt;
+&lt;!-- |------------------------|---| --&gt;
+&lt;!-- | [Submit GitHub username](https://forms.gle/NQdtNt82r8p2zFwC9) | **due Wed, Aug 19 at 11:59p** | --&gt;
+&lt;!-- | Complete [Get to know you survey](https://duke.qualtrics.com/jfe/form/SV_40BHXPlGnAiT01f) | **due Wed, Aug 19 at 11:59p** | --&gt;
+&lt;!-- | [Lab 01](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html)            |  **due Wed, Aug 26 at 11:59p** | --&gt;
+&lt;!-- | Read [syllabus](https://sta210-fa20.netlify.app/syllabus/)              |  | --&gt;
+&lt;!-- ## Other resources --&gt;
+&lt;!-- Complete the following [Duke StatSci Learning R](https://duke-learning-r.netlify.app/) tutorials to prepare for Thursday&#39;s lab.  --&gt;
+&lt;!-- All tutorials can be found under the **Getting Started** tab:  --&gt;
+&lt;!-- - Basics of R and RStudio --&gt;
+&lt;!-- - Basics of R and R Markdown --&gt;
+&lt;!-- - Into the Tidyverse --&gt;
+&lt;!-- - Clone repo + start new project --&gt;
+&lt;!-- - Commit + Push + Pull --&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 02</title>
+      <link>/schedule/week-02/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-02/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 03</title>
+      <link>/schedule/week-03/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-03/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 04</title>
+      <link>/schedule/week-04/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-04/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 05</title>
+      <link>/schedule/week-05/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-05/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 06</title>
+      <link>/schedule/week-06/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-06/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 07</title>
+      <link>/schedule/week-07/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-07/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 08</title>
+      <link>/schedule/week-08/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-08/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 09</title>
+      <link>/schedule/week-09/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-09/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 10</title>
+      <link>/schedule/week-10/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-10/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 11</title>
+      <link>/schedule/week-11/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-11/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 12</title>
+      <link>/schedule/week-12/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-12/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 13</title>
+      <link>/schedule/week-13/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-13/</guid>
+      <description> table { font-size: 18px; }  </description>
+      <content>&lt;style&gt;
+table {
+font-size: 18px;
+}
+
+&lt;/style&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Week 14</title>
+      <link>/schedule/week-14/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-14/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Week 15</title>
+      <link>/schedule/week-15/</link>
+      <pubDate>12 Mar 17 10:00 +0000</pubDate>
+      
+      <guid>/schedule/week-15/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
       <title>Course info</title>
       <link>/home/band_two/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
