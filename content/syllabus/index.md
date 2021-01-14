@@ -12,8 +12,7 @@ By the end of the semester, you will be able to...
 - Fit and evaluate linear and logistic regression models.
 - Assess whether a proposed model is appropriate and describe its limitations.
 - Use R Markdown to write reproducible reports and GitHub for version control and collaboration. 
-- Use GitHub for version control and collaboration.
-- Communicate statistical analyses to a general audience.
+- Communicate results from statistical analyses to a general audience.
 
 ## Course community 
 
@@ -27,9 +26,10 @@ The Duke Compact recognizes our shared responsibility for our collective health 
 **Duke Community Standard**
 
 All students, whether residing on campus or learning remotely, must adhere to the [Duke Community Standard (DCS)](https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct): Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, and accountability. Citizens of this community commit to reflect upon these principles in all academic and non- academic endeavors, and to protect and promote a culture of integrity.
+
 To uphold the Duke Community Standard:
          
-Students affirm their commitment to uphold the values of the Duke University community by signing a pledge that states:
+*Students affirm their commitment to uphold the values of the Duke University community by signing a pledge that states:*
 
 > I will not lie, cheat, or steal in my academic endeavors;
 
@@ -42,60 +42,52 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 
 ### Inclusive community
 
-It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
+It is my intent that students from diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
 
-Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:
+Furthermore, I strive to create a learning environment that supports a diversity of thoughts, perspectives and experiences. To help accomplish this:
 
 - If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.
-- I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.
+- If something was said or done as part of this class that makes you uncomfortable, please let me know.
 
 ## Accessibility
 
 In addition to accessibility issues experienced during the typical academic year, I recognize that remote learning may present additional challenges. Students may be experiencing unreliable wi-fi, lack of access to quiet study spaces, varied time-zones, or additional responsibilities while studying at home. If you are experiencing these or other difficulties, please contact me to discuss possible accommodations. 
 
-**Academic accommodations** 
+### Academic accommodations
 
 The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) will continue to be available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update](https://access.duke.edu/requests) accommodations under these circumstances. Zoom has the ability to provide live closed captioning. If you are not seeing this, and but would like to see this feature, please reach out to your instructor for assistance.
 
-## Academic conduct
+## Course materials & communication
 
-**TL;DR: Don't cheat!** 
-
-Please abide by the following as you work on assignments in this course:
-
-- On individual assignments such as homework, you may discuss the assignment with other students; however, you may not directly share code or your write up with any other student. On team assignments such as labs, you may discuss the assignment with other teams; however, you may not directly share code or your write up with another team. Unauthorized sharing of the code or the write up is considered an instance of academic misconduct for all students involved.
-
-- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism and an instance of academic misconduct.
-
-- You may not discuss or otherwise work with anyone on quizzes. Unauthorized collaboration or use of unauthorized materials is considered a violation of the standards for academic honesty for all students involved. More specific details about standards for academic conduct will be provided with the quiz instructions.
-
-Any violations in the standards for academic conduct as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
-
-## Course communication
+### Materials
 
 All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta210-sp21.netlify.app/, specifically on the [**Schedule**](https://sta210-sp21.netlify.app/schedule/) page.
 
-We will also use Sakai to email periodic announcements to the class. Please regularly check your email or check the **Announcements** tab in Sakai to ensure you have up-to-date information about the course.
+See the weekly pages for a detailed outline of each week's materials, assignments, videos, and activities. 
+
+We will use RStudio and GitHub for computing in the class. You may use RStudio through the STA 210 - Regression Analysis [Docker container](https://vm-manage.oit.duke.edu/containers). See the [Resources](/resources/) page for resources to help you get started with RStudio and GitHub.
+
+### Communication
+
+Regular announcements will be sent to the class through Sakai. Please check your email or check the **Announcements** tab in Sakai regularly to ensure you have up-to-date information about the course.
 
 
-## Asking for help
+**Online communication** 
 
-- **If you have a question during lecture or lab, please to ask it!** There are likely other students with the same question, so by asking you will create a learning opportunity for everyone. 
-- The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered through discussion rather than email, so office hours are a valuable resource. Please use them!
-- Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza. There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond! 
+If you have general questions about the course logistics, content, or assignments, you may post them on the online discussion platform. Note that this forum should only be used for questions or comments that may be viewed by the entire class.
 
-See the [Resources](/resources/) tab for information about additional resources for the course.
 
-## Email 
+**Email** 
 
-If there is a question that's not appropriate for the public forum (Piazza), you are welcome to email me directly. **If you email me, please include "STA 210" in the subject line.** Barring extenuating circumstances, I will respond to STA 210 emails within 48 hours Monday - Friday. I have more limited access to email on weekends.
+If there is a question that's not appropriate for the online discussion platform, you are welcome to email me directly. **If you email me, please include "STA 210" in the subject line.** Barring extenuating circumstances, I will respond to STA 210 emails within 48 hours Monday - Friday. 
+
 
 
 ## Activities & Assessment
 
 The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional settings.
 
-### A Week in STA 210!
+### A week in STA210
 
 <br> 
 
@@ -109,15 +101,17 @@ The following activities and assessments will help you successfully achieve the 
 | **Wednesday** | Tuesday's application exercise due          |
 |               | Watch lecture content video for Thursday    |
 | **Thursday**  | Attend live lecture session 10:15a - 11:30a |
-| **Friday**    | Thursday's application exercise due         |   
+| **Friday**    | Thursday's application exercise due         |  
 
 </center> 
+
+### Lectures
 
 Lectures will have two components: 
 
 - **Lecture content videos**: These are pre-recorded videos that contain the content. You can think of these as a "video textbook". You should watch the content videos before we meet for the live sessions. 
 
-- **Live lecture sessions**: These sessions will be on Zoom Tuesday and Thursdays 10:15a - 11:30a EST. During this time, we will answer questions from the live lecture videos and work through application exercises (AE) to apply what you learned in the content videos. 
+- **Live lecture sessions**: These sessions will be on Zoom during the scheduled class time. During this time, we will answer questions from the live lecture videos and work through application exercises (AE) to apply what you learned in the content videos. 
 
 ### Labs
 
@@ -125,7 +119,7 @@ In labs, you will apply the concepts discussed in lecture to various data analys
 
 **Sections 01L - 03L**: If you are in one of these sections, you are expected to attend lab during the scheduled time. You will spend most time working with your team to complete that week's assignment. There will be teaching assistants available if you have questions as you work. 
 
-**Section 04L:** Though you do not have a scheduled lab time, you will be assigned a team to work on the weekly lab assignment. You will be sent a short video to introduce each lab, and the teaching team will provide lab hours specifically for asynchronous lab students.
+**Section 04L:** Though you do not have a scheduled lab time, you will be assigned a team to work on the weekly lab assignment. There will be a short video to introduce each lab, and the teaching team will provide lab hours specifically for asynchronous lab students.
 
 Your lowest lab grade will be dropped at the end of the semester. 
 
@@ -134,7 +128,7 @@ Your lowest lab grade will be dropped at the end of the semester.
 
 In most homework assignments, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope. 
 
-One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, participating in a data analysis competition, listening to related podcasts, etc. More details will be provided during the semester.
+One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, participating in a data analysis competition, listening to related podcasts, or similar activities. More details will be provided during the semester.
 
 Your lowest homework grade will be dropped at the end of the semester. 
 
@@ -142,8 +136,7 @@ Your lowest homework grade will be dropped at the end of the semester.
 
 The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical aspects of regression. More details will be provided before each quiz. 
 
-Less weight will be given to your lowest quiz grade in the calculation of your overall quiz average.
-
+Your lowest quiz grade will be down-weighted in the calculation of your final quiz average.
 
 ### Final Project 
 
@@ -166,10 +159,10 @@ The final course grade will be calculated as follows:
 
  <span></span>   Category  | <span></span> Percentage 
 -----------|---------------------------------
-Homework | 35%
 Quizzes | 30%
+Homework | 30%
 Labs | 15%
-Final Project | 15%
+Final Project | 20%
 Participation | 5%
 
 </center>
@@ -197,17 +190,41 @@ F  | < 60
 
 </center>
 
+## Asking for help
+
+- **If you have a question during lecture or lab, please to ask it!** There are likely other students with the same question, so it is a learning opportunity for everyone.
+- The teaching team is here to help you be successful in the course. A lot of questions are most effectively answered through discussion rather than email, so office hours are a valuable resource. They are your time to ask questions about course content and assignments. The office hours schedule is posted on the [homepage](/home/).
+- Outside of class and office hours, any general questions about course content or assignments should be posted on the online discussion platform. There is a chance another student has already asked a similar question, so please check the other posts on online discussion platform before adding a new question. If you know the answer to a question posted, I encourage you to respond! 
+
+See the [Resources](/resources/) tab for information about additional resources for the course.
+
+
+## Academic conduct
+
+**TL;DR: Don't cheat!** 
+
+Please abide by the following as you work on assignments in this course:
+
+- On individual assignments such as homework, you may discuss the assignment with other students; however, you may not directly share your code or write up with any other student. On team assignments such as labs, you may discuss the assignment with other teams; however, you may not directly share your team's code or write up with another team. Unauthorized sharing of code or a write up is considered an instance of academic misconduct for all students involved.
+
+- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism and an instance of academic misconduct.
+
+- You may not discuss or otherwise work with anyone on quizzes. Unauthorized collaboration or use of unauthorized materials is considered an instance of academic misconduct for all students involved. More specific details about standards for academic conduct will be provided with the quiz instructions.
+
+Any violations in the standards for academic conduct as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for appropriate additional action. 
+
 
 ## Late work & extensions
 
 The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accommodate such circumstances. 
 
-**Late work policy**
+### Late work policy
+
 - Homework and labs may be submitted up to 3 days late with a 5% penalty each day. 
 - There is no late work accepted for application exercises or quizzes.
 - The late work policy for the project will be provided with the project instructions. 
 
-**Waiver for extenuating circumstances** 
+### Waiver for extenuating circumstances** 
 
 If there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, please email Professor Tackett before the deadline, to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used once, so only use it for a truly extenuating circumstance. 
 
