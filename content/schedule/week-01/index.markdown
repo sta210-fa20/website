@@ -1,6 +1,4 @@
 ---
-title: 'Week 01'
+title: "Week 01: Jan 18 - Jan 22"
 weight: 1
 ---
-
-Text
