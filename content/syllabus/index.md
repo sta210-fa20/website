@@ -84,7 +84,7 @@ We will also use Sakai to email periodic announcements to the class. Please regu
 - The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered through discussion rather than email, so office hours are a valuable resource. Please use them!
 - Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza. There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond! 
 
-Check out the [Help](/help/) tab for more information about finding help and additional resources.
+See the [Resources](/resources/) tab for information about additional resources for the course.
 
 ## Email 
 

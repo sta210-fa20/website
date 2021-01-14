@@ -15,41 +15,7 @@
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/schedule/week-01/</guid>
-  <description>&lt;style&gt;
-table {
-font-size: 18px;
-}
-
-&lt;/style&gt;
-&lt;!-- ## Lectures --&gt;
-&lt;!--     | Slides                   | Videos | Application Exercises (AE) | --&gt;
-&lt;!-- |-----------|--------------------------|--------|--------| --&gt;
-&lt;!-- | Monday    | [Welcome to STA 210!](https://sta210-fa20.netlify.app/slides/01-welcome.html#1) | [Welcome to STA 210!](https://warpwire.duke.edu/w/uyAEAA/) | [Live lecture slides](https://sta210-fa20.netlify.app/appex/01-intro.html)| --&gt;
-&lt;!-- |  |  | [Tour of website + Sakai](https://warpwire.duke.edu/w/8R4EAA/) | [Movie Revenues](https://sta210-fa20.netlify.app/appex/01-movies.html) | --&gt;
-&lt;!-- | Wednesday | [Motivating regression](https://sta210-fa20.netlify.app/slides/02-motivate-regression.html)    | [Motivating regression](https://warpwire.duke.edu/w/RS0EAA/)    | [Tour of RStudio + GitHub](https://sta210-fa20.netlify.app/appex/02-rstudio-tour.html) | --&gt;
-&lt;!-- |  |     [Meet the Toolkit](https://sta210-fa20.netlify.app/slides/02-meet-toolkit.html)  | [Meet the Toolkit](https://warpwire.duke.edu/w/RSwEAA/)     | | --&gt;
-&lt;!-- ## Readings --&gt;
-&lt;!-- |            |   | --&gt;
-&lt;!-- |------------|---| --&gt;
-&lt;!-- | [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf)  | **Required**   | --&gt;
-&lt;!-- | [How to read an R help page](https://socviz.co/appendix.html#a-little-more-about-r)  | **Required**   | --&gt;
-&lt;!-- |  [ROpenSci&#39;s Reproducibility Guide](https://ropensci.github.io/reproducibility-guide/sections/introduction/)          | Optional  | --&gt;
-&lt;!-- |  [1500 scientists lift the lid on reproducibility](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)          | Optional  | --&gt;
-&lt;!-- ## Assignments --&gt;
-&lt;!-- |                        |   | --&gt;
-&lt;!-- |------------------------|---| --&gt;
-&lt;!-- | [Submit GitHub username](https://forms.gle/NQdtNt82r8p2zFwC9) | **due Wed, Aug 19 at 11:59p** | --&gt;
-&lt;!-- | Complete [Get to know you survey](https://duke.qualtrics.com/jfe/form/SV_40BHXPlGnAiT01f) | **due Wed, Aug 19 at 11:59p** | --&gt;
-&lt;!-- | [Lab 01](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html)            |  **due Wed, Aug 26 at 11:59p** | --&gt;
-&lt;!-- | Read [syllabus](https://sta210-fa20.netlify.app/syllabus/)              |  | --&gt;
-&lt;!-- ## Other resources --&gt;
-&lt;!-- Complete the following [Duke StatSci Learning R](https://duke-learning-r.netlify.app/) tutorials to prepare for Thursday&#39;s lab.  --&gt;
-&lt;!-- All tutorials can be found under the **Getting Started** tab:  --&gt;
-&lt;!-- - Basics of R and RStudio --&gt;
-&lt;!-- - Basics of R and R Markdown --&gt;
-&lt;!-- - Into the Tidyverse --&gt;
-&lt;!-- - Clone repo + start new project --&gt;
-&lt;!-- - Commit + Push + Pull --&gt;
+  <description>&lt;p&gt;Text&lt;/p&gt;
 </description>
   </item>
   
@@ -59,12 +25,7 @@ font-size: 18px;
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/schedule/week-02/</guid>
-  <description>&lt;style&gt;
-table {
-font-size: 18px;
-}
-
-&lt;/style&gt;
+  <description>&lt;p&gt;Text&lt;/p&gt;
 </description>
   </item>
   
@@ -243,7 +204,7 @@ font-size: 18px;
   </item>
   
 <item>
-  <title>Week 15</title>
+  <title>Week 15: Exam period</title>
   <link>/schedule/week-15/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
@@ -981,7 +942,7 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;li&gt;The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered through discussion rather than email, so office hours are a valuable resource. Please use them!&lt;/li&gt;
 &lt;li&gt;Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza. There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Check out the &lt;a href=&#34;/help/&#34;&gt;Help&lt;/a&gt; tab for more information about finding help and additional resources.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;/resources/&#34;&gt;Resources&lt;/a&gt; tab for information about additional resources for the course.&lt;/p&gt;
 &lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;
 &lt;p&gt;If there is a question that&amp;rsquo;s not appropriate for the public forum (Piazza), you are welcome to email me directly. &lt;strong&gt;If you email me, please include &amp;ldquo;STA 210&amp;rdquo; in the subject line.&lt;/strong&gt; Barring extenuating circumstances, I will respond to STA 210 emails within 48 hours Monday - Friday. I have more limited access to email on weekends.&lt;/p&gt;
 &lt;h2 id=&#34;activities--assessment&#34;&gt;Activities &amp;amp; Assessment&lt;/h2&gt;
