@@ -1,5 +1,6 @@
 ---
 title: Syllabus
+output: pdf_document
 ---
 
 **[Click here](sta210-sp21-syllabus.pdf) to download a PDF copy of the syllabus.**
