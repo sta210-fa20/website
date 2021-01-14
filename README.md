@@ -8,6 +8,8 @@
 
 ## Colors
 
+Change in config -> _default -> params.toml
+
 - primary color: #338EA0
 - main accent: #871d89
 
