@@ -1,5 +1,5 @@
 ---
-title: "Week 06"
+title: "Week 06: Feb 22 - 26"
 weight: 6
 ---
 
