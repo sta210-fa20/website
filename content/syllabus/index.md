@@ -161,8 +161,8 @@ The final course grade will be calculated as follows:
 -----------|---------------------------------
 Quizzes | 30%
 Homework | 30%
-Labs | 15%
 Final Project | 20%
+Labs | 15%
 Participation | 5%
 
 </center>
