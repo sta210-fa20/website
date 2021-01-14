@@ -4,12 +4,17 @@ title: Resources
 
 ## R resources 
 
-**Getting started** 
+**Getting started**
 
 - [RStudio IDE Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
 - [Happy Git and GitHub for the useR](https://happygitwithr.com/)
-- [R Markdown Reference Guide](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 - [R for Data Science](https://r4ds.had.co.nz/)
+
+**R Markdown & LaTex**
+
+- [R Markdown Reference](https://rmarkdown.rstudio.com/lesson-1.html)
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+- [Quick Guide to LaTex](https://assets.ctfassets.net/nrgyaltdicpt/4e825etqMUW8vTF8drfRbw/d4f3d9adcb2980b80818f788e36316b2/A_quick_guide_to_LaTeX__Overleaf_version.pdf)
 
 **Data Visualization**
 
