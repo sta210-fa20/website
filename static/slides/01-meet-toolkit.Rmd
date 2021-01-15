@@ -19,7 +19,6 @@ output:
 library(tidyverse)
 ```
 
----
 
 class: middle, center
 

@@ -6,6 +6,7 @@ lessons:
     date: "Thu, Jan 21"
     title: "Welcome to STA 210!"
   - title: "Meet the toolkit"
+    slides: "01-meet-toolkit.html"
   
   - week: "Week 02"
     date: "Mon, Jan 25 "
