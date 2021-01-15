@@ -15,7 +15,7 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-01/</guid>
-      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Thursday Welcome to STA 210 Welcome to STA 210 First day of class     Tour of website + Sakai     Meet the Toolkit Meet the Toolkit     Readings         How to read an R help page   ROpenSci&amp;rsquo;s Reproducibility Guide   1500 scientists lift the lid on reproducibility    Assignments          Submit GitHub username due Sun, Jan 24 at 11:59p   Read syllabus     Other resources Complete the following Duke StatSci Learning R tutorials to prepare for Thursday&amp;rsquo;s lab.</description>
+      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Thursday Welcome to STA 210 Welcome to STA 210 First day of class     Tour of website + Sakai     Meet the Toolkit Meet the Toolkit     Readings         How to read an R help page   ROpenSci&amp;rsquo;s Reproducibility Guide   1500 scientists lift the lid on reproducibility    Assignments          Submit GitHub username due Sun, Jan 24 at 11:59p   Read syllabus     </description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -82,7 +82,7 @@ font-size: 18px;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Submit GitHub username&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://forms.gle/BPuz617YJWdt7HEv7&#34;&gt;Submit GitHub username&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;due Sun, Jan 24 at 11:59p&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -91,16 +91,6 @@ font-size: 18px;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;other-resources&#34;&gt;Other resources&lt;/h2&gt;
-&lt;p&gt;Complete the following &lt;a href=&#34;https://duke-learning-r.netlify.app/&#34;&gt;Duke StatSci Learning R&lt;/a&gt; tutorials to prepare for Thursday&amp;rsquo;s lab.&lt;/p&gt;
-&lt;p&gt;All tutorials can be found under the &lt;strong&gt;Getting Started&lt;/strong&gt; tab:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Basics of R and RStudio&lt;/li&gt;
-&lt;li&gt;Basics of R and R Markdown&lt;/li&gt;
-&lt;li&gt;Into the Tidyverse&lt;/li&gt;
-&lt;li&gt;Clone repo + start new project&lt;/li&gt;
-&lt;li&gt;Commit + Push + Pull&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     </item>
     

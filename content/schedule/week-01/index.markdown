@@ -31,19 +31,9 @@ font-size: 18px;
 
 |                        |   |
 |------------------------|---|
-| Submit GitHub username | **due Sun, Jan 24 at 11:59p** |
+| [Submit GitHub username](https://forms.gle/BPuz617YJWdt7HEv7) | **due Sun, Jan 24 at 11:59p** |
 | Read [syllabus](https://sta210-sp21.netlify.app/syllabus/)              |  |
 
-## Other resources
-
-Complete the following [Duke StatSci Learning R](https://duke-learning-r.netlify.app/) tutorials to prepare for Thursday's lab. 
-
-All tutorials can be found under the **Getting Started** tab: 
-- Basics of R and RStudio
-- Basics of R and R Markdown
-- Into the Tidyverse
-- Clone repo + start new project
-- Commit + Push + Pull
 
 
 
