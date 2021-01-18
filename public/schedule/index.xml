@@ -15,7 +15,7 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-01/</guid>
-      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Thursday Welcome to STA 210 Welcome to STA 210 First day of class     Tour of website + Sakai     Meet the Toolkit Meet the Toolkit     Readings         How to read an R help page   ROpenSci&amp;rsquo;s Reproducibility Guide   1500 scientists lift the lid on reproducibility    Assignments          Submit GitHub username due Sun, Jan 24 at 11:59p   Read syllabus     </description>
+      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Thursday  Welcome to STA 210 First day of class     Tour of course website + Sakai     Meet the Toolkit Meet the Toolkit     Readings         How to read an R help page   ROpenSci&amp;rsquo;s Reproducibility Guide   1500 scientists lift the lid on reproducibility    Assignments          Submit GitHub username due Sun, Jan 24 at 11:59p   Read syllabus     </description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -35,14 +35,14 @@ font-size: 18px;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Thursday&lt;/td&gt;
-&lt;td&gt;Welcome to STA 210&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;td&gt;Welcome to STA 210&lt;/td&gt;
 &lt;td&gt;First day of class&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Tour of website + Sakai&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/_wsFAA/&#34;&gt;Tour of course website + Sakai&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

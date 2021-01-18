@@ -14,8 +14,8 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Thursday   | Welcome to STA 210 | Welcome to STA 210 | First day of class|
-|  |  | Tour of website + Sakai |  |
+| Thursday   |  | Welcome to STA 210 | First day of class|
+|  |  | [Tour of course website + Sakai](https://warpwire.duke.edu/w/_wsFAA/) |  |
 |  | [Meet the Toolkit](https://sta210-sp21.netlify.app/slides/01-meet-toolkit.html#1)  | [Meet the Toolkit](https://warpwire.duke.edu/w/owkFAA/)     | |
 
 ## Readings
