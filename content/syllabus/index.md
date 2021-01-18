@@ -74,8 +74,9 @@ Regular announcements will be sent to the class through Sakai. Please check your
 
 **Online communication** 
 
-If you have general questions about the course logistics, content, or assignments, you may post them on the online discussion platform. Note that this forum should only be used for questions or comments that may be viewed by the entire class.
+If you have general questions about the course logistics, content, or assignments, you may post them on the online discussion platform Piazza. Note that this forum should only be used for questions or comments that may be viewed by the entire class.
 
+Piazza is accessible through the course page by clicking on the Piazza link on the top of course webpage or through Sakai. Note that it may ask you to make a financial contribution. You are **not** required to make a contribution participate in the class discussion on Piazza. 
 
 **Email** 
 
