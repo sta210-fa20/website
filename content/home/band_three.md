@@ -26,6 +26,7 @@ title: Teaching team and office hours
 | TA         | [Meredith Brown](mailto:meredith.brown@duke.edu)     | TBD |
 | TA         | [Cody Coombs](mailto:cody.coombs@duke.edu)         | TBD |
 | TA         | [Sophie Dalldorf](mailto:sophia.dalldorf@duke.edu)    | TBD |
+| TA         | [Joseph Lawson](mailto:joseph.lawson@duke.edu)    | TBD |
 | TA         | [Ezinne Nwankwo](mailto:ezinne.nwankwo@duke.edu)    | TBD |
 | TA         | [Sophie Riegel](mailto:sophie.riegel@duke.edu)    | TBD |
 | R Support TA        | [George Lindner](mailto:georger.lindner@duke.edu)    | TBD |
