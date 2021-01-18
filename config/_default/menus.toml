@@ -55,7 +55,11 @@
     weight = 80
  
 
-
+[[main]]
+    url = "https://piazza.com/duke/spring2021/sta210/home"
+    # pre = "<i class='fab fa-github fa-lg'></i>"
+    name  = "<i class=\"ai ai-piazza ai-lg\"></i>"
+    weight = 90
     
 
 
