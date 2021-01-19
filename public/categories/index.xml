@@ -35,7 +35,7 @@ font-size: 18px;
 &lt;tr&gt;
 &lt;td&gt;Thursday&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Welcome to STA 210&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-sp21.netlify.app/slides/01-welcome.html&#34;&gt;Welcome to Regression Analysis&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;First day of class&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

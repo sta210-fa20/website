@@ -4,7 +4,8 @@ lessons:
     
   - week: "Week 01"
     date: "Thu, Jan 21"
-    title: "Welcome to STA 210!"
+    title: "Welcome to Regression Analysis!"
+    slides: "01-welcome.html"
   - title: "Meet the toolkit"
     slides: "01-meet-toolkit.html"
   
