@@ -1254,7 +1254,7 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/home/band_three/</guid>
-      <description> .column { width: 100%; } table { width: 500px; font-size: 17px; font-weight: 400; padding-top: 5px; padding-bottom: 5px; }            Instructor Prof. Maria Tackett Wed 10a - 12p   TA Martha Aboagye TBD   TA Betsy Bersson TBD   TA Meredith Brown TBD   TA Cody Coombs TBD   TA Sophie Dalldorf TBD   TA Joseph Lawson TBD   TA Ezinne Nwankwo TBD   TA Sophie Riegel TBD   R Support TA George Lindner TBD    </description>
+      <description> .column { width: 100%; } table { width: 500px; font-size: 17px; font-weight: 400; padding-top: 5px; padding-bottom: 5px; }            Instructor Prof. Maria Tackett Wed 10a - 12p   TA Martha Aboagye TBD   TA Betsy Bersson TBD   TA Meredith Brown TBD   TA Cody Coombs TBD   TA Sophie Dalldorf TBD   TA Joseph Lawson TBD   TA Ezinne Nwankwo TBD   TA Sophie Riegel TBD    </description>
       <content>&lt;style&gt;
   .column {
   width: 100%;
@@ -1322,11 +1322,6 @@ projects. Ignoring these requirements is a violation of the Duke Community Stand
 &lt;tr&gt;
 &lt;td&gt;TA&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;mailto:sophie.riegel@duke.edu&#34;&gt;Sophie Riegel&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;TBD&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;R Support TA&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;mailto:george.lindner@duke.edu&#34;&gt;George Lindner&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;TBD&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

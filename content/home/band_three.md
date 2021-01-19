@@ -29,4 +29,4 @@ title: Teaching team and office hours
 | TA         | [Joseph Lawson](mailto:joseph.lawson@duke.edu)    | TBD |
 | TA         | [Ezinne Nwankwo](mailto:ezinne.nwankwo@duke.edu)    | TBD |
 | TA         | [Sophie Riegel](mailto:sophie.riegel@duke.edu)    | TBD |
-| R Support TA        | [George Lindner](mailto:george.lindner@duke.edu)    | TBD |
+
