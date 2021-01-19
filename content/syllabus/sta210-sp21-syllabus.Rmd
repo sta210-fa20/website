@@ -1,9 +1,36 @@
 ---
-title: Syllabus
+title: STA 210 Syllabus
+subtitle: Spring 2021
 output: pdf_document
 ---
 
-**[Click here](sta210-sp21-syllabus.pdf) to download a PDF copy of the syllabus.**
+## Teaching Team
+
+|            |                     |     |
+|------------|---------------------|-----|
+| Instructor | Prof. Maria Tackett | maria.tackett@duke.edu |
+| TAs         | Martha Aboagye | martha.aboagye@duke.edu      |
+|         |  Betsy Bersson | elizabeth.berrson@duke.edu |
+|          | Meredith Brown | meredith.brown@duke.edu  |
+|         | Cody Coombs | cody.coombs@duke.edu |
+|         | Sophie Dalldorf |sophia.dalldorf@duke.edu |
+|         | Joseph Lawson | joseph.lawson@duke.edu |
+|         | Ezinne Nwankwo | ezinne.nwankwo@duke.edu |  
+|         | Sophie Riegel | sophie.riegel@duke.edu |
+| R Support TA        | George Lindner | george.lindner@duke.edu| 
+
+## Class meetings
+
+**See Sakai for Zoom links to all class meetings.**
+
+|            |                     |     |
+|------------|---------------------|-----|
+|Lecture | All students | Tue and Thur 10:15a - 11:30a EST |
+| Labs | Lab 01L        | Mon 12p - 1:15p     |
+| |    Lab 02L     |   Mon 1:45p - 3p |
+| |   Lab 03L       | Mon 5:15p - 6:30p | 
+|  | Asynchronous     | |
+
 
 ## Course learning objectives
 
