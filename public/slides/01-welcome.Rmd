@@ -206,4 +206,4 @@ Services provided via Telehealth. To initiate services, you can contact their fr
 
 class: middle, center
 
-## [sta20-sp21.netlify.app](https://sta210-sp21.netlify.app)
+## [sta210-sp21.netlify.app](https://sta210-sp21.netlify.app)

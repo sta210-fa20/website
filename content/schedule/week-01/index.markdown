@@ -14,7 +14,7 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Thursday   |  | [Welcome to Regression Analysis](https://sta210-sp21.netlify.app/slides/01-welcome.html) | First day of class|
+| Thursday   | [Welcome to Regression Analysis](https://sta210-sp21.netlify.app/slides/01-welcome.html) | [Welcome to Regression Analysis](https://warpwire.duke.edu/w/jQ0FAA/)   | First day of class|
 |  |  | [Tour of course website + Sakai](https://warpwire.duke.edu/w/_wsFAA/) |  |
 |  | [Meet the Toolkit](https://sta210-sp21.netlify.app/slides/01-meet-toolkit.html#1)  | [Meet the Toolkit](https://warpwire.duke.edu/w/owkFAA/)     | |
 
