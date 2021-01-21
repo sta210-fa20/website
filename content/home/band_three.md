@@ -21,12 +21,12 @@ title: Teaching team and office hours
 |            |                     |     |
 |------------|---------------------|-----|
 | Instructor | [Prof. Maria Tackett](mailto:maria.tackett@duke.edu) | Wed 10a - 12p |
-| TA         | [Martha Aboagye](mailto:martha.aboagye@duke.edu)      | TBD |
-| TA         | [Betsy Bersson](mailto:elb75@duke.edu)      | TBD |
-| TA         | [Meredith Brown](mailto:meredith.brown@duke.edu)     | TBD |
-| TA         | [Cody Coombs](mailto:cody.coombs@duke.edu)         | TBD |
-| TA         | [Sophie Dalldorf](mailto:sophia.dalldorf@duke.edu)    | TBD |
-| TA         | [Joseph Lawson](mailto:joseph.lawson@duke.edu)    | TBD |
-| TA         | [Ezinne Nwankwo](mailto:ezinne.nwankwo@duke.edu)    | TBD |
-| TA         | [Sophie Riegel](mailto:sophie.riegel@duke.edu)    | TBD |
+| TAs         | [Martha Aboagye](mailto:martha.aboagye@duke.edu)      | Wed 6p - 8p |
+|        | [Betsy Bersson](mailto:elb75@duke.edu)      | Fri 8a - 10a |
+| | [Meredith Brown](mailto:meredith.brown@duke.edu)     | Tue 4:30p - 6:30p |
+|        | [Cody Coombs](mailto:cody.coombs@duke.edu)         | Wed 1p - 3p |
+|        | [Sophie Dalldorf](mailto:sophia.dalldorf@duke.edu)    | Thu 3p - 5p|
+| | [Joseph Lawson](mailto:joseph.lawson@duke.edu)    | Thu 6p - 8p |
+|         | [Ezinne Nwankwo](mailto:ezinne.nwankwo@duke.edu)    | Mon 10a - 12p |
+|        | [Sophie Riegel](mailto:sophie.riegel@duke.edu)    | Tue 8a - 10a |
 
