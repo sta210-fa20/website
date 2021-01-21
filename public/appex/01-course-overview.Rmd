@@ -96,15 +96,11 @@ knitr::include_graphics("img/01/nyt_requirements.png")
 
 --
 
-- Display your name (first and last name)
+- Display your name (not NetID)
 
 --
 
-- Raise your hand 
-
---
-
-- Reactions
+- Reactions / Raise your hand 
 
 --
 
@@ -117,7 +113,7 @@ knitr::include_graphics("img/01/nyt_requirements.png")
 
 --
 
-- Breakout rooms (not recorded)
+- Breakout rooms 
 
 ---
 
@@ -163,7 +159,7 @@ See the [Tour of course website + Sakai](https://warpwire.duke.edu/w/_wsFAA/) vi
 --
 
 .vocab[GitHub]: [https://github.com/sta210-sp21](https://github.com/sta210-sp21)
-  - Assignment repos (we'll talk more about that later)
+  - Assignment repos (you'll learn more about that in Lab 01)
 
 ---
 

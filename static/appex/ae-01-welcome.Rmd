@@ -44,7 +44,7 @@ Click [here](01-course-overview.html) for slides.
 
 - After you create your account, go to [https://forms.gle/rmJGcHio4UeiwZXh8](https://forms.gle/rmJGcHio4UeiwZXh8) and enter your NetID and  GitHub username. 
 
-Some tips from [Happy Git and GitHub for the useR](http://happygitwithr.com/github-acct.html#username-advice) to help you create a professional GitHub usernmae.
+Some tips from [Happy Git and GitHub for the useR](http://happygitwithr.com/github-acct.html#username-advice) to help you create a professional GitHub username.
 
 - Incorporate your actual name.
 - Reuse your username from other contexts if you can, e.g. Twitter or Slack.
@@ -58,37 +58,16 @@ Some tips from [Happy Git and GitHub for the useR](http://happygitwithr.com/gith
 
 ## Tour of R and RStudio 
 
-Let's take a tour of R and RStudio. I'll do a short demo, then give you a few minutes to try out yourself. 
+Let's take a tour of R and RStudio. I'll do a short demo to help you navigate RStudio. 
+
+You can access RStudio by going to  https://vm-manage.oit.duke.edu/containers and logging into the Docker container titled "STA 210 - Regression Analysis".
 
 ### Concepts introduced
 
 - Console
 - Using R as a calculator
-- Environment
-- Loading and viewing a data frame
-- Accessing a variable in a data frame
-- R functions
-
-### Your turn!
-
-- Go to https://vm-manage.oit.duke.edu/containers and log into the Docker container titled "RStudio - statistics application with Rmarkdown and knitr support". This is where you'll use RStudio during the semester. 
-
-- Use R as a calculator by typing the following in the **console**. 
-
-```{r eval = F}
-3 * 5 + 10
-```
-
-```{r eval = F}
-x <- 3
-x + x^2
-```
-
-```{r eval = F}
-x <- 1:10
-x*7
-```
-
-
+- RStudio environment
+- Brief intro to R Markdown
+- R Markdown vs. the console
 
 
