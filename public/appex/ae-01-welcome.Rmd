@@ -21,14 +21,7 @@ knitr::opts_chunk$set(warning = FALSE,
 
 ## Check in 
 
-## Introduction
-
-
-## Course overview
-
-Click [here](01-course-overview.html) for slides.
-
-- Watch the videos [Welcome to Regression Analysis](https://warpwire.duke.edu/w/jQ0FAA/) and [Tour of course website + Sakai](https://warpwire.duke.edu/w/_wsFAA/) for a more detailed overview. 
+## Introductions
 
 ## Meet your classmates! (~ 7 minutes)
 
@@ -37,6 +30,14 @@ Click [here](01-course-overview.html) for slides.
   - Name
   - Year
   - What is something you're looking forward to this semester (either in this class or in general)?
+
+
+## Course overview
+
+Click [here](01-course-overview.html) for slides.
+
+- Watch the videos [Welcome to Regression Analysis](https://warpwire.duke.edu/w/jQ0FAA/) and [Tour of course website + Sakai](https://warpwire.duke.edu/w/_wsFAA/) for a more detailed overview. 
+
 
 ## Get GitHub username (~ 5 - 7 minutse)
 
