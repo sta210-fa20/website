@@ -1,0 +1,102 @@
+---
+title: "Class check ins"
+author: "Prof. Maria Tackett"
+
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    logo: img/sta210_sticker.png
+    lib_dir: libs/font-awesome
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%" 
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 3.75,
+	fig.width = 6.25,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+
+
+### How are you feeling today?
+
+<br>
+
+.center[
+.col-3[
+
+<font class = "large-emoji">
+1) `r emo::ji("slightly_smiling_face")` 
+</font>
+
+
+<br>
+<br>
+
+<font class = "large-emoji">
+4) `r emo::ji("nerd_face")`
+</font>
+]
+
+.col-3[
+
+<font class = "large-emoji">
+2) `r emo::ji("laughing")`
+</font>
+
+<br>
+<br>
+
+<font class = "large-emoji">
+5) `r emo::ji("slightly_frowning_face")`
+</font>
+
+]
+
+.col-3[
+<font class = "large-emoji">
+3) `r emo::ji("sleeping")`
+</font>
+
+<br>
+<br>
+
+<font class = "large-emoji">
+6) `r emo::ji("sunglasses")`
+</font>
+]
+]

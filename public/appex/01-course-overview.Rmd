@@ -50,57 +50,6 @@ knitr::opts_chunk$set(
 library(tidyverse)
 ```
 
-### How are you feeling right now?
-
-<br>
-
-.center[
-.col-3[
-
-<font class = "large-emoji">
-1) `r emo::ji("slightly_smiling_face")` 
-</font>
-
-
-<br>
-<br>
-
-<font class = "large-emoji">
-4) `r emo::ji("nerd_face")`
-</font>
-]
-
-.col-3[
-
-<font class = "large-emoji">
-2) `r emo::ji("laughing")`
-</font>
-
-<br>
-<br>
-
-<font class = "large-emoji">
-5) `r emo::ji("slightly_frowning_face")`
-</font>
-
-]
-
-.col-3[
-<font class = "large-emoji">
-3) `r emo::ji("sleeping")`
-</font>
-
-<br>
-<br>
-
-<font class = "large-emoji">
-6) `r emo::ji("sunglasses")`
-</font>
-]
-]
-
----
-
 ### What is regression analysis?
 
 "In statistical modeling, regression analysis is a set of statistical processes for estimating the relationships among variables. It includes many techniques for modeling and analyzing several variables, when <font class="vocab">**the focus is on the relationship between a dependent variable and one or more independent variables (or 'predictors')**</font>. More specifically, regression analysis helps one understand how the typical value of the dependent variable (or 'criterion variable') changes when any one of the independent variables is varied, while the other independent variables are held fixed."
