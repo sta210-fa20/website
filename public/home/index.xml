@@ -15,7 +15,7 @@
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-01/</guid>
-      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Thursday Welcome to Regression Analysis Welcome to Regression Analysis First day of class     Tour of course website + Sakai     Meet the Toolkit Meet the Toolkit     Readings         How to read an R help page   ROpenSci&amp;rsquo;s Reproducibility Guide   1500 scientists lift the lid on reproducibility    Assignments          Submit GitHub username due Sun, Jan 24 at 11:59p   Read syllabus     </description>
+      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Thursday Welcome to Regression Analysis Welcome to Regression Analysis AE 01: Welcome!     Tour of course website + Sakai     Meet the Toolkit Meet the Toolkit     Readings         How to read an R help page   ROpenSci&amp;rsquo;s Reproducibility Guide   1500 scientists lift the lid on reproducibility    Assignments          Submit GitHub username due Sun, Jan 24 at 11:59p   Read syllabus     </description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -37,7 +37,7 @@ font-size: 18px;
 &lt;td&gt;Thursday&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://sta210-sp21.netlify.app/slides/01-welcome.html&#34;&gt;Welcome to Regression Analysis&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/jQ0FAA/&#34;&gt;Welcome to Regression Analysis&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;First day of class&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://sta210-fa20.netlify.app/appex/ae-01-welcome.html&#34;&gt;AE 01: Welcome!&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
