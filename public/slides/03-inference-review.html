@@ -324,7 +324,7 @@ class: middle, center
 ## # A tibble: 1 x 2
 ##      mu sigma
 ##   &lt;dbl&gt; &lt;dbl&gt;
-## 1  16.6  14.1
+## 1  16.7  14.1
 ```
 ]
 
@@ -349,7 +349,7 @@ samp_1
 ## # A tibble: 1 x 1
 ##   x_bar
 ##   &lt;dbl&gt;
-## 1  18.3
+## 1  18.4
 ```
 
 ---
@@ -373,7 +373,7 @@ samp_2
 ## # A tibble: 1 x 1
 ##   x_bar
 ##   &lt;dbl&gt;
-## 1  20.5
+## 1  15.1
 ```
 ---
 
@@ -396,7 +396,7 @@ samp_3
 ## # A tibble: 1 x 1
 ##   x_bar
 ##   &lt;dbl&gt;
-## 1  16.1
+## 1  15.8
 ```
 
 --
@@ -418,7 +418,7 @@ keep repeating...
 ## # A tibble: 1 x 2
 ##    mean    se
 ##   &lt;dbl&gt; &lt;dbl&gt;
-## 1  16.6  1.96
+## 1  16.6  2.01
 ```
 
 ---
@@ -812,11 +812,9 @@ t.test(abb$ppg, mu = 80) %&gt;%
 
 ```
 ## # A tibble: 1 x 8
-##   estimate statistic p.value parameter conf.low conf.high
-##      &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
-## 1     76.6    -0.481   0.632        49     62.3      90.8
-## # … with 2 more variables: method &lt;chr&gt;,
-## #   alternative &lt;chr&gt;
+##   estimate statistic p.value parameter conf.low conf.high method     alternative
+##      &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      
+## 1     76.6    -0.481   0.632        49     62.3      90.8 One Sampl… two.sided
 ```
 
 ---

@@ -50,6 +50,7 @@ library(broom)
 library(knitr)
 library(emo)
 library(infer)
+library(patchwork)
 ```
 
 class: middle center
