@@ -22,8 +22,6 @@ class: center, middle, inverse, title-slide
 
 
 
----
-
 class: middle center
 
 ## [Click for PDF of slides](03-inference-review.pdf)
@@ -90,7 +88,9 @@ Similar to tasting a spoonful of soup while cooking to make an inference about t
 ## Let's \*virtually\* go to Asheville! 
 
 .center[
-![](img/03/asheville.jpg)
+
+&lt;img src="img/03/asheville.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
 
 **How much should we expect to pay for an Airbnb in Asheville?**
 ]
@@ -107,8 +107,7 @@ Similar to tasting a spoonful of soup while cooking to make an inference about t
 listings.
 
 .question[
-What is the mean price per guest per night among Airbnb rentals in June 2020, 
-among Airbnbs with at least ten reviews in Asheville (zip codes 28801 - 28806)?
+What is the mean price per guest per night among Airbnb rentals in June 2020  with at least ten reviews in Asheville (zip codes 28801 - 28806)?
 ]
 
 ---
@@ -120,7 +119,7 @@ among Airbnbs with at least ten reviews in Asheville (zip codes 28801 - 28806)?
 We have data on the price per guest (`ppg`) for a random
 sample of 50 Airbnb listings.
 
-&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-3-1.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-4-1.png" width="70%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -262,7 +261,7 @@ We often write `\(N(\mu, \sigma)\)` to describe this distribution.
 
 ## The normal distribution (graphically)
 
-&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-5-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -317,7 +316,7 @@ class: middle, center
 
 ]
 
-&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-8-1.png" style="display: block; margin: auto;" /&gt;
 
 .small[
 
@@ -412,7 +411,7 @@ keep repeating...
 
 ]
 
-&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-16-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-17-1.png" style="display: block; margin: auto;" /&gt;
 
 
 ```
@@ -428,7 +427,7 @@ keep repeating...
 How do the shapes, centers, and spreads of these distributions compare?
 ]
 
-&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-18-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-19-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -554,7 +553,7 @@ Thicker tails than the normal distribution
 
 ## T vs Z distributions
 
-&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-20-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-21-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -568,7 +567,7 @@ class: middle, center
 ## Mean price per guest per night 
 
 .question[
-Does the data provide sufficient evidence that the mean price per guest per night in Airbnbs in Asheville is different from $80? 
+Does the data provide sufficient evidence that the mean price per guest per night in Airbnbs in Asheville differs from $80? 
 ]
 
 ---
@@ -599,7 +598,7 @@ Does the data provide sufficient evidence that the mean price per guest per nigh
 
 ## 1️⃣ State the hypotheses
 
-pull-left[
+.pull-left[
 .small-box[
 `$$\large{\begin{aligned}&amp; H_0: \mu = 80 \\&amp; H_a: \mu \neq 80\end{aligned}}$$`
 ]
@@ -611,8 +610,13 @@ pull-left[
 .big[.vocab[Null hypothesis]]
 
 .big[.vocab[Alternative hypothesis]]
-
 ]
+
+&lt;br&gt; 
+
+--
+
+**Note**: We define the hypotheses **&lt;u&gt;before&lt;/u&gt;** analyzing the data.
 
 ---
 
@@ -624,6 +628,8 @@ pull-left[
 |  x_bar|     sd|  n|
 |------:|------:|--:|
 | 76.587| 50.141| 50|
+
+&lt;br&gt; 
 
 --
 
@@ -665,7 +671,7 @@ Calculated from a `\(t\)` distribution with `\(n-1\)` degrees of freedom
 The test statistic follows a `\(t\)` distribution with 49 degrees of freedom. 
 
 .pull-left[
-&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-23-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-24-1.png" style="display: block; margin: auto;" /&gt;
 ]
 
 
@@ -709,7 +715,7 @@ The p-value of 0.633 is large, so we fail to reject the null hypothesis.
 
 class: middle, center
 
-### We know the mean price per guest per night is not equal to 80, but what is a plausible estimate for the mean? 
+### What is a plausible estimate for the mean price per guest per night? 
 
 ---
 
@@ -777,6 +783,41 @@ t_star
 --
 
 Note that this is consistent with the conclusion from our hypothesis test.
+
+---
+
+## One-sample t-test functions in R (both work!)
+
+
+```r
+library(infer)
+t_test(abb, response = ppg, mu = 80)
+```
+
+```
+## # A tibble: 1 x 6
+##   statistic  t_df p_value alternative lower_ci upper_ci
+##       &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;    &lt;dbl&gt;
+## 1    -0.481    49   0.632 two.sided       62.3     90.8
+```
+
+
+--
+
+
+```r
+t.test(abb$ppg, mu = 80) %&gt;%
+  tidy()
+```
+
+```
+## # A tibble: 1 x 8
+##   estimate statistic p.value parameter conf.low conf.high
+##      &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
+## 1     76.6    -0.481   0.632        49     62.3      90.8
+## # … with 2 more variables: method &lt;chr&gt;,
+## #   alternative &lt;chr&gt;
+```
 
 ---
 
