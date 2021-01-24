@@ -13,7 +13,8 @@ lessons:
     date: "Mon, Jan 25 "
     title: "Lab 01"
   - date: "Tue, Jan 26"
-    title: "Multivariable relationships"
+    title: "Exploring multivariable relationships"
+    slides: "02-multivar-relationships.html"
   - date: "Thu, Jan 28" 
     title: "Inference review"
 

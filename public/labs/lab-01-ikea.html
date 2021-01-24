@@ -529,9 +529,9 @@ text-decoration: underline;
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p><label for="tufte-mn-" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-" class="margin-toggle"><span class="marginnote"><span style="display: block;">R is the name of the programming language itself and RStudio is a convenient user interface.</span></span></p>
+<p><label for="tufte-mn-1" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-1" class="margin-toggle"><span class="marginnote"><span style="display: block;">R is the name of the programming language itself and RStudio is a convenient user interface.</span></span></p>
 <p>The goal of this lab is to get you started with the computing workflow we’ll use throughout the semester. You’ll get started using writing reproducible reports using R Markdown and practicing version control using git and GitHub.</p>
-<p><label for="tufte-mn-" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-" class="margin-toggle"><span class="marginnote"><span style="display: block;">git is a version control system (like “Track Changes” features from Microsoft Word but more powerful) and GitHub is the home for your Git-based projects on the internet (like DropBox but better).</span></span></p>
+<p><label for="tufte-mn-2" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-2" class="margin-toggle"><span class="marginnote"><span style="display: block;">git is a version control system (like “Track Changes” features from Microsoft Word but more powerful) and GitHub is the home for your Git-based projects on the internet (like DropBox but better).</span></span></p>
 <p>As the labs progress, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer and statistician. This lab is a brief review of the fundamental building blocks of R and RStudio: the interface, reading in data, and basic data wrangling and graphing functions. If you’re new to R or would like additional practice, there are additional resources listed at the end of the lab instructions.</p>
 <p>Today’s lab will be individual, to give you a chance to become more familiar with the workflow. In future labs you will work in teams, and learn how to collaborate using GitHub to produce a single lab report as a team.</p>
 <div id="learning-goals" class="section level2">
@@ -631,7 +631,7 @@ install.package("usethis")
 </div>
 <div id="yaml" class="section level2">
 <h2>YAML</h2>
-<p><label for="tufte-mn-" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-" class="margin-toggle"><span class="marginnote"><span style="display: block;">The top portion of your R Markdown file (between the three dashed lines) is called YAML. It stands for “YAML Ain’t Markup Language”. It is a human friendly data serialization standard for all programming languages. All you need to know is that this area is called the YAML (we will refer to it as such) and that it contains meta information about your document.</span></span></p>
+<p><label for="tufte-mn-3" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-3" class="margin-toggle"><span class="marginnote"><span style="display: block;">The top portion of your R Markdown file (between the three dashed lines) is called YAML. It stands for “YAML Ain’t Markup Language”. It is a human friendly data serialization standard for all programming languages. All you need to know is that this area is called the YAML (we will refer to it as such) and that it contains meta information about your document.</span></span></p>
 <p>Before we introduce the data, let’s update the name and date in the YAML.</p>
 <p>Open the R Markdown (Rmd) file in your project, input your name for the author name and today’s date for the date, and knit the document.</p>
 </div>
@@ -734,7 +734,7 @@ install.package("usethis")
 <div id="view-the-data" class="section level2">
 <h2>View the data</h2>
 <p>Before doing any analysis, you may want to get quick view of the data. This is a useful when you’ve imported data to see if your data imported correctly. We can use the <code>View</code> function to see the entire data set in RStudio. Type the code below in the <strong>console</strong> to view the entire dataset.</p>
-<p><label for="tufte-mn-" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-" class="margin-toggle"><span class="marginnote"><span style="display: block;">Notice that the <code>View(ikea)</code> command was run in the console and <strong>not</strong> in a code chunk in the RMarkdown file. By running the <code>View(ikea)</code> in the console, the dataset displays in your RStudio environment but not in the PDF output from your knitted Rmd file.</span></span></p>
+<p><label for="tufte-mn-4" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-4" class="margin-toggle"><span class="marginnote"><span style="display: block;">Notice that the <code>View(ikea)</code> command was run in the console and <strong>not</strong> in a code chunk in the RMarkdown file. By running the <code>View(ikea)</code> in the console, the dataset displays in your RStudio environment but not in the PDF output from your knitted Rmd file.</span></span></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">View</span>(ikea)</span></code></pre></div>
 </div>
 </div>
@@ -768,11 +768,11 @@ install.package("usethis")
 <ol start="4" style="list-style-type: decimal">
 <li>Another way to visualize numeric data is using density plots. Make a density plot to visualize the distribution of <code>price_usd</code>. Be sure to include an informative title and informative axis labels.</li>
 </ol>
-<p><label for="tufte-mn-" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-" class="margin-toggle"><span class="marginnote"><span style="display: block;">See the <a href="https://ggplot2.tidyverse.org/reference/geom_density.html">ggplot2 reference on density plots</a> for code examples.</span></span></p>
+<p><label for="tufte-mn-5" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-5" class="margin-toggle"><span class="marginnote"><span style="display: block;">See the <a href="https://ggplot2.tidyverse.org/reference/geom_density.html">ggplot2 reference on density plots</a> for code examples.</span></span></p>
 <div class="commit">
 <p>This is a good place to knit, commit, and push changes to your remote lab-01 repo on GitHub. Be sure to write an informative commit message (e.g. “Completed exercises 1 - 4”), and push every file to GitHub by clicking the checkbox next to each file in the Git pane. After you push the changes, the Git pane in RStudio should be empty.&quot;</p>
 </div>
-<p><label for="tufte-mn-" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-" class="margin-toggle"><span class="marginnote"><span style="display: block;">Check your lab-01 repo on the GitHub website (you may need to refresh the page in your browser) to ensure that all of the files are up-to-date.</span></span></p>
+<p><label for="tufte-mn-6" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-6" class="margin-toggle"><span class="marginnote"><span style="display: block;">Check your lab-01 repo on the GitHub website (you may need to refresh the page in your browser) to ensure that all of the files are up-to-date.</span></span></p>
 <p>We are most interested in the relationship between two or more variables, so let’s begin by looking at the distribution of price by category. We’ll focus on the five categories in the code below, since these include commonly purchased types of furniture.</p>
 <p>Use the code below to name the new data frame that only includes the furniture categories of interest. We’re giving this subset a new name, so we don’t overwrite the original data.</p>
 <p><strong>You will use this new data frame for the remainder of the lab.</strong></p>

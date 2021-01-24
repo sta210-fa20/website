@@ -1,6 +1,6 @@
 ---
 title: "Lab 01: Getting Started with R!"
-subtitle: ""
+subtitle: "due Sun, Jan 31 at 11:59p"
 output: 
   tufte::tufte_html:
     css: "./sta210-labs.css"
