@@ -869,7 +869,7 @@ Note that this is consistent with the conclusion from our hypothesis test.
 
 ---
 
-## One-sample t-test functions in R
+## One-sample t-test functions in R (both work!)
 
 ```{r}
 library(infer)
