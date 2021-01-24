@@ -114,7 +114,12 @@ starbucks <- openintro::starbucks %>%
 ]
 
 .panel[.panel-name[Code]
-.midi[
+.small[
+```{r, eval = F}
+starbucks <- openintro::starbucks %>%
+  mutate(bakery = factor(if_else(type == "bakery", 1, 0)))
+```
+
 ```{r univariate, fig.show = 'hide'}
 p1 <- ggplot(data = starbucks, aes(x = carb))  + 
   geom_histogram(fill = "steelblue", color = "black") + 
@@ -164,7 +169,7 @@ p1 <- ggplot(data = starbucks, aes(x = calories, y = carb)) +
 p2 <- ggplot(data = starbucks, aes(x = bakery, y = carb)) + 
   geom_boxplot(fill = "steelblue", color = "black") +
   labs(x = "Bakery", 
-      y  = "Total Carbs (in grams)")
+      y  = "Carbohydrates (grams)")
   
 p1 + p2
 ```
@@ -195,10 +200,10 @@ $$\text{carbs} = f(\text{calories}, \text{bakery}) + \epsilon$$
 
 In general, 
 
-1) Choose the functional form of $f$, i.e. .vocab[choose the appropriate model given the data]
+1) Choose the functional form of $f$, i.e. .vocab[choose the appropriate model given the response variable]
 
 - Suppose $f$ is a linear model
-    $$\hat{y} = f(\mathbf{X}) = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p$$
+    $$y = f(\mathbf{X}) = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p + \epsilon$$
 
 --
 
@@ -311,9 +316,9 @@ What is the relationship between the calories and total carbohydrates for bakery
 <br> 
 
 .vocab[Unit 3: Looking Ahead]
-  - Log-linear regression 
-  - Weighted least squares
-  - Communicating 
+  - Log-linear Regression 
+  - Weighted Least Squares
+  - Presenting statistical results
   
 ]
 

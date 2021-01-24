@@ -80,7 +80,13 @@ class: middle, center
 ]
 
 .panel[.panel-name[Code]
-.midi[
+.small[
+
+```r
+starbucks &lt;- openintro::starbucks %&gt;%
+  mutate(bakery = factor(if_else(type == "bakery", 1, 0)))
+```
+
 
 ```r
 p1 &lt;- ggplot(data = starbucks, aes(x = carb))  + 
@@ -110,7 +116,7 @@ p1 + (p2 / p3)
 
 .panelset[
 .panel[.panel-name[Plot]
-&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
 
 .alert[
 `$$\text{carbs} = f(\text{calories}, \text{bakery}) + \epsilon$$`
@@ -131,7 +137,7 @@ p1 &lt;- ggplot(data = starbucks, aes(x = calories, y = carb)) +
 p2 &lt;- ggplot(data = starbucks, aes(x = bakery, y = carb)) + 
   geom_boxplot(fill = "steelblue", color = "black") +
   labs(x = "Bakery", 
-      y  = "Total Carbs (in grams)")
+      y  = "Carbohydrates (grams)")
   
 p1 + p2
 ```
@@ -162,10 +168,10 @@ p1 + p2
 
 In general, 
 
-1) Choose the functional form of `\(f\)`, i.e. .vocab[choose the appropriate model given the data]
+1) Choose the functional form of `\(f\)`, i.e. .vocab[choose the appropriate model given the response variable]
 
 - Suppose `\(f\)` is a linear model
-    `$$\hat{y} = f(\mathbf{X}) = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p$$`
+    `$$y = f(\mathbf{X}) = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p + \epsilon$$`
 
 --
 
@@ -177,7 +183,7 @@ In general,
 
 ## Carbs vs. Calories 
 
-&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-5-1.png" style="display: block; margin: auto;" /&gt;
 
 .alert[
 `$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \epsilon$$`
@@ -189,7 +195,7 @@ In general,
 
 
 
-&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
 
 .alert[
 `$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \epsilon$$`
@@ -199,7 +205,7 @@ In general,
 
 ## Carbs vs. Calories + Bakery (with interaction)
 
-&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-8-1.png" style="display: block; margin: auto;" /&gt;
 
 .alert[
 `$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \beta_3 ~ \text{calories} \times \text{bakery}  + \epsilon$$`
@@ -257,9 +263,9 @@ What is the relationship between the calories and total carbohydrates for bakery
 &lt;br&gt; 
 
 .vocab[Unit 3: Looking Ahead]
-  - Log-linear regression 
-  - Weighted least squares
-  - Communicating 
+  - Log-linear Regression 
+  - Weighted Least Squares
+  - Presenting statistical results
   
 ]
 
