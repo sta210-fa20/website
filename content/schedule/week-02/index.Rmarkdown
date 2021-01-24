@@ -15,7 +15,8 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Tuesday  | [Exploring multivariable relationships](https://sta210-sp21.netlify.app/slides/02-multivar-relationships.html) |  [Exploring multivariable relationships](https://warpwire.duke.edu/w/zRkFAA/) | AE 02 |
-| Thursday   | Statistical inference review | Statistical inference review   | AE 03|
+| Thursday   | Statistical inference review | [Statistical inference review Part 1](https://warpwire.duke.edu/w/_xkFAA/)   | AE 03|
+|    |  | Statistical inference review Part 2  | |
 
 ## Readings
 

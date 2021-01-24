@@ -897,5 +897,10 @@ t.test(abb$ppg, mu = 80) %>%
 - Confidence interval to estimate a population parameter
 
 
+---
+
+## Acknowledgements
+
+These slides were adapted from 
 
 

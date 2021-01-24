@@ -100,7 +100,7 @@ font-size: 18px;
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
       <guid>/schedule/week-02/</guid>
-      <description> table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Tuesday Exploring multivariable relationships Exploring multivariable relationships AE 02   Thursday Statistical inference review Statistical inference review AE 03    Readings         Introduction to Modern Statistics (IMS) Section 7.1.2   IMS Section 7.2 - 7.4    Assignments          Lab 01 due Sun, Jan 31 at 11:59p EST   Complete All About You survey due Sun, Jan 31 at 11:59p EST    </description>
+      <description>table { font-size: 18px; }  Lectures     Slides Videos Application Exercises (AE)     Tuesday Exploring multivariable relationships Exploring multivariable relationships AE 02   Thursday Statistical inference review Statistical inference review Part 1 AE 03     Statistical inference review Part 2     Readings         Introduction to Modern Statistics (IMS) Section 7.</description>
       <content>&lt;style&gt;
 table {
 font-size: 18px;
@@ -127,8 +127,14 @@ font-size: 18px;
 &lt;tr&gt;
 &lt;td&gt;Thursday&lt;/td&gt;
 &lt;td&gt;Statistical inference review&lt;/td&gt;
-&lt;td&gt;Statistical inference review&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://warpwire.duke.edu/w/_xkFAA/&#34;&gt;Statistical inference review Part 1&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;AE 03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Statistical inference review Part 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
