@@ -16,7 +16,7 @@ font-size: 18px;
 |-----------|--------------------------|--------|--------|
 | Tuesday  | [Exploring multivariable relationships](https://sta210-sp21.netlify.app/slides/02-multivar-relationships.html) |  [Exploring multivariable relationships](https://warpwire.duke.edu/w/zRkFAA/) | AE 02 |
 | Thursday   | [Statistical inference review](https://sta210-sp21.netlify.app/slides/03-inference-review.html) | [Statistical inference review Part 1](https://warpwire.duke.edu/w/_xkFAA/)   | AE 03|
-|    |  | Statistical inference review Part 2  | |
+|    |  | [Statistical inference review Part 2](https://warpwire.duke.edu/w/ERwFAA/)  | |
 
 ## Readings
 

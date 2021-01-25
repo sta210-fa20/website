@@ -687,7 +687,12 @@ $$\large{\begin{aligned}& H_0: \mu = 80 \\& H_a: \mu \neq 80\end{aligned}}$$
 
 --
 
-**Note**: We define the hypotheses **<u>before</u>** analyzing the data.
+- We define the hypotheses **<u>before</u>** analyzing the data.
+
+- We will assume the null hypothesis is true and assess the strength of evidence **<u>against</u>** the null hypohtesis. 
+
+
+
 
 ---
 
@@ -735,9 +740,15 @@ $$ t = \frac{\bar{X} - \mu_0}{\mathbf{s}/\sqrt{n}} = \frac{76.587 - 80}{50.141 /
 
 .eq[
 $$\text{p-value} = P(|t| \geq |\text{test statistic}|)$$
+
+Calculated from a $t$ distribution with $n-1$ degrees of freedom. 
 ]
 
-Calculated from a $t$ distribution with $n-1$ degrees of freedom
+
+
+--
+
+The p-value is the probability of observing a test statistic at least as extreme as the one we've observed, given the null hypothesis is true.
 
 ---
 
@@ -817,9 +828,9 @@ $$\text{ Estimate} \pm \text{ (critical value) } \times \text{SE}$$
 .middle[
 .eq[
 
-Confidence interval for $\bar{X}$
+Confidence interval for $\mu$
 
-$$\bar{X} \pm t^* \times \frac{\sigma}{\sqrt{n}}$$
+$$\bar{X} \pm t^* \times \frac{s}{\sqrt{n}}$$
 ]
 ]
 
@@ -829,7 +840,7 @@ $t^*$ is calculated from a $t$ distribution with $n-1$ degrees of freedom
   
 ---
 
-## Calculating the 95% CI for $\bar{X}$
+## Calculating the 95% CI for $\mu$
 
 ```{r echo = F}
 abb %>% 
@@ -901,6 +912,6 @@ t.test(abb$ppg, mu = 80) %>%
 
 ## Acknowledgements
 
-These slides were adapted from 
+Some slides were adapted from [Data Science in a Box](datasciencebox.org).
 
 
