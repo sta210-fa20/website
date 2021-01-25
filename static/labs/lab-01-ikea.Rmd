@@ -306,7 +306,7 @@ Recreate the density plot using a more suitable alpha level, so we can more easi
 
 6. Briefly describe why we defined the fill of the curves by mapping aesthetics of the plot (inside the `aes` function) but we defined the alpha level as a characteristic of the plotting geom.
 
-7. Overlapping density plots are not the only way to visualize the relationship between a quantitative and categorical variable. Use a different type of plot to visualize the relationship between `price_usd` and `category`. 
+7. Overlapping density plots are not the only way to visualize the relationship between a quantitative and categorical variable. Use a different type of plot to visualize the relationship between `price_usd` and `category`. Include an informative title and informative axis labels.
 
 You can use the [ggplot2 cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) and [from Data to Viz](https://www.data-to-viz.com/#ridgeline) for inspiration. 
 
