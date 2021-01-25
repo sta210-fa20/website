@@ -11,12 +11,14 @@ lessons:
   
   - week: "Week 02"
     date: "Mon, Jan 25 "
-    title: "Lab 01"
+    title: "Lab 01: Getting started with R!"
+    lab: "lab-01-ikea.html"
   - date: "Tue, Jan 26"
     title: "Exploring multivariable relationships"
     slides: "02-multivar-relationships.html"
   - date: "Thu, Jan 28" 
-    title: "Inference review"
+    title: "Statistical inference review"
+    slides: "03-inference-review.html"
 
   - date: "UNIT 01"
     title: "CONTINUOUS RESPONSE VARIABLES"

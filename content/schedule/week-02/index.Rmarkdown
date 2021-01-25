@@ -15,7 +15,7 @@ font-size: 18px;
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
 | Tuesday  | [Exploring multivariable relationships](https://sta210-sp21.netlify.app/slides/02-multivar-relationships.html) |  [Exploring multivariable relationships](https://warpwire.duke.edu/w/zRkFAA/) | AE 02 |
-| Thursday   | Statistical inference review | [Statistical inference review Part 1](https://warpwire.duke.edu/w/_xkFAA/)   | AE 03|
+| Thursday   | [Statistical inference review](https://sta210-sp21.netlify.app/slides/03-inference-review.html) | [Statistical inference review Part 1](https://warpwire.duke.edu/w/_xkFAA/)   | AE 03|
 |    |  | Statistical inference review Part 2  | |
 
 ## Readings
@@ -30,7 +30,7 @@ font-size: 18px;
 
 |                        |   |
 |------------------------|---|
-| Lab 01 | **due Sun, Jan 31 at 11:59p EST**
+| [Lab 01](https://sta210-sp21.netlify.app/labs/lab-01-ikea.html) | **due Sun, Jan 31 at 11:59p EST**
 | Complete [All About You survey](https://duke.qualtrics.com/jfe/form/SV_czLvjD7M9XkcZKK)   | **due Sun, Jan 31 at 11:59p EST** |
 
 
