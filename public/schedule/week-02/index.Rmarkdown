@@ -31,7 +31,7 @@ font-size: 18px;
 |                        |   |
 |------------------------|---|
 | Lab 01 | **due Sun, Jan 31 at 11:59p EST**
-| Complete All About You survey   | **due Sun, Jan 31 at 11:59p EST** |
+| Complete [All About You survey](https://duke.qualtrics.com/jfe/form/SV_czLvjD7M9XkcZKK)   | **due Sun, Jan 31 at 11:59p EST** |
 
 
 
