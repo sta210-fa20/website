@@ -1,0 +1,334 @@
+---
+title: "Exploring multivariable relationships"
+author: "Prof. Maria Tackett"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 3.5,
+	fig.width = 5.8333,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(patchwork)
+library(broom)
+#library(xaringanExtra)
+xaringanExtra::use_panelset()
+```
+
+class: middle, center 
+
+## [Click for PDF of slides](02-multivar-relationships.pdf)
+
+---
+
+## Carbohydrates in Starbucks food 
+
+- Starbucks often displays the total calories in their food items but not the other nutritional information.
+
+- Our goal is to analyze the relationship between the calories and total carbohydrates (carbs) in Starbucks food items, and assess if it differs based on the type of food item (bakery, salad, sandwich, etc.)
+
+- We can use our analysis to estimate the total carbs using information about the total calories and type for a given food time 
+
+---
+
+## Starbucks data 
+
+```{r data, echo  = F}
+starbucks <- openintro::starbucks %>%
+  mutate(bakery = factor(if_else(type == "bakery", 1, 0)))
+```
+
+
+--
+
+- .vocab[Observations]: 77 Starbucks food items
+
+--
+
+- .vocab[Variables]:
+    - `carb`: Total carbohydrates (in grams)
+    - `calories`: Total calories
+    - `bakery`: 1: bakery food item, 0: other food type
+
+---
+
+## Terminology
+
+- `carb` is the .vocab[response variable]
+    - variable whose variation we want to understand / variable we wish to predict
+    - also known as *outcome* or *dependent* variable
+
+--
+
+<br> 
+
+- `calories`, `bakery` are the .vocab[predictor variables]
+    - variables used to account for variation in the outcome
+    - also known as *explanatory*, *independent*, or *input* variables
+
+---
+
+## Let's look at the data
+
+.panelset[
+.panel[.panel-name[Plot]
+```{r ref.label="univariate", echo=FALSE, warning=FALSE, fig.height = 2.5}
+```
+]
+
+.panel[.panel-name[Code]
+.small[
+```{r, eval = F}
+starbucks <- openintro::starbucks %>%
+  mutate(bakery = factor(if_else(type == "bakery", 1, 0)))
+```
+
+```{r univariate, fig.show = 'hide'}
+p1 <- ggplot(data = starbucks, aes(x = carb))  + 
+  geom_histogram(fill = "steelblue", color = "black") + 
+  labs(x = "Carbohydrates (in grams)", 
+       y = "Count")
+
+p2 <- ggplot(data = starbucks, aes(x = calories))  + 
+  geom_histogram(fill = "steelblue", color = "black") + 
+  labs(x = "Calories", 
+       y = "Count")
+
+p3 <- ggplot(data = starbucks, aes(x = bakery))  + 
+  geom_bar(fill = "steelblue", color = "black") + 
+  labs(x = "Bakery Item", 
+       y = "Count")
+
+p1 + (p2 / p3)
+```
+]
+]
+]
+
+---
+
+## Response vs. Predictors
+
+.panelset[
+.panel[.panel-name[Plot]
+```{r ref.label="bivariate", echo=FALSE, warning=FALSE, fig.height = 2}
+```
+
+.alert[
+$$\text{carbs} = f(\text{calories}, \text{bakery}) + \epsilon$$
+]
+
+]
+
+.panel[.panel-name[Code]
+.midi[
+```{r bivariate, fig.show = 'hide'}
+p1 <- ggplot(data = starbucks, aes(x = calories, y = carb)) + 
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "steelblue") +
+  labs(x = "Calories", 
+      y  = "Carbohydrates (grams)")
+
+p2 <- ggplot(data = starbucks, aes(x = bakery, y = carb)) + 
+  geom_boxplot(fill = "steelblue", color = "black") +
+  labs(x = "Bakery", 
+      y  = "Carbohydrates (grams)")
+  
+p1 + p2
+```
+]
+]
+]
+
+
+---
+
+## Model 
+
+.alert[
+$$\text{carbs} = f(\text{calories}, \text{bakery}) + \epsilon$$
+]
+
+- **Goal**: Determine $f$
+
+--
+
+- How do we determine $f$?
+  - Make an assumption about the functional form $f$
+  - Use the data to fit a model based on that form 
+    
+---
+
+## Determine $f$
+
+In general, 
+
+1) Choose the functional form of $f$, i.e. .vocab[choose the appropriate model given the response variable]
+
+- Suppose $f$ is a linear model
+    $$y = f(\mathbf{X}) = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p + \epsilon$$
+
+--
+
+2) Use the data to fit (or train) the model, i.e .vocab[estimate the model parameters]
+
+- Estimate $\beta_0, \beta_1, \ldots, \beta_p$
+
+---
+
+## Carbs vs. Calories 
+
+```{r echo = F, fig.height = 2.5}
+ggplot(data = starbucks, aes(x = calories, y = carb)) + 
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "steelblue") +
+  labs(x = "Calories", 
+      y  = "Carbohydrates (grams)", 
+      title = "Total Carbohydrates vs. Calories")
+```
+
+.alert[
+$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \epsilon$$
+]
+
+---
+
+## Carbs vs. Calories + Bakery 
+
+```{r echo = F}
+model1 <- lm(carb ~ calories + bakery, data = starbucks)
+model1 <- tidy(model1)
+```
+
+```{r echo = F, fig.height = 2.5}
+ggplot(data = starbucks, aes(x = calories, y = carb, color = bakery)) + 
+  geom_point(alpha = 0.5) +
+  geom_abline(slope = model1$estimate[2], intercept = model1$estimate[1], color = "#1B9E77") +
+  geom_abline(slope = model1$estimate[2], intercept = model1$estimate[1] + model1$estimate[3], color = "#7570B3") +
+  labs(x = "Calories", 
+      y  = "Carbohydrates (grams)",
+      color = "Bakery", 
+      title = "Total Carbohydrates vs. Calories", 
+      subtitle = "by Bakery") + 
+  scale_color_manual(values=c("#1B9E77", "#7570B3"))
+```
+
+.alert[
+$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \epsilon$$
+]
+ 
+---
+
+## Carbs vs. Calories + Bakery (with interaction)
+
+```{r ref.label = "model-plot", echo = F, fig.height = 2.5}
+```
+
+.alert[
+$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \beta_3 ~ \text{calories} \times \text{bakery}  + \epsilon$$
+]
+
+---
+
+## Code for plot on previous slide
+
+.midi[
+```{r model-plot, fig.show = 'hide'}
+ggplot(data = starbucks, aes(x = calories, y = carb, color = bakery)) + 
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Calories", 
+      y  = "Carbohydrates (grams)",
+      color = "Bakery", 
+      title = "Total Carbohydrates vs. Calories", 
+      subtitle = "With Interaction") + 
+  scale_color_manual(values=c("#1B9E77", "#7570B3"))
+```
+]
+
+
+---
+
+## Why?
+
+.alert[
+$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \beta_3 ~ \text{calories} \times \text{bakery}  + \epsilon$$
+]
+
+--
+
+.vocab[Prediction:]
+
+What do we expect the total carbohydrates to be in a piece of Starbucks pumpkin bread, a bakery item that is 410 calories?   
+
+--
+
+.vocab[Inference:]
+
+What is the relationship between the calories and total carbohydrates for bakery items at Starbucks? For non-bakery items?
+---
+
+## Course Outline
+
+.pull-left[
+
+.vocab[Unit 1: Quantitative Response Variables]
+  - Simple Linear Regression 
+  - Multiple Linear Regression
+
+<br> 
+
+.vocab[Unit 3: Looking Ahead]
+  - Log-linear Regression 
+  - Weighted Least Squares
+  - Presenting statistical results
+  
+]
+
+.pull-right[
+
+- .vocab[Unit 2: Categorical Response Variable]
+  - Logistic Regression 
+  - Multinomial Logistic Regression 
+
+]
+
+
+    

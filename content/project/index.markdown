@@ -2,6 +2,9 @@
 title: "STA 210 Final Project"
 ---
 
+Details about the project will be posted at a later date. 
+
+<!--
 ## Timeline
 
 Proposal due **Friday, October 9**
@@ -510,3 +513,4 @@ tidy(model) %>%
   - [Data Visualization: A Practice Introduction](https://socviz.co/index.html)
   - [Patchwork R Package](https://patchwork.data-imaginist.com/index.html)
 
+-->

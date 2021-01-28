@@ -4,18 +4,11 @@ resources:
   icon: fa-search
   icon_pack: fas
   what: |
-    This is the course schedule! whoo! 
+    This is the course schedule! 
 
-- url: /help/
-  title: help
+- url: /resources/
+  title: resources
   icon: fa-book-open
   icon_pack: fas
   what: |
-    This is where you'll get help! Whoo! 
-
-- url: https://www.tidyverse.org/tags/tidymodels/
-  title: Github
-  icon: fa-bullhorn
-  icon_pack: fas
-  what: |
-    These are other tags! whoo!
+    This is where you can find resources for the course and wellness.

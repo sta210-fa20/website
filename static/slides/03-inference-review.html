@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Statistical inference review</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Maria Tackett" />
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Statistical inference review
+### Prof. Maria Tackett
+
+---
+
+
+
+
+
+
+class: middle center
+
+## [Click for PDF of slides](03-inference-review.pdf)
+
+---
+
+## Topics
+
+
+- Sampling distributions and the Central Limit Theorem 
+
+- Hypothesis test to test a claim about a population parameter
+
+- Confidence interval to estimate a population parameter
+
+---
+
+class: center, middle
+
+## Sample Statistics and Sampling Distributions
+
+---
+
+## Terminology
+
+.vocab[Population]: a group of individuals or objects we are interested in studying
+
+.vocab[Parameter]: a numerical quantity derived from the population (almost always unknown)
+
+If we had data from every unit in the population, we could just calculate 
+population parameters and be done!
+
+--
+
+**Unfortunately, we usually cannot do this.**
+
+.vocab[Sample]: a subset of our population of interest
+
+.vocab[Statistic]: a numerical quantity derived from a sample
+
+---
+
+## Inference
+
+If the sample is .vocab[representative], then we can use the tools of probability and statistical inference to make .vocab[generalizable] conclusions to the broader population of interest.
+
+
+&lt;img src="img/03/soup.png" width="406" height="234" style="display: block; margin: auto;" /&gt;
+
+Similar to tasting a spoonful of soup while cooking to make an inference about the entire pot.
+
+---
+
+## Statistical inference
+
+.vocab[Statistical inference] is the process of using sample data to make conclusions about the underlying population the sample came from.
+
+- .vocab[Estimation]: using the sample to estimate a plausible range of values for the unknown parameter
+
+- .vocab[Testing]: evaluating whether our observed sample provides evidence for or against some claim about the population
+
+---
+
+## Let's \*virtually\* go to Asheville! 
+
+.center[
+
+&lt;img src="img/03/asheville.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+
+**How much should we expect to pay for an Airbnb in Asheville?**
+]
+
+---
+
+## Asheville data
+
+[Inside Airbnb](http://insideairbnb.com/) scraped all Airbnb listings in Asheville, NC, that were active on June 25, 2020.
+
+**Population of interest**: listings in the Asheville with at least ten reviews.
+
+**Parameter of interest**: Mean price per guest per night among these 
+listings.
+
+.question[
+What is the mean price per guest per night among Airbnb rentals in June 2020  with at least ten reviews in Asheville (zip codes 28801 - 28806)?
+]
+
+---
+
+## Visualizing our sample
+
+
+
+We have data on the price per guest (`ppg`) for a random
+sample of 50 Airbnb listings.
+
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-4-1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Sample statistic
+
+A .vocab[sample statistic (point estimate)] is a single value of a statistic computed from the sample data to serve as the "best guess", or estimate, for the population parameter. 
+
+
+```r
+abb %&gt;% 
+  summarize(mean_price = mean(ppg))
+```
+
+```
+## # A tibble: 1 x 1
+##   mean_price
+##        &lt;dbl&gt;
+## 1       76.6
+```
+
+--
+
+If we took another random sample of 50 Airbnbs in Asheville, we'd likely have a different sample statistic.
+---
+
+## Variability of sample statistics
+
+- Each sample from the population yields a slightly different sample statistic.
+
+- The sample-to-sample difference is called .vocab[sampling variability].
+
+- We can use theory to help us understand the underlying .vocab[sampling distribution] and quantify this sample-to-sample variability.  
+
+---
+
+## The goal of statistical inference
+
+- Statistical inference is the act of generalizing from a sample in order to 
+make conclusions regarding a population. 
+
+- We are interested in population parameters, which we do not observe. Instead, 
+we must calculate statistics from our sample in order to learn about them.
+
+- As part of this process, we must quantify the degree of uncertainty in our 
+sample statistic. 
+
+---
+
+## Sampling distribution of the mean
+
+We're interested in the mean price per guest per night at Aribnbs in Asheville, so suppose we were able to do the following:
+
+--
+
+1. Take a random sample of size `\(n\)` from this population, and calculate the 
+mean price per guest per night in this sample, `\(\bar{X}_1\)`
+
+--
+
+2. Put the sample back, take a second random sample of size `\(n\)`, and calculate 
+the mean price per guest per night from this new sample, `\(\bar{X}_2\)`
+
+--
+
+3. Put the sample back, take a third random sample of size `\(n\)`, and calculate
+the mean price per guest per night from this sample, too...
+
+--
+
+...and so on.
+
+---
+
+## Sampling distribution of the mean
+
+After repeating this many times, we have a dataset that has the
+`\(K\)` sample averages from the population: `\(\bar{X}_1\)`, `\(\bar{X}_2\)`, `\(\cdots\)`,
+`\(\bar{X}_K\)` 
+
+--
+
+.question[
+Can we say anything about the distribution of these sample means (that is, the
+.vocab[sampling distribution] of the mean?) 
+]
+
+---
+
+class: center, middle
+
+## The Central Limit Theorem
+
+---
+
+class: middle
+
+A quick caveat...
+
+For now, let's assume we know the underlying standard deviation, `\(\sigma\)`, from our distribution 
+
+---
+
+## The Central Limit Theorem
+
+For a population with a well-defined mean `\(\mu\)` and standard deviation `\(\sigma\)`,
+these three properties hold for the distribution of sample average `\(\bar{X}\)`,
+assuming certain conditions hold:
+
+--
+
+1. The mean of the sampling distribution of the mean is identical to the 
+population mean `\(\mu\)`.
+
+--
+
+2. The standard deviation of the distribution of the sample averages is
+`\(\sigma/\sqrt{n}\)`.
+  - This is called the .vocab[standard error] (SE) of the mean. 
+ 
+--
+
+3. For `\(n\)` large enough, the shape of the
+sampling distribution of means is approximately .vocab[normally distributed].
+
+---
+
+## The normal (Gaussian) distribution
+
+The normal distribution is unimodal and symmetric and is described by its .vocab[density function]:
+
+If a random variable `\(X\)` follows the normal distribution, then
+`$$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left\{ -\frac{1}{2}\frac{(x - \mu)^2}{\sigma^2} \right\}$$`
+where `\(\mu\)` is the mean and `\(\sigma^2\)` is the variance `\((\sigma \text{ is the standard deviation})\)`
+
+.alert[
+We often write `\(N(\mu, \sigma)\)` to describe this distribution.
+]
+---
+
+## The normal distribution (graphically)
+
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Wait, *any* population distribution?
+
+The Central Limit Theorem tells us that *&lt;b&gt;sample means&lt;/b&gt;* are normally distributed, **if** we have enough data and certain conditions hold. 
+
+This is true *even if the population distribution is not normally distributed*.
+
+Click [here](http://onlinestatbook.com/stat_sim/sampling_dist/index.html) to see an interactive demonstration of this idea.
+
+---
+
+## Conditions for CLT 
+
+We need to check two conditions for CLT to hold: independence, sample size/distribution. 
+
+--
+
+✅ .vocab[Independence:] The sampled observations must be independent. This is 
+difficult to check, but the following are useful guidelines:
+
+- the sample must be randomly taken
+- if sampling without replacement, sample size must be less than 10% of the 
+    population size
+
+--
+
+If samples are independent, then by definition one sample's value does not "influence" another sample's value.
+
+---
+
+## Conditions for CLT 
+
+✅ .vocab[Sample size / distribution:] 
+
+- if data are numerical, usually n &gt; 30 is considered a large enough sample for the CLT to kick in
+- if we know for sure that the underlying data are normally distributed, then the distribution of sample averages will also be exactly normal, regardless of the sample size
+- if data are categorical, at least 10 successes and 10 failures.
+
+---
+
+class: middle, center
+
+## Let's run our own simulation
+
+---
+
+### Underlying population (not observed in real life!)
+
+.small[
+
+]
+
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-8-1.png" style="display: block; margin: auto;" /&gt;
+
+.small[
+
+```
+## # A tibble: 1 x 2
+##      mu sigma
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1  16.6  14.0
+```
+]
+
+---
+
+## Sampling from the population - 1
+
+
+```r
+set.seed(1)
+samp_1 &lt;- rs_pop %&gt;%
+  sample_n(size = 50) %&gt;%
+  summarise(x_bar = mean(x))
+```
+
+
+```r
+samp_1
+```
+
+```
+## # A tibble: 1 x 1
+##   x_bar
+##   &lt;dbl&gt;
+## 1  16.4
+```
+
+---
+
+## Sampling from the population - 2
+
+
+```r
+set.seed(2)
+samp_2 &lt;- rs_pop %&gt;%
+  sample_n(size = 50) %&gt;% 
+  summarise(x_bar = mean(x))
+```
+
+
+```r
+samp_2
+```
+
+```
+## # A tibble: 1 x 1
+##   x_bar
+##   &lt;dbl&gt;
+## 1  13.3
+```
+---
+
+## Sampling from the population - 3
+
+
+```r
+set.seed(3)
+samp_3 &lt;- rs_pop %&gt;%
+  sample_n(size = 50) %&gt;% 
+  summarise(x_bar = mean(x))
+```
+
+
+```r
+samp_3
+```
+
+```
+## # A tibble: 1 x 1
+##   x_bar
+##   &lt;dbl&gt;
+## 1  17.8
+```
+
+--
+
+keep repeating...
+
+---
+
+## Sampling distribution
+
+.small[
+
+]
+
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-17-1.png" style="display: block; margin: auto;" /&gt;
+
+
+```
+## # A tibble: 1 x 2
+##    mean    se
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1  16.6  2.02
+```
+
+---
+
+.question[
+How do the shapes, centers, and spreads of these distributions compare?
+]
+
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-19-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## CLT Recap
+
+- If certain conditions are satisfied, regardless of the shape of the 
+population distribution, the sampling distribution of the mean follows an 
+approximately normal distribution.
+
+--
+
+- The center of the sampling distribution is at the center of the population 
+distribution.
+
+--
+
+- The sampling distribution is less variable than the population distribution 
+(and we can quantify by how much).
+
+--
+
+.alert[
+`$$\bar{X} \sim N\Big(\mu, \frac{\sigma}{\sqrt{n}}\Big)$$`
+]
+
+---
+
+## Back to Asheville 
+
+✅ .vocab[Independence] 
+
+- The Airbnbs in this data set were randomly selected 
+- 50 is less than 10% of all Airbnbs in Asheville 
+
+--
+
+✅ .vocab[Sample size / distribution]
+
+- The sample size 50 is sufficiently large, `\((n &gt; 30)\)` 
+
+---
+
+## Back to Asheville 
+
+.alert[
+Let `\(\bar{X}\)` be the mean price per guest per night in a sample of 50 Airbnbs. Since the conditions are satisfied, we know by the CLT
+
+`$$\bar{X} \sim N\Big(\mu, \frac{\sigma}{\sqrt{50}}\Big)$$`
+Where `\(\mu\)` is the population mean price per guest per night, and `\(\sigma\)` is the population standard deviation. 
+]
+
+- We will use the CLT to draw conclusions about `\(\mu\)`, and we'll deal with the unknown `\(\sigma\)`.
+
+---
+
+## Why do we care?
+
+Knowing the distribution of the sample statistic `\(\bar{X}\)` can help us
+
+--
+
+- estimate a population parameter as **sample statistic** `\(\boldsymbol{\pm}\)` **margin of error**
+  - the .vocab[margin of error] is comprised of a measure of how confident we want to be and how variable the sample statistic is
+--
+
+&lt;br&gt; 
+
+- test for a population parameter by evaluating how likely it is to obtain to observed sample statistic when assuming that the null hypothesis is true
+  - this probability will depend on how variable the sampling distribution is
+
+---
+
+class: center, middle
+
+## Inference based on the CLT
+
+---
+
+## Inference based on the CLT
+
+If necessary conditions are met, we can also use inference methods based on the CLT. Suppose we know the true population standard deviation. 
+
+--
+
+Then the CLT tells us that `\(\bar{X}\)` approximately has the distribution `\(N\left(\mu, \sigma/\sqrt{n}\right)\)`. 
+
+That is,
+
+`$$Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0, 1)$$`
+---
+
+## What if `\(\sigma\)` isn't known?
+
+&lt;img src="img/03/guinness.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## T distribution
+
+- In practice, we never know the true value of `\(\sigma\)`, and so we estimate it from our data with `\(s\)`.
+
+- In practice We will use the `\(t\)` distribution instead of the standard normal distribution when we conduct statistical inference for the mean (and eventually linear regression coefficients)
+
+.question[
+For the sample mean `\(\bar{X}\)`, 
+
+$$ Z = \frac{\bar{X} - \mu}{\boldsymbol{\sigma}/\sqrt{n}} \sim N(0, 1) \hspace{5mm} \Rightarrow \hspace{5mm}  T = \frac{\bar{X} - \mu}{\mathbf{s}/\sqrt{n}} \sim t_{n-1}$$
+]
+
+---
+
+## T distribution 
+
+
+The t-distribution is also unimodal and symmetric, and is centered at 0
+
+--
+
+Thicker tails than the normal distribution
+  - This is to make up for additional variability introduced by using `\(s\)` instead of `\(\sigma\)` in calculation of the .vocab[standard error (SE)], `\(s/\sqrt{n}\)`.
+
+---
+
+## T vs Z distributions
+
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-21-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle, center
+
+## Hypothesis testing 
+
+---
+
+
+## Mean price per guest per night 
+
+.question[
+Does the data provide sufficient evidence that the mean price per guest per night in Airbnbs in Asheville differs from $80? 
+]
+
+---
+
+## Outline of a hypothesis test
+
+--
+
+1️⃣ State the hypotheses.
+
+
+--
+
+2️⃣ Calculate the test statistic. 
+
+
+--
+
+3️⃣ Calculate the p-value.
+
+
+--
+
+4️⃣ State the conclusion. 
+
+
+---
+
+## 1️⃣ State the hypotheses
+
+.pull-left[
+.small-box[
+`$$\large{\begin{aligned}&amp; H_0: \mu = 80 \\&amp; H_a: \mu \neq 80\end{aligned}}$$`
+]
+]
+
+.pull-right[
+&lt;font color = "white"&gt;place-holder&lt;/font&gt;
+ 
+.big[.vocab[Null hypothesis]]
+
+.big[.vocab[Alternative hypothesis]]
+]
+
+&lt;br&gt; 
+
+--
+
+- We define the hypotheses **&lt;u&gt;before&lt;/u&gt;** analyzing the data.
+
+- We will assume the null hypothesis is true and assess the strength of evidence **&lt;u&gt;against&lt;/u&gt;** the null hypohtesis. 
+
+
+
+
+---
+
+## 2️⃣ Calculate the test statistic.
+
+**From our data**
+
+
+|  x_bar|     sd|  n|
+|------:|------:|--:|
+| 76.587| 50.141| 50|
+
+&lt;br&gt; 
+
+--
+
+.eq[
+`$$\text{test statistic} = \frac{\text{Estimate} - \text{Hypothesized}}{\text{Standard error}}$$` 
+]
+
+---
+
+## 2️⃣ Calculate the test statistic.
+
+**From our data**
+
+
+|  x_bar|     sd|  n|
+|------:|------:|--:|
+| 76.587| 50.141| 50|
+
+
+&lt;br&gt; 
+.eq[
+$$ t = \frac{\bar{X} - \mu_0}{\mathbf{s}/\sqrt{n}} = \frac{76.587 - 80}{50.141 / \sqrt{50}} = -0.481$$
+]
+
+---
+
+## 3️⃣ Calculate the p-value.
+
+.eq[
+`$$\text{p-value} = P(|t| \geq |\text{test statistic}|)$$`
+
+Calculated from a `\(t\)` distribution with `\(n-1\)` degrees of freedom. 
+]
+
+
+
+--
+
+The p-value is the probability of observing a test statistic at least as extreme as the one we've observed, given the null hypothesis is true.
+
+---
+
+## 3️⃣ Calculate the p-value
+
+The test statistic follows a `\(t\)` distribution with 49 degrees of freedom. 
+
+.pull-left[
+&lt;img src="03-inference-review_files/figure-html/unnamed-chunk-24-1.png" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-right[
+
+```r
+pval &lt;- 2 * pt(abs(-0.481), 49, 
+               lower.tail = FALSE)
+pval 
+```
+
+```
+## [1] 0.6326574
+```
+]
+---
+
+## Understanding the p-value
+
+|  Magnitude of p-value |             Interpretation            |
+|:---------------------:|:-------------------------------------:|
+| p-value &lt; 0.01        | strong evidence against `\(H_0\)`         |
+| 0.01 &lt; p-value &lt; 0.05 | moderate evidence against `\(H_0\)`       |
+| 0.05 &lt; p-value &lt; 0.1  | weak evidence against `\(H_0\)`           |
+| p-value &gt; 0.1         | effectively no evidence against `\(H_0\)` |
+
+&lt;br&gt; 
+&lt;br&gt;
+
+*These are general guidelines. The strength of evidence depends on the context of the problem.*
+
+---
+
+## 4️⃣ State the conclusion
+
+The p-value of 0.633 is large, so we fail to reject the null hypothesis. 
+
+.vocab[The data do not provide sufficient evidence that the mean price per guest per night for Airbnbs in Asheville is not equal to $80.]
+
+---
+
+class: middle, center
+
+### What is a plausible estimate for the mean price per guest per night? 
+
+---
+
+## Confidence interval 
+
+.eq[
+`$$\text{ Estimate} \pm \text{ (critical value) } \times \text{SE}$$`
+]
+
+--
+
+.middle[
+.eq[
+
+Confidence interval for `\(\mu\)`
+
+`$$\bar{X} \pm t^* \times \frac{s}{\sqrt{n}}$$`
+]
+]
+
+&lt;br&gt;
+
+`\(t^*\)` is calculated from a `\(t\)` distribution with `\(n-1\)` degrees of freedom
+  
+---
+
+## Calculating the 95% CI for `\(\mu\)`
+
+
+|  x_bar|     sd|  n|
+|------:|------:|--:|
+| 76.587| 50.141| 50|
+
+
+```r
+t_star &lt;- qt(0.975, 49)
+t_star
+```
+
+```
+## [1] 2.009575
+```
+
+--
+
+.eq[
+`$$76.587 \pm 2.01 \times \frac{50.141}{\sqrt{50}} \\[8pt]
+\mathbf{[62.334, 90.840]}$$`
+]
+
+---
+
+## Interpretation 
+
+.eq[
+`$$\mathbf{[62.334, 90.840]}$$`
+]
+
+--
+
+&lt;br&gt;
+
+.vocab[We are 95% confident the true mean price per guest per night for Airbnbs in Asheville is between $62.33 and $90.84.]
+
+--
+
+Note that this is consistent with the conclusion from our hypothesis test.
+
+---
+
+## One-sample t-test functions in R (both work!)
+
+
+```r
+library(infer)
+t_test(abb, response = ppg, mu = 80)
+```
+
+```
+## # A tibble: 1 x 6
+##   statistic  t_df p_value alternative lower_ci upper_ci
+##       &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;    &lt;dbl&gt;
+## 1    -0.481    49   0.632 two.sided       62.3     90.8
+```
+
+
+--
+
+
+```r
+t.test(abb$ppg, mu = 80) %&gt;%
+  tidy()
+```
+
+```
+## # A tibble: 1 x 8
+##   estimate statistic p.value parameter conf.low conf.high method     alternative
+##      &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      
+## 1     76.6    -0.481   0.632        49     62.3      90.8 One Sampl… two.sided
+```
+
+---
+
+## Recap
+
+
+- Sampling distributions and the Central Limit Theorem 
+
+- Hypothesis test to test a claim about a population parameter
+
+- Confidence interval to estimate a population parameter
+
+
+---
+
+## Acknowledgements
+
+Some slides were adapted from [Data Science in a Box](datasciencebox.org).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

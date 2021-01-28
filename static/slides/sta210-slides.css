@@ -33,7 +33,7 @@ h1, h3 {
 
 a, a > code {
   font-family: 'Open Sans', sans-serif;
-  color: #008eaa;
+  color: #799100;
   text-decoration: underline;
   font-weight: bold;
   font-size: 90%;
@@ -47,7 +47,7 @@ a, a > code {
 }
 .remark-code, .remark-inline-code { 
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
-font-size: 100%;
+font-size: 75%;
 }
 
 

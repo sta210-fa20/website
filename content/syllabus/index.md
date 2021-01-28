@@ -2,142 +2,155 @@
 title: Syllabus
 ---
 
-**[Click here](https://sta210-fa20.netlify.app/syllabus.pdf) to download a PDF copy of the syllabus.**
+**[Click here](sta210-sp21-syllabus.pdf) to download a PDF copy of the syllabus.**
 
 ## Course learning objectives
 
-By the end of the semester, you will…
+By the end of the semester, you will be able to...
 
-- know methods for analyzing multivariate datasets, with an emphasis on interpretation
-- know how to check whether proposed statistical models are appropriate for given data
-- develop proficiency in addressing complex research questions using statistical evidence
-- develop proficiency in computing tools used to conduct reproducible statistical analyses, specifically R and Git
-- understand the process of data-based research by working on an independent research project
+- Analyze real-world data to answer questions about multivariable relationships.
+- Fit and evaluate linear and logistic regression models.
+- Assess whether a proposed model is appropriate and describe its limitations.
+- Use R Markdown to write reproducible reports and GitHub for version control and collaboration. 
+- Communicate results from statistical analyses to a general audience.
 
 ## Course community 
 
-### Duke Community Standard 
+### Duke Compact & Community Standard 
 
-As a student in this course, you have agreed to uphold the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) as well as the practices specific to this course. 
+**The Duke Compact**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_KN97j30ST4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+The Duke Compact recognizes our shared responsibility for our collective health and well- being. Please be reminded that by signing your name to this pledge, you have acknowledged that you understand the conditions for being on campus. These include complying with university, state, and local requirements and acting to protect yourself and those around you. For complete language and updated policies, please visit [returnto.duke.edu/compact/](https://returnto.duke.edu/compact/).
 
+
+**Duke Community Standard**
+
+All students, whether residing on campus or learning remotely, must adhere to the [Duke Community Standard (DCS)](https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct): Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, and accountability. Citizens of this community commit to reflect upon these principles in all academic and non- academic endeavors, and to protect and promote a culture of integrity.
+
+To uphold the Duke Community Standard:
+         
+*Students affirm their commitment to uphold the values of the Duke University community by signing a pledge that states:*
+
+> I will not lie, cheat, or steal in my academic endeavors;
+
+> I will conduct myself honorably in all my endeavors;
+
+> I will act if the Standard is compromised
+
+Regardless of course delivery format, it is the responsibility of all students to understand and follow Duke policies regarding academic integrity, including doing one's own work, following proper citation of sources, and adhering to guidance around group work
+projects. Ignoring these requirements is a violation of the Duke Community Standard. If you have any questions about how to follow these requirements, please contact [Jeanna McCullers](mailto:jeanna.mccullers@duke.edu), Director of the Office of Student Conduct.
 
 ### Inclusive community
 
-It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
+It is my intent that students from diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke’s Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
 
-Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:
+Furthermore, I strive to create a learning environment that supports a diversity of thoughts, perspectives and experiences. To help accomplish this:
 
 - If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.
-- I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.
+- If something was said or done as part of this class that makes you uncomfortable, please let me know.
 
-### Accessibility 
-
-If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make accommodations. 
+## Accessibility
 
 In addition to accessibility issues experienced during the typical academic year, I recognize that remote learning may present additional challenges. Students may be experiencing unreliable wi-fi, lack of access to quiet study spaces, varied time-zones, or additional responsibilities while studying at home. If you are experiencing these or other difficulties, please contact me to discuss possible accommodations. 
 
-The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update accommodations](https://access.duke.edu/requests) under these circumstances. 
+### Academic accommodations
+
+The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) will continue to be available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update](https://access.duke.edu/requests) accommodations under these circumstances. Zoom has the ability to provide live closed captioning. If you are not seeing this, and but would like to see this feature, please reach out to your instructor for assistance.
+
+## Course materials & communication
+
+### Materials
+
+All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta210-sp21.netlify.app/, specifically on the [**Schedule**](https://sta210-sp21.netlify.app/schedule/) page.
+
+See the weekly pages for a detailed outline of each week's materials, assignments, videos, and activities. 
+
+We will use RStudio and GitHub for computing in the class. You may use RStudio through the STA 210 - Regression Analysis [Docker container](https://vm-manage.oit.duke.edu/containers). See the [Resources](/resources/) page for resources to help you get started with RStudio and GitHub.
+
+### Communication
+
+Regular announcements will be sent to the class through Sakai. Please check your email or check the **Announcements** tab in Sakai regularly to ensure you have up-to-date information about the course.
 
 
-### Academic honesty
+**Online communication** 
 
-**TL;DR: Don't cheat!** 
+If you have general questions about the course logistics, content, or assignments, you may post them on the online discussion platform Piazza. Note that this forum should only be used for questions or comments that may be viewed by the entire class.
 
-Please abide by the following as you work on assignments in this course:
+Piazza is accessible through the course page by clicking on the Piazza link on the top of course webpage or through Sakai. Note that it may ask you to make a financial contribution. You are **not** required to make a contribution participate in the class discussion on Piazza. 
 
-- You may not discuss or otherwise work with others on the quizzes. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.
-- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. 
-- On individual assignments, you may not directly share code or write up with other students. On team assignments, you may not directly share code or write up with another team. Unauthorized sharing of the code or write up will be considered a violation for all students involved.
+**Email** 
 
-Any violations in academic honesty standards as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for further action.
+If there is a question that's not appropriate for the online discussion platform, you are welcome to email me directly. **If you email me, please include "STA 210" in the subject line.** Barring extenuating circumstances, I will respond to STA 210 emails within 48 hours Monday - Friday. 
 
-### Communication 
-
-All lecture notes, assignment instructions, up-to-date schedule, and other course materials may be found on the course website, https://sta20-fa20.netlify.app . 
-
-I will also email announcements through Sakai periodically to ensure everyone has the current information. Please check your email and/or the Announcements page regularly. 
-
-
-### Getting Help
-
-- If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone. 
-- The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
-- Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza. There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond! 
-
-Check out the [Help](/help/) tab for more information about getting help and resources.
-
-### Email 
-
-If there is a question that's not appropriate for the public forum (Piazza), you are welcome to email me directly. **If you email me, please include "STA 210" in the subject line.** Barring extenuating circumstances, I will respond to STA 210 emails within 48 hours Monday - Friday. I have more limited access to email on weekends.
 
 
 ## Activities & Assessment
 
-The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional projects.
+The following activities and assessments will help you successfully achieve the course learning objectives. By experiencing the course content in different ways, you will not only gain a better understanding of regression analysis, but you will also get experiences that can guide you as you apply what you've learned in future academic and professional settings.
 
-### A Week in STA 210!
+### A week in STA210
+
+<br> 
 
 <center> 
 
-| **Monday**    | Attend live lecture session 10:15a - 11:30a |
+|    **Day**           | **Activity**   |
 |---------------|---------------------------------------------|
-| **Tuesday**   | Watch lecture content videos for Wednesday  |
-|               | Monday's AE due                             |
-| **Wednesday** | Attend live lecture session 10:15a - 11:30a |
-|               | Previous week's lab due                     |
-| **Thursday**  | Attend lab session / start new lab          |
-|               | Wednesday's AE due                          |
-| **Friday**    | Watch lecture content videos for Monday     |   
+| **Monday**    | Attend lab   |
+|               | Watch lecture content video for Tuesday   |
+| **Tuesday**   | Attend live lecture session 10:15a - 11:30a |
+| **Wednesday** | Tuesday's application exercise due          |
+|               | Watch lecture content video for Thursday    |
+| **Thursday**  | Attend live lecture session 10:15a - 11:30a |
+| **Friday**    | Thursday's application exercise due         |  
 
 </center> 
+
+### Lectures
 
 Lectures will have two components: 
 
 - **Lecture content videos**: These are pre-recorded videos that contain the content. You can think of these as a "video textbook". You should watch the content videos before we meet for the live sessions. 
 
-- **Live lecture sessions**: These sessions will be on Zoom Mondays and Wednesdays 10:15a - 11:30a. During this time, we will answer questions from the live lecture videos and most of the time will be used to work on exercises where you apply the material from the content videos.
+- **Live lecture sessions**: These sessions will be on Zoom during the scheduled class time. During this time, we will answer questions from the live lecture videos and work through application exercises (AE) to apply what you learned in the content videos. 
 
 ### Labs
 
-In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. Most lab assignments will be performed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's Git repository on the course's GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab, and you will also be asked to evaluate your team members' engagement periodically during the semester. Lab assignments will be completed using R Markdown, correspond to an appropriate GitHub repository, and submitted as a .pdf file to Gradescope. 
+In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. Most lab assignments will be performed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team's Git repository in the [STA 210 GitHub organization](https://github.com/sta210-sp21) as the central platform for collaboration. Commits to this repository will be used as a metric of each team member's relative contribution for each lab, and you will also be asked to evaluate your team members' engagement periodically during the semester. Lab assignments will be completed using R Markdown, correspond to an appropriate GitHub repository, and submitted to Gradescope.
 
 **Sections 01L - 03L**: If you are in one of these sections, you are expected to attend lab during the scheduled time. You will spend most time working with your team to complete that week's assignment. There will be teaching assistants available if you have questions as you work. 
 
-**Section 04L:** Though you do not have a scheduled lab time, you will find a time with your team to work on the weekly lab assignment. The teaching team will provide tips and resources to help you establish a plan for collaboration. You will be able to ask questions during office hours and on Piazza.  
+**Section 04L:** Though you do not have a scheduled lab time, you will be assigned a team to work on the weekly lab assignment. There will be a short video to introduce each lab, and the teaching team will provide lab hours specifically for asynchronous lab students.
 
-*To accommodate unexpected events, the lowest lab grade will be dropped at the end of the semester for all students.*
+Your lowest lab grade will be dropped at the end of the semester. 
 
 
 ### Homework
 
-In homework, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted in Gradescope. 
+In most homework assignments, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Homework must be typed up using R Markdown and GitHub and submitted to Gradescope. 
 
-Individual homework extensions will only be given for extenuating circumstances. Please contact Professor Tackett if you have an extenuating circumstance that prohibits you from completing the homework by the stated due date.
+One homework assignment will be dedicated towards engaging with statistics outside of the classroom by attending statistics-related talks, participating in a data analysis competition, listening to related podcasts, or similar activities. More details will be provided during the semester.
 
-*To accommodate unexpected events, the lowest homework grade will be dropped at the end of the semester.*
+Your lowest homework grade will be dropped at the end of the semester. 
 
 ### Quizzes 
 
-There will be four quizzes during the semester. The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical and conceptual aspects of regression. Quizzes will be timed and must be completed during the time period specified. 
+The quizzes are an opportunity to assess the knowledge and skills you’ve learned. They will include both the conceptual and mathematical aspects of regression. More details will be provided before each quiz. 
 
-**Quiz dates cannot be changed and no make-up quizzes will be given.** If extenuating circumstances prohibit you from taking a quiz, please let Professor Tackett know before the start of the quiz. 
+Your lowest quiz grade will be down-weighted in the calculation of your final quiz average.
 
 ### Final Project 
 
-The purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided a few weeks into the semester. 
+The purpose of the project is to apply what you’ve learned throughout the semester to explore an interesting data-based research question using regression. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided later in the semester.
 
-The participation of the course grade will be based primarily on individual Application Exercises (AEs), which give you an opportunity to practice using the statistical concepts and/or code discussed in lecture on short data analyses. AEs will be linked in lecture slides and time will be set aside during the optional live sessions to work on them. These AEs are due by the end of the next day; for instance, an AE associated with a lecture on Monday will be due Tuesday at 11:59p. AEs will be graded based on a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 90% of AEs will result in full points for AEs; anything lower than that will be assigned points accordingly. 
+### Participation
 
-In addition to AEs will be periodic activities help build a learning community. These will be short, fun activities that will help everyone in the class connect throughout the semester. 
+The participation component of the grade will be based on two components: 
 
-The last component of participation will be based on periodic team feedback about each team member's overall contribution to labs and the project. 
+- **Participating in lecture.** This includes watching the lecture content videos and completing the Application Exercises (AEs) from the corresponding live lecture session. AEs are due on GitHub within one week of the live lecture. AEs will graded based on making a good-faith effort on the activity. You will receive full credit for this portion of the participation grade if you watch the lecture content video and complete the AE in a timely manner for at least 80% of the lectures.
 
-### Statistics Experiences
+- **Teamwork** This will be based periodic team feedback and commits to team labs and the final program.  
 
-
-During the course of the semester, there will be periodic opportunities for you to experience statistics and data science outside of the classroom. The goal of these experiences are for you to think about how the material you're learning in the course can connect with your experiences and society at large. 
 
 ## Grading
 
@@ -147,12 +160,11 @@ The final course grade will be calculated as follows:
 
  <span></span>   Category  | <span></span> Percentage 
 -----------|---------------------------------
-Quizzes| 35%
-Homework | 25%
+Quizzes | 30%
+Homework | 30%
+Final Project | 20%
 Labs | 15%
-Final Project | 15%
 Participation | 5%
-Stats Experience | 5%
 
 </center>
 
@@ -179,38 +191,57 @@ F  | < 60
 
 </center>
 
+## Asking for help
 
-### Late Work
+- **If you have a question during lecture or lab, please to ask it!** There are likely other students with the same question, so it is a learning opportunity for everyone.
+- The teaching team is here to help you be successful in the course. A lot of questions are most effectively answered through discussion rather than email, so office hours are a valuable resource. They are your time to ask questions about course content and assignments. The office hours schedule is posted on the [homepage](/home/).
+- Outside of class and office hours, any general questions about course content or assignments should be posted on the online discussion platform. There is a chance another student has already asked a similar question, so please check the other posts on online discussion platform before adding a new question. If you know the answer to a question posted, I encourage you to respond! 
 
-You will have a 24 hour grace period after the due date of homework and lab assignments to turn them in with no penalty. I recommend using this policy as little as possible, but they are there to provide some relief and to accommodate multiple time zones. After the grace period, there is a 20% penalty for each day the assignment is late. 
-
-If there are extenuating circumstances that prevent you from completing an assignment by the stated due date, please let Professor Tackett know as soon as possible.
-
-**Late work will not be accepted for the quizzes or the final project**
+See the [Resources](/resources/) tab for information about additional resources for the course.
 
 
-### Regrade Requests
+## Academic conduct
 
-Regrade requests should be submitted through the regrade request from on Gradescope. **Requests for a regrade must be made within a week of when the assignment is returned; requests submitted later will not be considered.** You should only submit a regrade request if there is an error in the grade calculation or a correct answer was mistakenly marked as incorrect. You should not submit a regrade to dispute the number of points deducted for an incorrect response. *Please note that by submitting a regrade request, your entire assignment may be regraded and you may potentially lose points.* 
+**TL;DR: Don't cheat!** 
 
-Due to the time consuming nature of responding to regrade requests, you should attend office hours and ask a member of the teaching team about the feedback before submitting the request. When you submit a request, please indicate which member of the teaching team you spoke with. *Note: Grades can only be changed by Professor Tackett. Teaching Assistants cannot change grades on returned assignments.*
+Please abide by the following as you work on assignments in this course:
 
-**No grades will be changed after the final project presentations.**
+- On individual assignments such as homework, you may discuss the assignment with other students; however, you may not directly share your code or write up with any other student. On team assignments such as labs, you may discuss the assignment with other teams; however, you may not directly share your team's code or write up with another team. Unauthorized sharing of code or a write up is considered an instance of academic misconduct for all students involved.
+
+- **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism and an instance of academic misconduct.
+
+- You may not discuss or otherwise work with anyone on quizzes. Unauthorized collaboration or use of unauthorized materials is considered an instance of academic misconduct for all students involved. More specific details about standards for academic conduct will be provided with the quiz instructions.
+
+Any violations in the standards for academic conduct as outlined in the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the [Office of Student Conduct](https://studentaffairs.duke.edu/conduct) for appropriate additional action. 
+
+
+## Late work & extensions
+
+The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped and the lowest quiz grade will be down-weighted to accommodate such circumstances. 
+
+### Late work policy
+
+- Homework and labs may be submitted up to 3 days late with a 5% penalty each day. 
+- There is no late work accepted for application exercises or quizzes.
+- The late work policy for the project will be provided with the project instructions. 
+
+### Waiver for extenuating circumstances
+
+If there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, please email Professor Tackett before the deadline, to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used once, so only use it for a truly extenuating circumstance. 
+
+If there are circumstances that are having a longer-term impact on your academic performance, please notify your academic dean. 
+
+## Regrade Requests
+
+Regrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question may be regraded and you may potentially lose points.
+
+No grades will be changed after the final project presentations. 
 
 ## Additional resources
 
-### Academic Resource Center 
+Please see the [Resources](../resources/) page for additional academic and wellness resources.
 
-There are times may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The [Academic Resource Center (ARC)](https://arc.duke.edu) offers free services to all students during their undergraduate careers at Duke.  Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact <a href="mailto:arc@duke.edu" title="email">ARC@duke.edu</a>, 919-684-5917.
+## Important dates
 
-### CAPS
+You can find important dates on the  [Spring 2021 Academic Calendar](https://registrar.duke.edu/spring-2021-academic-calendar). 
 
-[Duke Counseling & Pyschological Services (CAPS)](https://studentaffairs.duke.edu/caps) helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. CAPS recognizes that we are living in unprecedented times and that the changes, challenges and stressors brought on by the COVID-19 pandemic have impacted everyone, often in ways that are tax our well-being. CAPS offers many services to Duke undergraduate students, including brief individual and group counseling, couples counseling and more. CAPS staff also provides outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life. CAPS provides services to students via Telehealth. To initiate services, you can contact their front desk at 919-660-1000.
-
-### Important dates
-
-- **Aug 17**: Classes begin
-- **Aug 28**: Drop/add ends
-- **Oct 30**: Last day to withdraw with W
-- **Nov 16**: Classes end
-- **Nov 21**: Final exam period, 9a - 12p

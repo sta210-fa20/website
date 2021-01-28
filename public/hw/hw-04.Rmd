@@ -1,5 +1,5 @@
 ---
-title: "HW 04: Variable transformations"
+title: "HW 04"
 subtitle: ""
 author: ""
 date: ""
@@ -16,86 +16,4 @@ knitr::opts_chunk$set(echo = TRUE,
                       message=FALSE)
 ```
 
-# Getting started
-
-Clone the **hw-04-** repo and start a new project in RStudio. For more detailed instructions about getting started, see the [Lab 01 instructions](https://sta210-fa20.netlify.app/labs/lab-01-practice-r.html).
-
-Type the following lines of code in the **console** in RStudio filling in your Github username and the email address associated with your Github account.
-
-```{r eval=FALSE}
-library(usethis)
-use_git_config(user.name = "your github username", 
-               user.email="your email")
-```
-
-## Packages 
-
-We will use the following packages in this assignment: 
-
-```{r}
-library(tidyverse)
-library(broom)
-library(knitr)
-#add other packages as needed
-```
-
-# Florida votes in the 2000 U.S. Presidental Election
-
-For this assignment, we will examine data on the [2000 U.S. presidential election](https://en.wikipedia.org/wiki/2000_United_States_presidential_election) between George W. Bush and Al Gore. It was one of the closest elections in history that ultimately came down to the state of Florida. One county in particular, Palm Beach County, was at the center of the controversy due to the design of their ballots - the infamous [butterfly ballots](http://news.bbc.co.uk/2/hi/in_depth/americas/2000/us_elections/glossary/a-b/1037172.stm). It is believed that many people who intended to vote for Al Gore accidentally voted for Pat Buchanan due to how the spots to mark the candidate were arranged next to the names.
-
-In this homework, we will fit models that use the number of votes for Bush to predict the number of votes for Buchanan. Using this model, we'll investigate whether the data support the claim that votes for Gore may have accidentally gone to Buchanan. 
-
-The data set is available in `florida-votes-2000.csv` in the data folder of your repo.
-
-The variables in the data are 
-
-- `County`: County name
-- `Bush2000`: Number of votes for George W. Bush
-- `Buchanan2000`: Number of votes for Pat Buchanan
-
-# Questions
-
-**For each question, write your narrative in full sentences and show all relevant code and output used to support your narrative.**
-
-1. Create a scatterplot to visualize the relationship between the number of votes for Buchanan versus the number of votes for Bush. 
-Describe what you observe in the scatterplot, including a description of the relationship between the votes for Buchanan and votes for Bush. 
-
-2. What is the county with the extreme outlier number of votes for Buchanan? Create a new data frame that doesn't include the outlying county. **You will use this updated data frame for Questions 3 - 7.**
-
-3. We'd like to fit a model that can be used to predict the number of votes for Buchanan based on the number of votes for Bush in a given county. To do so, we'll use the mean-centered version of `Bush2000` for the model. 
-   
-   - Briefly explain why we want to use the mean-centered version of `Bush2000` in the model rather than the original variable? 
-   - Create a new variable, `Bush2000_cent` that is the mean-centered `Bush2000`.
-
-4. Fit a model to predict the number of votes for Buchanan based on the number of votes for Bush in the county.
- 
-   - Interpret the intercept in the context of the data.
-   - Interpret the coefficient of `Bush2000_cent`in the context of the data. 
-
-
-5. Next, let's fit a model using log-transformed `Buchanan2000` as the response variable and `Bush2000_cent` as the predictor. 
- 
-    - Interpret the intercept in terms of the number of votes for Buchanan. 
-    - Interpret the coefficient of `Bush2000_cent`in terms of the number of votes for Buchanan. 
-
-
-6. Now let's fit a model using `Buchanan2000` as the response and log-transformed `Bush2000` as the predictor.
-
-   - Use the model to interpret how the number of votes for Buchanan is expected to change when the number of votes for Bush doubles. 
-   
-7. Lastly, let's fit a model using log-transformed  `Buchanan2000` as the response and log-transformed `Bush2000` as the predictor. 
-
-   - **Extra credit**: Use the model to interpret how the number of votes for Buchanan is expected to change when the number of votes for Bush doubles. 
-
-8. Compare the four models fit in Questions 4 - 7. Which model best fits the data? Show any relevant analysis and/or statistics used to choose the best fit model. 
-
-9. Use the model you chose in the previous question to predict the number of votes for Buchanan in the outlying county identified in Question 2. Include the predicted value and appropriate 95% interval.  
-
-10. It is assumed that some of the votes for Buchanan in that county were actually intended to be for Gore. Based on your results in the previous question, does your model support this claim? If no, briefly explain. If yes, about how many votes were possibly intended for Gore? Show any calculations / output used to derive your answer.
-
-<br><br>
-
-<hr>
-
-The data set was obtained from the Sleuth3 R package.
-
+Instructions will be posted when the homework is assigned. 

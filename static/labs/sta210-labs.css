@@ -62,6 +62,13 @@ h4.date {
 	font-weight: 350;
 }
 
+a, a > code {
+  font-family: 'Open Sans', sans-serif;
+  color: #799100;
+  text-decoration: underline;
+  font-size: 90%;
+}
+
 .numeral {
 	font-family: "Source Sans Pro";
 	font-weight: 350;
@@ -79,6 +86,15 @@ strong {
 	font-family: "Source Sans Pro";
 }
 
+table, th, td {
+  border-bottom: 1px solid #808080;
+}
+
+th {
+align: center;
+}
+
+
 /* Code formatting */
 
 
@@ -91,11 +107,18 @@ strong {
 	}
 }
 
-code {
-	font-family: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 17px;
-	line-height: 1.6;
+.remark-code, .remark-inline-code { 
+  font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
+font-size: 75%;
 }
+
+
+.remark-inline-code {
+  font-weight: bold;
+  font-size: 100%;
+}
+.remark-code-line-highlighted     { background-color: #ffff88; }
+
 
 pre {
 	background-color: #FFFFFF;
@@ -168,7 +191,7 @@ ol ol {
 }
 
 td {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 /*Style for the Footer*/
@@ -190,7 +213,3 @@ div .commit {
   text-decoration: italic;
 }
 
-a {
-color: #aa008e;
-text-decoration: underline;
-}

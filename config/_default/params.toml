@@ -52,20 +52,20 @@ MathJaxVersion = "2.7.1"
 [colors]
     text = "#404040" # off-black
     # Links
-    link = "#008eaa" # main accent
+    link = "#871d89" # main accent
     link_hover = "#cc3168" #lighter
     # Footer
-    footer_primary = "#008eaa"
+    footer_primary = "#338EA0"
     footer_text = "#ffffff" 
     # Backgrounds
     background = "#ffffff" 
     home_section_odd = "#ffffff"
     home_section_even = "#fcfcfc" 
     # Menu
-    menu_primary = "#008eaa"
+    menu_primary = "#338EA0"
     menu_text = "#ffffff"
-    menu_text_active = "#aa008e"
-    menu_text_current = "#aa008e"
+    menu_text_active = "#871d89"
+    menu_text_current = "#871d89"
     menu_decorate_current = "none"
     menu_title = "#ffffff" 
     menu_title_active = "#00000075" 

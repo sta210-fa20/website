@@ -1,0 +1,917 @@
+---
+title: "Statistical inference review"
+author: "Prof. Maria Tackett"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+knitr::opts_chunk$set(fig.height = 3, fig.width = 5, dpi = 300, 
+                      warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center") 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+# For magick
+dev.off <- function(){
+  invisible(grDevices::dev.off())
+}
+# For ggplot2
+ggplot2::theme_set(ggplot2::theme_bw())
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+library(knitr)
+library(emo)
+library(infer)
+library(patchwork)
+```
+
+class: middle center
+
+## [Click for PDF of slides](03-inference-review.pdf)
+
+---
+
+## Topics
+
+
+- Sampling distributions and the Central Limit Theorem 
+
+- Hypothesis test to test a claim about a population parameter
+
+- Confidence interval to estimate a population parameter
+
+---
+
+class: center, middle
+
+## Sample Statistics and Sampling Distributions
+
+---
+
+## Terminology
+
+.vocab[Population]: a group of individuals or objects we are interested in studying
+
+.vocab[Parameter]: a numerical quantity derived from the population (almost always unknown)
+
+If we had data from every unit in the population, we could just calculate 
+population parameters and be done!
+
+--
+
+**Unfortunately, we usually cannot do this.**
+
+.vocab[Sample]: a subset of our population of interest
+
+.vocab[Statistic]: a numerical quantity derived from a sample
+
+---
+
+## Inference
+
+If the sample is .vocab[representative], then we can use the tools of probability and statistical inference to make .vocab[generalizable] conclusions to the broader population of interest.
+
+
+```{r echo=FALSE, out.width=406, out.height= 234, fig.align="center"}
+knitr::include_graphics("img/03/soup.png")
+```
+
+Similar to tasting a spoonful of soup while cooking to make an inference about the entire pot.
+
+---
+
+## Statistical inference
+
+.vocab[Statistical inference] is the process of using sample data to make conclusions about the underlying population the sample came from.
+
+- .vocab[Estimation]: using the sample to estimate a plausible range of values for the unknown parameter
+
+- .vocab[Testing]: evaluating whether our observed sample provides evidence for or against some claim about the population
+
+---
+
+## Let's \*virtually\* go to Asheville! 
+
+.center[
+
+```{r echo = F, out.width = "50%"}
+include_graphics("img/03/asheville.jpg")
+```
+
+
+**How much should we expect to pay for an Airbnb in Asheville?**
+]
+
+---
+
+## Asheville data
+
+[Inside Airbnb](http://insideairbnb.com/) scraped all Airbnb listings in Asheville, NC, that were active on June 25, 2020.
+
+**Population of interest**: listings in the Asheville with at least ten reviews.
+
+**Parameter of interest**: Mean price per guest per night among these 
+listings.
+
+.question[
+What is the mean price per guest per night among Airbnb rentals in June 2020  with at least ten reviews in Asheville (zip codes 28801 - 28806)?
+]
+
+---
+
+## Visualizing our sample
+
+```{r echo = F}
+abb <- read_csv("data/asheville.csv")
+```
+
+We have data on the price per guest (`ppg`) for a random
+sample of 50 Airbnb listings.
+
+```{r, echo = F, out.width = "70%"}
+ggplot(data = abb, aes(ppg)) +
+  geom_histogram(binwidth = 25,
+                 color = "darkblue",
+                 fill = "steelblue") +
+  labs(title = "Distribution of price per guest per night",
+       x = "Price per guest per night",
+       y = "Count") +
+  scale_y_continuous(breaks = seq(0, 20, by = 5)) + 
+  ylim(0, 20) +
+  theme_minimal()
+```
+
+---
+
+## Sample statistic
+
+A .vocab[sample statistic (point estimate)] is a single value of a statistic computed from the sample data to serve as the "best guess", or estimate, for the population parameter. 
+
+```{r}
+abb %>% 
+  summarize(mean_price = mean(ppg))
+```
+
+--
+
+If we took another random sample of 50 Airbnbs in Asheville, we'd likely have a different sample statistic.
+---
+
+## Variability of sample statistics
+
+- Each sample from the population yields a slightly different sample statistic.
+
+- The sample-to-sample difference is called .vocab[sampling variability].
+
+- We can use theory to help us understand the underlying .vocab[sampling distribution] and quantify this sample-to-sample variability.  
+
+---
+
+## The goal of statistical inference
+
+- Statistical inference is the act of generalizing from a sample in order to 
+make conclusions regarding a population. 
+
+- We are interested in population parameters, which we do not observe. Instead, 
+we must calculate statistics from our sample in order to learn about them.
+
+- As part of this process, we must quantify the degree of uncertainty in our 
+sample statistic. 
+
+---
+
+## Sampling distribution of the mean
+
+We're interested in the mean price per guest per night at Aribnbs in Asheville, so suppose we were able to do the following:
+
+--
+
+1. Take a random sample of size $n$ from this population, and calculate the 
+mean price per guest per night in this sample, $\bar{X}_1$
+
+--
+
+2. Put the sample back, take a second random sample of size $n$, and calculate 
+the mean price per guest per night from this new sample, $\bar{X}_2$
+
+--
+
+3. Put the sample back, take a third random sample of size $n$, and calculate
+the mean price per guest per night from this sample, too...
+
+--
+
+...and so on.
+
+---
+
+## Sampling distribution of the mean
+
+After repeating this many times, we have a dataset that has the
+$K$ sample averages from the population: $\bar{X}_1$, $\bar{X}_2$, $\cdots$,
+$\bar{X}_K$ 
+
+--
+
+.question[
+Can we say anything about the distribution of these sample means (that is, the
+.vocab[sampling distribution] of the mean?) 
+]
+
+---
+
+class: center, middle
+
+## The Central Limit Theorem
+
+---
+
+class: middle
+
+A quick caveat...
+
+For now, let's assume we know the underlying standard deviation, $\sigma$, from our distribution 
+
+---
+
+## The Central Limit Theorem
+
+For a population with a well-defined mean $\mu$ and standard deviation $\sigma$,
+these three properties hold for the distribution of sample average $\bar{X}$,
+assuming certain conditions hold:
+
+--
+
+1. The mean of the sampling distribution of the mean is identical to the 
+population mean $\mu$.
+
+--
+
+2. The standard deviation of the distribution of the sample averages is
+$\sigma/\sqrt{n}$.
+  - This is called the .vocab[standard error] (SE) of the mean. 
+ 
+--
+
+3. For $n$ large enough, the shape of the
+sampling distribution of means is approximately .vocab[normally distributed].
+
+---
+
+## The normal (Gaussian) distribution
+
+The normal distribution is unimodal and symmetric and is described by its .vocab[density function]:
+
+If a random variable $X$ follows the normal distribution, then
+$$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left\{ -\frac{1}{2}\frac{(x - \mu)^2}{\sigma^2} \right\}$$
+where $\mu$ is the mean and $\sigma^2$ is the variance $(\sigma \text{ is the standard deviation})$
+
+.alert[
+We often write $N(\mu, \sigma)$ to describe this distribution.
+]
+---
+
+## The normal distribution (graphically)
+
+```{r echo = F, fig.height = 2.5}
+ggplot(NULL, aes(c(-3,3))) +
+  geom_area(stat = "function", fun = dnorm, fill = "#FFFFFF", xlim = c(-3, 3), color = "black", size = 1.5) +
+  labs(x = "", 
+       y = "Density") +
+  theme_bw() +
+  scale_x_continuous(breaks = c(-3,-2,-1,0,1,2,3))
+```
+
+---
+
+## Wait, *any* population distribution?
+
+The Central Limit Theorem tells us that *<b>sample means</b>* are normally distributed, **if** we have enough data and certain conditions hold. 
+
+This is true *even if the population distribution is not normally distributed*.
+
+Click [here](http://onlinestatbook.com/stat_sim/sampling_dist/index.html) to see an interactive demonstration of this idea.
+
+---
+
+## Conditions for CLT 
+
+We need to check two conditions for CLT to hold: independence, sample size/distribution. 
+
+--
+
+`r emo::ji("white_check_mark")` .vocab[Independence:] The sampled observations must be independent. This is 
+difficult to check, but the following are useful guidelines:
+
+- the sample must be randomly taken
+- if sampling without replacement, sample size must be less than 10% of the 
+    population size
+
+--
+
+If samples are independent, then by definition one sample's value does not "influence" another sample's value.
+
+---
+
+## Conditions for CLT 
+
+`r emo::ji("white_check_mark")` .vocab[Sample size / distribution:] 
+
+- if data are numerical, usually n > 30 is considered a large enough sample for the CLT to kick in
+- if we know for sure that the underlying data are normally distributed, then the distribution of sample averages will also be exactly normal, regardless of the sample size
+- if data are categorical, at least 10 successes and 10 failures.
+
+---
+
+class: middle, center
+
+## Let's run our own simulation
+
+---
+
+### Underlying population (not observed in real life!)
+
+.small[
+```{r echo = F}
+rs_pop <- tibble(x = rbeta(100000, 1, 5) * 100)
+```
+]
+
+```{r echo=FALSE, fig.height=2}
+ggplot(data = rs_pop, aes(x = x)) +
+  geom_density(binwidth = 2, fill = "steelblue", color = "darkblue") +
+  labs(title = "Population distribution", x = "") +
+  theme(axis.title.y = element_blank(),
+        axis.text.y  = element_blank(),
+        axis.ticks.y = element_blank())
+```
+
+.small[
+```{r echo = F}
+rs_pop %>%
+  summarise(mu = mean(x), sigma = sd(x))
+```
+]
+
+---
+
+## Sampling from the population - 1
+
+```{r}
+set.seed(1)
+samp_1 <- rs_pop %>%
+  sample_n(size = 50) %>%
+  summarise(x_bar = mean(x))
+```
+
+```{r}
+samp_1
+```
+
+---
+
+## Sampling from the population - 2
+
+```{r}
+set.seed(2)
+samp_2 <- rs_pop %>%
+  sample_n(size = 50) %>% 
+  summarise(x_bar = mean(x))
+```
+
+```{r}
+samp_2
+```
+---
+
+## Sampling from the population - 3
+
+```{r}
+set.seed(3)
+samp_3 <- rs_pop %>%
+  sample_n(size = 50) %>% 
+  summarise(x_bar = mean(x))
+```
+
+```{r}
+samp_3
+```
+
+--
+
+keep repeating...
+
+---
+
+## Sampling distribution
+
+.small[
+```{r echo = F}
+set.seed(092620)
+sampling <- rs_pop %>%
+  rep_sample_n(size = 50, replace = TRUE, reps = 5000) %>%
+  group_by(replicate) %>%
+  summarise(xbar = mean(x))
+```
+]
+
+```{r echo=FALSE, fig.height=1.9}
+ggplot(data = sampling, aes(x = xbar)) +
+  geom_histogram(binwidth = 1, fill = "steelblue", color = "darkblue") +
+  labs(title = "Sampling distribution of sample means") +
+  theme(axis.title.y = element_blank(),
+        axis.text.y  = element_blank(),
+        axis.ticks.y = element_blank())
+```
+
+```{r echo = F}
+sampling %>%
+  summarise(mean = mean(xbar), se = sd(xbar))
+```
+
+---
+
+.question[
+How do the shapes, centers, and spreads of these distributions compare?
+]
+
+```{r echo=FALSE, fig.height=2.5}
+p1 <- ggplot(data = rs_pop, aes(x = x)) +
+  geom_density(binwidth = 2, fill = "steelblue", color = "darkblue") +
+  labs(title = "Population distribution", x = "") +
+  xlim(-5, 100) +
+  theme(axis.title.y = element_blank(),
+        axis.text.y  = element_blank(),
+        axis.ticks.y = element_blank())
+
+p2 <- ggplot(data = sampling, aes(x = xbar)) +
+  geom_histogram(binwidth = 1, fill = "steelblue", color = "darkblue") +
+  labs(title = "Sampling distribution of sample means", x = "Sample means") +
+  xlim(-5, 100) +
+  labs(x = " ", 
+       y = " ") +
+    theme(axis.title.y = element_blank(),
+        axis.text.y  = element_blank(),
+        axis.ticks.y = element_blank())
+
+p1 / p2
+```
+
+---
+
+## CLT Recap
+
+- If certain conditions are satisfied, regardless of the shape of the 
+population distribution, the sampling distribution of the mean follows an 
+approximately normal distribution.
+
+--
+
+- The center of the sampling distribution is at the center of the population 
+distribution.
+
+--
+
+- The sampling distribution is less variable than the population distribution 
+(and we can quantify by how much).
+
+--
+
+.alert[
+$$\bar{X} \sim N\Big(\mu, \frac{\sigma}{\sqrt{n}}\Big)$$
+]
+
+---
+
+## Back to Asheville 
+
+`r emo::ji("white_check_mark")` .vocab[Independence] 
+
+- The Airbnbs in this data set were randomly selected 
+- 50 is less than 10% of all Airbnbs in Asheville 
+
+--
+
+`r emo::ji("white_check_mark")` .vocab[Sample size / distribution]
+
+- The sample size 50 is sufficiently large, $(n > 30)$ 
+
+---
+
+## Back to Asheville 
+
+.alert[
+Let $\bar{X}$ be the mean price per guest per night in a sample of 50 Airbnbs. Since the conditions are satisfied, we know by the CLT
+
+$$\bar{X} \sim N\Big(\mu, \frac{\sigma}{\sqrt{50}}\Big)$$
+Where $\mu$ is the population mean price per guest per night, and $\sigma$ is the population standard deviation. 
+]
+
+- We will use the CLT to draw conclusions about $\mu$, and we'll deal with the unknown $\sigma$.
+
+---
+
+## Why do we care?
+
+Knowing the distribution of the sample statistic $\bar{X}$ can help us
+
+--
+
+- estimate a population parameter as **sample statistic** $\boldsymbol{\pm}$ **margin of error**
+  - the .vocab[margin of error] is comprised of a measure of how confident we want to be and how variable the sample statistic is
+--
+
+<br> 
+
+- test for a population parameter by evaluating how likely it is to obtain to observed sample statistic when assuming that the null hypothesis is true
+  - this probability will depend on how variable the sampling distribution is
+
+---
+
+class: center, middle
+
+## Inference based on the CLT
+
+---
+
+## Inference based on the CLT
+
+If necessary conditions are met, we can also use inference methods based on the CLT. Suppose we know the true population standard deviation. 
+
+--
+
+Then the CLT tells us that $\bar{X}$ approximately has the distribution $N\left(\mu, \sigma/\sqrt{n}\right)$. 
+
+That is,
+
+$$Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0, 1)$$
+---
+
+## What if $\sigma$ isn't known?
+
+```{r fig.align="center",out.width="80%",echo=FALSE}
+knitr::include_graphics("img/03/guinness.jpg")
+```
+
+---
+
+## T distribution
+
+- In practice, we never know the true value of $\sigma$, and so we estimate it from our data with $s$.
+
+- In practice We will use the $t$ distribution instead of the standard normal distribution when we conduct statistical inference for the mean (and eventually linear regression coefficients)
+
+.question[
+For the sample mean $\bar{X}$, 
+
+$$ Z = \frac{\bar{X} - \mu}{\boldsymbol{\sigma}/\sqrt{n}} \sim N(0, 1) \hspace{5mm} \Rightarrow \hspace{5mm}  T = \frac{\bar{X} - \mu}{\mathbf{s}/\sqrt{n}} \sim t_{n-1}$$
+]
+
+---
+
+## T distribution 
+
+
+The t-distribution is also unimodal and symmetric, and is centered at 0
+
+--
+
+Thicker tails than the normal distribution
+  - This is to make up for additional variability introduced by using $s$ instead of $\sigma$ in calculation of the .vocab[standard error (SE)], $s/\sqrt{n}$.
+
+---
+
+## T vs Z distributions
+
+```{r echo=FALSE, fig.height = 2.5}
+x = seq(-5,5,len=1000)
+d = rbind(
+  data.frame(dist="t (df=1)",  x=x, d=dt(x,1)),
+  data.frame(dist="t (df=3)",  x=x, d=dt(x,3)),
+  data.frame(dist="t (df=5)",  x=x, d=dt(x,5)),
+  data.frame(dist="t (df=10)", x=x, d=dt(x,10)),
+  data.frame(dist="t (df=15)", x=x, d=dt(x,15)),
+  data.frame(dist="t (df=30)", x=x, d=dt(x,30)),
+  data.frame(dist="Z", x=x, d=dnorm(x))
+)
+
+ggplot(d, aes(x=x, y=d, color=dist)) + geom_line()
+```
+
+---
+
+class: middle, center
+
+## Hypothesis testing 
+
+---
+
+
+## Mean price per guest per night 
+
+.question[
+Does the data provide sufficient evidence that the mean price per guest per night in Airbnbs in Asheville differs from $80? 
+]
+
+---
+
+## Outline of a hypothesis test
+
+--
+
+`r emo::ji('one')` State the hypotheses.
+
+
+--
+
+`r emo::ji('two')` Calculate the test statistic. 
+
+
+--
+
+`r emo::ji('three')` Calculate the p-value.
+
+
+--
+
+`r emo::ji('four')` State the conclusion. 
+
+
+---
+
+## `r emo::ji('one')` State the hypotheses
+
+.pull-left[
+.small-box[
+$$\large{\begin{aligned}& H_0: \mu = 80 \\& H_a: \mu \neq 80\end{aligned}}$$
+]
+]
+
+.pull-right[
+<font color = "white">place-holder</font>
+ 
+.big[.vocab[Null hypothesis]]
+
+.big[.vocab[Alternative hypothesis]]
+]
+
+<br> 
+
+--
+
+- We define the hypotheses **<u>before</u>** analyzing the data.
+
+- We will assume the null hypothesis is true and assess the strength of evidence **<u>against</u>** the null hypohtesis. 
+
+
+
+
+---
+
+## `r emo::ji('two')` Calculate the test statistic.
+
+**From our data**
+
+```{r echo = F}
+abb %>% 
+  summarise(x_bar = mean(ppg), 
+            sd = sd(ppg), n = n()) %>%
+  kable(digits = 3)
+```
+
+<br> 
+
+--
+
+.eq[
+$$\text{test statistic} = \frac{\text{Estimate} - \text{Hypothesized}}{\text{Standard error}}$$ 
+]
+
+---
+
+## `r emo::ji('two')` Calculate the test statistic.
+
+**From our data**
+
+```{r echo = F}
+abb %>% 
+  summarise(x_bar = mean(ppg), 
+            sd = sd(ppg), n = n()) %>%
+  kable(digits = 3)
+```
+
+
+<br> 
+.eq[
+$$ t = \frac{\bar{X} - \mu_0}{\mathbf{s}/\sqrt{n}} = \frac{76.587 - 80}{50.141 / \sqrt{50}} = -0.481$$
+]
+
+---
+
+## `r emo::ji('three')` Calculate the p-value.
+
+.eq[
+$$\text{p-value} = P(|t| \geq |\text{test statistic}|)$$
+
+Calculated from a $t$ distribution with $n-1$ degrees of freedom. 
+]
+
+
+
+--
+
+The p-value is the probability of observing a test statistic at least as extreme as the one we've observed, given the null hypothesis is true.
+
+---
+
+## `r emo::ji('three')` Calculate the p-value
+
+The test statistic follows a $t$ distribution with 49 degrees of freedom. 
+
+.pull-left[
+```{r echo = F, fig.height = 2.5}
+ggplot(data.frame(x = c(-4, 4)), aes(x)) +
+  stat_function(fun = dt, args =list(df =49)) +
+  stat_function(fun = dt,   args =list(df =49),
+                xlim = c(-4, -.481),
+                geom = "area", fill = "steelblue") + 
+    stat_function(fun = dt,   args =list(df = 49),
+                xlim = c(.481, 4),
+                geom = "area", fill = "steelblue") +
+    geom_vline(xintercept = .481,linetype = "dashed") +
+    geom_vline(xintercept = -.481,linetype = "dashed") +
+    labs(x = "t", 
+         y = "density") + 
+    annotate("text", x = 2.6, y = 0.3, label = "|test statistic|") +
+  annotate("text", x = -2.6, y = 0.3, label = "-|test statistic|") +
+    ylim(0, NA) +
+  theme_classic()
+```
+]
+
+
+.pull-right[
+```{r}
+pval <- 2 * pt(abs(-0.481), 49, 
+               lower.tail = FALSE)
+pval 
+```
+]
+---
+
+## Understanding the p-value
+
+|  Magnitude of p-value |             Interpretation            |
+|:---------------------:|:-------------------------------------:|
+| p-value < 0.01        | strong evidence against $H_0$         |
+| 0.01 < p-value < 0.05 | moderate evidence against $H_0$       |
+| 0.05 < p-value < 0.1  | weak evidence against $H_0$           |
+| p-value > 0.1         | effectively no evidence against $H_0$ |
+
+<br> 
+<br>
+
+*These are general guidelines. The strength of evidence depends on the context of the problem.*
+
+---
+
+## `r emo::ji('four')` State the conclusion
+
+The p-value of `r round(pval, 3)` is large, so we fail to reject the null hypothesis. 
+
+.vocab[The data do not provide sufficient evidence that the mean price per guest per night for Airbnbs in Asheville is not equal to $80.]
+
+---
+
+class: middle, center
+
+### What is a plausible estimate for the mean price per guest per night? 
+
+---
+
+## Confidence interval 
+
+.eq[
+$$\text{ Estimate} \pm \text{ (critical value) } \times \text{SE}$$
+]
+
+--
+
+.middle[
+.eq[
+
+Confidence interval for $\mu$
+
+$$\bar{X} \pm t^* \times \frac{s}{\sqrt{n}}$$
+]
+]
+
+<br>
+
+$t^*$ is calculated from a $t$ distribution with $n-1$ degrees of freedom
+  
+---
+
+## Calculating the 95% CI for $\mu$
+
+```{r echo = F}
+abb %>% 
+  summarise(x_bar = mean(ppg), 
+            sd = sd(ppg), n = n()) %>%
+  kable(digits = 3)
+```
+
+```{r}
+t_star <- qt(0.975, 49)
+t_star
+```
+
+--
+
+.eq[
+$$76.587 \pm 2.01 \times \frac{50.141}{\sqrt{50}} \\[8pt]
+\mathbf{[62.334, 90.840]}$$
+]
+
+---
+
+## Interpretation 
+
+.eq[
+$$\mathbf{[62.334, 90.840]}$$
+]
+
+--
+
+<br>
+
+.vocab[We are 95% confident the true mean price per guest per night for Airbnbs in Asheville is between $62.33 and $90.84.]
+
+--
+
+Note that this is consistent with the conclusion from our hypothesis test.
+
+---
+
+## One-sample t-test functions in R (both work!)
+
+```{r}
+library(infer)
+t_test(abb, response = ppg, mu = 80)
+```
+
+
+--
+
+```{r}
+t.test(abb$ppg, mu = 80) %>%
+  tidy()
+```
+
+---
+
+## Recap
+
+
+- Sampling distributions and the Central Limit Theorem 
+
+- Hypothesis test to test a claim about a population parameter
+
+- Confidence interval to estimate a population parameter
+
+
+---
+
+## Acknowledgements
+
+Some slides were adapted from [Data Science in a Box](datasciencebox.org).
+
+

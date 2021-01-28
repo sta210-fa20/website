@@ -1,0 +1,61 @@
+---
+title: "AE 02: Bike rentals in DC"
+subtitle: "Exploring multivariable relationships"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+## Class announcements
+
+- Office hours start this week
+- See this week's schedule: [Week 02](https://sta210-sp21.netlify.app/schedule/week-02/)
+  - [Lab 01](https://sta210-sp21.netlify.app/labs/lab-01-ikea.html) due Sun, Jan 31 at 11:59P
+  - Complete [All About You survey](https://duke.qualtrics.com/jfe/form/SV_czLvjD7M9XkcZKK) by Sun, Jan 31 at 11:59p
+- Check Sakai announcements + email for weekly updates
+
+## Introductions 
+
+## Meet your classmates! (~ 5 minutes)
+
+- Go to a breakout room
+- Introduce yourself!
+  - Name
+  - Year
+  - What is something you're looking forward to this semester (either in this class or in general)?
+
+## Questions about the class
+
+## Questions from Lab 01
+
+## Questions from video
+
+## Bike rentals in DC
+
+```{r warning = FALSE, message = FALSE}
+library(tidyverse)
+```
+
+
+"Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and return back has become automatic. Through these systems, user is able to easily rent a bike from a particular position and return back at another position. Currently, there are about over 500 bike-sharing programs around the world which is composed of over 500 thousands bicycles. Today, there exists great interest in these systems due to their important role in traffic, environmental and health issues."
+
+- From [UCI Machine Learning Repository - Bike Sharing Dataset](http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset)
+
+## Exercises (~ 15 minutes)
+
+- Go to the [STA 210 course organization](https://www.github.com/sta210-sp21) on GitHub.
+
+- Clone the **ae-02-** repo and start a new project in RStudio.
+
+- Be sure to push your changes periodically as you work on the AE. 
+
+- Write your breakout room's answer on the Google Slide. Link will be posted in chat.

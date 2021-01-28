@@ -1,5 +1,5 @@
 ---
-title: "Week 02: SLR"
+title: 'Week 02: Jan 25 - 29'
 weight: 2
 ---
 
@@ -14,42 +14,28 @@ font-size: 18px;
 
 |           | Slides                   | Videos | Application Exercises (AE) |
 |-----------|--------------------------|--------|--------|
-| Monday    | [Simple Linear Regression: Intro](https://sta210-fa20.netlify.app/slides/03-slr-intro.html#1) | [An Introduction to Simple Linear Regression](https://warpwire.duke.edu/w/izoEAA/)| [AE 03: Price of Porsches](https://sta210-fa20.netlify.app/appex/ae-03-porsche.html) |
-| Wednesday | [SLR: Foundation](https://sta210-fa20.netlify.app/slides/04-slr-foundation.html)    | [SLR: Foundation](https://warpwire.duke.edu/w/hUUEAA/) | [AE 04: Price of Porsches (Inference)](https://sta210-fa20.netlify.app/appex/ae-04-porsche-inf.html) |
-|  |     [SLR: Inference](https://sta210-fa20.netlify.app/slides/04-slr-coef-inf.html)  | [SLR: Inference](https://warpwire.duke.edu/w/e0UEAA/)    | |
-
+| Tuesday  | [Exploring multivariable relationships](https://sta210-sp21.netlify.app/slides/02-multivar-relationships.html) |  [Exploring multivariable relationships](https://warpwire.duke.edu/w/zRkFAA/) | [AE 02: Bike rentals in DC](https://sta210-sp21.netlify.app/appex/ae-02-bikeshare.html) |
+| Thursday   | [Statistical inference review](https://sta210-sp21.netlify.app/slides/03-inference-review.html) | [Statistical inference review Part 1](https://warpwire.duke.edu/w/_xkFAA/)   | [AE 03: Bike rentals in DC cont'd](https://sta210-sp21.netlify.app/appex/ae-03-bikeshare-pt2.html)|
+|    |  | [Statistical inference review Part 2](https://warpwire.duke.edu/w/ERwFAA/)  | |
 
 ## Readings
 
-|            |   |
-|------------|---|
-| [OpenIntro Statistics: 8.1 - 8.4 ](https://leanpub.com/openintro-statistics) <br> (click "Read Free Sample" to access PDF) | **Required**   |
-| [Elements and Principles for Characterizing Variation between Data Analyses](https://arxiv.org/pdf/1903.07639.pdf)  | **Required**   |
+|            | 
+|------------|
+| [Introduction to Modern Statistics (IMS) Section 7.1.2](https://openintro-ims.netlify.app/inference-num.html#one-mean-math)  |
+| [IMS Section 7.2 - 7.4](https://openintro-ims.netlify.app/inference-num.html#differenceOfTwoMeans) | 
 
 
 ## Assignments
 
 |                        |   |
 |------------------------|---|
-| [HW 01](https://sta210-fa20.netlify.app/hw/hw-01.html)            |  **due Wed, Sep 2 at 11:59p** |
-| [Lab 02](https://sta210-fa20.netlify.app/labs/lab-02-slr.html)          |  **due Wed, Sep 2 at 11:59p** |
+| [Lab 01](https://sta210-sp21.netlify.app/labs/lab-01-ikea.html) | **due Sun, Jan 31 at 11:59p EST**
+| Complete [All About You survey](https://duke.qualtrics.com/jfe/form/SV_czLvjD7M9XkcZKK)   | **due Sun, Jan 31 at 11:59p EST** |
 
 
-## Announcements + Resources
-
-**Computing workshops by the Center for Data and Visualization Sciences**
-
-- [R for data science: getting started, EDA, data wrangling](https://duke.libcal.com/event/6867861)
-  - Tue, Sep 1, 10a - 12p
-- [R for data science: visualization, pivot, join, regression](https://duke.libcal.com/event/6867914)
-  - Wed, Sep 9, 1p - 3p
-  
-Find a complete list of workshops [here](https://library.duke.edu/data/workshops). 
 
 
-**RStudio Cheat Sheets**
 
-- [ggplot2 cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
-- [dplyr cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
 

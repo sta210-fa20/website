@@ -1,0 +1,89 @@
+---
+title: "AE 02: Multivariable relationships"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+## Class announcements
+
+- Office hours start Monday
+- Labs start Monday 
+
+## Check in 
+
+## Introductions
+
+## Meet your classmates! (~ 7 minutes)
+
+- Go to a breakout room
+- Introduce yourself!
+  - Name
+  - Year
+  - What is something you're looking forward to this semester (either in this class or in general)?
+
+## Check in 
+
+## Introductions
+
+## Meet your classmates! (~ 7 minutes)
+
+- Go to a breakout room
+- Introduce yourself!
+  - Name
+  - Year
+  - What is something you're looking forward to this semester (either in this class or in general)?
+
+
+## Course overview
+
+Click [here](01-course-overview.html) for slides.
+
+- Watch the videos [Welcome to Regression Analysis](https://warpwire.duke.edu/w/jQ0FAA/) and [Tour of course website + Sakai](https://warpwire.duke.edu/w/_wsFAA/) for a more detailed overview. 
+
+
+## Get GitHub username (~ 5 - 7 minutse)
+
+- Go to https://github.com/, and create an account (unless you already have one). 
+
+- After you create your account, go to [https://forms.gle/rmJGcHio4UeiwZXh8](https://forms.gle/rmJGcHio4UeiwZXh8) and enter your NetID and  GitHub username. 
+
+Some tips from [Happy Git and GitHub for the useR](http://happygitwithr.com/github-acct.html#username-advice) to help you create a professional GitHub username.
+
+- Incorporate your actual name.
+- Reuse your username from other contexts if you can, e.g. Twitter or Slack.
+- Pick a username you will be comfortable revealing to your future boss.
+- Be as unique as possible in as few characters as possible. Shorter is better than longer.
+- Make it timeless.</small>
+- Avoid words with special meaning in programming (e.g. `NA`).
+
+
+## RStudio tour 
+
+## Tour of R and RStudio 
+
+Let's take a tour of R and RStudio. I'll do a short demo to help you navigate RStudio. 
+
+You can access RStudio by going to  https://vm-manage.oit.duke.edu/containers and logging into the Docker container titled "STA 210 - Regression Analysis".
+
+### Concepts introduced
+
+- Console
+- Using R as a calculator
+- RStudio environment
+- Brief intro to R Markdown
+- R Markdown vs. the console
+
+
+
+
+

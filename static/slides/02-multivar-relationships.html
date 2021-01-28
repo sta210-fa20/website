@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Exploring multivariable relationships</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Maria Tackett" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Exploring multivariable relationships
+### Prof. Maria Tackett
+
+---
+
+
+
+
+
+
+class: middle, center 
+
+## [Click for PDF of slides](02-multivar-relationships.pdf)
+
+---
+
+## Carbohydrates in Starbucks food 
+
+- Starbucks often displays the total calories in their food items but not the other nutritional information.
+
+- Our goal is to analyze the relationship between the calories and total carbohydrates (carbs) in Starbucks food items, and assess if it differs based on the type of food item (bakery, salad, sandwich, etc.)
+
+- We can use our analysis to estimate the total carbs using information about the total calories and type for a given food time 
+
+---
+
+## Starbucks data 
+
+
+
+
+--
+
+- .vocab[Observations]: 77 Starbucks food items
+
+--
+
+- .vocab[Variables]:
+    - `carb`: Total carbohydrates (in grams)
+    - `calories`: Total calories
+    - `bakery`: 1: bakery food item, 0: other food type
+
+---
+
+## Terminology
+
+- `carb` is the .vocab[response variable]
+    - variable whose variation we want to understand / variable we wish to predict
+    - also known as *outcome* or *dependent* variable
+
+--
+
+&lt;br&gt; 
+
+- `calories`, `bakery` are the .vocab[predictor variables]
+    - variables used to account for variation in the outcome
+    - also known as *explanatory*, *independent*, or *input* variables
+
+---
+
+## Let's look at the data
+
+.panelset[
+.panel[.panel-name[Plot]
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+]
+
+.panel[.panel-name[Code]
+.small[
+
+```r
+starbucks &lt;- openintro::starbucks %&gt;%
+  mutate(bakery = factor(if_else(type == "bakery", 1, 0)))
+```
+
+
+```r
+p1 &lt;- ggplot(data = starbucks, aes(x = carb))  + 
+  geom_histogram(fill = "steelblue", color = "black") + 
+  labs(x = "Carbohydrates (in grams)", 
+       y = "Count")
+
+p2 &lt;- ggplot(data = starbucks, aes(x = calories))  + 
+  geom_histogram(fill = "steelblue", color = "black") + 
+  labs(x = "Calories", 
+       y = "Count")
+
+p3 &lt;- ggplot(data = starbucks, aes(x = bakery))  + 
+  geom_bar(fill = "steelblue", color = "black") + 
+  labs(x = "Bakery Item", 
+       y = "Count")
+
+p1 + (p2 / p3)
+```
+]
+]
+]
+
+---
+
+## Response vs. Predictors
+
+.panelset[
+.panel[.panel-name[Plot]
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+
+.alert[
+`$$\text{carbs} = f(\text{calories}, \text{bakery}) + \epsilon$$`
+]
+
+]
+
+.panel[.panel-name[Code]
+.midi[
+
+```r
+p1 &lt;- ggplot(data = starbucks, aes(x = calories, y = carb)) + 
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "steelblue") +
+  labs(x = "Calories", 
+      y  = "Carbohydrates (grams)")
+
+p2 &lt;- ggplot(data = starbucks, aes(x = bakery, y = carb)) + 
+  geom_boxplot(fill = "steelblue", color = "black") +
+  labs(x = "Bakery", 
+      y  = "Carbohydrates (grams)")
+  
+p1 + p2
+```
+]
+]
+]
+
+
+---
+
+## Model 
+
+.alert[
+`$$\text{carbs} = f(\text{calories}, \text{bakery}) + \epsilon$$`
+]
+
+- **Goal**: Determine `\(f\)`
+
+--
+
+- How do we determine `\(f\)`?
+  - Make an assumption about the functional form `\(f\)`
+  - Use the data to fit a model based on that form 
+    
+---
+
+## Determine `\(f\)`
+
+In general, 
+
+1) Choose the functional form of `\(f\)`, i.e. .vocab[choose the appropriate model given the response variable]
+
+- Suppose `\(f\)` is a linear model
+    `$$y = f(\mathbf{X}) = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p + \epsilon$$`
+
+--
+
+2) Use the data to fit (or train) the model, i.e .vocab[estimate the model parameters]
+
+- Estimate `\(\beta_0, \beta_1, \ldots, \beta_p\)`
+
+---
+
+## Carbs vs. Calories 
+
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-5-1.png" style="display: block; margin: auto;" /&gt;
+
+.alert[
+`$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \epsilon$$`
+]
+
+---
+
+## Carbs vs. Calories + Bakery 
+
+
+
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+
+.alert[
+`$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \epsilon$$`
+]
+ 
+---
+
+## Carbs vs. Calories + Bakery (with interaction)
+
+&lt;img src="02-multivar-relationships_files/figure-html/unnamed-chunk-8-1.png" style="display: block; margin: auto;" /&gt;
+
+.alert[
+`$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \beta_3 ~ \text{calories} \times \text{bakery}  + \epsilon$$`
+]
+
+---
+
+## Code for plot on previous slide
+
+.midi[
+
+```r
+ggplot(data = starbucks, aes(x = calories, y = carb, color = bakery)) + 
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Calories", 
+      y  = "Carbohydrates (grams)",
+      color = "Bakery", 
+      title = "Total Carbohydrates vs. Calories", 
+      subtitle = "With Interaction") + 
+  scale_color_manual(values=c("#1B9E77", "#7570B3"))
+```
+]
+
+
+---
+
+## Why?
+
+.alert[
+`$$\text{carbs} = \beta_0 + \beta_1 ~\text{calories} + \beta_2 ~\text{bakery} + \beta_3 ~ \text{calories} \times \text{bakery}  + \epsilon$$`
+]
+
+--
+
+.vocab[Prediction:]
+
+What do we expect the total carbohydrates to be in a piece of Starbucks pumpkin bread, a bakery item that is 410 calories?   
+
+--
+
+.vocab[Inference:]
+
+What is the relationship between the calories and total carbohydrates for bakery items at Starbucks? For non-bakery items?
+---
+
+## Course Outline
+
+.pull-left[
+
+.vocab[Unit 1: Quantitative Response Variables]
+  - Simple Linear Regression 
+  - Multiple Linear Regression
+
+&lt;br&gt; 
+
+.vocab[Unit 3: Looking Ahead]
+  - Log-linear Regression 
+  - Weighted Least Squares
+  - Presenting statistical results
+  
+]
+
+.pull-right[
+
+- .vocab[Unit 2: Categorical Response Variable]
+  - Logistic Regression 
+  - Multinomial Logistic Regression 
+
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

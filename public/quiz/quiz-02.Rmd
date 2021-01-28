@@ -1,6 +1,6 @@
 ---
 title: "Quiz 02"
-subtitle: "Active Oct 1 - 2, 2 hour time limit"
+subtitle: ""
 output: 
   html_document:
     css: "sta210-quiz.css"
@@ -14,26 +14,4 @@ knitr::opts_chunk$set(echo = TRUE,
                       message=FALSE)
 ```
 
-## General instructions
-
-Quiz 02 will be released on **October 1 at 12a EST** and must be completed by **October 2 at 11:59p EST**. Once you open the quiz, you will have **2 hours** to complete it. The timer automatically starts when you open the quiz, and the quiz will automatically close when you reach the time limit.
-
-During the time the quiz is available, you will see a **Quiz 02** assignment on Gradescope. Click on that assignment to take the quiz.
-
-In addition to the Quiz 02 assignment on Gradescope, you will find a repo called **quiz-02-[your_github_username]** on [GitHub](https://www.github.com/sta210-fa20). There is one question that requires you to do analysis in R. For this question, you will put all code and output used to support your conclusions in the .Rmd file, knit to a PDF, and upload that PDF in the specified quiz question. **Write your narrative in the Rmd file in the Rmd file.** 
-
-## Notes
-
-- The quiz is an individual assignment. You may <u>not</u> discuss the quiz with anyone else (either in the class or not). See the Academic Honesty guidelines in the [course syllabus](https://sta210-fa20.netlify.app/syllabus/#course-community) for more information.
-
-- The quiz is open-book, open-note, so you may use any materials from class (except other people!) as you take the quiz. 
-
-- Be sure to read all instructions and quiz questions carefully!
-
-- Piazza will be inactive during the duration of the quiz, so no one will be able to post questions on Piazza October 1 - 2. If you have computing issues or trouble accessing the quiz on Gradescope, please email Professor Tackett with **STA 210 Quiz** in the subject line. 
-
-- There will be no office hours on October 1 - 2. Office hours will resume on Monday, October 5. 
-
-- The teaching team will not be able to answer questions about the quiz (outside of technical issues) while the quiz is active. This is to ensure all students have the same information regardless of when they take the quiz. 
-
-- See [this video by Gradescope](https://www.youtube.com/watch?v=j_kha2UkeMY&feature=youtu.be) **before** taking the quiz to get an idea of what to expect. 
+Instructions will be posted when the quiz is assigned.

@@ -75,10 +75,6 @@
   </url>
   
   <url>
-    <loc>/help/</loc>
-  </url>
-  
-  <url>
     <loc>/home/</loc>
   </url>
   
@@ -88,6 +84,10 @@
   
   <url>
     <loc>/author/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/</loc>
   </url>
   
   <url>
