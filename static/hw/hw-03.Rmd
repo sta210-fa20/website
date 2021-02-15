@@ -55,13 +55,13 @@ library(patchwork)
 
 ## Part 1: Conceptual questions
 
-In a [1991 study, Allen et. al](https://web-b-ebscohost-com.proxy.lib.duke.edu/ehost/detail/detail?vid=0&sid=5587f68b-38f1-4dde-8b58-ad2184de5f19%40pdc-v-sessmgr03&bdata=JnNpdGU9ZWhvc3QtbGl2ZSZzY29wZT1zaXRl#db=pdh&AN=1992-04617-001) sought to answer whether the presence of a close friend or pet affected a woman's stress levels as she completed a challenging tasks. To test this, they conducted an experiment in which 45 women dogs were tasked with counting backwards by 13s or 17s under one of three test conditions (`group`):
+In a [1991 study, Allen et. al](https://web-b-ebscohost-com.proxy.lib.duke.edu/ehost/detail/detail?vid=0&sid=5587f68b-38f1-4dde-8b58-ad2184de5f19%40pdc-v-sessmgr03&bdata=JnNpdGU9ZWhvc3QtbGl2ZSZzY29wZT1zaXRl#db=pdh&AN=1992-04617-001) sought to answer whether the presence of a close friend or pet affected a woman's stress levels as she completed a challenging tasks. To test this, they conducted an experiment in which 45 women who were dog-owners were tasked with counting backwards by 13s or 17s under one of three test conditions (`group`):
 
 - `C`: Control group, Alone
 - `F`: Close friend present
 - `P`: Pet present 
 
-All of the participants were dog-owners who responded to an advertisement about the student.
+All of the participants were dog-owners who responded to an advertisement about the study.
 
 The data is available in `stress-experiment.csv` in the `data` folder.
     
